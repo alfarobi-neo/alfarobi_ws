@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/devel
+
+Name: dynamixel_sdk
+Description: Description of dynamixel_sdk
+Version: 3.5.2
+Cflags: -I/home/alfarobi/alfarobi_ws/src/DynamixelSDK/c++/include
+Libs: -L${prefix}/lib -ldynamixel_sdk
+Requires: 

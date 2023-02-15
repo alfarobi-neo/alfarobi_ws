@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/install
+
+Name: second_strategy_monitor
+Description: Description of second_strategy_monitor
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp roslib std_msgs geometry_msgs sensor_msgs cv_bridge image_transport vision_utils

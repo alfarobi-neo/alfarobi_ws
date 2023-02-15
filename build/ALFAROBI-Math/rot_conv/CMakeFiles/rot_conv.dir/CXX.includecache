@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alfarobi/alfarobi_ws/src/ALFAROBI-Math/rot_conv/include/rot_conv/rot_conv.h
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Geometry
+-
+
+/home/alfarobi/alfarobi_ws/src/ALFAROBI-Math/rot_conv/src/rot_conv.cpp
+rot_conv/rot_conv.h
+-
+eigen3/Eigen/Eigenvalues
+-
+cmath
+-
+

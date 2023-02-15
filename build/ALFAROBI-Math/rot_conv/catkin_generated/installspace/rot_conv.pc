@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/install
+
+Name: rot_conv
+Description: Description of rot_conv
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lrot_conv
+Requires: 

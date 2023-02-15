@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Wno-address   CMakeFiles/rot_conv_sample.dir/test/rot_conv_sample.cpp.o  -o /home/alfarobi/alfarobi_ws/devel/lib/rot_conv/rot_conv_sample -rdynamic /home/alfarobi/alfarobi_ws/devel/lib/librot_conv.so -Wl,-rpath,/home/alfarobi/alfarobi_ws/devel/lib 

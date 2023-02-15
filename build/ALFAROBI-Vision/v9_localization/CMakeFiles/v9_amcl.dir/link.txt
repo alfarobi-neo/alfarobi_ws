@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/alfarobi/alfarobi_ws/devel/lib/libv9_amcl.a  CMakeFiles/v9_amcl.dir/src/v9_amcl.cpp.o
+/usr/bin/ranlib /home/alfarobi/alfarobi_ws/devel/lib/libv9_amcl.a

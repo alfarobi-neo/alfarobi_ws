@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/install
+
+Name: team_communication
+Description: Description of team_communication
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

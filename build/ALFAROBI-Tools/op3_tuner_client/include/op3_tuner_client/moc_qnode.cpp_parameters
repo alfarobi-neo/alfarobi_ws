@@ -1,0 +1,9 @@
+-I/home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/op3_tuner_client
+-I/home/alfarobi/alfarobi_ws/build/ALFAROBI-Tools/op3_tuner_client
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="op3_tuner_client"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/alfarobi/alfarobi_ws/build/ALFAROBI-Tools/op3_tuner_client/include/op3_tuner_client/moc_qnode.cpp
+/home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/op3_tuner_client/include/op3_tuner_client/qnode.hpp

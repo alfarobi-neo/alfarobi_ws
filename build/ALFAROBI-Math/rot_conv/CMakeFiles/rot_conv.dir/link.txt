@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -Wall -Wno-address  -shared -Wl,-soname,librot_conv.so -o /home/alfarobi/alfarobi_ws/devel/lib/librot_conv.so CMakeFiles/rot_conv.dir/src/rot_conv.cpp.o 

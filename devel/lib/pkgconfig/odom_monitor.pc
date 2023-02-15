@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/devel
+
+Name: odom_monitor
+Description: Description of odom_monitor
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp roslib std_msgs geometry_msgs sensor_msgs message_filters

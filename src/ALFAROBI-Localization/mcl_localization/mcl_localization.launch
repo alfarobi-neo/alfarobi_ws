@@ -1,0 +1,6 @@
+<launch>
+ <param name="mcl_localization/bin_file" value="$(find mcl_localization)/distance_mat/dist.bin" type="str"/>
+
+ <node name="mcl_localization_node" pkg="mcl_localization" type="mcl_localization_node" output="screen"/>
+
+</launch>

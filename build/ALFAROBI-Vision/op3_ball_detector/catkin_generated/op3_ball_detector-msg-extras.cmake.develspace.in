@@ -1,0 +1,2 @@
+set(op3_ball_detector_MESSAGE_FILES "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Vision/op3_ball_detector/msg/CircleSetStamped.msg;/home/alfarobi/alfarobi_ws/src/ALFAROBI-Vision/op3_ball_detector/msg/BallDetectorParams.msg")
+set(op3_ball_detector_SERVICE_FILES "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Vision/op3_ball_detector/srv/GetParameters.srv;/home/alfarobi/alfarobi_ws/src/ALFAROBI-Vision/op3_ball_detector/srv/SetParameters.srv")

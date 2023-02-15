@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/install
+
+Name: main_service
+Description: Description of main_service
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~score" : \b [int] Goalpost Histogram Score min: 0, default: 20, max: 2000
+- \b "~ratio1" : \b [int] Ratio Goalpost One min: 0, default: 20, max: 2000
+- \b "~ratio2" : \b [int] Ratio Goalpost Two min: 0, default: 20, max: 2000
+

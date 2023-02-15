@@ -1,0 +1,2 @@
+set(mcl_localization_MESSAGE_FILES "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Localization/mcl_localization/msgs/localization.msg;/home/alfarobi/alfarobi_ws/src/ALFAROBI-Localization/mcl_localization/msgs/localization_param.msg")
+set(mcl_localization_SERVICE_FILES "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Localization/mcl_localization/srv/GetLocParam.srv;/home/alfarobi/alfarobi_ws/src/ALFAROBI-Localization/mcl_localization/srv/SetLocParam.srv")

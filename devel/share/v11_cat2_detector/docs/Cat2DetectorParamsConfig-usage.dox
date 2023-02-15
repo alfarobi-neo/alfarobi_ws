@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="v11_cat2_detector_node" pkg="v11_cat2_detector" type="v11_cat2_detector_node">
+  <param name="min_thres" type="int" value="255" />
+  <param name="ratio1" type="int" value="20" />
+  <param name="ratio2" type="int" value="20" />
+</node>
+\endverbatim
+

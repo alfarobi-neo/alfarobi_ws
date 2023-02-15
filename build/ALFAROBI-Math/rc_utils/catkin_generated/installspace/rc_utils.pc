@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/install
+
+Name: rc_utils
+Description: Description of rc_utils
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lrc_utils
+Requires: 

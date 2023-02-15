@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/devel
+
+Name: arduino_controller
+Description: Description of arduino_controller
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

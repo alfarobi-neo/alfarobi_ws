@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/devel
+
+Name: alfarobi
+Description: Description of alfarobi
+Version: 0.1.0
+Cflags: -I/home/alfarobi/alfarobi_ws/src/ALFAROBI-Main/alfarobi/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs

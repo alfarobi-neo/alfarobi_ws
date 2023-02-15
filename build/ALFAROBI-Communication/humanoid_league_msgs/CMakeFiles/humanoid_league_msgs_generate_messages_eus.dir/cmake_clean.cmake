@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/humanoid_league_msgs_generate_messages_eus"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/VisualCompassRotation.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/GoalInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/HeadMode.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/BallInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/LineIntersectionRelative.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/Strategy.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/Model.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/LineIntersectionInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/TeamData.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/PostInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/RobotControlState.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/GoalRelative.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/BarInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/GameState.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/Animation.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/LineInformationInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/ObstaclesRelative.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/LineCircleInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/BallRelative.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/LineSegmentRelative.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/ObstaclesInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/AdditionalServoData.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/ObstacleInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/LineCircleRelative.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/GoalPartsInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/Position2D.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/BallsInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/ObstacleRelative.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/Speak.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/LineSegmentInImage.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/msg/LineInformationRelative.l"
+  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/humanoid_league_msgs/manifest.l"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/humanoid_league_msgs_generate_messages_eus.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

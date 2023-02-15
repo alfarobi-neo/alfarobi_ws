@@ -1,0 +1,16 @@
+\subsubsection usage Usage
+\verbatim
+<node name="v10_projection_2_node" pkg="v10_projection__2" type="v10_projection_2_node">
+  <param name="num_particles" type="int" value="100" />
+  <param name="range_var" type="double" value="40000.0" />
+  <param name="beam_var" type="double" value="7225.0" />
+  <param name="gy_var" type="double" value="1225.0" />
+  <param name="alpha1" type="double" value="1.0" />
+  <param name="alpha2" type="double" value="1.0" />
+  <param name="alpha3" type="double" value="1.0" />
+  <param name="alpha4" type="double" value="1.0" />
+  <param name="short_term_rate" type="double" value="1.0" />
+  <param name="long_term_rate" type="double" value="1.0" />
+</node>
+\endverbatim
+

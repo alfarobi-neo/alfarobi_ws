@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/devel
+
+Name: capture_step_module_msgs
+Description: Description of capture_step_module_msgs
+Version: 0.1.0
+Cflags: -I/home/alfarobi/alfarobi_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

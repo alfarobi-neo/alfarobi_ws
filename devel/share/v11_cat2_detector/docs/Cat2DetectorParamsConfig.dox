@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~min_thres" : \b [int] Minimum White Line Threshold  min: 0, default: 255, max: 255
+- \b "~ratio1" : \b [int] Ratio Goalpost One min: 0, default: 20, max: 2000
+- \b "~ratio2" : \b [int] Ratio Goalpost Two min: 0, default: 20, max: 2000
+

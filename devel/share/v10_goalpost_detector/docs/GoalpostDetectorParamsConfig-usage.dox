@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="v10_goalpost_detector_node" pkg="v10_goalpost_detector" type="v10_goalpost_detector_node">
+  <param name="canny1" type="int" value="20" />
+  <param name="canny2" type="int" value="20" />
+  <param name="threshold_corner" type="int" value="20" />
+  <param name="intersections" type="int" value="20" />
+</node>
+\endverbatim
+

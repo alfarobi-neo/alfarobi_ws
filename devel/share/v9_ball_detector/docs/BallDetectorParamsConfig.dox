@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~score" : \b [int] Ball Histogram Score min: 0, default: 20, max: 2000
+- \b "~cost" : \b [int] Circle Fitting Cost min: 0, default: 20, max: 1000
+

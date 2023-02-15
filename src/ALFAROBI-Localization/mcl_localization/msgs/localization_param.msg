@@ -1,0 +1,9 @@
+float64 mcl_afast
+float64 mcl_aslow
+float64 mcl_variance
+float64 mgauss_x
+float64 mgauss_y
+float64 mgauss_w
+float64 vgauss_x
+float64 vgauss_y
+float64 mcl_wcmps

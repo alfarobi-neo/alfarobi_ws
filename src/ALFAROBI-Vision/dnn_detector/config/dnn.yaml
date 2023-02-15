@@ -1,0 +1,4 @@
+scaling: 180
+confidence: 0.48
+mean_val: 127.5
+filter_debug: true

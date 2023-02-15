@@ -1,0 +1,8 @@
+prefix=/home/alfarobi/alfarobi_ws/devel
+
+Name: v12_goalpost_white_monitor
+Description: Description of v12_goalpost_white_monitor
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp roslib std_msgs geometry_msgs sensor_msgs cv_bridge image_transport vision_utils

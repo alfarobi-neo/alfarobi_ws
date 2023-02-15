@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/humanoid_league_msgs_generate_messages_py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_VisualCompassRotation.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_GoalInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_HeadMode.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_BallInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_LineIntersectionRelative.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_Strategy.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_Model.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_LineIntersectionInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_TeamData.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_PostInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_RobotControlState.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_GoalRelative.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_BarInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_GameState.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_Animation.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_LineInformationInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_ObstaclesRelative.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_LineCircleInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_BallRelative.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_LineSegmentRelative.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_ObstaclesInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_AdditionalServoData.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_ObstacleInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_LineCircleRelative.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_GoalPartsInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_Position2D.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_BallsInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_ObstacleRelative.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_Speak.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_LineSegmentInImage.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/_LineInformationRelative.py"
+  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/humanoid_league_msgs/msg/__init__.py"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/humanoid_league_msgs_generate_messages_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
