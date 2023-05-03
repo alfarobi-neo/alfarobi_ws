@@ -3353,32 +3353,6 @@ analyze_msgs_genpy/fast:
 .PHONY : analyze_msgs_genpy/fast
 
 #=============================================================================
-# Target rules for targets named arduino_calibrator
-
-# Build rule for target.
-arduino_calibrator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arduino_calibrator
-.PHONY : arduino_calibrator
-
-# fast build rule for target.
-arduino_calibrator/fast:
-	$(MAKE) -f ALFAROBI-Tools/arduino_calibrator/CMakeFiles/arduino_calibrator.dir/build.make ALFAROBI-Tools/arduino_calibrator/CMakeFiles/arduino_calibrator.dir/build
-.PHONY : arduino_calibrator/fast
-
-#=============================================================================
-# Target rules for targets named arduino_calibrator_autogen
-
-# Build rule for target.
-arduino_calibrator_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arduino_calibrator_autogen
-.PHONY : arduino_calibrator_autogen
-
-# fast build rule for target.
-arduino_calibrator_autogen/fast:
-	$(MAKE) -f ALFAROBI-Tools/arduino_calibrator/CMakeFiles/arduino_calibrator_autogen.dir/build.make ALFAROBI-Tools/arduino_calibrator/CMakeFiles/arduino_calibrator_autogen.dir/build
-.PHONY : arduino_calibrator_autogen/fast
-
-#=============================================================================
 # Target rules for targets named base_station_node
 
 # Build rule for target.
@@ -6483,8 +6457,6 @@ help:
 	@echo "... analyze_msgs_generate_messages_eus"
 	@echo "... analyze_msgs_generate_messages_py"
 	@echo "... analyze_msgs_genpy"
-	@echo "... arduino_calibrator"
-	@echo "... arduino_calibrator_autogen"
 	@echo "... base_station_node"
 	@echo "... base_station_node_autogen"
 	@echo "... capture_step_module_msgs_genpy"

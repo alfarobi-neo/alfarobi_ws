@@ -19,7 +19,7 @@ add_custom_target(humanoid_league_msgs_generate_messages ALL)
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Animation.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Animation.msg" "trajectory_msgs/JointTrajectory:std_msgs/Header:trajectory_msgs/JointTrajectoryPoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Animation.msg" "std_msgs/Header:trajectory_msgs/JointTrajectory:trajectory_msgs/JointTrajectoryPoint"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/HeadMode.msg" NAME_WE)
@@ -39,12 +39,12 @@ add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg" "std_msgs/Header:geometry_msgs/Point:humanoid_league_msgs/BallInImage"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg" "std_msgs/Header:humanoid_league_msgs/BallInImage:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalInImage.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalInImage.msg" "humanoid_league_msgs/PostInImage:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalInImage.msg" "std_msgs/Header:humanoid_league_msgs/PostInImage:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalRelative.msg" NAME_WE)
@@ -84,17 +84,17 @@ add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationInImage.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationInImage.msg" "std_msgs/Header:humanoid_league_msgs/LineIntersectionInImage:geometry_msgs/Point:humanoid_league_msgs/LineSegmentInImage:humanoid_league_msgs/LineCircleInImage"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationInImage.msg" "humanoid_league_msgs/LineCircleInImage:humanoid_league_msgs/LineIntersectionInImage:std_msgs/Header:geometry_msgs/Point:humanoid_league_msgs/LineSegmentInImage"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationRelative.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationRelative.msg" "std_msgs/Header:geometry_msgs/Point:humanoid_league_msgs/LineSegmentRelative:humanoid_league_msgs/LineCircleRelative:humanoid_league_msgs/LineIntersectionRelative"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationRelative.msg" "humanoid_league_msgs/LineSegmentRelative:humanoid_league_msgs/LineCircleRelative:std_msgs/Header:geometry_msgs/Point:humanoid_league_msgs/LineIntersectionRelative"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Model.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Model.msg" "std_msgs/Header:humanoid_league_msgs/ObstaclesRelative:geometry_msgs/PoseWithCovariance:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/PoseWithCovarianceStamped:humanoid_league_msgs/ObstacleRelative:humanoid_league_msgs/BallRelative:geometry_msgs/Pose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Model.msg" "geometry_msgs/Pose:humanoid_league_msgs/ObstaclesRelative:geometry_msgs/PoseWithCovarianceStamped:humanoid_league_msgs/ObstacleRelative:geometry_msgs/PoseWithCovariance:humanoid_league_msgs/BallRelative:std_msgs/Header:geometry_msgs/Point:geometry_msgs/Quaternion"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg" NAME_WE)
@@ -104,7 +104,7 @@ add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesInImage.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesInImage.msg" "humanoid_league_msgs/ObstacleInImage:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesInImage.msg" "std_msgs/Header:humanoid_league_msgs/ObstacleInImage:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg" NAME_WE)
@@ -114,7 +114,7 @@ add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg" "std_msgs/Header:geometry_msgs/Point:humanoid_league_msgs/ObstacleRelative"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg" "std_msgs/Header:humanoid_league_msgs/ObstacleRelative:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg" NAME_WE)
@@ -124,12 +124,12 @@ add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg" "humanoid_league_msgs/PostInImage:std_msgs/Header:geometry_msgs/Point:humanoid_league_msgs/BarInImage"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg" "std_msgs/Header:humanoid_league_msgs/PostInImage:geometry_msgs/Point:humanoid_league_msgs/BarInImage"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/AdditionalServoData.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/AdditionalServoData.msg" "sensor_msgs/Temperature:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/AdditionalServoData.msg" "std_msgs/Header:sensor_msgs/Temperature"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GameState.msg" NAME_WE)
@@ -149,7 +149,7 @@ add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg" "geometry_msgs/Pose2D:humanoid_league_msgs/Position2D:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg" "std_msgs/Header:humanoid_league_msgs/Position2D:geometry_msgs/Pose2D"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Strategy.msg" NAME_WE)
@@ -169,7 +169,7 @@ add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg" NAME_WE)
 add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg" "geometry_msgs/Pose2D:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "humanoid_league_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg" "std_msgs/Header:geometry_msgs/Pose2D"
 )
 
 #
@@ -181,7 +181,7 @@ add_custom_target(_humanoid_league_msgs_generate_messages_check_deps_${_filename
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Animation.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
@@ -205,13 +205,13 @@ _generate_msg_cpp(humanoid_league_msgs
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
@@ -259,19 +259,19 @@ _generate_msg_cpp(humanoid_league_msgs
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Model.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
@@ -283,7 +283,7 @@ _generate_msg_cpp(humanoid_league_msgs
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
@@ -295,7 +295,7 @@ _generate_msg_cpp(humanoid_league_msgs
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
@@ -307,13 +307,13 @@ _generate_msg_cpp(humanoid_league_msgs
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/AdditionalServoData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
@@ -337,7 +337,7 @@ _generate_msg_cpp(humanoid_league_msgs
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_cpp(humanoid_league_msgs
@@ -361,7 +361,7 @@ _generate_msg_cpp(humanoid_league_msgs
 _generate_msg_cpp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/humanoid_league_msgs
 )
 
@@ -454,7 +454,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS humanoid_league_msgs_generate_messa
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Animation.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
@@ -478,13 +478,13 @@ _generate_msg_eus(humanoid_league_msgs
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
@@ -532,19 +532,19 @@ _generate_msg_eus(humanoid_league_msgs
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Model.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
@@ -556,7 +556,7 @@ _generate_msg_eus(humanoid_league_msgs
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
@@ -568,7 +568,7 @@ _generate_msg_eus(humanoid_league_msgs
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
@@ -580,13 +580,13 @@ _generate_msg_eus(humanoid_league_msgs
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/AdditionalServoData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
@@ -610,7 +610,7 @@ _generate_msg_eus(humanoid_league_msgs
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_eus(humanoid_league_msgs
@@ -634,7 +634,7 @@ _generate_msg_eus(humanoid_league_msgs
 _generate_msg_eus(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/humanoid_league_msgs
 )
 
@@ -727,7 +727,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS humanoid_league_msgs_generate_messa
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Animation.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
@@ -751,13 +751,13 @@ _generate_msg_lisp(humanoid_league_msgs
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
@@ -805,19 +805,19 @@ _generate_msg_lisp(humanoid_league_msgs
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Model.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
@@ -829,7 +829,7 @@ _generate_msg_lisp(humanoid_league_msgs
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
@@ -841,7 +841,7 @@ _generate_msg_lisp(humanoid_league_msgs
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
@@ -853,13 +853,13 @@ _generate_msg_lisp(humanoid_league_msgs
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/AdditionalServoData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
@@ -883,7 +883,7 @@ _generate_msg_lisp(humanoid_league_msgs
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_lisp(humanoid_league_msgs
@@ -907,7 +907,7 @@ _generate_msg_lisp(humanoid_league_msgs
 _generate_msg_lisp(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/humanoid_league_msgs
 )
 
@@ -1000,7 +1000,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS humanoid_league_msgs_generate_messa
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Animation.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
@@ -1024,13 +1024,13 @@ _generate_msg_nodejs(humanoid_league_msgs
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
@@ -1078,19 +1078,19 @@ _generate_msg_nodejs(humanoid_league_msgs
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Model.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
@@ -1102,7 +1102,7 @@ _generate_msg_nodejs(humanoid_league_msgs
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
@@ -1114,7 +1114,7 @@ _generate_msg_nodejs(humanoid_league_msgs
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
@@ -1126,13 +1126,13 @@ _generate_msg_nodejs(humanoid_league_msgs
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/AdditionalServoData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
@@ -1156,7 +1156,7 @@ _generate_msg_nodejs(humanoid_league_msgs
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_nodejs(humanoid_league_msgs
@@ -1180,7 +1180,7 @@ _generate_msg_nodejs(humanoid_league_msgs
 _generate_msg_nodejs(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/humanoid_league_msgs
 )
 
@@ -1273,7 +1273,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS humanoid_league_msgs_generate_messa
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Animation.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
@@ -1297,13 +1297,13 @@ _generate_msg_py(humanoid_league_msgs
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
@@ -1351,19 +1351,19 @@ _generate_msg_py(humanoid_league_msgs
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationInImage.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleInImage.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineInformationRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineSegmentRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineCircleRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/LineIntersectionRelative.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Model.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallRelative.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
@@ -1375,7 +1375,7 @@ _generate_msg_py(humanoid_league_msgs
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
@@ -1387,7 +1387,7 @@ _generate_msg_py(humanoid_league_msgs
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstacleRelative.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
@@ -1399,13 +1399,13 @@ _generate_msg_py(humanoid_league_msgs
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg"
   "${MSG_I_FLAGS}"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/PostInImage.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BarInImage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/AdditionalServoData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Temperature.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
@@ -1429,7 +1429,7 @@ _generate_msg_py(humanoid_league_msgs
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 _generate_msg_py(humanoid_league_msgs
@@ -1453,7 +1453,7 @@ _generate_msg_py(humanoid_league_msgs
 _generate_msg_py(humanoid_league_msgs
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/Position2D.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/humanoid_league_msgs
 )
 

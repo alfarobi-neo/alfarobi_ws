@@ -67,18 +67,18 @@ ALFAROBI-Communication/team_communication/CMakeFiles/team_communication_generate
 
 /home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/robot_data.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/robot_data.l: /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg
-/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/robot_data.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
-/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/robot_data.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/robot_data.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/robot_data.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/robot_data.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from team_communication/robot_data.msg"
 	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/team_communication && ../../catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg -Iteam_communication:/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p team_communication -o /home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg
 
 /home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg
-/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
-/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg
-/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg/team_data.l: /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from team_communication/team_data.msg"
 	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/team_communication && ../../catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg -Iteam_communication:/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p team_communication -o /home/ajus/alfarobi_ws/devel/share/roseus/ros/team_communication/msg
 

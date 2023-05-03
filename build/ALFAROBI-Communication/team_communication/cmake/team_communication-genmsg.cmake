@@ -24,12 +24,12 @@ add_custom_target(_team_communication_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg" NAME_WE)
 add_custom_target(_team_communication_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "team_communication" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg" "geometry_msgs/Pose2D:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "team_communication" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg" "geometry_msgs/Point:std_msgs/Header:geometry_msgs/Pose2D"
 )
 
 get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg" NAME_WE)
 add_custom_target(_team_communication_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "team_communication" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg" "geometry_msgs/Pose2D:team_communication/robot_data:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "team_communication" "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg" "geometry_msgs/Point:geometry_msgs/Pose2D:std_msgs/Header:team_communication/robot_data"
 )
 
 #
@@ -47,13 +47,13 @@ _generate_msg_cpp(team_communication
 _generate_msg_cpp(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/team_communication
 )
 _generate_msg_cpp(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/team_communication
 )
 
@@ -96,13 +96,13 @@ _generate_msg_eus(team_communication
 _generate_msg_eus(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/team_communication
 )
 _generate_msg_eus(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/team_communication
 )
 
@@ -145,13 +145,13 @@ _generate_msg_lisp(team_communication
 _generate_msg_lisp(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/team_communication
 )
 _generate_msg_lisp(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/team_communication
 )
 
@@ -194,13 +194,13 @@ _generate_msg_nodejs(team_communication
 _generate_msg_nodejs(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/team_communication
 )
 _generate_msg_nodejs(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/team_communication
 )
 
@@ -243,13 +243,13 @@ _generate_msg_py(team_communication
 _generate_msg_py(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/team_communication
 )
 _generate_msg_py(team_communication
   "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/team_communication
 )
 

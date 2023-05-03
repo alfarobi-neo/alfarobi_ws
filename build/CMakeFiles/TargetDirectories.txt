@@ -397,15 +397,6 @@
 /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/analyze_msgs/CMakeFiles/analyze_msgs_generate_messages_eus.dir
 /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/analyze_msgs/CMakeFiles/analyze_msgs_generate_messages_py.dir
 /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/analyze_msgs/CMakeFiles/analyze_msgs_genpy.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/install/strip.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/install/local.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/install.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/list_install_components.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/rebuild_cache.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/edit_cache.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/test.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/arduino_calibrator.dir
-/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/arduino_calibrator/CMakeFiles/arduino_calibrator_autogen.dir
 /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/CMakeFiles/install/strip.dir
 /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/CMakeFiles/install/local.dir
 /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/CMakeFiles/install.dir

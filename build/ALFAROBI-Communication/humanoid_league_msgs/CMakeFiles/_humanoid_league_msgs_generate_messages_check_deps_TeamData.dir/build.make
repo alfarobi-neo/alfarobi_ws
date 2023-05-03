@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
 include ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_TeamData.dir/progress.make
 
 ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_TeamData:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/humanoid_league_msgs && ../../catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py humanoid_league_msgs /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg geometry_msgs/Pose2D:humanoid_league_msgs/Position2D:std_msgs/Header
+	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/humanoid_league_msgs && ../../catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py humanoid_league_msgs /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/TeamData.msg std_msgs/Header:humanoid_league_msgs/Position2D:geometry_msgs/Pose2D
 
 _humanoid_league_msgs_generate_messages_check_deps_TeamData: ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_TeamData
 _humanoid_league_msgs_generate_messages_check_deps_TeamData: ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_TeamData.dir/build.make

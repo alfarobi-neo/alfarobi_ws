@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
 include ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_BallsInImage.dir/progress.make
 
 ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_BallsInImage:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/humanoid_league_msgs && ../../catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py humanoid_league_msgs /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg std_msgs/Header:geometry_msgs/Point:humanoid_league_msgs/BallInImage
+	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/humanoid_league_msgs && ../../catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py humanoid_league_msgs /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/BallsInImage.msg std_msgs/Header:humanoid_league_msgs/BallInImage:geometry_msgs/Point
 
 _humanoid_league_msgs_generate_messages_check_deps_BallsInImage: ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_BallsInImage
 _humanoid_league_msgs_generate_messages_check_deps_BallsInImage: ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_BallsInImage.dir/build.make
