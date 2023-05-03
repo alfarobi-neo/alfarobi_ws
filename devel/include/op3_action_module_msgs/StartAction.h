@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -38,7 +38,7 @@ struct StartAction_
    typedef int32_t _page_num_type;
   _page_num_type page_num;
 
-   typedef std::vector<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > , typename ContainerAllocator::template rebind<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::other >  _joint_name_array_type;
+   typedef std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>> _joint_name_array_type;
   _joint_name_array_type joint_name_array;
 
 
@@ -66,6 +66,21 @@ ros::message_operations::Printer< ::op3_action_module_msgs::StartAction_<Contain
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::op3_action_module_msgs::StartAction_<ContainerAllocator1> & lhs, const ::op3_action_module_msgs::StartAction_<ContainerAllocator2> & rhs)
+{
+  return lhs.page_num == rhs.page_num &&
+    lhs.joint_name_array == rhs.joint_name_array;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::op3_action_module_msgs::StartAction_<ContainerAllocator1> & lhs, const ::op3_action_module_msgs::StartAction_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace op3_action_module_msgs
 
 namespace ros
@@ -75,23 +90,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'op3_action_module_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/op3_action_module_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_action_module_msgs::StartAction_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_action_module_msgs::StartAction_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_action_module_msgs::StartAction_<ContainerAllocator> >
@@ -101,6 +100,16 @@ struct IsMessage< ::op3_action_module_msgs::StartAction_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::op3_action_module_msgs::StartAction_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_action_module_msgs::StartAction_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_action_module_msgs::StartAction_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -143,9 +152,9 @@ struct Definition< ::op3_action_module_msgs::StartAction_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int32     page_num\n\
-string[]  joint_name_array\n\
-";
+    return "int32     page_num\n"
+"string[]  joint_name_array\n"
+;
   }
 
   static const char* value(const ::op3_action_module_msgs::StartAction_<ContainerAllocator>&) { return value(); }
@@ -189,7 +198,7 @@ struct Printer< ::op3_action_module_msgs::StartAction_<ContainerAllocator> >
     for (size_t i = 0; i < v.joint_name_array.size(); ++i)
     {
       s << indent << "  joint_name_array[" << i << "]: ";
-      Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.joint_name_array[i]);
+      Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.joint_name_array[i]);
     }
   }
 };

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/include/analyze_msgs/Fuzzy.h"
+  "/home/ajus/alfarobi_ws/devel/include/analyze_msgs/movAvg.h"
   "CMakeFiles/analyze_msgs_generate_messages_cpp"
-  "/home/alfarobi/alfarobi_ws/devel/include/analyze_msgs/Fuzzy.h"
-  "/home/alfarobi/alfarobi_ws/devel/include/analyze_msgs/movAvg.h"
 )
 
 # Per-language clean rules from dependency scanning.

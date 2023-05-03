@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -62,6 +62,20 @@ ros::message_operations::Printer< ::feedback_msgs::GetFeedbackParamResponse_<Con
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator1> & lhs, const ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator2> & rhs)
+{
+  return lhs.parameters == rhs.parameters;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator1> & lhs, const ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace feedback_msgs
 
 namespace ros
@@ -71,23 +85,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'feedback_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/feedback_msgs/msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator> >
@@ -96,6 +94,16 @@ struct IsMessage< ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator>
 
 template <class ContainerAllocator>
 struct IsMessage< ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -139,34 +147,34 @@ struct Definition< ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator
 {
   static const char* value()
   {
-    return "FeedbackParam    parameters\n\
-\n\
-\n\
-================================================================================\n\
-MSG: feedback_msgs/FeedbackParam\n\
-float32 Body_Height\n\
-float32 Body_Tilt\n\
-float32 Leg_X\n\
-float32 Leg_Y\n\
-float32 Leg_Z\n\
-\n\
-float32 Leg_R_Z\n\
-float32 Leg_L_Z\n\
-float32 R_Roll\n\
-float32 L_Roll\n\
-\n\
-float32 Setpoint_Pitch\n\
-float32 Setpoint_Roll\n\
-\n\
-float32 Gain_Angle_Pitch\n\
-float32 Gain_Angle_Roll\n\
-\n\
-float32 Gain_Velocity_Pitch\n\
-float32 Gain_Velocity_Roll\n\
-\n\
-float32 Gain_Integral_Pitch\n\
-float32 Gain_Integral_Roll\n\
-";
+    return "FeedbackParam    parameters\n"
+"\n"
+"\n"
+"================================================================================\n"
+"MSG: feedback_msgs/FeedbackParam\n"
+"float32 Body_Height\n"
+"float32 Body_Tilt\n"
+"float32 Leg_X\n"
+"float32 Leg_Y\n"
+"float32 Leg_Z\n"
+"\n"
+"float32 Leg_R_Z\n"
+"float32 Leg_L_Z\n"
+"float32 R_Roll\n"
+"float32 L_Roll\n"
+"\n"
+"float32 Setpoint_Pitch\n"
+"float32 Setpoint_Roll\n"
+"\n"
+"float32 Gain_Angle_Pitch\n"
+"float32 Gain_Angle_Roll\n"
+"\n"
+"float32 Gain_Velocity_Pitch\n"
+"float32 Gain_Velocity_Roll\n"
+"\n"
+"float32 Gain_Integral_Pitch\n"
+"float32 Gain_Integral_Roll\n"
+;
   }
 
   static const char* value(const ::feedback_msgs::GetFeedbackParamResponse_<ContainerAllocator>&) { return value(); }

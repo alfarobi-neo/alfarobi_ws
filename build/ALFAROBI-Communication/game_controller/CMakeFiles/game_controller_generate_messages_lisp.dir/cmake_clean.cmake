@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/game_controller/msg/GameState.lisp"
   "CMakeFiles/game_controller_generate_messages_lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/game_controller/msg/GameState.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/lib/op3_camera_setting_tool/op3_camera_setting_tool"
+  "/home/ajus/alfarobi_ws/devel/lib/op3_camera_setting_tool/op3_camera_setting_tool.pdb"
   "CMakeFiles/op3_camera_setting_tool.dir/src/main.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/op3_camera_setting_tool/op3_camera_setting_tool.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/op3_camera_setting_tool/op3_camera_setting_tool"
 )
 
 # Per-language clean rules from dependency scanning.

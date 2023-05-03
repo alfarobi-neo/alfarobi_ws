@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -119,10 +119,45 @@ struct GameState_
    typedef uint16_t _singleShots_type;
   _singleShots_type singleShots;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _coach_message_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _coach_message_type;
   _coach_message_type coach_message;
 
 
+
+// reducing the odds to have name collisions with Windows.h 
+#if defined(_WIN32) && defined(GAMESTATE_INITAL)
+  #undef GAMESTATE_INITAL
+#endif
+#if defined(_WIN32) && defined(GAMESTATE_READY)
+  #undef GAMESTATE_READY
+#endif
+#if defined(_WIN32) && defined(GAMESTATE_SET)
+  #undef GAMESTATE_SET
+#endif
+#if defined(_WIN32) && defined(GAMESTATE_PLAYING)
+  #undef GAMESTATE_PLAYING
+#endif
+#if defined(_WIN32) && defined(GAMESTATE_FINISHED)
+  #undef GAMESTATE_FINISHED
+#endif
+#if defined(_WIN32) && defined(STATE_NORMAL)
+  #undef STATE_NORMAL
+#endif
+#if defined(_WIN32) && defined(STATE_PENALTYSHOOT)
+  #undef STATE_PENALTYSHOOT
+#endif
+#if defined(_WIN32) && defined(STATE_OVERTIME)
+  #undef STATE_OVERTIME
+#endif
+#if defined(_WIN32) && defined(STATE_TIMEOUT)
+  #undef STATE_TIMEOUT
+#endif
+#if defined(_WIN32) && defined(STATE_FREEKICK)
+  #undef STATE_FREEKICK
+#endif
+#if defined(_WIN32) && defined(STATE_PENALTYKICK)
+  #undef STATE_PENALTYKICK
+#endif
 
   enum {
     GAMESTATE_INITAL = 0u,
@@ -182,6 +217,37 @@ ros::message_operations::Printer< ::humanoid_league_msgs::GameState_<ContainerAl
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::GameState_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::GameState_<ContainerAllocator2> & rhs)
+{
+  return lhs.header == rhs.header &&
+    lhs.gameState == rhs.gameState &&
+    lhs.secondaryState == rhs.secondaryState &&
+    lhs.secondrayStateTeam == rhs.secondrayStateTeam &&
+    lhs.firstHalf == rhs.firstHalf &&
+    lhs.ownScore == rhs.ownScore &&
+    lhs.rivalScore == rhs.rivalScore &&
+    lhs.secondsRemaining == rhs.secondsRemaining &&
+    lhs.secondary_seconds_remaining == rhs.secondary_seconds_remaining &&
+    lhs.hasKickOff == rhs.hasKickOff &&
+    lhs.penalized == rhs.penalized &&
+    lhs.secondsTillUnpenalized == rhs.secondsTillUnpenalized &&
+    lhs.allowedToMove == rhs.allowedToMove &&
+    lhs.dropInTeam == rhs.dropInTeam &&
+    lhs.dropInTime == rhs.dropInTime &&
+    lhs.penaltyShot == rhs.penaltyShot &&
+    lhs.singleShots == rhs.singleShots &&
+    lhs.coach_message == rhs.coach_message;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::GameState_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::GameState_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -191,23 +257,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::GameState_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::GameState_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::GameState_<ContainerAllocator> >
@@ -217,6 +267,16 @@ struct IsMessage< ::humanoid_league_msgs::GameState_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::GameState_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::GameState_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::GameState_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -259,74 +319,72 @@ struct Definition< ::humanoid_league_msgs::GameState_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# This message provides all information from the game controller\n\
-# for additional information see documentation of the game controller\n\
-# https://github.com/bhuman/GameController\n\
-\n\
-\n\
-std_msgs/Header header\n\
-\n\
-uint8 GAMESTATE_INITAL=0\n\
-uint8 GAMESTATE_READY=1\n\
-uint8 GAMESTATE_SET=2\n\
-uint8 GAMESTATE_PLAYING=3\n\
-uint8 GAMESTATE_FINISHED=4\n\
-uint8 gameState\n\
-\n\
-uint8 STATE_NORMAL = 0\n\
-uint8 STATE_PENALTYSHOOT = 1\n\
-uint8 STATE_OVERTIME = 2\n\
-uint8 STATE_TIMEOUT = 3\n\
-uint8 STATE_FREEKICK = 4\n\
-uint8 STATE_PENALTYKICK = 5\n\
-uint8 secondaryState\n\
-\n\
-# For newest version of game controller\n\
-# Tells which team has the free kick or penalty kick\n\
-uint8 secondrayStateTeam\n\
-\n\
-bool firstHalf\n\
-uint8 ownScore\n\
-uint8 rivalScore\n\
-\n\
-# Seconds remaining for the game half\n\
-int16 secondsRemaining\n\
-# Seconds remaining for things like kickoff\n\
-uint16 secondary_seconds_remaining\n\
-\n\
-bool hasKickOff\n\
-bool penalized\n\
-uint16 secondsTillUnpenalized\n\
-# Allowed to move is different from penalized.\n\
-# You can for example be not allowed to move due to the current state of the game\n\
-bool allowedToMove\n\
-\n\
-bool dropInTeam\n\
-uint16 dropInTime\n\
-\n\
-uint8 penaltyShot\n\
-uint16 singleShots\n\
-\n\
-string coach_message\n\
-\n\
-================================================================================\n\
-MSG: std_msgs/Header\n\
-# Standard metadata for higher-level stamped data types.\n\
-# This is generally used to communicate timestamped data \n\
-# in a particular coordinate frame.\n\
-# \n\
-# sequence ID: consecutively increasing ID \n\
-uint32 seq\n\
-#Two-integer timestamp that is expressed as:\n\
-# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
-# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
-# time-handling sugar is provided by the client library\n\
-time stamp\n\
-#Frame this data is associated with\n\
-# 0: no frame\n\
-# 1: global frame\n\
-string frame_id\n\
-";
+    return "# This message provides all information from the game controller\n"
+"# for additional information see documentation of the game controller\n"
+"# https://github.com/bhuman/GameController\n"
+"\n"
+"\n"
+"std_msgs/Header header\n"
+"\n"
+"uint8 GAMESTATE_INITAL=0\n"
+"uint8 GAMESTATE_READY=1\n"
+"uint8 GAMESTATE_SET=2\n"
+"uint8 GAMESTATE_PLAYING=3\n"
+"uint8 GAMESTATE_FINISHED=4\n"
+"uint8 gameState\n"
+"\n"
+"uint8 STATE_NORMAL = 0\n"
+"uint8 STATE_PENALTYSHOOT = 1\n"
+"uint8 STATE_OVERTIME = 2\n"
+"uint8 STATE_TIMEOUT = 3\n"
+"uint8 STATE_FREEKICK = 4\n"
+"uint8 STATE_PENALTYKICK = 5\n"
+"uint8 secondaryState\n"
+"\n"
+"# For newest version of game controller\n"
+"# Tells which team has the free kick or penalty kick\n"
+"uint8 secondrayStateTeam\n"
+"\n"
+"bool firstHalf\n"
+"uint8 ownScore\n"
+"uint8 rivalScore\n"
+"\n"
+"# Seconds remaining for the game half\n"
+"int16 secondsRemaining\n"
+"# Seconds remaining for things like kickoff\n"
+"uint16 secondary_seconds_remaining\n"
+"\n"
+"bool hasKickOff\n"
+"bool penalized\n"
+"uint16 secondsTillUnpenalized\n"
+"# Allowed to move is different from penalized.\n"
+"# You can for example be not allowed to move due to the current state of the game\n"
+"bool allowedToMove\n"
+"\n"
+"bool dropInTeam\n"
+"uint16 dropInTime\n"
+"\n"
+"uint8 penaltyShot\n"
+"uint16 singleShots\n"
+"\n"
+"string coach_message\n"
+"\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::GameState_<ContainerAllocator>&) { return value(); }
@@ -416,7 +474,7 @@ struct Printer< ::humanoid_league_msgs::GameState_<ContainerAllocator> >
     s << indent << "singleShots: ";
     Printer<uint16_t>::stream(s, indent + "  ", v.singleShots);
     s << indent << "coach_message: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.coach_message);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.coach_message);
   }
 };
 

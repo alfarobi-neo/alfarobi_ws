@@ -67,14 +67,14 @@ set(capture_step_module_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(capture_step_module_SOURCE_PREFIX /home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module)
-  set(capture_step_module_DEVEL_PREFIX /home/alfarobi/alfarobi_ws/devel)
+  set(capture_step_module_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module)
+  set(capture_step_module_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
   set(capture_step_module_INSTALL_PREFIX "")
   set(capture_step_module_PREFIX ${capture_step_module_DEVEL_PREFIX})
 else()
   set(capture_step_module_SOURCE_PREFIX "")
   set(capture_step_module_DEVEL_PREFIX "")
-  set(capture_step_module_INSTALL_PREFIX /home/alfarobi/alfarobi_ws/install)
+  set(capture_step_module_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
   set(capture_step_module_PREFIX ${capture_step_module_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(capture_step_module_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/include " STREQUAL " ")
+if(NOT "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/include " STREQUAL " ")
   set(capture_step_module_INCLUDE_DIRS "")
-  set(_include_dirs "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/include")
+  set(_include_dirs "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/inclu
         message(FATAL_ERROR "Project 'capture_step_module' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'capture_step_module' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'capture_step_module' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/${idir}'.  ${_report}")
     endif()
     _list_append_unique(capture_step_module_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/alfarobi/alfarobi_ws/devel/lib;/home/alfarobi/alfarobi_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ajus/alfarobi_ws/devel/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(capture_step_module_LIBRARIES ${capture_step_module_LIBRARIES})
 
   _list_append_unique(capture_step_module_LIBRARY_DIRS ${${capture_step_module_dep}_LIBRARY_DIRS})
-  list(APPEND capture_step_module_EXPORTED_TARGETS ${${capture_step_module_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(capture_step_module_EXPORTED_TARGETS ${${capture_step_module_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

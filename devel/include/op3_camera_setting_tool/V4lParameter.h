@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -35,7 +35,7 @@ struct V4lParameter_
 
 
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _name_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _name_type;
   _name_type name;
 
    typedef int32_t _value_type;
@@ -66,6 +66,21 @@ ros::message_operations::Printer< ::op3_camera_setting_tool::V4lParameter_<Conta
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator1> & lhs, const ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator2> & rhs)
+{
+  return lhs.name == rhs.name &&
+    lhs.value == rhs.value;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator1> & lhs, const ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace op3_camera_setting_tool
 
 namespace ros
@@ -75,23 +90,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'op3_camera_setting_tool': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/op3_camera_setting_tool/msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> >
@@ -101,6 +100,16 @@ struct IsMessage< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -143,9 +152,9 @@ struct Definition< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> 
 {
   static const char* value()
   {
-    return "string  name\n\
-int32   value\n\
-";
+    return "string  name\n"
+"int32   value\n"
+;
   }
 
   static const char* value(const ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator>&) { return value(); }
@@ -184,7 +193,7 @@ struct Printer< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> >
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator>& v)
   {
     s << indent << "name: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.name);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.name);
     s << indent << "value: ";
     Printer<int32_t>::stream(s, indent + "  ", v.value);
   }

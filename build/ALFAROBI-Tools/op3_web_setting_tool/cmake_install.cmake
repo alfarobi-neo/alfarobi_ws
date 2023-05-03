@@ -1,8 +1,8 @@
-# Install script for directory: /home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/op3_web_setting_tool
+# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Tools/op3_web_setting_tool
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/alfarobi/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,25 +32,30 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Tools/op3_web_setting_tool/catkin_generated/installspace/op3_web_setting_tool.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/op3_web_setting_tool/catkin_generated/installspace/op3_web_setting_tool.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_web_setting_tool/cmake" TYPE FILE FILES
-    "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Tools/op3_web_setting_tool/catkin_generated/installspace/op3_web_setting_toolConfig.cmake"
-    "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Tools/op3_web_setting_tool/catkin_generated/installspace/op3_web_setting_toolConfig-version.cmake"
+    "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/op3_web_setting_tool/catkin_generated/installspace/op3_web_setting_toolConfig.cmake"
+    "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/op3_web_setting_tool/catkin_generated/installspace/op3_web_setting_toolConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_web_setting_tool" TYPE FILE FILES "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/op3_web_setting_tool/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_web_setting_tool" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Tools/op3_web_setting_tool/package.xml")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_web_setting_tool" TYPE DIRECTORY FILES
-    "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/op3_web_setting_tool/html"
-    "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/op3_web_setting_tool/launch"
+    "/home/ajus/alfarobi_ws/src/ALFAROBI-Tools/op3_web_setting_tool/html"
+    "/home/ajus/alfarobi_ws/src/ALFAROBI-Tools/op3_web_setting_tool/launch"
     )
 endif()
 

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -61,6 +61,20 @@ ros::message_operations::Printer< ::zmp_walking_module_msgs::SetZMPParamResponse
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator1> & lhs, const ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator2> & rhs)
+{
+  return lhs.result == rhs.result;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator1> & lhs, const ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace zmp_walking_module_msgs
 
 namespace ros
@@ -70,23 +84,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'zmp_walking_module_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/zmp_walking_module_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator> >
@@ -95,6 +93,16 @@ struct IsMessage< ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAlloc
 
 template <class ContainerAllocator>
 struct IsMessage< ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -138,9 +146,9 @@ struct Definition< ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllo
 {
   static const char* value()
   {
-    return "bool            result\n\
-\n\
-";
+    return "bool            result\n"
+"\n"
+;
   }
 
   static const char* value(const ::zmp_walking_module_msgs::SetZMPParamResponse_<ContainerAllocator>&) { return value(); }

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -85,6 +85,24 @@ ros::message_operations::Printer< ::humanoid_league_msgs::GoalInImage_<Container
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::GoalInImage_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::GoalInImage_<ContainerAllocator2> & rhs)
+{
+  return lhs.header == rhs.header &&
+    lhs.left_post == rhs.left_post &&
+    lhs.right_post == rhs.right_post &&
+    lhs.center_direction == rhs.center_direction &&
+    lhs.confidence == rhs.confidence;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::GoalInImage_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::GoalInImage_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -94,23 +112,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::GoalInImage_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::GoalInImage_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::GoalInImage_<ContainerAllocator> >
@@ -120,6 +122,16 @@ struct IsMessage< ::humanoid_league_msgs::GoalInImage_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::GoalInImage_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::GoalInImage_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::GoalInImage_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -162,63 +174,61 @@ struct Definition< ::humanoid_league_msgs::GoalInImage_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# A goal on the image. Should be extracted from the seen posts and bars\n\
-\n\
-# The header is included to get the time stamp for later use in tf\n\
-std_msgs/Header header\n\
-\n\
-# Left post (or the only seen one)\n\
-humanoid_league_msgs/PostInImage left_post\n\
-# Right post, or null if only one post of the goal is seen\n\
-humanoid_league_msgs/PostInImage right_post\n\
-\n\
-# Vector pointing to the (probable) center of the goal.\n\
-# Should only be used if only one goal post is visible. If both are visible this should be none.\n\
-# This is normally an educated guess, using the goal bar or the position of the post on the image\n\
-# The point can also be outside of the image\n\
-geometry_msgs/Point center_direction\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-# 0 means no goal was found.\n\
-float32 confidence\n\
-\n\
-================================================================================\n\
-MSG: std_msgs/Header\n\
-# Standard metadata for higher-level stamped data types.\n\
-# This is generally used to communicate timestamped data \n\
-# in a particular coordinate frame.\n\
-# \n\
-# sequence ID: consecutively increasing ID \n\
-uint32 seq\n\
-#Two-integer timestamp that is expressed as:\n\
-# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
-# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
-# time-handling sugar is provided by the client library\n\
-time stamp\n\
-#Frame this data is associated with\n\
-# 0: no frame\n\
-# 1: global frame\n\
-string frame_id\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/PostInImage\n\
-# A (possible) goal post in the image. It is defined by two end points and a width.\n\
-\n\
-# Two points defining the significant axis of the post\n\
-geometry_msgs/Point foot_point\n\
-geometry_msgs/Point top_point\n\
-# Orthogonal to significant vector (in pixel)\n\
-float32 width\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-";
+    return "# A goal on the image. Should be extracted from the seen posts and bars\n"
+"\n"
+"# The header is included to get the time stamp for later use in tf\n"
+"std_msgs/Header header\n"
+"\n"
+"# Left post (or the only seen one)\n"
+"humanoid_league_msgs/PostInImage left_post\n"
+"# Right post, or null if only one post of the goal is seen\n"
+"humanoid_league_msgs/PostInImage right_post\n"
+"\n"
+"# Vector pointing to the (probable) center of the goal.\n"
+"# Should only be used if only one goal post is visible. If both are visible this should be none.\n"
+"# This is normally an educated guess, using the goal bar or the position of the post on the image\n"
+"# The point can also be outside of the image\n"
+"geometry_msgs/Point center_direction\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"# 0 means no goal was found.\n"
+"float32 confidence\n"
+"\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/PostInImage\n"
+"# A (possible) goal post in the image. It is defined by two end points and a width.\n"
+"\n"
+"# Two points defining the significant axis of the post\n"
+"geometry_msgs/Point foot_point\n"
+"geometry_msgs/Point top_point\n"
+"# Orthogonal to significant vector (in pixel)\n"
+"float32 width\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::GoalInImage_<ContainerAllocator>&) { return value(); }

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -83,61 +83,117 @@ struct TeamData_
    typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
   _header_type header;
 
-   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _robot_ids_type;
+   typedef std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> _robot_ids_type;
   _robot_ids_type robot_ids;
 
-   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _role_type;
+   typedef std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> _role_type;
   _role_type role;
 
-   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _action_type;
+   typedef std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> _action_type;
   _action_type action;
 
-   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _state_type;
+   typedef std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> _state_type;
   _state_type state;
 
-   typedef std::vector< ::geometry_msgs::Pose2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::geometry_msgs::Pose2D_<ContainerAllocator> >::other >  _robot_positions_type;
+   typedef std::vector< ::geometry_msgs::Pose2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::geometry_msgs::Pose2D_<ContainerAllocator> >> _robot_positions_type;
   _robot_positions_type robot_positions;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _ball_relative_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _ball_relative_type;
   _ball_relative_type ball_relative;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _oppgoal_relative_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _oppgoal_relative_type;
   _oppgoal_relative_type oppgoal_relative;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _opponent_robot_a_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _opponent_robot_a_type;
   _opponent_robot_a_type opponent_robot_a;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _opponent_robot_b_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _opponent_robot_b_type;
   _opponent_robot_b_type opponent_robot_b;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _opponent_robot_c_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _opponent_robot_c_type;
   _opponent_robot_c_type opponent_robot_c;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _opponent_robot_d_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _opponent_robot_d_type;
   _opponent_robot_d_type opponent_robot_d;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _team_robot_a_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _team_robot_a_type;
   _team_robot_a_type team_robot_a;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _team_robot_b_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _team_robot_b_type;
   _team_robot_b_type team_robot_b;
 
-   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >::other >  _team_robot_c_type;
+   typedef std::vector< ::humanoid_league_msgs::Position2D_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::Position2D_<ContainerAllocator> >> _team_robot_c_type;
   _team_robot_c_type team_robot_c;
 
-   typedef std::vector<float, typename ContainerAllocator::template rebind<float>::other >  _avg_walking_speed_type;
+   typedef std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> _avg_walking_speed_type;
   _avg_walking_speed_type avg_walking_speed;
 
-   typedef std::vector<float, typename ContainerAllocator::template rebind<float>::other >  _time_to_position_at_ball_type;
+   typedef std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> _time_to_position_at_ball_type;
   _time_to_position_at_ball_type time_to_position_at_ball;
 
-   typedef std::vector<float, typename ContainerAllocator::template rebind<float>::other >  _max_kicking_distance_type;
+   typedef std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> _max_kicking_distance_type;
   _max_kicking_distance_type max_kicking_distance;
 
-   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _offensive_side_type;
+   typedef std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> _offensive_side_type;
   _offensive_side_type offensive_side;
 
 
+
+// reducing the odds to have name collisions with Windows.h 
+#if defined(_WIN32) && defined(ROLE_IDLING)
+  #undef ROLE_IDLING
+#endif
+#if defined(_WIN32) && defined(ROLE_OTHER)
+  #undef ROLE_OTHER
+#endif
+#if defined(_WIN32) && defined(ROLE_STRIKER)
+  #undef ROLE_STRIKER
+#endif
+#if defined(_WIN32) && defined(ROLE_SUPPORTER)
+  #undef ROLE_SUPPORTER
+#endif
+#if defined(_WIN32) && defined(ROLE_DEFENDER)
+  #undef ROLE_DEFENDER
+#endif
+#if defined(_WIN32) && defined(ROLE_GOALIE)
+  #undef ROLE_GOALIE
+#endif
+#if defined(_WIN32) && defined(ACTION_UNDEFINED)
+  #undef ACTION_UNDEFINED
+#endif
+#if defined(_WIN32) && defined(ACTION_POSITIONING)
+  #undef ACTION_POSITIONING
+#endif
+#if defined(_WIN32) && defined(ACTION_GOING_TO_BALL)
+  #undef ACTION_GOING_TO_BALL
+#endif
+#if defined(_WIN32) && defined(ACTION_TRYING_TO_SCORE)
+  #undef ACTION_TRYING_TO_SCORE
+#endif
+#if defined(_WIN32) && defined(ACTION_WAITING)
+  #undef ACTION_WAITING
+#endif
+#if defined(_WIN32) && defined(STATE_INACTIVE)
+  #undef STATE_INACTIVE
+#endif
+#if defined(_WIN32) && defined(STATE_ACTIVE)
+  #undef STATE_ACTIVE
+#endif
+#if defined(_WIN32) && defined(STATE_PENALIZED)
+  #undef STATE_PENALIZED
+#endif
+#if defined(_WIN32) && defined(UNSPECIFIED)
+  #undef UNSPECIFIED
+#endif
+#if defined(_WIN32) && defined(LEFT)
+  #undef LEFT
+#endif
+#if defined(_WIN32) && defined(RIGHT)
+  #undef RIGHT
+#endif
+#if defined(_WIN32) && defined(CENTER)
+  #undef CENTER
+#endif
 
   enum {
     ROLE_IDLING = 0u,
@@ -218,6 +274,38 @@ ros::message_operations::Printer< ::humanoid_league_msgs::TeamData_<ContainerAll
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::TeamData_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::TeamData_<ContainerAllocator2> & rhs)
+{
+  return lhs.header == rhs.header &&
+    lhs.robot_ids == rhs.robot_ids &&
+    lhs.role == rhs.role &&
+    lhs.action == rhs.action &&
+    lhs.state == rhs.state &&
+    lhs.robot_positions == rhs.robot_positions &&
+    lhs.ball_relative == rhs.ball_relative &&
+    lhs.oppgoal_relative == rhs.oppgoal_relative &&
+    lhs.opponent_robot_a == rhs.opponent_robot_a &&
+    lhs.opponent_robot_b == rhs.opponent_robot_b &&
+    lhs.opponent_robot_c == rhs.opponent_robot_c &&
+    lhs.opponent_robot_d == rhs.opponent_robot_d &&
+    lhs.team_robot_a == rhs.team_robot_a &&
+    lhs.team_robot_b == rhs.team_robot_b &&
+    lhs.team_robot_c == rhs.team_robot_c &&
+    lhs.avg_walking_speed == rhs.avg_walking_speed &&
+    lhs.time_to_position_at_ball == rhs.time_to_position_at_ball &&
+    lhs.max_kicking_distance == rhs.max_kicking_distance &&
+    lhs.offensive_side == rhs.offensive_side;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::TeamData_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::TeamData_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -227,23 +315,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::TeamData_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::TeamData_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::TeamData_<ContainerAllocator> >
@@ -253,6 +325,16 @@ struct IsMessage< ::humanoid_league_msgs::TeamData_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::TeamData_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::TeamData_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::TeamData_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -295,137 +377,135 @@ struct Definition< ::humanoid_league_msgs::TeamData_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# This message contains all information provided by the mitecom standard for team communication.\n\
-# Everything is in meters (ROS standard) not to be confused with millimeters (mitecom standard)!\n\
-# Set belief values to 0 if object was not recognized.\n\
-# More information here: https://github.com/fumanoids/mitecom\n\
-\n\
-std_msgs/Header header\n\
-\n\
-# Every value is an array because we can have multiple robots communicating with us.\n\
-# The values match with the robot ids\n\
-uint8[] robot_ids\n\
-\n\
-uint8 ROLE_IDLING=0\n\
-uint8 ROLE_OTHER=1\n\
-uint8 ROLE_STRIKER=2\n\
-uint8 ROLE_SUPPORTER=3\n\
-uint8 ROLE_DEFENDER=4\n\
-uint8 ROLE_GOALIE=5\n\
-uint8[] role\n\
-\n\
-uint8 ACTION_UNDEFINED=0\n\
-uint8 ACTION_POSITIONING=1\n\
-uint8 ACTION_GOING_TO_BALL=2\n\
-uint8 ACTION_TRYING_TO_SCORE=3\n\
-uint8 ACTION_WAITING=4\n\
-uint8[] action\n\
-\n\
-uint8 STATE_INACTIVE=0\n\
-uint8 STATE_ACTIVE=1\n\
-uint8 STATE_PENALIZED=2\n\
-uint8[] state\n\
-\n\
-# Absolute position values\n\
-geometry_msgs/Pose2D[] robot_positions\n\
-\n\
-# Relative ball position, theta of Pose2D is not used\n\
-Position2D[] ball_relative\n\
-\n\
-# Relative position of the opponent goal, theta of Pose2D is not used\n\
-# This is helpful if the robot has no global position, but sees the goal\n\
-Position2D[] oppgoal_relative\n\
-\n\
-# Positions of opponent robots, if they are recognized\n\
-# The letter of the robot is arbitrary as the sending robot does not know the id of a seen robot\n\
-Position2D[] opponent_robot_a\n\
-Position2D[] opponent_robot_b\n\
-Position2D[] opponent_robot_c\n\
-Position2D[] opponent_robot_d\n\
-\n\
-# Positions of team robots, if they are recognized\n\
-# The letter of the robot is arbitrary as the sending robot does not know the id of a seen robot\n\
-Position2D[] team_robot_a\n\
-Position2D[] team_robot_b\n\
-Position2D[] team_robot_c\n\
-\n\
-float32[] avg_walking_speed\n\
-float32[] time_to_position_at_ball\n\
-float32[] max_kicking_distance\n\
-\n\
-# Strategy over which side the team tries to attack\n\
-# Especially useful during a kickoff\n\
-uint8 UNSPECIFIED=0\n\
-uint8 LEFT=1\n\
-uint8 RIGHT=2\n\
-uint8 CENTER=3\n\
-uint8[] offensive_side\n\
-================================================================================\n\
-MSG: std_msgs/Header\n\
-# Standard metadata for higher-level stamped data types.\n\
-# This is generally used to communicate timestamped data \n\
-# in a particular coordinate frame.\n\
-# \n\
-# sequence ID: consecutively increasing ID \n\
-uint32 seq\n\
-#Two-integer timestamp that is expressed as:\n\
-# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
-# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
-# time-handling sugar is provided by the client library\n\
-time stamp\n\
-#Frame this data is associated with\n\
-# 0: no frame\n\
-# 1: global frame\n\
-string frame_id\n\
-\n\
-================================================================================\n\
-MSG: geometry_msgs/Pose2D\n\
-# Deprecated\n\
-# Please use the full 3D pose.\n\
-\n\
-# In general our recommendation is to use a full 3D representation of everything and for 2D specific applications make the appropriate projections into the plane for their calculations but optimally will preserve the 3D information during processing.\n\
-\n\
-# If we have parallel copies of 2D datatypes every UI and other pipeline will end up needing to have dual interfaces to plot everything. And you will end up with not being able to use 3D tools for 2D use cases even if they're completely valid, as you'd have to reimplement it with different inputs and outputs. It's not particularly hard to plot the 2D pose or compute the yaw error for the Pose message and there are already tools and libraries that can do this for you.\n\
-\n\
-\n\
-# This expresses a position and orientation on a 2D manifold.\n\
-\n\
-float64 x\n\
-float64 y\n\
-float64 theta\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/Position2D\n\
-# The position system is the same as mitecom. The following part is taken from the mitecom documentation:\n\
-# https://github.com/fumanoids/mitecom\n\
-# The origin of the absolute coordinate center is the center of the middle\n\
-# circle (center of field). The x axis points towards the opponent goal, the\n\
-# y axis to the left.\n\
-#\n\
-#      y\n\
-#      ^       ______________________\n\
-#      |    M  |          |          |  O\n\
-#      |    Y  |_ -x, y   |   x, y  _|  P\n\
-#      |    G  | |        |        | |  P\n\
-# 0    +    O  | |       ( )       | |  G\n\
-#      |    A  |_|        |        |_|  O\n\
-#      |    L  |  -x,-y   |   x,-y   |  A\n\
-#      |       |__________|__________|  L\n\
-#      |\n\
-#      +------------------+--------------> x\n\
-#                         0\n\
-#\n\
-# The 0 value of the orientation is pointing to the opponent side (right side in the image).\n\
-# The value increases counter clockwise\n\
-# Everything in meters (because it is the ROS standard)\n\
-\n\
-# The header is included to get the time stamp for later use in tf\n\
-std_msgs/Header header\n\
-\n\
-geometry_msgs/Pose2D pose\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-";
+    return "# This message contains all information provided by the mitecom standard for team communication.\n"
+"# Everything is in meters (ROS standard) not to be confused with millimeters (mitecom standard)!\n"
+"# Set belief values to 0 if object was not recognized.\n"
+"# More information here: https://github.com/fumanoids/mitecom\n"
+"\n"
+"std_msgs/Header header\n"
+"\n"
+"# Every value is an array because we can have multiple robots communicating with us.\n"
+"# The values match with the robot ids\n"
+"uint8[] robot_ids\n"
+"\n"
+"uint8 ROLE_IDLING=0\n"
+"uint8 ROLE_OTHER=1\n"
+"uint8 ROLE_STRIKER=2\n"
+"uint8 ROLE_SUPPORTER=3\n"
+"uint8 ROLE_DEFENDER=4\n"
+"uint8 ROLE_GOALIE=5\n"
+"uint8[] role\n"
+"\n"
+"uint8 ACTION_UNDEFINED=0\n"
+"uint8 ACTION_POSITIONING=1\n"
+"uint8 ACTION_GOING_TO_BALL=2\n"
+"uint8 ACTION_TRYING_TO_SCORE=3\n"
+"uint8 ACTION_WAITING=4\n"
+"uint8[] action\n"
+"\n"
+"uint8 STATE_INACTIVE=0\n"
+"uint8 STATE_ACTIVE=1\n"
+"uint8 STATE_PENALIZED=2\n"
+"uint8[] state\n"
+"\n"
+"# Absolute position values\n"
+"geometry_msgs/Pose2D[] robot_positions\n"
+"\n"
+"# Relative ball position, theta of Pose2D is not used\n"
+"Position2D[] ball_relative\n"
+"\n"
+"# Relative position of the opponent goal, theta of Pose2D is not used\n"
+"# This is helpful if the robot has no global position, but sees the goal\n"
+"Position2D[] oppgoal_relative\n"
+"\n"
+"# Positions of opponent robots, if they are recognized\n"
+"# The letter of the robot is arbitrary as the sending robot does not know the id of a seen robot\n"
+"Position2D[] opponent_robot_a\n"
+"Position2D[] opponent_robot_b\n"
+"Position2D[] opponent_robot_c\n"
+"Position2D[] opponent_robot_d\n"
+"\n"
+"# Positions of team robots, if they are recognized\n"
+"# The letter of the robot is arbitrary as the sending robot does not know the id of a seen robot\n"
+"Position2D[] team_robot_a\n"
+"Position2D[] team_robot_b\n"
+"Position2D[] team_robot_c\n"
+"\n"
+"float32[] avg_walking_speed\n"
+"float32[] time_to_position_at_ball\n"
+"float32[] max_kicking_distance\n"
+"\n"
+"# Strategy over which side the team tries to attack\n"
+"# Especially useful during a kickoff\n"
+"uint8 UNSPECIFIED=0\n"
+"uint8 LEFT=1\n"
+"uint8 RIGHT=2\n"
+"uint8 CENTER=3\n"
+"uint8[] offensive_side\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Pose2D\n"
+"# Deprecated\n"
+"# Please use the full 3D pose.\n"
+"\n"
+"# In general our recommendation is to use a full 3D representation of everything and for 2D specific applications make the appropriate projections into the plane for their calculations but optimally will preserve the 3D information during processing.\n"
+"\n"
+"# If we have parallel copies of 2D datatypes every UI and other pipeline will end up needing to have dual interfaces to plot everything. And you will end up with not being able to use 3D tools for 2D use cases even if they're completely valid, as you'd have to reimplement it with different inputs and outputs. It's not particularly hard to plot the 2D pose or compute the yaw error for the Pose message and there are already tools and libraries that can do this for you.\n"
+"\n"
+"\n"
+"# This expresses a position and orientation on a 2D manifold.\n"
+"\n"
+"float64 x\n"
+"float64 y\n"
+"float64 theta\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/Position2D\n"
+"# The position system is the same as mitecom. The following part is taken from the mitecom documentation:\n"
+"# https://github.com/fumanoids/mitecom\n"
+"# The origin of the absolute coordinate center is the center of the middle\n"
+"# circle (center of field). The x axis points towards the opponent goal, the\n"
+"# y axis to the left.\n"
+"#\n"
+"#      y\n"
+"#      ^       ______________________\n"
+"#      |    M  |          |          |  O\n"
+"#      |    Y  |_ -x, y   |   x, y  _|  P\n"
+"#      |    G  | |        |        | |  P\n"
+"# 0    +    O  | |       ( )       | |  G\n"
+"#      |    A  |_|        |        |_|  O\n"
+"#      |    L  |  -x,-y   |   x,-y   |  A\n"
+"#      |       |__________|__________|  L\n"
+"#      |\n"
+"#      +------------------+--------------> x\n"
+"#                         0\n"
+"#\n"
+"# The 0 value of the orientation is pointing to the opponent side (right side in the image).\n"
+"# The value increases counter clockwise\n"
+"# Everything in meters (because it is the ROS standard)\n"
+"\n"
+"# The header is included to get the time stamp for later use in tf\n"
+"std_msgs/Header header\n"
+"\n"
+"geometry_msgs/Pose2D pose\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::TeamData_<ContainerAllocator>&) { return value(); }

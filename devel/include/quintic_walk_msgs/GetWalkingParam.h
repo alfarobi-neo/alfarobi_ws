@@ -57,8 +57,8 @@ struct DataType< ::quintic_walk_msgs::GetWalkingParam > {
 };
 
 
-// service_traits::MD5Sum< ::quintic_walk_msgs::GetWalkingParamRequest> should match 
-// service_traits::MD5Sum< ::quintic_walk_msgs::GetWalkingParam > 
+// service_traits::MD5Sum< ::quintic_walk_msgs::GetWalkingParamRequest> should match
+// service_traits::MD5Sum< ::quintic_walk_msgs::GetWalkingParam >
 template<>
 struct MD5Sum< ::quintic_walk_msgs::GetWalkingParamRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::quintic_walk_msgs::GetWalkingParamRequest>
   }
 };
 
-// service_traits::DataType< ::quintic_walk_msgs::GetWalkingParamRequest> should match 
-// service_traits::DataType< ::quintic_walk_msgs::GetWalkingParam > 
+// service_traits::DataType< ::quintic_walk_msgs::GetWalkingParamRequest> should match
+// service_traits::DataType< ::quintic_walk_msgs::GetWalkingParam >
 template<>
 struct DataType< ::quintic_walk_msgs::GetWalkingParamRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::quintic_walk_msgs::GetWalkingParamRequest>
   }
 };
 
-// service_traits::MD5Sum< ::quintic_walk_msgs::GetWalkingParamResponse> should match 
-// service_traits::MD5Sum< ::quintic_walk_msgs::GetWalkingParam > 
+// service_traits::MD5Sum< ::quintic_walk_msgs::GetWalkingParamResponse> should match
+// service_traits::MD5Sum< ::quintic_walk_msgs::GetWalkingParam >
 template<>
 struct MD5Sum< ::quintic_walk_msgs::GetWalkingParamResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::quintic_walk_msgs::GetWalkingParamResponse>
   }
 };
 
-// service_traits::DataType< ::quintic_walk_msgs::GetWalkingParamResponse> should match 
-// service_traits::DataType< ::quintic_walk_msgs::GetWalkingParam > 
+// service_traits::DataType< ::quintic_walk_msgs::GetWalkingParamResponse> should match
+// service_traits::DataType< ::quintic_walk_msgs::GetWalkingParam >
 template<>
 struct DataType< ::quintic_walk_msgs::GetWalkingParamResponse>
 {

@@ -675,7 +675,7 @@ class WalkingParam {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.mode.length;
+    length += _getByteLength(object.mode);
     return length + 226;
   }
 

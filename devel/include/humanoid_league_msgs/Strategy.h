@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -47,6 +47,50 @@ struct Strategy_
   _offensive_side_type offensive_side;
 
 
+
+// reducing the odds to have name collisions with Windows.h 
+#if defined(_WIN32) && defined(ROLE_IDLING)
+  #undef ROLE_IDLING
+#endif
+#if defined(_WIN32) && defined(ROLE_OTHER)
+  #undef ROLE_OTHER
+#endif
+#if defined(_WIN32) && defined(ROLE_STRIKER)
+  #undef ROLE_STRIKER
+#endif
+#if defined(_WIN32) && defined(ROLE_SUPPORTER)
+  #undef ROLE_SUPPORTER
+#endif
+#if defined(_WIN32) && defined(ROLE_DEFENDER)
+  #undef ROLE_DEFENDER
+#endif
+#if defined(_WIN32) && defined(ROLE_GOALIE)
+  #undef ROLE_GOALIE
+#endif
+#if defined(_WIN32) && defined(ACTION_UNDEFINED)
+  #undef ACTION_UNDEFINED
+#endif
+#if defined(_WIN32) && defined(ACTION_POSITIONING)
+  #undef ACTION_POSITIONING
+#endif
+#if defined(_WIN32) && defined(ACTION_GOING_TO_BALL)
+  #undef ACTION_GOING_TO_BALL
+#endif
+#if defined(_WIN32) && defined(ACTION_TRYING_TO_SCORE)
+  #undef ACTION_TRYING_TO_SCORE
+#endif
+#if defined(_WIN32) && defined(ACTION_WAITING)
+  #undef ACTION_WAITING
+#endif
+#if defined(_WIN32) && defined(SIDE_LEFT)
+  #undef SIDE_LEFT
+#endif
+#if defined(_WIN32) && defined(SIDE_MIDDLE)
+  #undef SIDE_MIDDLE
+#endif
+#if defined(_WIN32) && defined(SIDE_RIGHT)
+  #undef SIDE_RIGHT
+#endif
 
   enum {
     ROLE_IDLING = 0u,
@@ -115,6 +159,22 @@ ros::message_operations::Printer< ::humanoid_league_msgs::Strategy_<ContainerAll
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::Strategy_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::Strategy_<ContainerAllocator2> & rhs)
+{
+  return lhs.role == rhs.role &&
+    lhs.action == rhs.action &&
+    lhs.offensive_side == rhs.offensive_side;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::Strategy_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::Strategy_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -124,23 +184,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::Strategy_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::Strategy_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::Strategy_<ContainerAllocator> >
@@ -149,6 +193,16 @@ struct IsMessage< ::humanoid_league_msgs::Strategy_<ContainerAllocator> >
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::Strategy_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::Strategy_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::Strategy_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -192,32 +246,32 @@ struct Definition< ::humanoid_league_msgs::Strategy_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# This message provides information about the current strategy of the robot to the team communication so that it can be\n\
-# shared with other team robots\n\
-\n\
-# Which role the robot has currently\n\
-uint8 ROLE_IDLING=0\n\
-uint8 ROLE_OTHER=1\n\
-uint8 ROLE_STRIKER=2\n\
-uint8 ROLE_SUPPORTER=3\n\
-uint8 ROLE_DEFENDER=4\n\
-uint8 ROLE_GOALIE=5\n\
-uint8 role\n\
-\n\
-# The current action of the robot\n\
-uint8 ACTION_UNDEFINED=0\n\
-uint8 ACTION_POSITIONING=1\n\
-uint8 ACTION_GOING_TO_BALL=2\n\
-uint8 ACTION_TRYING_TO_SCORE=3\n\
-uint8 ACTION_WAITING=4\n\
-uint8 action\n\
-\n\
-# Offensive strategy\n\
-uint8 SIDE_LEFT = 0\n\
-uint8 SIDE_MIDDLE = 1\n\
-uint8 SIDE_RIGHT = 2\n\
-uint8 offensive_side\n\
-";
+    return "# This message provides information about the current strategy of the robot to the team communication so that it can be\n"
+"# shared with other team robots\n"
+"\n"
+"# Which role the robot has currently\n"
+"uint8 ROLE_IDLING=0\n"
+"uint8 ROLE_OTHER=1\n"
+"uint8 ROLE_STRIKER=2\n"
+"uint8 ROLE_SUPPORTER=3\n"
+"uint8 ROLE_DEFENDER=4\n"
+"uint8 ROLE_GOALIE=5\n"
+"uint8 role\n"
+"\n"
+"# The current action of the robot\n"
+"uint8 ACTION_UNDEFINED=0\n"
+"uint8 ACTION_POSITIONING=1\n"
+"uint8 ACTION_GOING_TO_BALL=2\n"
+"uint8 ACTION_TRYING_TO_SCORE=3\n"
+"uint8 ACTION_WAITING=4\n"
+"uint8 action\n"
+"\n"
+"# Offensive strategy\n"
+"uint8 SIDE_LEFT = 0\n"
+"uint8 SIDE_MIDDLE = 1\n"
+"uint8 SIDE_RIGHT = 2\n"
+"uint8 offensive_side\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::Strategy_<ContainerAllocator>&) { return value(); }

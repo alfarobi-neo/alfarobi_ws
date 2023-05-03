@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/install
+prefix=/home/ajus/alfarobi_ws/install
 
 Name: vision_calibration
 Description: Description of vision_calibration

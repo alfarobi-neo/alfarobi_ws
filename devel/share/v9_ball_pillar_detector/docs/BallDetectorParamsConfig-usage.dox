@@ -1,8 +1,0 @@
-\subsubsection usage Usage
-\verbatim
-<node name="v9_ball_pillar_detector_node" pkg="v9_ball_pillar_detector" type="v9_ball_pillar_detector_node">
-  <param name="score" type="int" value="20" />
-  <param name="cost" type="int" value="20" />
-</node>
-\endverbatim
-

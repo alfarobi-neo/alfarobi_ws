@@ -1,9 +1,0 @@
-mcl_afast: 0.1
-mcl_aslow: 0.01
-vgauss_x: 1
-vgauss_y: 1
-mgauss_x: 4
-mgauss_y: 4
-mgauss_w: 2
-variance: 0.03
-mcl_wcmps: 0.01

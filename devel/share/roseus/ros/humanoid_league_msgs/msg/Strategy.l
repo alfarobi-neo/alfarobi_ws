@@ -54,6 +54,25 @@
 (intern "*SIDE_RIGHT*" (find-package "HUMANOID_LEAGUE_MSGS::STRATEGY"))
 (shadow '*SIDE_RIGHT* (find-package "HUMANOID_LEAGUE_MSGS::STRATEGY"))
 (defconstant humanoid_league_msgs::Strategy::*SIDE_RIGHT* 2)
+
+(defun humanoid_league_msgs::Strategy-to-symbol (const)
+  (cond
+        ((= const 0) 'humanoid_league_msgs::Strategy::*ROLE_IDLING*)
+        ((= const 1) 'humanoid_league_msgs::Strategy::*ROLE_OTHER*)
+        ((= const 2) 'humanoid_league_msgs::Strategy::*ROLE_STRIKER*)
+        ((= const 3) 'humanoid_league_msgs::Strategy::*ROLE_SUPPORTER*)
+        ((= const 4) 'humanoid_league_msgs::Strategy::*ROLE_DEFENDER*)
+        ((= const 5) 'humanoid_league_msgs::Strategy::*ROLE_GOALIE*)
+        ((= const 0) 'humanoid_league_msgs::Strategy::*ACTION_UNDEFINED*)
+        ((= const 1) 'humanoid_league_msgs::Strategy::*ACTION_POSITIONING*)
+        ((= const 2) 'humanoid_league_msgs::Strategy::*ACTION_GOING_TO_BALL*)
+        ((= const 3) 'humanoid_league_msgs::Strategy::*ACTION_TRYING_TO_SCORE*)
+        ((= const 4) 'humanoid_league_msgs::Strategy::*ACTION_WAITING*)
+        ((= const 0) 'humanoid_league_msgs::Strategy::*SIDE_LEFT*)
+        ((= const 1) 'humanoid_league_msgs::Strategy::*SIDE_MIDDLE*)
+        ((= const 2) 'humanoid_league_msgs::Strategy::*SIDE_RIGHT*)
+        (t nil)))
+
 (defclass humanoid_league_msgs::Strategy
   :super ros::object
   :slots (_role _action _offensive_side ))

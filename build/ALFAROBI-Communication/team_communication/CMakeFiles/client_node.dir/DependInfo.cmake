@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/client_node.cpp" "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Communication/team_communication/CMakeFiles/client_node.dir/src/client_node.cpp.o"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/client_node.cpp" "/home/ajus/alfarobi_ws/build/ALFAROBI-Communication/team_communication/CMakeFiles/client_node.dir/src/client_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,9 +17,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/alfarobi/alfarobi_ws/devel/include"
-  "/opt/ros/kinetic/include"
-  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/home/ajus/alfarobi_ws/devel/include"
+  "/opt/ros/noetic/include"
+  "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.

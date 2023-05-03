@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "base_station_node_automoc.cpp"
+  "CMakeFiles/base_station_node_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/base_station_node_autogen.dir/ParseCache.txt"
+  "base_station_node_autogen"
+  "/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node"
+  "/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node.pdb"
   "CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o"
+  "CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/base_station_node.dir/basemonitor.cpp.o"
-  "CMakeFiles/base_station_node.dir/base_station_node_automoc.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/base_station_monitor/base_station_node.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/base_station_monitor/base_station_node"
 )
 
 # Per-language clean rules from dependency scanning.

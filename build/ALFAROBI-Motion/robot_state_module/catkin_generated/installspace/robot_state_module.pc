@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/install
+prefix=/home/ajus/alfarobi_ws/install
 
 Name: robot_state_module
 Description: Description of robot_state_module

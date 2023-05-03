@@ -60,10 +60,10 @@ class JointCtrlModule {
   static getMessageSize(object) {
     let length = 0;
     object.joint_name.forEach((val) => {
-      length += 4 + val.length;
+      length += 4 + _getByteLength(val);
     });
     object.module_name.forEach((val) => {
-      length += 4 + val.length;
+      length += 4 + _getByteLength(val);
     });
     return length + 8;
   }

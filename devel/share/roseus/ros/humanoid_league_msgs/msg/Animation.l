@@ -46,17 +46,17 @@
        (if __header (setq _header (car __header)))
        _header)))
   (:request
-   (&optional __request)
-   (if __request (setq _request __request)) _request)
+   (&optional (__request :null))
+   (if (not (eq __request :null)) (setq _request __request)) _request)
   (:first
-   (&optional __first)
-   (if __first (setq _first __first)) _first)
+   (&optional (__first :null))
+   (if (not (eq __first :null)) (setq _first __first)) _first)
   (:last
-   (&optional __last)
-   (if __last (setq _last __last)) _last)
+   (&optional (__last :null))
+   (if (not (eq __last :null)) (setq _last __last)) _last)
   (:hcm
-   (&optional __hcm)
-   (if __hcm (setq _hcm __hcm)) _hcm)
+   (&optional (__hcm :null))
+   (if (not (eq __hcm :null)) (setq _hcm __hcm)) _hcm)
   (:position
    (&rest __position)
    (if (keywordp (car __position))
@@ -150,8 +150,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ================================================================================
@@ -159,6 +157,7 @@ MSG: trajectory_msgs/JointTrajectory
 Header header
 string[] joint_names
 JointTrajectoryPoint[] points
+
 ================================================================================
 MSG: trajectory_msgs/JointTrajectoryPoint
 # Each trajectory point specifies either positions[, velocities[, accelerations]]

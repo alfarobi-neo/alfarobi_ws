@@ -19,7 +19,7 @@
 (defmethod team_communication::team_data
   (:init
    (&key
-    ((:robots_data __robots_data) (let (r) (dotimes (i 0) (push (instance team_communication::robot_data :init) r)) r))
+    ((:robots_data __robots_data) ())
     )
    (send-super :init)
    (setq _robots_data __robots_data)
@@ -91,8 +91,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ================================================================================

@@ -57,8 +57,8 @@ struct DataType< ::op3_walking_module_msgs::SetWalkingParam > {
 };
 
 
-// service_traits::MD5Sum< ::op3_walking_module_msgs::SetWalkingParamRequest> should match 
-// service_traits::MD5Sum< ::op3_walking_module_msgs::SetWalkingParam > 
+// service_traits::MD5Sum< ::op3_walking_module_msgs::SetWalkingParamRequest> should match
+// service_traits::MD5Sum< ::op3_walking_module_msgs::SetWalkingParam >
 template<>
 struct MD5Sum< ::op3_walking_module_msgs::SetWalkingParamRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::op3_walking_module_msgs::SetWalkingParamRequest>
   }
 };
 
-// service_traits::DataType< ::op3_walking_module_msgs::SetWalkingParamRequest> should match 
-// service_traits::DataType< ::op3_walking_module_msgs::SetWalkingParam > 
+// service_traits::DataType< ::op3_walking_module_msgs::SetWalkingParamRequest> should match
+// service_traits::DataType< ::op3_walking_module_msgs::SetWalkingParam >
 template<>
 struct DataType< ::op3_walking_module_msgs::SetWalkingParamRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::op3_walking_module_msgs::SetWalkingParamRequest>
   }
 };
 
-// service_traits::MD5Sum< ::op3_walking_module_msgs::SetWalkingParamResponse> should match 
-// service_traits::MD5Sum< ::op3_walking_module_msgs::SetWalkingParam > 
+// service_traits::MD5Sum< ::op3_walking_module_msgs::SetWalkingParamResponse> should match
+// service_traits::MD5Sum< ::op3_walking_module_msgs::SetWalkingParam >
 template<>
 struct MD5Sum< ::op3_walking_module_msgs::SetWalkingParamResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::op3_walking_module_msgs::SetWalkingParamResponse>
   }
 };
 
-// service_traits::DataType< ::op3_walking_module_msgs::SetWalkingParamResponse> should match 
-// service_traits::DataType< ::op3_walking_module_msgs::SetWalkingParam > 
+// service_traits::DataType< ::op3_walking_module_msgs::SetWalkingParamResponse> should match
+// service_traits::DataType< ::op3_walking_module_msgs::SetWalkingParam >
 template<>
 struct DataType< ::op3_walking_module_msgs::SetWalkingParamResponse>
 {

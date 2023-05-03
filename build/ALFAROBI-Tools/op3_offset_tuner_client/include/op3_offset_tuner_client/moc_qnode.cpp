@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qnode.hpp'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'qnode.hpp' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.9.1. It"
+#error "This file was generated using the moc from 5.12.8. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -54,7 +54,7 @@ QT_MOC_LITERAL(8, 165, 18) // "recalculate_offset"
 static const uint qt_meta_data_op3_offset_tuner_client__QNode[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        5,   14, // methods
@@ -88,7 +88,7 @@ static const uint qt_meta_data_op3_offset_tuner_client__QNode[] = {
 void op3_offset_tuner_client::QNode::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        QNode *_t = static_cast<QNode *>(_o);
+        auto *_t = static_cast<QNode *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->loggingUpdated(); break;
@@ -100,24 +100,23 @@ void op3_offset_tuner_client::QNode::qt_static_metacall(QObject *_o, QMetaObject
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
-        void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (QNode::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QNode::loggingUpdated)) {
+            using _t = void (QNode::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QNode::loggingUpdated)) {
                 *result = 0;
                 return;
             }
         }
         {
-            typedef void (QNode::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QNode::rosShutdown)) {
+            using _t = void (QNode::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QNode::rosShutdown)) {
                 *result = 1;
                 return;
             }
         }
         {
-            typedef void (QNode::*_t)(op3_offset_tuner_msgs::JointOffsetPositionData );
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QNode::updatePresentJointOffsetData)) {
+            using _t = void (QNode::*)(op3_offset_tuner_msgs::JointOffsetPositionData );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QNode::updatePresentJointOffsetData)) {
                 *result = 2;
                 return;
             }
@@ -125,10 +124,14 @@ void op3_offset_tuner_client::QNode::qt_static_metacall(QObject *_o, QMetaObject
     }
 }
 
-const QMetaObject op3_offset_tuner_client::QNode::staticMetaObject = {
-    { &QThread::staticMetaObject, qt_meta_stringdata_op3_offset_tuner_client__QNode.data,
-      qt_meta_data_op3_offset_tuner_client__QNode,  qt_static_metacall, nullptr, nullptr}
-};
+QT_INIT_METAOBJECT const QMetaObject op3_offset_tuner_client::QNode::staticMetaObject = { {
+    &QThread::staticMetaObject,
+    qt_meta_stringdata_op3_offset_tuner_client__QNode.data,
+    qt_meta_data_op3_offset_tuner_client__QNode,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *op3_offset_tuner_client::QNode::metaObject() const
@@ -140,7 +143,7 @@ void *op3_offset_tuner_client::QNode::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_op3_offset_tuner_client__QNode.stringdata0))
-        return static_cast<void*>(const_cast< QNode*>(this));
+        return static_cast<void*>(this);
     return QThread::qt_metacast(_clname);
 }
 

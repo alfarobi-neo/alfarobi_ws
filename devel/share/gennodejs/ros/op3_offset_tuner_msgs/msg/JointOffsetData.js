@@ -103,7 +103,7 @@ class JointOffsetData {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.joint_name.length;
+    length += _getByteLength(object.joint_name);
     return length + 32;
   }
 

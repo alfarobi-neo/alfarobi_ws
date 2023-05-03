@@ -57,8 +57,8 @@ struct DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetData > {
 };
 
 
-// service_traits::MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetDataRequest> should match 
-// service_traits::MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetData > 
+// service_traits::MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetDataRequest> should match
+// service_traits::MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetData >
 template<>
 struct MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetDataRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetDataRequest>
   }
 };
 
-// service_traits::DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetDataRequest> should match 
-// service_traits::DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetData > 
+// service_traits::DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetDataRequest> should match
+// service_traits::DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetData >
 template<>
 struct DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetDataRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetDataRequest>
   }
 };
 
-// service_traits::MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetDataResponse> should match 
-// service_traits::MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetData > 
+// service_traits::MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetDataResponse> should match
+// service_traits::MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetData >
 template<>
 struct MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetDataResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::op3_tuning_module_msgs::GetPresentJointOffsetDataResponse>
   }
 };
 
-// service_traits::DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetDataResponse> should match 
-// service_traits::DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetData > 
+// service_traits::DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetDataResponse> should match
+// service_traits::DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetData >
 template<>
 struct DataType< ::op3_tuning_module_msgs::GetPresentJointOffsetDataResponse>
 {

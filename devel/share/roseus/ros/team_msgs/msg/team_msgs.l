@@ -29,8 +29,8 @@
    (setq _robot_pos __robot_pos)
    self)
   (:status
-   (&optional __status)
-   (if __status (setq _status __status)) _status)
+   (&optional (__status :null))
+   (if (not (eq __status :null)) (setq _status __status)) _status)
   (:robot_pos
    (&rest __robot_pos)
    (if (keywordp (car __robot_pos))

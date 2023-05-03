@@ -21,6 +21,14 @@
 (intern "*HIGH_PRIORITY*" (find-package "HUMANOID_LEAGUE_MSGS::SPEAK"))
 (shadow '*HIGH_PRIORITY* (find-package "HUMANOID_LEAGUE_MSGS::SPEAK"))
 (defconstant humanoid_league_msgs::Speak::*HIGH_PRIORITY* 2)
+
+(defun humanoid_league_msgs::Speak-to-symbol (const)
+  (cond
+        ((= const 0) 'humanoid_league_msgs::Speak::*LOW_PRIORITY*)
+        ((= const 1) 'humanoid_league_msgs::Speak::*MID_PRIORITY*)
+        ((= const 2) 'humanoid_league_msgs::Speak::*HIGH_PRIORITY*)
+        (t nil)))
+
 (defclass humanoid_league_msgs::Speak
   :super ros::object
   :slots (_text _priority _filename ))

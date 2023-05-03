@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/game_controller/msg/GameState.js"
   "CMakeFiles/game_controller_generate_messages_nodejs"
-  "/home/alfarobi/alfarobi_ws/devel/share/gennodejs/ros/game_controller/msg/GameState.js"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/densis_msgs/manifest.l"
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/densis_msgs/msg/densis.l"
   "CMakeFiles/densis_msgs_generate_messages_eus"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/densis_msgs/msg/densis.l"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/densis_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

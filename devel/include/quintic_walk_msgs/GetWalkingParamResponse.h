@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -62,6 +62,20 @@ ros::message_operations::Printer< ::quintic_walk_msgs::GetWalkingParamResponse_<
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator1> & lhs, const ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator2> & rhs)
+{
+  return lhs.parameters == rhs.parameters;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator1> & lhs, const ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace quintic_walk_msgs
 
 namespace ros
@@ -71,23 +85,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'quintic_walk_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/quintic_walk_msgs/msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator> >
@@ -97,6 +95,16 @@ struct IsMessage< ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocat
 template <class ContainerAllocator>
 struct IsMessage< ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -139,84 +147,84 @@ struct Definition< ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAlloca
 {
   static const char* value()
   {
-    return "WalkingParam    parameters\n\
-\n\
-================================================================================\n\
-MSG: quintic_walk_msgs/WalkingParam\n\
-float32 freq\n\
-float32 doubleSupportRatio\n\
-float32 footDistance\n\
-float32 footRise\n\
-float32 footPutDownZOffset\n\
-float32 footPutDownPhase\n\
-float32 footApexPhase\n\
-float32 footOvershootRatio\n\
-float32 footOvershootPhase\n\
-float32 trunkHeight\n\
-float32 trunkPitch\n\
-float32 trunkPhase\n\
-float32 trunkXOffset\n\
-float32 trunkYOffset\n\
-float32 trunkSwing\n\
-float32 trunkPause\n\
-float32 trunkXOffsetPCoefForward\n\
-float32 trunkXOffsetPCoefTurn\n\
-float32 trunkPitchPCoefForward\n\
-float32 trunkPitchPCoefTurn\n\
-bool trunkYOnlyInDoubleSupport\n\
-\n\
-float32 XMove\n\
-float32 YMove\n\
-float32 ZMove\n\
-string mode\n\
-bool tuning\n\
-\n\
-float32 D_ANKLE_P_qw\n\
-float32 D_KNEE_qw\n\
-float32 D_HIP_P_qw\n\
-\n\
-\n\
-float32 KP_P_qw\n\
-float32 KD_P_qw\n\
-float32 KI_P_qw\n\
-\n\
-\n\
-\n\
-float32 ShoulderGain_qw\n\
-float32 setpointPitch\n\
-float32 pitch_error_tol\n\
-\n\
-float32 KP_X_qw\n\
-float32 KD_X_qw\n\
-float32 KI_X_qw\n\
-\n\
-\n\
-float32 Angle_0\n\
-float32 Angle_1\n\
-float32 Angle_2\n\
-float32 Angle_3\n\
-float32 Angle_4\n\
-\n\
-float32 KD_0\n\
-float32 KD_1\n\
-float32 KD_2\n\
-float32 KD_3\n\
-float32 KD_4\n\
-\n\
-float32 Gyro_0\n\
-float32 Gyro_1\n\
-float32 Gyro_2\n\
-float32 Gyro_3\n\
-float32 Gyro_4\n\
-\n\
-float32 KP_0\n\
-float32 KP_1\n\
-float32 KP_2\n\
-float32 KP_3\n\
-float32 KP_4\n\
-\n\
-\n\
-";
+    return "WalkingParam    parameters\n"
+"\n"
+"================================================================================\n"
+"MSG: quintic_walk_msgs/WalkingParam\n"
+"float32 freq\n"
+"float32 doubleSupportRatio\n"
+"float32 footDistance\n"
+"float32 footRise\n"
+"float32 footPutDownZOffset\n"
+"float32 footPutDownPhase\n"
+"float32 footApexPhase\n"
+"float32 footOvershootRatio\n"
+"float32 footOvershootPhase\n"
+"float32 trunkHeight\n"
+"float32 trunkPitch\n"
+"float32 trunkPhase\n"
+"float32 trunkXOffset\n"
+"float32 trunkYOffset\n"
+"float32 trunkSwing\n"
+"float32 trunkPause\n"
+"float32 trunkXOffsetPCoefForward\n"
+"float32 trunkXOffsetPCoefTurn\n"
+"float32 trunkPitchPCoefForward\n"
+"float32 trunkPitchPCoefTurn\n"
+"bool trunkYOnlyInDoubleSupport\n"
+"\n"
+"float32 XMove\n"
+"float32 YMove\n"
+"float32 ZMove\n"
+"string mode\n"
+"bool tuning\n"
+"\n"
+"float32 D_ANKLE_P_qw\n"
+"float32 D_KNEE_qw\n"
+"float32 D_HIP_P_qw\n"
+"\n"
+"\n"
+"float32 KP_P_qw\n"
+"float32 KD_P_qw\n"
+"float32 KI_P_qw\n"
+"\n"
+"\n"
+"\n"
+"float32 ShoulderGain_qw\n"
+"float32 setpointPitch\n"
+"float32 pitch_error_tol\n"
+"\n"
+"float32 KP_X_qw\n"
+"float32 KD_X_qw\n"
+"float32 KI_X_qw\n"
+"\n"
+"\n"
+"float32 Angle_0\n"
+"float32 Angle_1\n"
+"float32 Angle_2\n"
+"float32 Angle_3\n"
+"float32 Angle_4\n"
+"\n"
+"float32 KD_0\n"
+"float32 KD_1\n"
+"float32 KD_2\n"
+"float32 KD_3\n"
+"float32 KD_4\n"
+"\n"
+"float32 Gyro_0\n"
+"float32 Gyro_1\n"
+"float32 Gyro_2\n"
+"float32 Gyro_3\n"
+"float32 Gyro_4\n"
+"\n"
+"float32 KP_0\n"
+"float32 KP_1\n"
+"float32 KP_2\n"
+"float32 KP_3\n"
+"float32 KP_4\n"
+"\n"
+"\n"
+;
   }
 
   static const char* value(const ::quintic_walk_msgs::GetWalkingParamResponse_<ContainerAllocator>&) { return value(); }

@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
+prefix=/home/ajus/alfarobi_ws/devel
 
 Name: rosbag_to_csv
 Description: Description of rosbag_to_csv

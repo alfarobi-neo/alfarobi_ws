@@ -51,7 +51,7 @@ class SetModuleRequest {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.module_name.length;
+    length += _getByteLength(object.module_name);
     return length + 4;
   }
 

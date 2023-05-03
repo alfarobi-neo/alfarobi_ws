@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/lib/libop3_action_module.pdb"
+  "/home/ajus/alfarobi_ws/devel/lib/libop3_action_module.so"
   "CMakeFiles/op3_action_module.dir/src/action_module.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/libop3_action_module.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/libop3_action_module.so"
 )
 
 # Per-language clean rules from dependency scanning.

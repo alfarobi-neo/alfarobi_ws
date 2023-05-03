@@ -22,8 +22,8 @@
   (:init
    (&key
     ((:header __header) (instance std_msgs::Header :init))
-    ((:posts __posts) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::PostInImage :init) r)) r))
-    ((:bars __bars) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::BarInImage :init) r)) r))
+    ((:posts __posts) ())
+    ((:bars __bars) ())
     )
    (send-super :init)
    (setq _header __header)
@@ -123,8 +123,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ================================================================================

@@ -1,14 +1,14 @@
 
 "use strict";
 
-let JointTorqueOnOffArray = require('./JointTorqueOnOffArray.js');
+let JointTorqueOnOff = require('./JointTorqueOnOff.js');
 let JointOffsetPositionData = require('./JointOffsetPositionData.js');
 let JointOffsetData = require('./JointOffsetData.js');
-let JointTorqueOnOff = require('./JointTorqueOnOff.js');
+let JointTorqueOnOffArray = require('./JointTorqueOnOffArray.js');
 
 module.exports = {
-  JointTorqueOnOffArray: JointTorqueOnOffArray,
+  JointTorqueOnOff: JointTorqueOnOff,
   JointOffsetPositionData: JointOffsetPositionData,
   JointOffsetData: JointOffsetData,
-  JointTorqueOnOff: JointTorqueOnOff,
+  JointTorqueOnOffArray: JointTorqueOnOffArray,
 };

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -258,6 +258,54 @@ ros::message_operations::Printer< ::data_log_msgs::DataLog_<ContainerAllocator> 
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::data_log_msgs::DataLog_<ContainerAllocator1> & lhs, const ::data_log_msgs::DataLog_<ContainerAllocator2> & rhs)
+{
+  return lhs.RFootFK == rhs.RFootFK &&
+    lhs.LFootFK == rhs.LFootFK &&
+    lhs.TorsoFK == rhs.TorsoFK &&
+    lhs.RFootIK == rhs.RFootIK &&
+    lhs.LFootIK == rhs.LFootIK &&
+    lhs.TorsoIK == rhs.TorsoIK &&
+    lhs.IMUdegrees == rhs.IMUdegrees &&
+    lhs.baseInertia == rhs.baseInertia &&
+    lhs.LSSPInertia == rhs.LSSPInertia &&
+    lhs.RSSPInertia == rhs.RSSPInertia &&
+    lhs.DSPInertia == rhs.DSPInertia &&
+    lhs.ZMPLSSP == rhs.ZMPLSSP &&
+    lhs.ZMPRSSP == rhs.ZMPRSSP &&
+    lhs.ZMPDSP == rhs.ZMPDSP &&
+    lhs.ZMPLSSP_accZ == rhs.ZMPLSSP_accZ &&
+    lhs.ZMPRSSP_accZ == rhs.ZMPRSSP_accZ &&
+    lhs.ZMPDSP_accZ == rhs.ZMPDSP_accZ &&
+    lhs.ZMPLSSP_estimate == rhs.ZMPLSSP_estimate &&
+    lhs.ZMPRSSP_estimate == rhs.ZMPRSSP_estimate &&
+    lhs.ZMPDSP_estimate == rhs.ZMPDSP_estimate &&
+    lhs.COMLSSPrpy == rhs.COMLSSPrpy &&
+    lhs.COMRSSPrpy == rhs.COMRSSPrpy &&
+    lhs.COMDSPrpy == rhs.COMDSPrpy &&
+    lhs.accelFiltered == rhs.accelFiltered &&
+    lhs.ZMPLSSP_accFil == rhs.ZMPLSSP_accFil &&
+    lhs.ZMPRSSP_accFil == rhs.ZMPRSSP_accFil &&
+    lhs.ZMPDSP_accFil == rhs.ZMPDSP_accFil &&
+    lhs.LAnklePitch_velocityNow == rhs.LAnklePitch_velocityNow &&
+    lhs.LAnklePitch_positionIK == rhs.LAnklePitch_positionIK &&
+    lhs.LAnklePitch_positionNow == rhs.LAnklePitch_positionNow &&
+    lhs.LAnklePitch_refPosFromPos == rhs.LAnklePitch_refPosFromPos &&
+    lhs.RAnklePitch_velocityNow == rhs.RAnklePitch_velocityNow &&
+    lhs.RAnklePitch_positionIK == rhs.RAnklePitch_positionIK &&
+    lhs.RAnklePitch_positionNow == rhs.RAnklePitch_positionNow &&
+    lhs.RAnklePitch_refPosFromPos == rhs.RAnklePitch_refPosFromPos;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::data_log_msgs::DataLog_<ContainerAllocator1> & lhs, const ::data_log_msgs::DataLog_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace data_log_msgs
 
 namespace ros
@@ -267,23 +315,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'data_log_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::data_log_msgs::DataLog_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::data_log_msgs::DataLog_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::data_log_msgs::DataLog_<ContainerAllocator> >
@@ -292,6 +324,16 @@ struct IsMessage< ::data_log_msgs::DataLog_<ContainerAllocator> >
 
 template <class ContainerAllocator>
 struct IsMessage< ::data_log_msgs::DataLog_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::data_log_msgs::DataLog_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::data_log_msgs::DataLog_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -335,97 +377,97 @@ struct Definition< ::data_log_msgs::DataLog_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "#geometry_msgs/Point[] current_joint_msg\n\
-geometry_msgs/Pose RFootFK\n\
-geometry_msgs/Pose LFootFK\n\
-geometry_msgs/Pose TorsoFK\n\
-geometry_msgs/Pose RFootIK\n\
-geometry_msgs/Pose LFootIK\n\
-geometry_msgs/Pose TorsoIK\n\
-geometry_msgs/Point IMUdegrees\n\
-geometry_msgs/Inertia baseInertia\n\
-geometry_msgs/Inertia LSSPInertia\n\
-geometry_msgs/Inertia RSSPInertia\n\
-geometry_msgs/Inertia DSPInertia\n\
-geometry_msgs/Point ZMPLSSP\n\
-geometry_msgs/Point ZMPRSSP\n\
-geometry_msgs/Point ZMPDSP\n\
-geometry_msgs/Point ZMPLSSP_accZ\n\
-geometry_msgs/Point ZMPRSSP_accZ\n\
-geometry_msgs/Point ZMPDSP_accZ\n\
-geometry_msgs/Point ZMPLSSP_estimate\n\
-geometry_msgs/Point ZMPRSSP_estimate\n\
-geometry_msgs/Point ZMPDSP_estimate\n\
-geometry_msgs/Point COMLSSPrpy\n\
-geometry_msgs/Point COMRSSPrpy\n\
-geometry_msgs/Point COMDSPrpy\n\
-geometry_msgs/Point accelFiltered\n\
-geometry_msgs/Point ZMPLSSP_accFil\n\
-geometry_msgs/Point ZMPRSSP_accFil\n\
-geometry_msgs/Point ZMPDSP_accFil\n\
-#float32 LAnklePitch_torqueIn     \n\
-float32 LAnklePitch_velocityNow  \n\
-float32 LAnklePitch_positionIK   \n\
-float32 LAnklePitch_positionNow  \n\
-float32 LAnklePitch_refPosFromPos\n\
-float32 RAnklePitch_velocityNow  \n\
-float32 RAnklePitch_positionIK   \n\
-float32 RAnklePitch_positionNow \n\
-float32 RAnklePitch_refPosFromPos\n\
-================================================================================\n\
-MSG: geometry_msgs/Pose\n\
-# A representation of pose in free space, composed of position and orientation. \n\
-Point position\n\
-Quaternion orientation\n\
-\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-\n\
-================================================================================\n\
-MSG: geometry_msgs/Quaternion\n\
-# This represents an orientation in free space in quaternion form.\n\
-\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-float64 w\n\
-\n\
-================================================================================\n\
-MSG: geometry_msgs/Inertia\n\
-# Mass [kg]\n\
-float64 m\n\
-\n\
-# Center of mass [m]\n\
-geometry_msgs/Vector3 com\n\
-\n\
-# Inertia Tensor [kg-m^2]\n\
-#     | ixx ixy ixz |\n\
-# I = | ixy iyy iyz |\n\
-#     | ixz iyz izz |\n\
-float64 ixx\n\
-float64 ixy\n\
-float64 ixz\n\
-float64 iyy\n\
-float64 iyz\n\
-float64 izz\n\
-\n\
-================================================================================\n\
-MSG: geometry_msgs/Vector3\n\
-# This represents a vector in free space. \n\
-# It is only meant to represent a direction. Therefore, it does not\n\
-# make sense to apply a translation to it (e.g., when applying a \n\
-# generic rigid transformation to a Vector3, tf2 will only apply the\n\
-# rotation). If you want your data to be translatable too, use the\n\
-# geometry_msgs/Point message instead.\n\
-\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-";
+    return "#geometry_msgs/Point[] current_joint_msg\n"
+"geometry_msgs/Pose RFootFK\n"
+"geometry_msgs/Pose LFootFK\n"
+"geometry_msgs/Pose TorsoFK\n"
+"geometry_msgs/Pose RFootIK\n"
+"geometry_msgs/Pose LFootIK\n"
+"geometry_msgs/Pose TorsoIK\n"
+"geometry_msgs/Point IMUdegrees\n"
+"geometry_msgs/Inertia baseInertia\n"
+"geometry_msgs/Inertia LSSPInertia\n"
+"geometry_msgs/Inertia RSSPInertia\n"
+"geometry_msgs/Inertia DSPInertia\n"
+"geometry_msgs/Point ZMPLSSP\n"
+"geometry_msgs/Point ZMPRSSP\n"
+"geometry_msgs/Point ZMPDSP\n"
+"geometry_msgs/Point ZMPLSSP_accZ\n"
+"geometry_msgs/Point ZMPRSSP_accZ\n"
+"geometry_msgs/Point ZMPDSP_accZ\n"
+"geometry_msgs/Point ZMPLSSP_estimate\n"
+"geometry_msgs/Point ZMPRSSP_estimate\n"
+"geometry_msgs/Point ZMPDSP_estimate\n"
+"geometry_msgs/Point COMLSSPrpy\n"
+"geometry_msgs/Point COMRSSPrpy\n"
+"geometry_msgs/Point COMDSPrpy\n"
+"geometry_msgs/Point accelFiltered\n"
+"geometry_msgs/Point ZMPLSSP_accFil\n"
+"geometry_msgs/Point ZMPRSSP_accFil\n"
+"geometry_msgs/Point ZMPDSP_accFil\n"
+"#float32 LAnklePitch_torqueIn     \n"
+"float32 LAnklePitch_velocityNow  \n"
+"float32 LAnklePitch_positionIK   \n"
+"float32 LAnklePitch_positionNow  \n"
+"float32 LAnklePitch_refPosFromPos\n"
+"float32 RAnklePitch_velocityNow  \n"
+"float32 RAnklePitch_positionIK   \n"
+"float32 RAnklePitch_positionNow \n"
+"float32 RAnklePitch_refPosFromPos\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Pose\n"
+"# A representation of pose in free space, composed of position and orientation. \n"
+"Point position\n"
+"Quaternion orientation\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Quaternion\n"
+"# This represents an orientation in free space in quaternion form.\n"
+"\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+"float64 w\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Inertia\n"
+"# Mass [kg]\n"
+"float64 m\n"
+"\n"
+"# Center of mass [m]\n"
+"geometry_msgs/Vector3 com\n"
+"\n"
+"# Inertia Tensor [kg-m^2]\n"
+"#     | ixx ixy ixz |\n"
+"# I = | ixy iyy iyz |\n"
+"#     | ixz iyz izz |\n"
+"float64 ixx\n"
+"float64 ixy\n"
+"float64 ixz\n"
+"float64 iyy\n"
+"float64 iyz\n"
+"float64 izz\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Vector3\n"
+"# This represents a vector in free space. \n"
+"# It is only meant to represent a direction. Therefore, it does not\n"
+"# make sense to apply a translation to it (e.g., when applying a \n"
+"# generic rigid transformation to a Vector3, tf2 will only apply the\n"
+"# rotation). If you want your data to be translatable too, use the\n"
+"# geometry_msgs/Point message instead.\n"
+"\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+;
   }
 
   static const char* value(const ::data_log_msgs::DataLog_<ContainerAllocator>&) { return value(); }

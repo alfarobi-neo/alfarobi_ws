@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/install
+prefix=/home/ajus/alfarobi_ws/install
 
 Name: model_based_control
 Description: Description of model_based_control

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -37,6 +37,47 @@ struct RobotControlState_
   _state_type state;
 
 
+
+// reducing the odds to have name collisions with Windows.h 
+#if defined(_WIN32) && defined(CONTROLABLE)
+  #undef CONTROLABLE
+#endif
+#if defined(_WIN32) && defined(FALLING)
+  #undef FALLING
+#endif
+#if defined(_WIN32) && defined(FALLEN)
+  #undef FALLEN
+#endif
+#if defined(_WIN32) && defined(GETTING_UP)
+  #undef GETTING_UP
+#endif
+#if defined(_WIN32) && defined(ANIMATION_RUNNING)
+  #undef ANIMATION_RUNNING
+#endif
+#if defined(_WIN32) && defined(STARTUP)
+  #undef STARTUP
+#endif
+#if defined(_WIN32) && defined(SHUTDOWN)
+  #undef SHUTDOWN
+#endif
+#if defined(_WIN32) && defined(PENALTY)
+  #undef PENALTY
+#endif
+#if defined(_WIN32) && defined(PENALTY_ANIMANTION)
+  #undef PENALTY_ANIMANTION
+#endif
+#if defined(_WIN32) && defined(RECORD)
+  #undef RECORD
+#endif
+#if defined(_WIN32) && defined(WALKING)
+  #undef WALKING
+#endif
+#if defined(_WIN32) && defined(MOTOR_OFF)
+  #undef MOTOR_OFF
+#endif
+#if defined(_WIN32) && defined(HCM_OFF)
+  #undef HCM_OFF
+#endif
 
   enum {
     CONTROLABLE = 0u,
@@ -102,6 +143,20 @@ ros::message_operations::Printer< ::humanoid_league_msgs::RobotControlState_<Con
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::RobotControlState_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::RobotControlState_<ContainerAllocator2> & rhs)
+{
+  return lhs.state == rhs.state;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::RobotControlState_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::RobotControlState_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -111,23 +166,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::RobotControlState_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::RobotControlState_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::RobotControlState_<ContainerAllocator> >
@@ -136,6 +175,16 @@ struct IsMessage< ::humanoid_league_msgs::RobotControlState_<ContainerAllocator>
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::RobotControlState_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::RobotControlState_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::RobotControlState_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -179,46 +228,46 @@ struct Definition< ::humanoid_league_msgs::RobotControlState_<ContainerAllocator
 {
   static const char* value()
   {
-    return "# This message provides the current state of the hardware control manager (HCM), which is handling falling, standing up and the decision\n\
-# between playing animations and walking\n\
-\n\
-# Robot can be controlled from a higher level\n\
-uint8 CONTROLABLE=0\n\
-# Robot is currently falling\n\
-# it can not be controlled and should go to a position that minimizes the damage during a fall\n\
-uint8 FALLING=1\n\
-# Robot is lying on the floor\n\
-# maybe reset your world model, as the state should be unsure now\n\
-uint8 FALLEN=2\n\
-# Robot is currently trying to get up again\n\
-uint8 GETTING_UP=3\n\
-# An animation is running\n\
-# no walking or further animations possible\n\
-# Falling detection is deactivated\n\
-uint8 ANIMATION_RUNNING=4\n\
-# The hardware control manager is booting\n\
-uint8 STARTUP=5\n\
-# The hardware control manager is shutting down\n\
-uint8 SHUTDOWN=6\n\
-# The robot is in penalty position\n\
-# It can not be controlled\n\
-uint8 PENALTY=7\n\
-# The robot is getting in or out of penalty position\n\
-uint8 PENALTY_ANIMANTION=8\n\
-# The robot is used for recording animations\n\
-# Reserved all controling to a recording process\n\
-# No falling detection is processed and no stand ups will be done\n\
-uint8 RECORD=9\n\
-# The robot is walking\n\
-uint8 WALKING=10\n\
-# A state where the motors are turned off, but the hardware control manager is still waiting for commandos and turns the motors on,\n\
-# if a move commando comes\n\
-uint8 MOTOR_OFF=11\n\
-# Last status send by the hardware control manager after shutting down\n\
-uint8 HCM_OFF=12\n\
-\n\
-uint8 state\n\
-";
+    return "# This message provides the current state of the hardware control manager (HCM), which is handling falling, standing up and the decision\n"
+"# between playing animations and walking\n"
+"\n"
+"# Robot can be controlled from a higher level\n"
+"uint8 CONTROLABLE=0\n"
+"# Robot is currently falling\n"
+"# it can not be controlled and should go to a position that minimizes the damage during a fall\n"
+"uint8 FALLING=1\n"
+"# Robot is lying on the floor\n"
+"# maybe reset your world model, as the state should be unsure now\n"
+"uint8 FALLEN=2\n"
+"# Robot is currently trying to get up again\n"
+"uint8 GETTING_UP=3\n"
+"# An animation is running\n"
+"# no walking or further animations possible\n"
+"# Falling detection is deactivated\n"
+"uint8 ANIMATION_RUNNING=4\n"
+"# The hardware control manager is booting\n"
+"uint8 STARTUP=5\n"
+"# The hardware control manager is shutting down\n"
+"uint8 SHUTDOWN=6\n"
+"# The robot is in penalty position\n"
+"# It can not be controlled\n"
+"uint8 PENALTY=7\n"
+"# The robot is getting in or out of penalty position\n"
+"uint8 PENALTY_ANIMANTION=8\n"
+"# The robot is used for recording animations\n"
+"# Reserved all controling to a recording process\n"
+"# No falling detection is processed and no stand ups will be done\n"
+"uint8 RECORD=9\n"
+"# The robot is walking\n"
+"uint8 WALKING=10\n"
+"# A state where the motors are turned off, but the hardware control manager is still waiting for commandos and turns the motors on,\n"
+"# if a move commando comes\n"
+"uint8 MOTOR_OFF=11\n"
+"# Last status send by the hardware control manager after shutting down\n"
+"uint8 HCM_OFF=12\n"
+"\n"
+"uint8 state\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::RobotControlState_<ContainerAllocator>&) { return value(); }

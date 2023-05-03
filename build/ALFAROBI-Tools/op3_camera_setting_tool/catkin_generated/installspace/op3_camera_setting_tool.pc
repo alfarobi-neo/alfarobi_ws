@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/install
+prefix=/home/ajus/alfarobi_ws/install
 
 Name: op3_camera_setting_tool
 Description: Description of op3_camera_setting_tool

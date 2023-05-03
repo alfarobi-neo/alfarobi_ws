@@ -32,6 +32,17 @@
 (intern "*POLE*" (find-package "HUMANOID_LEAGUE_MSGS::OBSTACLERELATIVE"))
 (shadow '*POLE* (find-package "HUMANOID_LEAGUE_MSGS::OBSTACLERELATIVE"))
 (defconstant humanoid_league_msgs::ObstacleRelative::*POLE* 5)
+
+(defun humanoid_league_msgs::ObstacleRelative-to-symbol (const)
+  (cond
+        ((= const 0) 'humanoid_league_msgs::ObstacleRelative::*UNDEFINED*)
+        ((= const 1) 'humanoid_league_msgs::ObstacleRelative::*ROBOT_UNDEFINED*)
+        ((= const 2) 'humanoid_league_msgs::ObstacleRelative::*ROBOT_MAGENTA*)
+        ((= const 3) 'humanoid_league_msgs::ObstacleRelative::*ROBOT_CYAN*)
+        ((= const 4) 'humanoid_league_msgs::ObstacleRelative::*HUMAN*)
+        ((= const 5) 'humanoid_league_msgs::ObstacleRelative::*POLE*)
+        (t nil)))
+
 (defclass humanoid_league_msgs::ObstacleRelative
   :super ros::object
   :slots (_color _playerNumber _position _width _height _confidence ))

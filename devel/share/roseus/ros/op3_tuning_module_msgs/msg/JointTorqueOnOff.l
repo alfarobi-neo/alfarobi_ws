@@ -30,8 +30,8 @@
    (&optional __joint_name)
    (if __joint_name (setq _joint_name __joint_name)) _joint_name)
   (:torque_enable
-   (&optional __torque_enable)
-   (if __torque_enable (setq _torque_enable __torque_enable)) _torque_enable)
+   (&optional (__torque_enable :null))
+   (if (not (eq __torque_enable :null)) (setq _torque_enable __torque_enable)) _torque_enable)
   (:serialization-length
    ()
    (+

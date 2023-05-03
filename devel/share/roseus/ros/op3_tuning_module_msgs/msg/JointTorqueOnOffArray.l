@@ -19,7 +19,7 @@
 (defmethod op3_tuning_module_msgs::JointTorqueOnOffArray
   (:init
    (&key
-    ((:torque_enable_data __torque_enable_data) (let (r) (dotimes (i 0) (push (instance op3_tuning_module_msgs::JointTorqueOnOff :init) r)) r))
+    ((:torque_enable_data __torque_enable_data) ())
     )
    (send-super :init)
    (setq _torque_enable_data __torque_enable_data)

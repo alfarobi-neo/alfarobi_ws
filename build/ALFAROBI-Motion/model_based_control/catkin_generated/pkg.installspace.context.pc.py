@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmodel_based_control".split(';') if "-lmodel_based_control" != "" else []
 PROJECT_NAME = "model_based_control"
-PROJECT_SPACE_DIR = "/home/alfarobi/alfarobi_ws/install"
+PROJECT_SPACE_DIR = "/home/ajus/alfarobi_ws/install"
 PROJECT_VERSION = "0.0.0"

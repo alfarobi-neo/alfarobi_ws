@@ -51,6 +51,24 @@
 (intern "*HCM_OFF*" (find-package "HUMANOID_LEAGUE_MSGS::ROBOTCONTROLSTATE"))
 (shadow '*HCM_OFF* (find-package "HUMANOID_LEAGUE_MSGS::ROBOTCONTROLSTATE"))
 (defconstant humanoid_league_msgs::RobotControlState::*HCM_OFF* 12)
+
+(defun humanoid_league_msgs::RobotControlState-to-symbol (const)
+  (cond
+        ((= const 0) 'humanoid_league_msgs::RobotControlState::*CONTROLABLE*)
+        ((= const 1) 'humanoid_league_msgs::RobotControlState::*FALLING*)
+        ((= const 2) 'humanoid_league_msgs::RobotControlState::*FALLEN*)
+        ((= const 3) 'humanoid_league_msgs::RobotControlState::*GETTING_UP*)
+        ((= const 4) 'humanoid_league_msgs::RobotControlState::*ANIMATION_RUNNING*)
+        ((= const 5) 'humanoid_league_msgs::RobotControlState::*STARTUP*)
+        ((= const 6) 'humanoid_league_msgs::RobotControlState::*SHUTDOWN*)
+        ((= const 7) 'humanoid_league_msgs::RobotControlState::*PENALTY*)
+        ((= const 8) 'humanoid_league_msgs::RobotControlState::*PENALTY_ANIMANTION*)
+        ((= const 9) 'humanoid_league_msgs::RobotControlState::*RECORD*)
+        ((= const 10) 'humanoid_league_msgs::RobotControlState::*WALKING*)
+        ((= const 11) 'humanoid_league_msgs::RobotControlState::*MOTOR_OFF*)
+        ((= const 12) 'humanoid_league_msgs::RobotControlState::*HCM_OFF*)
+        (t nil)))
+
 (defclass humanoid_league_msgs::RobotControlState
   :super ros::object
   :slots (_state ))

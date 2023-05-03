@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/msg/JointOffsetData.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/msg/JointOffsetPositionData.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/msg/JointTorqueOnOff.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/msg/JointTorqueOnOffArray.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/srv/GetPresentJointOffsetData.lisp"
   "CMakeFiles/op3_tuning_module_msgs_generate_messages_lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/msg/JointOffsetData.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/msg/JointOffsetPositionData.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/msg/JointTorqueOnOffArray.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/msg/JointTorqueOnOff.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/op3_tuning_module_msgs/srv/GetPresentJointOffsetData.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

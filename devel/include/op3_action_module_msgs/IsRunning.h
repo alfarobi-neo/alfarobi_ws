@@ -57,8 +57,8 @@ struct DataType< ::op3_action_module_msgs::IsRunning > {
 };
 
 
-// service_traits::MD5Sum< ::op3_action_module_msgs::IsRunningRequest> should match 
-// service_traits::MD5Sum< ::op3_action_module_msgs::IsRunning > 
+// service_traits::MD5Sum< ::op3_action_module_msgs::IsRunningRequest> should match
+// service_traits::MD5Sum< ::op3_action_module_msgs::IsRunning >
 template<>
 struct MD5Sum< ::op3_action_module_msgs::IsRunningRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::op3_action_module_msgs::IsRunningRequest>
   }
 };
 
-// service_traits::DataType< ::op3_action_module_msgs::IsRunningRequest> should match 
-// service_traits::DataType< ::op3_action_module_msgs::IsRunning > 
+// service_traits::DataType< ::op3_action_module_msgs::IsRunningRequest> should match
+// service_traits::DataType< ::op3_action_module_msgs::IsRunning >
 template<>
 struct DataType< ::op3_action_module_msgs::IsRunningRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::op3_action_module_msgs::IsRunningRequest>
   }
 };
 
-// service_traits::MD5Sum< ::op3_action_module_msgs::IsRunningResponse> should match 
-// service_traits::MD5Sum< ::op3_action_module_msgs::IsRunning > 
+// service_traits::MD5Sum< ::op3_action_module_msgs::IsRunningResponse> should match
+// service_traits::MD5Sum< ::op3_action_module_msgs::IsRunning >
 template<>
 struct MD5Sum< ::op3_action_module_msgs::IsRunningResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::op3_action_module_msgs::IsRunningResponse>
   }
 };
 
-// service_traits::DataType< ::op3_action_module_msgs::IsRunningResponse> should match 
-// service_traits::DataType< ::op3_action_module_msgs::IsRunning > 
+// service_traits::DataType< ::op3_action_module_msgs::IsRunningResponse> should match
+// service_traits::DataType< ::op3_action_module_msgs::IsRunning >
 template<>
 struct DataType< ::op3_action_module_msgs::IsRunningResponse>
 {

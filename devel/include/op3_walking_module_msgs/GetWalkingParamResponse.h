@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -62,6 +62,20 @@ ros::message_operations::Printer< ::op3_walking_module_msgs::GetWalkingParamResp
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator1> & lhs, const ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator2> & rhs)
+{
+  return lhs.parameters == rhs.parameters;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator1> & lhs, const ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace op3_walking_module_msgs
 
 namespace ros
@@ -71,23 +85,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'op3_walking_module_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/op3_walking_module_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator> >
@@ -96,6 +94,16 @@ struct IsMessage< ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerA
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -139,82 +147,82 @@ struct Definition< ::op3_walking_module_msgs::GetWalkingParamResponse_<Container
 {
   static const char* value()
   {
-    return "WalkingParam    parameters\n\
-\n\
-================================================================================\n\
-MSG: op3_walking_module_msgs/WalkingParam\n\
-####### walking init pose #######\n\
-float32 init_x_offset\n\
-float32 init_y_offset\n\
-float32 init_z_offset\n\
-float32 init_roll_offset\n\
-float32 init_pitch_offset\n\
-float32 init_yaw_offset\n\
-float32 r_x_offset\n\
-float32 r_y_offset\n\
-float32 r_z_offset\n\
-float32 r_roll_offset\n\
-float32 r_pitch_offset\n\
-float32 r_yaw_offset\n\
-float32 l_x_offset\n\
-float32 l_y_offset\n\
-float32 l_z_offset\n\
-float32 l_roll_offset\n\
-float32 l_pitch_offset\n\
-float32 l_yaw_offset\n\
-\n\
-\n\
-####### time parameter #####\n\
-float32 period_time\n\
-float32 dsp_ratio\n\
-float32 step_fb_ratio\n\
-\n\
-########## walking parameter ########\n\
-float32 x_move_amplitude\n\
-float32 y_move_amplitude\n\
-float32 z_move_amplitude\n\
-float32 angle_move_amplitude\n\
-bool move_aim_on\n\
-\n\
-########## balance parameter ##########\n\
-bool balance_enable\n\
-float32 balance_hip_roll_gain\n\
-float32 balance_knee_gain\n\
-float32 balance_ankle_roll_gain\n\
-float32 balance_ankle_pitch_gain\n\
-float32 y_swap_amplitude\n\
-float32 z_swap_amplitude\n\
-float32 arm_swing_gain\n\
-float32 pelvis_offset\n\
-float32 hip_pitch_offset\n\
-\n\
-########## balance parameter ##########\n\
-float32 KP_P\n\
-float32 KD_P\n\
-float32 KI_P\n\
-float32 D_ANKLE_P\n\
-float32 D_KNEE\n\
-float32 D_HIP_P\n\
-\n\
-float32 KP_R\n\
-float32 KD_R\n\
-float32 KI_R\n\
-float32 D_ANKLE_R\n\
-float32 D_HIP_R\n\
-float32 shoulder_gain\n\
-\n\
-########## gain parameter ##########\n\
-int32 p_gain\n\
-int32 i_gain\n\
-int32 d_gain\n\
-\n\
-########## ZMP WALKING BIT-BOTS ###########\n\
-float32 zmp_vx\n\
-float32 zmp_vy\n\
-float32 zmp_vphi\n\
-\n\
-bool zmp_useGyro\n\
-";
+    return "WalkingParam    parameters\n"
+"\n"
+"================================================================================\n"
+"MSG: op3_walking_module_msgs/WalkingParam\n"
+"####### walking init pose #######\n"
+"float32 init_x_offset\n"
+"float32 init_y_offset\n"
+"float32 init_z_offset\n"
+"float32 init_roll_offset\n"
+"float32 init_pitch_offset\n"
+"float32 init_yaw_offset\n"
+"float32 r_x_offset\n"
+"float32 r_y_offset\n"
+"float32 r_z_offset\n"
+"float32 r_roll_offset\n"
+"float32 r_pitch_offset\n"
+"float32 r_yaw_offset\n"
+"float32 l_x_offset\n"
+"float32 l_y_offset\n"
+"float32 l_z_offset\n"
+"float32 l_roll_offset\n"
+"float32 l_pitch_offset\n"
+"float32 l_yaw_offset\n"
+"\n"
+"\n"
+"####### time parameter #####\n"
+"float32 period_time\n"
+"float32 dsp_ratio\n"
+"float32 step_fb_ratio\n"
+"\n"
+"########## walking parameter ########\n"
+"float32 x_move_amplitude\n"
+"float32 y_move_amplitude\n"
+"float32 z_move_amplitude\n"
+"float32 angle_move_amplitude\n"
+"bool move_aim_on\n"
+"\n"
+"########## balance parameter ##########\n"
+"bool balance_enable\n"
+"float32 balance_hip_roll_gain\n"
+"float32 balance_knee_gain\n"
+"float32 balance_ankle_roll_gain\n"
+"float32 balance_ankle_pitch_gain\n"
+"float32 y_swap_amplitude\n"
+"float32 z_swap_amplitude\n"
+"float32 arm_swing_gain\n"
+"float32 pelvis_offset\n"
+"float32 hip_pitch_offset\n"
+"\n"
+"########## balance parameter ##########\n"
+"float32 KP_P\n"
+"float32 KD_P\n"
+"float32 KI_P\n"
+"float32 D_ANKLE_P\n"
+"float32 D_KNEE\n"
+"float32 D_HIP_P\n"
+"\n"
+"float32 KP_R\n"
+"float32 KD_R\n"
+"float32 KI_R\n"
+"float32 D_ANKLE_R\n"
+"float32 D_HIP_R\n"
+"float32 shoulder_gain\n"
+"\n"
+"########## gain parameter ##########\n"
+"int32 p_gain\n"
+"int32 i_gain\n"
+"int32 d_gain\n"
+"\n"
+"########## ZMP WALKING BIT-BOTS ###########\n"
+"float32 zmp_vx\n"
+"float32 zmp_vy\n"
+"float32 zmp_vphi\n"
+"\n"
+"bool zmp_useGyro\n"
+;
   }
 
   static const char* value(const ::op3_walking_module_msgs::GetWalkingParamResponse_<ContainerAllocator>&) { return value(); }

@@ -70,6 +70,29 @@
 (intern "*CENTER*" (find-package "HUMANOID_LEAGUE_MSGS::TEAMDATA"))
 (shadow '*CENTER* (find-package "HUMANOID_LEAGUE_MSGS::TEAMDATA"))
 (defconstant humanoid_league_msgs::TeamData::*CENTER* 3)
+
+(defun humanoid_league_msgs::TeamData-to-symbol (const)
+  (cond
+        ((= const 0) 'humanoid_league_msgs::TeamData::*ROLE_IDLING*)
+        ((= const 1) 'humanoid_league_msgs::TeamData::*ROLE_OTHER*)
+        ((= const 2) 'humanoid_league_msgs::TeamData::*ROLE_STRIKER*)
+        ((= const 3) 'humanoid_league_msgs::TeamData::*ROLE_SUPPORTER*)
+        ((= const 4) 'humanoid_league_msgs::TeamData::*ROLE_DEFENDER*)
+        ((= const 5) 'humanoid_league_msgs::TeamData::*ROLE_GOALIE*)
+        ((= const 0) 'humanoid_league_msgs::TeamData::*ACTION_UNDEFINED*)
+        ((= const 1) 'humanoid_league_msgs::TeamData::*ACTION_POSITIONING*)
+        ((= const 2) 'humanoid_league_msgs::TeamData::*ACTION_GOING_TO_BALL*)
+        ((= const 3) 'humanoid_league_msgs::TeamData::*ACTION_TRYING_TO_SCORE*)
+        ((= const 4) 'humanoid_league_msgs::TeamData::*ACTION_WAITING*)
+        ((= const 0) 'humanoid_league_msgs::TeamData::*STATE_INACTIVE*)
+        ((= const 1) 'humanoid_league_msgs::TeamData::*STATE_ACTIVE*)
+        ((= const 2) 'humanoid_league_msgs::TeamData::*STATE_PENALIZED*)
+        ((= const 0) 'humanoid_league_msgs::TeamData::*UNSPECIFIED*)
+        ((= const 1) 'humanoid_league_msgs::TeamData::*LEFT*)
+        ((= const 2) 'humanoid_league_msgs::TeamData::*RIGHT*)
+        ((= const 3) 'humanoid_league_msgs::TeamData::*CENTER*)
+        (t nil)))
+
 (defclass humanoid_league_msgs::TeamData
   :super ros::object
   :slots (_header _robot_ids _role _action _state _robot_positions _ball_relative _oppgoal_relative _opponent_robot_a _opponent_robot_b _opponent_robot_c _opponent_robot_d _team_robot_a _team_robot_b _team_robot_c _avg_walking_speed _time_to_position_at_ball _max_kicking_distance _offensive_side ))
@@ -82,16 +105,16 @@
     ((:role __role) (make-array 0 :initial-element 0 :element-type :char))
     ((:action __action) (make-array 0 :initial-element 0 :element-type :char))
     ((:state __state) (make-array 0 :initial-element 0 :element-type :char))
-    ((:robot_positions __robot_positions) (let (r) (dotimes (i 0) (push (instance geometry_msgs::Pose2D :init) r)) r))
-    ((:ball_relative __ball_relative) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
-    ((:oppgoal_relative __oppgoal_relative) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
-    ((:opponent_robot_a __opponent_robot_a) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
-    ((:opponent_robot_b __opponent_robot_b) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
-    ((:opponent_robot_c __opponent_robot_c) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
-    ((:opponent_robot_d __opponent_robot_d) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
-    ((:team_robot_a __team_robot_a) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
-    ((:team_robot_b __team_robot_b) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
-    ((:team_robot_c __team_robot_c) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::Position2D :init) r)) r))
+    ((:robot_positions __robot_positions) ())
+    ((:ball_relative __ball_relative) ())
+    ((:oppgoal_relative __oppgoal_relative) ())
+    ((:opponent_robot_a __opponent_robot_a) ())
+    ((:opponent_robot_b __opponent_robot_b) ())
+    ((:opponent_robot_c __opponent_robot_c) ())
+    ((:opponent_robot_d __opponent_robot_d) ())
+    ((:team_robot_a __team_robot_a) ())
+    ((:team_robot_b __team_robot_b) ())
+    ((:team_robot_c __team_robot_c) ())
     ((:avg_walking_speed __avg_walking_speed) (make-array 0 :initial-element 0.0 :element-type :float))
     ((:time_to_position_at_ball __time_to_position_at_ball) (make-array 0 :initial-element 0.0 :element-type :float))
     ((:max_kicking_distance __max_kicking_distance) (make-array 0 :initial-element 0.0 :element-type :float))
@@ -550,8 +573,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ================================================================================

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -49,6 +49,20 @@ struct LineIntersectionRelative_
 
 
 
+// reducing the odds to have name collisions with Windows.h 
+#if defined(_WIN32) && defined(UNDEFINED)
+  #undef UNDEFINED
+#endif
+#if defined(_WIN32) && defined(L)
+  #undef L
+#endif
+#if defined(_WIN32) && defined(T)
+  #undef T
+#endif
+#if defined(_WIN32) && defined(X)
+  #undef X
+#endif
+
   enum {
     UNDEFINED = 0u,
     L = 1u,
@@ -86,6 +100,22 @@ ros::message_operations::Printer< ::humanoid_league_msgs::LineIntersectionRelati
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator2> & rhs)
+{
+  return lhs.type == rhs.type &&
+    lhs.segments == rhs.segments &&
+    lhs.confidence == rhs.confidence;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -95,23 +125,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> >
@@ -120,6 +134,16 @@ struct IsMessage< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAll
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -163,41 +187,41 @@ struct Definition< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAl
 {
   static const char* value()
   {
-    return "# Information about a special line feature on the field\n\
-\n\
-# The type defines which kind of intersection is present\n\
-uint8 UNDEFINED=0\n\
-uint8 L=1\n\
-uint8 T=2\n\
-uint8 X=3\n\
-uint8 type\n\
-\n\
-# The line segments related to this crossing\n\
-humanoid_league_msgs/LineSegmentRelative segments\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/LineSegmentRelative\n\
-# A line segment relative to the robot\n\
-\n\
-# Start and end position of the line\n\
-# x in front of the robot\n\
-# y to the left\n\
-# z should be 0\n\
-geometry_msgs/Point start\n\
-geometry_msgs/Point end\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-";
+    return "# Information about a special line feature on the field\n"
+"\n"
+"# The type defines which kind of intersection is present\n"
+"uint8 UNDEFINED=0\n"
+"uint8 L=1\n"
+"uint8 T=2\n"
+"uint8 X=3\n"
+"uint8 type\n"
+"\n"
+"# The line segments related to this crossing\n"
+"humanoid_league_msgs/LineSegmentRelative segments\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/LineSegmentRelative\n"
+"# A line segment relative to the robot\n"
+"\n"
+"# Start and end position of the line\n"
+"# x in front of the robot\n"
+"# y to the left\n"
+"# z should be 0\n"
+"geometry_msgs/Point start\n"
+"geometry_msgs/Point end\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator>&) { return value(); }

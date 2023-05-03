@@ -24,6 +24,15 @@
 (intern "*X*" (find-package "HUMANOID_LEAGUE_MSGS::LINEINTERSECTIONRELATIVE"))
 (shadow '*X* (find-package "HUMANOID_LEAGUE_MSGS::LINEINTERSECTIONRELATIVE"))
 (defconstant humanoid_league_msgs::LineIntersectionRelative::*X* 3)
+
+(defun humanoid_league_msgs::LineIntersectionRelative-to-symbol (const)
+  (cond
+        ((= const 0) 'humanoid_league_msgs::LineIntersectionRelative::*UNDEFINED*)
+        ((= const 1) 'humanoid_league_msgs::LineIntersectionRelative::*L*)
+        ((= const 2) 'humanoid_league_msgs::LineIntersectionRelative::*T*)
+        ((= const 3) 'humanoid_league_msgs::LineIntersectionRelative::*X*)
+        (t nil)))
+
 (defclass humanoid_league_msgs::LineIntersectionRelative
   :super ros::object
   :slots (_type _segments _confidence ))

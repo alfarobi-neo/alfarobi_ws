@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include/eigen3".split(
 PROJECT_CATKIN_DEPENDS = "roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lrobotis_math".split(';') if "-lrobotis_math" != "" else []
 PROJECT_NAME = "robotis_math"
-PROJECT_SPACE_DIR = "/home/alfarobi/alfarobi_ws/install"
+PROJECT_SPACE_DIR = "/home/ajus/alfarobi_ws/install"
 PROJECT_VERSION = "0.2.6"

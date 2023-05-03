@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include/eigen3".split(
 PROJECT_CATKIN_DEPENDS = "roscpp;robotis_math;cmake_modules".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lop3_kinematics_dynamics".split(';') if "-lop3_kinematics_dynamics" != "" else []
 PROJECT_NAME = "op3_kinematics_dynamics"
-PROJECT_SPACE_DIR = "/home/alfarobi/alfarobi_ws/install"
+PROJECT_SPACE_DIR = "/home/ajus/alfarobi_ws/install"
 PROJECT_VERSION = "0.1.0"

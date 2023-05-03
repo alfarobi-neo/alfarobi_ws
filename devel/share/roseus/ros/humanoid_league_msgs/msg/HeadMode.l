@@ -39,6 +39,20 @@
 (intern "*LOOK_UP*" (find-package "HUMANOID_LEAGUE_MSGS::HEADMODE"))
 (shadow '*LOOK_UP* (find-package "HUMANOID_LEAGUE_MSGS::HEADMODE"))
 (defconstant humanoid_league_msgs::HeadMode::*LOOK_UP* 9)
+
+(defun humanoid_league_msgs::HeadMode-to-symbol (const)
+  (cond
+        ((= const 0) 'humanoid_league_msgs::HeadMode::*BALL_MODE*)
+        ((= const 1) 'humanoid_league_msgs::HeadMode::*POST_MODE*)
+        ((= const 2) 'humanoid_league_msgs::HeadMode::*BALL_GOAL_TRACKING*)
+        ((= const 3) 'humanoid_league_msgs::HeadMode::*FIELD_FEATURES*)
+        ((= const 4) 'humanoid_league_msgs::HeadMode::*NON_FIELD_FEATURES*)
+        ((= const 5) 'humanoid_league_msgs::HeadMode::*LOOK_DOWN*)
+        ((= const 7) 'humanoid_league_msgs::HeadMode::*LOOK_FORWARD*)
+        ((= const 8) 'humanoid_league_msgs::HeadMode::*DONT_MOVE*)
+        ((= const 9) 'humanoid_league_msgs::HeadMode::*LOOK_UP*)
+        (t nil)))
+
 (defclass humanoid_league_msgs::HeadMode
   :super ros::object
   :slots (_headMode ))

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/lib/librot_conv.pdb"
+  "/home/ajus/alfarobi_ws/devel/lib/librot_conv.so"
   "CMakeFiles/rot_conv.dir/src/rot_conv.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/librot_conv.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/librot_conv.so"
 )
 
 # Per-language clean rules from dependency scanning.

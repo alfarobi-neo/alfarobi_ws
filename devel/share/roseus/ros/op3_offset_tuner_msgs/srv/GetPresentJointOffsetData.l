@@ -52,7 +52,7 @@
 (defmethod op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse
   (:init
    (&key
-    ((:present_data_array __present_data_array) (let (r) (dotimes (i 0) (push (instance op3_offset_tuner_msgs::JointOffsetPositionData :init) r)) r))
+    ((:present_data_array __present_data_array) ())
     )
    (send-super :init)
    (setq _present_data_array __present_data_array)

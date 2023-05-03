@@ -67,14 +67,14 @@ set(robotis_framework_common_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(robotis_framework_common_SOURCE_PREFIX /home/alfarobi/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common)
-  set(robotis_framework_common_DEVEL_PREFIX /home/alfarobi/alfarobi_ws/devel)
+  set(robotis_framework_common_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common)
+  set(robotis_framework_common_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
   set(robotis_framework_common_INSTALL_PREFIX "")
   set(robotis_framework_common_PREFIX ${robotis_framework_common_DEVEL_PREFIX})
 else()
   set(robotis_framework_common_SOURCE_PREFIX "")
   set(robotis_framework_common_DEVEL_PREFIX "")
-  set(robotis_framework_common_INSTALL_PREFIX /home/alfarobi/alfarobi_ws/install)
+  set(robotis_framework_common_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
   set(robotis_framework_common_PREFIX ${robotis_framework_common_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(robotis_framework_common_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include " STREQUAL " ")
+if(NOT "/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include " STREQUAL " ")
   set(robotis_framework_common_INCLUDE_DIRS "")
-  set(_include_dirs "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include")
+  set(_include_dirs "/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include")
   if(NOT "https://github.com/ROBOTIS-GIT/ROBOTIS-Framework/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ROBOTIS-GIT/ROBOTIS-Framework/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/robotis_framework_common " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_comm
         message(FATAL_ERROR "Project 'robotis_framework_common' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'robotis_framework_common' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/alfarobi/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'robotis_framework_common' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/${idir}'.  ${_report}")
     endif()
     _list_append_unique(robotis_framework_common_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/alfarobi/alfarobi_ws/devel/lib;/home/alfarobi/alfarobi_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ajus/alfarobi_ws/devel/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(robotis_framework_common_LIBRARIES ${robotis_framework_common_LIBRARIES})
 
   _list_append_unique(robotis_framework_common_LIBRARY_DIRS ${${robotis_framework_common_dep}_LIBRARY_DIRS})
-  list(APPEND robotis_framework_common_EXPORTED_TARGETS ${${robotis_framework_common_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(robotis_framework_common_EXPORTED_TARGETS ${${robotis_framework_common_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

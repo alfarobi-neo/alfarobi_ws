@@ -70,8 +70,8 @@ class Speak {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.text.length;
-    length += object.filename.length;
+    length += _getByteLength(object.text);
+    length += _getByteLength(object.filename);
     return length + 9;
   }
 

@@ -1,8 +1,0 @@
-prefix=/home/alfarobi/alfarobi_ws/install
-
-Name: v9_goalpost_global
-Description: Description of v9_goalpost_global
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: roscpp roslib std_msgs geometry_msgs sensor_msgs image_transport cv_bridge

@@ -1,13 +1,15 @@
 file(REMOVE_RECURSE
-  "arduino_calibrator_automoc.cpp"
+  "CMakeFiles/arduino_calibrator_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/arduino_calibrator_autogen.dir/ParseCache.txt"
+  "arduino_calibrator_autogen"
+  "/home/ajus/alfarobi_ws/devel/lib/arduino_calibrator/arduino_calibrator"
+  "/home/ajus/alfarobi_ws/devel/lib/arduino_calibrator/arduino_calibrator.pdb"
+  "CMakeFiles/arduino_calibrator.dir/arduino_calibrator_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/arduino_calibrator.dir/arduinocontroller.cpp.o"
+  "CMakeFiles/arduino_calibrator.dir/chart.cpp.o"
   "CMakeFiles/arduino_calibrator.dir/main.cpp.o"
   "CMakeFiles/arduino_calibrator.dir/mainwindow.cpp.o"
-  "CMakeFiles/arduino_calibrator.dir/arduinocontroller.cpp.o"
   "CMakeFiles/arduino_calibrator.dir/robotitem.cpp.o"
-  "CMakeFiles/arduino_calibrator.dir/chart.cpp.o"
-  "CMakeFiles/arduino_calibrator.dir/arduino_calibrator_automoc.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/arduino_calibrator/arduino_calibrator.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/arduino_calibrator/arduino_calibrator"
 )
 
 # Per-language clean rules from dependency scanning.

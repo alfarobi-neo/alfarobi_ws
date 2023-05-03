@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/filter_msgs/msg/filter.js"
   "CMakeFiles/filter_msgs_generate_messages_nodejs"
-  "/home/alfarobi/alfarobi_ws/devel/share/gennodejs/ros/filter_msgs/msg/filter.js"
 )
 
 # Per-language clean rules from dependency scanning.

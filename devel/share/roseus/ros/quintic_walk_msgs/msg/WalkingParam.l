@@ -199,8 +199,8 @@
    (&optional __trunkPitchPCoefTurn)
    (if __trunkPitchPCoefTurn (setq _trunkPitchPCoefTurn __trunkPitchPCoefTurn)) _trunkPitchPCoefTurn)
   (:trunkYOnlyInDoubleSupport
-   (&optional __trunkYOnlyInDoubleSupport)
-   (if __trunkYOnlyInDoubleSupport (setq _trunkYOnlyInDoubleSupport __trunkYOnlyInDoubleSupport)) _trunkYOnlyInDoubleSupport)
+   (&optional (__trunkYOnlyInDoubleSupport :null))
+   (if (not (eq __trunkYOnlyInDoubleSupport :null)) (setq _trunkYOnlyInDoubleSupport __trunkYOnlyInDoubleSupport)) _trunkYOnlyInDoubleSupport)
   (:XMove
    (&optional __XMove)
    (if __XMove (setq _XMove __XMove)) _XMove)
@@ -214,8 +214,8 @@
    (&optional __mode)
    (if __mode (setq _mode __mode)) _mode)
   (:tuning
-   (&optional __tuning)
-   (if __tuning (setq _tuning __tuning)) _tuning)
+   (&optional (__tuning :null))
+   (if (not (eq __tuning :null)) (setq _tuning __tuning)) _tuning)
   (:D_ANKLE_P_qw
    (&optional __D_ANKLE_P_qw)
    (if __D_ANKLE_P_qw (setq _D_ANKLE_P_qw __D_ANKLE_P_qw)) _D_ANKLE_P_qw)

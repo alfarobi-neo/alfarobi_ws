@@ -26,6 +26,15 @@
 (intern "*STATUS_ERROR*" (find-package "ROBOTIS_CONTROLLER_MSGS::STATUSMSG"))
 (shadow '*STATUS_ERROR* (find-package "ROBOTIS_CONTROLLER_MSGS::STATUSMSG"))
 (defconstant robotis_controller_msgs::StatusMsg::*STATUS_ERROR* 3)
+
+(defun robotis_controller_msgs::StatusMsg-to-symbol (const)
+  (cond
+        ((= const 0) 'robotis_controller_msgs::StatusMsg::*STATUS_UNKNOWN*)
+        ((= const 1) 'robotis_controller_msgs::StatusMsg::*STATUS_INFO*)
+        ((= const 2) 'robotis_controller_msgs::StatusMsg::*STATUS_WARN*)
+        ((= const 3) 'robotis_controller_msgs::StatusMsg::*STATUS_ERROR*)
+        (t nil)))
+
 (defclass robotis_controller_msgs::StatusMsg
   :super ros::object
   :slots (_header _type _module_name _status_msg ))
@@ -127,8 +136,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ")

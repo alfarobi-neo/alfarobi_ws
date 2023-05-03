@@ -58,8 +58,8 @@
    (setq _is_running __is_running)
    self)
   (:is_running
-   (&optional __is_running)
-   (if __is_running (setq _is_running __is_running)) _is_running)
+   (&optional (__is_running :null))
+   (if (not (eq __is_running :null)) (setq _is_running __is_running)) _is_running)
   (:serialization-length
    ()
    (+

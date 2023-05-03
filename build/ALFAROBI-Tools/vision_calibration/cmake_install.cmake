@@ -1,8 +1,8 @@
-# Install script for directory: /home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/vision_calibration
+# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Tools/vision_calibration
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/alfarobi/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,18 +32,23 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Tools/vision_calibration/catkin_generated/installspace/vision_calibration.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/vision_calibration/catkin_generated/installspace/vision_calibration.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision_calibration/cmake" TYPE FILE FILES
-    "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Tools/vision_calibration/catkin_generated/installspace/vision_calibrationConfig.cmake"
-    "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Tools/vision_calibration/catkin_generated/installspace/vision_calibrationConfig-version.cmake"
+    "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/vision_calibration/catkin_generated/installspace/vision_calibrationConfig.cmake"
+    "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/vision_calibration/catkin_generated/installspace/vision_calibrationConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision_calibration" TYPE FILE FILES "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/vision_calibration/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision_calibration" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Tools/vision_calibration/package.xml")
 endif()
 

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/manifest.l"
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/msg/FeedbackParam.l"
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/srv/GetFeedbackParam.l"
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/srv/SetFeedbackParam.l"
   "CMakeFiles/feedback_msgs_generate_messages_eus"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/msg/FeedbackParam.l"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/srv/SetFeedbackParam.l"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/srv/GetFeedbackParam.l"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

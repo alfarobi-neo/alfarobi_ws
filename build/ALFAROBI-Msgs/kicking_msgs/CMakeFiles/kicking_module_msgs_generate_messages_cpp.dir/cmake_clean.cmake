@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/include/kicking_module_msgs/GetKickingParam.h"
+  "/home/ajus/alfarobi_ws/devel/include/kicking_module_msgs/KickingParam.h"
+  "/home/ajus/alfarobi_ws/devel/include/kicking_module_msgs/SetKickingParam.h"
   "CMakeFiles/kicking_module_msgs_generate_messages_cpp"
-  "/home/alfarobi/alfarobi_ws/devel/include/kicking_module_msgs/KickingParam.h"
-  "/home/alfarobi/alfarobi_ws/devel/include/kicking_module_msgs/GetKickingParam.h"
-  "/home/alfarobi/alfarobi_ws/devel/include/kicking_module_msgs/SetKickingParam.h"
 )
 
 # Per-language clean rules from dependency scanning.

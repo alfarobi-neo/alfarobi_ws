@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/op3_action_module_msgs/msg/StartAction.js"
+  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/op3_action_module_msgs/srv/IsRunning.js"
   "CMakeFiles/op3_action_module_msgs_generate_messages_nodejs"
-  "/home/alfarobi/alfarobi_ws/devel/share/gennodejs/ros/op3_action_module_msgs/msg/StartAction.js"
-  "/home/alfarobi/alfarobi_ws/devel/share/gennodejs/ros/op3_action_module_msgs/srv/IsRunning.js"
 )
 
 # Per-language clean rules from dependency scanning.

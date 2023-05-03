@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/lib/team_communication/robi"
+  "/home/ajus/alfarobi_ws/devel/lib/team_communication/robi.pdb"
   "CMakeFiles/robi.dir/src/robi.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/team_communication/robi.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/team_communication/robi"
 )
 
 # Per-language clean rules from dependency scanning.

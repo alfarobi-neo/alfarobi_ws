@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/include/team_communication/robot_data.h"
+  "/home/ajus/alfarobi_ws/devel/include/team_communication/team_comm.h"
+  "/home/ajus/alfarobi_ws/devel/include/team_communication/team_data.h"
   "CMakeFiles/team_communication_generate_messages_cpp"
-  "/home/alfarobi/alfarobi_ws/devel/include/team_communication/robot_data.h"
-  "/home/alfarobi/alfarobi_ws/devel/include/team_communication/team_comm.h"
-  "/home/alfarobi/alfarobi_ws/devel/include/team_communication/team_data.h"
 )
 
 # Per-language clean rules from dependency scanning.

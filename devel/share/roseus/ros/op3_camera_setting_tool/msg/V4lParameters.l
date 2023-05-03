@@ -19,7 +19,7 @@
 (defmethod op3_camera_setting_tool::V4lParameters
   (:init
    (&key
-    ((:video_parameter __video_parameter) (let (r) (dotimes (i 0) (push (instance op3_camera_setting_tool::V4lParameter :init) r)) r))
+    ((:video_parameter __video_parameter) ())
     )
    (send-super :init)
    (setq _video_parameter __video_parameter)

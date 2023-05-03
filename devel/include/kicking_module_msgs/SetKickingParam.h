@@ -57,8 +57,8 @@ struct DataType< ::kicking_module_msgs::SetKickingParam > {
 };
 
 
-// service_traits::MD5Sum< ::kicking_module_msgs::SetKickingParamRequest> should match 
-// service_traits::MD5Sum< ::kicking_module_msgs::SetKickingParam > 
+// service_traits::MD5Sum< ::kicking_module_msgs::SetKickingParamRequest> should match
+// service_traits::MD5Sum< ::kicking_module_msgs::SetKickingParam >
 template<>
 struct MD5Sum< ::kicking_module_msgs::SetKickingParamRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::kicking_module_msgs::SetKickingParamRequest>
   }
 };
 
-// service_traits::DataType< ::kicking_module_msgs::SetKickingParamRequest> should match 
-// service_traits::DataType< ::kicking_module_msgs::SetKickingParam > 
+// service_traits::DataType< ::kicking_module_msgs::SetKickingParamRequest> should match
+// service_traits::DataType< ::kicking_module_msgs::SetKickingParam >
 template<>
 struct DataType< ::kicking_module_msgs::SetKickingParamRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::kicking_module_msgs::SetKickingParamRequest>
   }
 };
 
-// service_traits::MD5Sum< ::kicking_module_msgs::SetKickingParamResponse> should match 
-// service_traits::MD5Sum< ::kicking_module_msgs::SetKickingParam > 
+// service_traits::MD5Sum< ::kicking_module_msgs::SetKickingParamResponse> should match
+// service_traits::MD5Sum< ::kicking_module_msgs::SetKickingParam >
 template<>
 struct MD5Sum< ::kicking_module_msgs::SetKickingParamResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::kicking_module_msgs::SetKickingParamResponse>
   }
 };
 
-// service_traits::DataType< ::kicking_module_msgs::SetKickingParamResponse> should match 
-// service_traits::DataType< ::kicking_module_msgs::SetKickingParam > 
+// service_traits::DataType< ::kicking_module_msgs::SetKickingParamResponse> should match
+// service_traits::DataType< ::kicking_module_msgs::SetKickingParam >
 template<>
 struct DataType< ::kicking_module_msgs::SetKickingParamResponse>
 {

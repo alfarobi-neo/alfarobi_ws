@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/install
+prefix=/home/ajus/alfarobi_ws/install
 
 Name: arduino_calibrator
 Description: Description of arduino_calibrator

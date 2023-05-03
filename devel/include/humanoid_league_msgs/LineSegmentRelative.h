@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -73,6 +73,22 @@ ros::message_operations::Printer< ::humanoid_league_msgs::LineSegmentRelative_<C
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator2> & rhs)
+{
+  return lhs.start == rhs.start &&
+    lhs.end == rhs.end &&
+    lhs.confidence == rhs.confidence;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -82,23 +98,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> >
@@ -107,6 +107,16 @@ struct IsMessage< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocato
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -150,24 +160,24 @@ struct Definition< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocat
 {
   static const char* value()
   {
-    return "# A line segment relative to the robot\n\
-\n\
-# Start and end position of the line\n\
-# x in front of the robot\n\
-# y to the left\n\
-# z should be 0\n\
-geometry_msgs/Point start\n\
-geometry_msgs/Point end\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-";
+    return "# A line segment relative to the robot\n"
+"\n"
+"# Start and end position of the line\n"
+"# x in front of the robot\n"
+"# y to the left\n"
+"# z should be 0\n"
+"geometry_msgs/Point start\n"
+"geometry_msgs/Point end\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator>&) { return value(); }

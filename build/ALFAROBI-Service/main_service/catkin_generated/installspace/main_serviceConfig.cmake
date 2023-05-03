@@ -67,14 +67,14 @@ set(main_service_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(main_service_SOURCE_PREFIX /home/alfarobi/alfarobi_ws/src/ALFAROBI-Service/main_service)
-  set(main_service_DEVEL_PREFIX /home/alfarobi/alfarobi_ws/devel)
+  set(main_service_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Service/main_service)
+  set(main_service_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
   set(main_service_INSTALL_PREFIX "")
   set(main_service_PREFIX ${main_service_DEVEL_PREFIX})
 else()
   set(main_service_SOURCE_PREFIX "")
   set(main_service_DEVEL_PREFIX "")
-  set(main_service_INSTALL_PREFIX /home/alfarobi/alfarobi_ws/install)
+  set(main_service_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
   set(main_service_PREFIX ${main_service_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/alfarobi/alfarobi_ws/install/lib;/home/alfarobi/alfarobi_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ajus/alfarobi_ws/install/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(main_service_LIBRARIES ${main_service_LIBRARIES})
 
   _list_append_unique(main_service_LIBRARY_DIRS ${${main_service_dep}_LIBRARY_DIRS})
-  list(APPEND main_service_EXPORTED_TARGETS ${${main_service_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(main_service_EXPORTED_TARGETS ${${main_service_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -241,6 +241,56 @@ ros::message_operations::Printer< ::capture_step_module_msgs::WalkingParam_<Cont
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::capture_step_module_msgs::WalkingParam_<ContainerAllocator1> & lhs, const ::capture_step_module_msgs::WalkingParam_<ContainerAllocator2> & rhs)
+{
+  return lhs.halt_pos_leg_ext == rhs.halt_pos_leg_ext &&
+    lhs.halt_pos_leg_roll_ext == rhs.halt_pos_leg_roll_ext &&
+    lhs.halt_pos_leg_pitch_ext == rhs.halt_pos_leg_pitch_ext &&
+    lhs.halt_pos_foot_roll_ext == rhs.halt_pos_foot_roll_ext &&
+    lhs.halt_pos_foot_pitch_ext == rhs.halt_pos_foot_pitch_ext &&
+    lhs.const_ground_push == rhs.const_ground_push &&
+    lhs.propt_ground_push == rhs.propt_ground_push &&
+    lhs.const_step_height == rhs.const_step_height &&
+    lhs.propt_step_height == rhs.propt_step_height &&
+    lhs.swing_start == rhs.swing_start &&
+    lhs.swing_stop == rhs.swing_stop &&
+    lhs.sagittal_swg_fwd == rhs.sagittal_swg_fwd &&
+    lhs.sagittal_swg_bwd == rhs.sagittal_swg_bwd &&
+    lhs.lateral_swg == rhs.lateral_swg &&
+    lhs.lateral_swg_offset == rhs.lateral_swg_offset &&
+    lhs.trng_lateral_swg_offset == rhs.trng_lateral_swg_offset &&
+    lhs.rotational_swg == rhs.rotational_swg &&
+    lhs.rotational_swg_offset == rhs.rotational_swg_offset &&
+    lhs.lateral_hip_swg == rhs.lateral_hip_swg &&
+    lhs.fwd_lean == rhs.fwd_lean &&
+    lhs.bwd_lean == rhs.bwd_lean &&
+    lhs.fwd_trng_lean == rhs.fwd_trng_lean &&
+    lhs.gait_vel_limit == rhs.gait_vel_limit &&
+    lhs.sagittal_acc == rhs.sagittal_acc &&
+    lhs.lateral_acc == rhs.lateral_acc &&
+    lhs.rotational_acc == rhs.rotational_acc &&
+    lhs.const_step_freq == rhs.const_step_freq &&
+    lhs.sagittal_prop_step_freq == rhs.sagittal_prop_step_freq &&
+    lhs.lateral_prop_step_freq == rhs.lateral_prop_step_freq &&
+    lhs.x_move_amplitude == rhs.x_move_amplitude &&
+    lhs.y_move_amplitude == rhs.y_move_amplitude &&
+    lhs.angle_move_amplitude == rhs.angle_move_amplitude &&
+    lhs.halt_position == rhs.halt_position &&
+    lhs.leg_lifting == rhs.leg_lifting &&
+    lhs.leg_swing == rhs.leg_swing &&
+    lhs.lateral_swing == rhs.lateral_swing &&
+    lhs.leaning == rhs.leaning;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::capture_step_module_msgs::WalkingParam_<ContainerAllocator1> & lhs, const ::capture_step_module_msgs::WalkingParam_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace capture_step_module_msgs
 
 namespace ros
@@ -250,23 +300,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'capture_step_module_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::capture_step_module_msgs::WalkingParam_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::capture_step_module_msgs::WalkingParam_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::capture_step_module_msgs::WalkingParam_<ContainerAllocator> >
@@ -275,6 +309,16 @@ struct IsMessage< ::capture_step_module_msgs::WalkingParam_<ContainerAllocator> 
 
 template <class ContainerAllocator>
 struct IsMessage< ::capture_step_module_msgs::WalkingParam_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::capture_step_module_msgs::WalkingParam_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::capture_step_module_msgs::WalkingParam_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -318,58 +362,58 @@ struct Definition< ::capture_step_module_msgs::WalkingParam_<ContainerAllocator>
 {
   static const char* value()
   {
-    return "####### Halt Position #######\n\
-float32 halt_pos_leg_ext\n\
-float32 halt_pos_leg_roll_ext\n\
-float32 halt_pos_leg_pitch_ext\n\
-float32 halt_pos_foot_roll_ext\n\
-float32 halt_pos_foot_pitch_ext\n\
-\n\
-####### Leg Lifting #####\n\
-float32 const_ground_push\n\
-float32 propt_ground_push\n\
-float32 const_step_height\n\
-float32 propt_step_height\n\
-\n\
-########## Leg Swing ########\n\
-float32 swing_start\n\
-float32 swing_stop\n\
-float32 sagittal_swg_fwd\n\
-float32 sagittal_swg_bwd\n\
-float32 lateral_swg\n\
-float32 lateral_swg_offset\n\
-float32 trng_lateral_swg_offset\n\
-float32 rotational_swg\n\
-float32 rotational_swg_offset\n\
-\n\
-########## Lateral Hip Swing ##########\n\
-float32 lateral_hip_swg\n\
-\n\
-########## Leaning ##########\n\
-float32 fwd_lean\n\
-float32 bwd_lean\n\
-float32 fwd_trng_lean\n\
-\n\
-########## Step ##########\n\
-float32 gait_vel_limit\n\
-float32 sagittal_acc\n\
-float32 lateral_acc\n\
-float32 rotational_acc\n\
-float32 const_step_freq\n\
-float32 sagittal_prop_step_freq\n\
-float32 lateral_prop_step_freq\n\
-\n\
-########## walking parameter ########\n\
-float32 x_move_amplitude\n\
-float32 y_move_amplitude\n\
-float32 angle_move_amplitude\n\
-bool halt_position\n\
-bool leg_lifting\n\
-bool leg_swing\n\
-bool lateral_swing\n\
-bool leaning\n\
-\n\
-";
+    return "####### Halt Position #######\n"
+"float32 halt_pos_leg_ext\n"
+"float32 halt_pos_leg_roll_ext\n"
+"float32 halt_pos_leg_pitch_ext\n"
+"float32 halt_pos_foot_roll_ext\n"
+"float32 halt_pos_foot_pitch_ext\n"
+"\n"
+"####### Leg Lifting #####\n"
+"float32 const_ground_push\n"
+"float32 propt_ground_push\n"
+"float32 const_step_height\n"
+"float32 propt_step_height\n"
+"\n"
+"########## Leg Swing ########\n"
+"float32 swing_start\n"
+"float32 swing_stop\n"
+"float32 sagittal_swg_fwd\n"
+"float32 sagittal_swg_bwd\n"
+"float32 lateral_swg\n"
+"float32 lateral_swg_offset\n"
+"float32 trng_lateral_swg_offset\n"
+"float32 rotational_swg\n"
+"float32 rotational_swg_offset\n"
+"\n"
+"########## Lateral Hip Swing ##########\n"
+"float32 lateral_hip_swg\n"
+"\n"
+"########## Leaning ##########\n"
+"float32 fwd_lean\n"
+"float32 bwd_lean\n"
+"float32 fwd_trng_lean\n"
+"\n"
+"########## Step ##########\n"
+"float32 gait_vel_limit\n"
+"float32 sagittal_acc\n"
+"float32 lateral_acc\n"
+"float32 rotational_acc\n"
+"float32 const_step_freq\n"
+"float32 sagittal_prop_step_freq\n"
+"float32 lateral_prop_step_freq\n"
+"\n"
+"########## walking parameter ########\n"
+"float32 x_move_amplitude\n"
+"float32 y_move_amplitude\n"
+"float32 angle_move_amplitude\n"
+"bool halt_position\n"
+"bool leg_lifting\n"
+"bool leg_swing\n"
+"bool lateral_swing\n"
+"bool leaning\n"
+"\n"
+;
   }
 
   static const char* value(const ::capture_step_module_msgs::WalkingParam_<ContainerAllocator>&) { return value(); }

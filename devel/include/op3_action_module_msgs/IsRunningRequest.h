@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -58,6 +58,7 @@ ros::message_operations::Printer< ::op3_action_module_msgs::IsRunningRequest_<Co
 return s;
 }
 
+
 } // namespace op3_action_module_msgs
 
 namespace ros
@@ -67,23 +68,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'op3_action_module_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/op3_action_module_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocator> >
@@ -92,6 +77,16 @@ struct IsMessage< ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocator
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -135,8 +130,8 @@ struct Definition< ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocato
 {
   static const char* value()
   {
-    return "\n\
-";
+    return "\n"
+;
   }
 
   static const char* value(const ::op3_action_module_msgs::IsRunningRequest_<ContainerAllocator>&) { return value(); }

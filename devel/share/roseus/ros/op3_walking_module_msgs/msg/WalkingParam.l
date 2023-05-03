@@ -208,11 +208,11 @@
    (&optional __angle_move_amplitude)
    (if __angle_move_amplitude (setq _angle_move_amplitude __angle_move_amplitude)) _angle_move_amplitude)
   (:move_aim_on
-   (&optional __move_aim_on)
-   (if __move_aim_on (setq _move_aim_on __move_aim_on)) _move_aim_on)
+   (&optional (__move_aim_on :null))
+   (if (not (eq __move_aim_on :null)) (setq _move_aim_on __move_aim_on)) _move_aim_on)
   (:balance_enable
-   (&optional __balance_enable)
-   (if __balance_enable (setq _balance_enable __balance_enable)) _balance_enable)
+   (&optional (__balance_enable :null))
+   (if (not (eq __balance_enable :null)) (setq _balance_enable __balance_enable)) _balance_enable)
   (:balance_hip_roll_gain
    (&optional __balance_hip_roll_gain)
    (if __balance_hip_roll_gain (setq _balance_hip_roll_gain __balance_hip_roll_gain)) _balance_hip_roll_gain)
@@ -295,8 +295,8 @@
    (&optional __zmp_vphi)
    (if __zmp_vphi (setq _zmp_vphi __zmp_vphi)) _zmp_vphi)
   (:zmp_useGyro
-   (&optional __zmp_useGyro)
-   (if __zmp_useGyro (setq _zmp_useGyro __zmp_useGyro)) _zmp_useGyro)
+   (&optional (__zmp_useGyro :null))
+   (if (not (eq __zmp_useGyro :null)) (setq _zmp_useGyro __zmp_useGyro)) _zmp_useGyro)
   (:serialization-length
    ()
    (+

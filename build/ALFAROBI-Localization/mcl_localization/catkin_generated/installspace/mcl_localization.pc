@@ -1,8 +1,0 @@
-prefix=/home/alfarobi/alfarobi_ws/install
-
-Name: mcl_localization
-Description: Description of mcl_localization
-Version: 0.1.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: roscpp vision_simple eigen_conversions kdl_conversions robotis_math geometry_msgs sensor_msgs message_generation message_runtime

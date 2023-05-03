@@ -1,8 +1,8 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
+prefix=/home/ajus/alfarobi_ws/devel
 
 Name: game_controller
 Description: Description of game_controller
 Version: 0.0.0
-Cflags: -I/home/alfarobi/alfarobi_ws/devel/include
+Cflags: -I/home/ajus/alfarobi_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: 

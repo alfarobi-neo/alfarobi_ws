@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -73,6 +73,22 @@ ros::message_operations::Printer< ::humanoid_league_msgs::BallRelative_<Containe
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::BallRelative_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::BallRelative_<ContainerAllocator2> & rhs)
+{
+  return lhs.header == rhs.header &&
+    lhs.ball_relative == rhs.ball_relative &&
+    lhs.confidence == rhs.confidence;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::BallRelative_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::BallRelative_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -82,23 +98,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::BallRelative_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::BallRelative_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::BallRelative_<ContainerAllocator> >
@@ -108,6 +108,16 @@ struct IsMessage< ::humanoid_league_msgs::BallRelative_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::BallRelative_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::BallRelative_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::BallRelative_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -150,45 +160,43 @@ struct Definition< ::humanoid_league_msgs::BallRelative_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# Provides the relative position of the ball\n\
-\n\
-# The header is included to get the time stamp\n\
-std_msgs/Header header\n\
-\n\
-# x to front\n\
-# y to left\n\
-# z height (should normally be 0, if ball was not high kicked)\n\
-# Everything is measured in meters\n\
-geometry_msgs/Point ball_relative\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-# 0 means no ball was found\n\
-float32 confidence\n\
-================================================================================\n\
-MSG: std_msgs/Header\n\
-# Standard metadata for higher-level stamped data types.\n\
-# This is generally used to communicate timestamped data \n\
-# in a particular coordinate frame.\n\
-# \n\
-# sequence ID: consecutively increasing ID \n\
-uint32 seq\n\
-#Two-integer timestamp that is expressed as:\n\
-# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
-# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
-# time-handling sugar is provided by the client library\n\
-time stamp\n\
-#Frame this data is associated with\n\
-# 0: no frame\n\
-# 1: global frame\n\
-string frame_id\n\
-\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-";
+    return "# Provides the relative position of the ball\n"
+"\n"
+"# The header is included to get the time stamp\n"
+"std_msgs/Header header\n"
+"\n"
+"# x to front\n"
+"# y to left\n"
+"# z height (should normally be 0, if ball was not high kicked)\n"
+"# Everything is measured in meters\n"
+"geometry_msgs/Point ball_relative\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"# 0 means no ball was found\n"
+"float32 confidence\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::BallRelative_<ContainerAllocator>&) { return value(); }

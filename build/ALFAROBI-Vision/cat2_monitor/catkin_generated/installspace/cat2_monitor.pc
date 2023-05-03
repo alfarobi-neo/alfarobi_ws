@@ -1,8 +1,0 @@
-prefix=/home/alfarobi/alfarobi_ws/install
-
-Name: cat2_monitor
-Description: Description of cat2_monitor
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp roslib std_msgs geometry_msgs sensor_msgs cv_bridge image_transport vision_utils

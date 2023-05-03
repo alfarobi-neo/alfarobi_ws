@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -88,6 +88,25 @@ ros::message_operations::Printer< ::humanoid_league_msgs::Animation_<ContainerAl
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::Animation_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::Animation_<ContainerAllocator2> & rhs)
+{
+  return lhs.header == rhs.header &&
+    lhs.request == rhs.request &&
+    lhs.first == rhs.first &&
+    lhs.last == rhs.last &&
+    lhs.hcm == rhs.hcm &&
+    lhs.position == rhs.position;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::Animation_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::Animation_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -97,23 +116,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::Animation_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::Animation_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::Animation_<ContainerAllocator> >
@@ -123,6 +126,16 @@ struct IsMessage< ::humanoid_league_msgs::Animation_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::Animation_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::Animation_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::Animation_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -165,58 +178,57 @@ struct Definition< ::humanoid_league_msgs::Animation_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "Header header\n\
-\n\
-# This is a request to make HCM controllable, e.g. stop walking\n\
-bool request\n\
-\n\
-# First message of this animation\n\
-bool first\n\
-\n\
-# Last message of this animation\n\
-bool last\n\
-\n\
-# Is this animation comming from the hardware control manager\n\
-bool hcm\n\
-\n\
-# Joint goals\n\
-trajectory_msgs/JointTrajectory position\n\
-\n\
-================================================================================\n\
-MSG: std_msgs/Header\n\
-# Standard metadata for higher-level stamped data types.\n\
-# This is generally used to communicate timestamped data \n\
-# in a particular coordinate frame.\n\
-# \n\
-# sequence ID: consecutively increasing ID \n\
-uint32 seq\n\
-#Two-integer timestamp that is expressed as:\n\
-# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
-# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
-# time-handling sugar is provided by the client library\n\
-time stamp\n\
-#Frame this data is associated with\n\
-# 0: no frame\n\
-# 1: global frame\n\
-string frame_id\n\
-\n\
-================================================================================\n\
-MSG: trajectory_msgs/JointTrajectory\n\
-Header header\n\
-string[] joint_names\n\
-JointTrajectoryPoint[] points\n\
-================================================================================\n\
-MSG: trajectory_msgs/JointTrajectoryPoint\n\
-# Each trajectory point specifies either positions[, velocities[, accelerations]]\n\
-# or positions[, effort] for the trajectory to be executed.\n\
-# All specified values are in the same order as the joint names in JointTrajectory.msg\n\
-\n\
-float64[] positions\n\
-float64[] velocities\n\
-float64[] accelerations\n\
-float64[] effort\n\
-duration time_from_start\n\
-";
+    return "Header header\n"
+"\n"
+"# This is a request to make HCM controllable, e.g. stop walking\n"
+"bool request\n"
+"\n"
+"# First message of this animation\n"
+"bool first\n"
+"\n"
+"# Last message of this animation\n"
+"bool last\n"
+"\n"
+"# Is this animation comming from the hardware control manager\n"
+"bool hcm\n"
+"\n"
+"# Joint goals\n"
+"trajectory_msgs/JointTrajectory position\n"
+"\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
+"\n"
+"================================================================================\n"
+"MSG: trajectory_msgs/JointTrajectory\n"
+"Header header\n"
+"string[] joint_names\n"
+"JointTrajectoryPoint[] points\n"
+"\n"
+"================================================================================\n"
+"MSG: trajectory_msgs/JointTrajectoryPoint\n"
+"# Each trajectory point specifies either positions[, velocities[, accelerations]]\n"
+"# or positions[, effort] for the trajectory to be executed.\n"
+"# All specified values are in the same order as the joint names in JointTrajectory.msg\n"
+"\n"
+"float64[] positions\n"
+"float64[] velocities\n"
+"float64[] accelerations\n"
+"float64[] effort\n"
+"duration time_from_start\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::Animation_<ContainerAllocator>&) { return value(); }

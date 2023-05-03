@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -46,13 +46,13 @@ struct LineInformationInImage_
    typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
   _header_type header;
 
-   typedef std::vector< ::humanoid_league_msgs::LineIntersectionInImage_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::LineIntersectionInImage_<ContainerAllocator> >::other >  _intersections_type;
+   typedef std::vector< ::humanoid_league_msgs::LineIntersectionInImage_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::LineIntersectionInImage_<ContainerAllocator> >> _intersections_type;
   _intersections_type intersections;
 
-   typedef std::vector< ::humanoid_league_msgs::LineSegmentInImage_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::LineSegmentInImage_<ContainerAllocator> >::other >  _segments_type;
+   typedef std::vector< ::humanoid_league_msgs::LineSegmentInImage_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::LineSegmentInImage_<ContainerAllocator> >> _segments_type;
   _segments_type segments;
 
-   typedef std::vector< ::humanoid_league_msgs::LineCircleInImage_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::LineCircleInImage_<ContainerAllocator> >::other >  _circles_type;
+   typedef std::vector< ::humanoid_league_msgs::LineCircleInImage_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::LineCircleInImage_<ContainerAllocator> >> _circles_type;
   _circles_type circles;
 
 
@@ -80,6 +80,23 @@ ros::message_operations::Printer< ::humanoid_league_msgs::LineInformationInImage
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator2> & rhs)
+{
+  return lhs.header == rhs.header &&
+    lhs.intersections == rhs.intersections &&
+    lhs.segments == rhs.segments &&
+    lhs.circles == rhs.circles;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -89,23 +106,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator> >
@@ -115,6 +116,16 @@ struct IsMessage< ::humanoid_league_msgs::LineInformationInImage_<ContainerAlloc
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -157,80 +168,78 @@ struct Definition< ::humanoid_league_msgs::LineInformationInImage_<ContainerAllo
 {
   static const char* value()
   {
-    return "# Contains all line related information on the image itself\n\
-\n\
-# The header is included to get the time stamp for later use in tf\n\
-std_msgs/Header header\n\
-\n\
-LineIntersectionInImage[] intersections\n\
-LineSegmentInImage[] segments\n\
-LineCircleInImage[] circles\n\
-================================================================================\n\
-MSG: std_msgs/Header\n\
-# Standard metadata for higher-level stamped data types.\n\
-# This is generally used to communicate timestamped data \n\
-# in a particular coordinate frame.\n\
-# \n\
-# sequence ID: consecutively increasing ID \n\
-uint32 seq\n\
-#Two-integer timestamp that is expressed as:\n\
-# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
-# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
-# time-handling sugar is provided by the client library\n\
-time stamp\n\
-#Frame this data is associated with\n\
-# 0: no frame\n\
-# 1: global frame\n\
-string frame_id\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/LineIntersectionInImage\n\
-# A line intersection feature in the image\n\
-\n\
-# The type defines which kind of intersection is present\n\
-uint8 UNDEFINED=0\n\
-uint8 L=1\n\
-uint8 T=2\n\
-uint8 X=3\n\
-uint8 type\n\
-\n\
-# The line segments related to this crossing\n\
-humanoid_league_msgs/LineSegmentInImage segments\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/LineSegmentInImage\n\
-# A normal line segment in the image\n\
-\n\
-# Two points defining the vector of the line. The center is orthogonally in the middle of the line\n\
-geometry_msgs/Point start\n\
-geometry_msgs/Point end\n\
-\n\
-# Orthogonal to the significant vector\n\
-float32 start_width\n\
-float32 end_with\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/LineCircleInImage\n\
-# Defines a line circle in image space, i.e. the center circle\n\
-\n\
-# The circle is defined by an arc with left and right end points and a point in the middle for getting the radius\n\
-geometry_msgs/Point left\n\
-geometry_msgs/Point middle\n\
-geometry_msgs/Point right\n\
-\n\
-";
+    return "# Contains all line related information on the image itself\n"
+"\n"
+"# The header is included to get the time stamp for later use in tf\n"
+"std_msgs/Header header\n"
+"\n"
+"LineIntersectionInImage[] intersections\n"
+"LineSegmentInImage[] segments\n"
+"LineCircleInImage[] circles\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/LineIntersectionInImage\n"
+"# A line intersection feature in the image\n"
+"\n"
+"# The type defines which kind of intersection is present\n"
+"uint8 UNDEFINED=0\n"
+"uint8 L=1\n"
+"uint8 T=2\n"
+"uint8 X=3\n"
+"uint8 type\n"
+"\n"
+"# The line segments related to this crossing\n"
+"humanoid_league_msgs/LineSegmentInImage segments\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/LineSegmentInImage\n"
+"# A normal line segment in the image\n"
+"\n"
+"# Two points defining the vector of the line. The center is orthogonally in the middle of the line\n"
+"geometry_msgs/Point start\n"
+"geometry_msgs/Point end\n"
+"\n"
+"# Orthogonal to the significant vector\n"
+"float32 start_width\n"
+"float32 end_with\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/LineCircleInImage\n"
+"# Defines a line circle in image space, i.e. the center circle\n"
+"\n"
+"# The circle is defined by an arc with left and right end points and a point in the middle for getting the radius\n"
+"geometry_msgs/Point left\n"
+"geometry_msgs/Point middle\n"
+"geometry_msgs/Point right\n"
+"\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::LineInformationInImage_<ContainerAllocator>&) { return value(); }

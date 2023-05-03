@@ -1,8 +1,8 @@
-# Install script for directory: /home/alfarobi/alfarobi_ws/src/rosbag_to_csv
+# Install script for directory: /home/ajus/alfarobi_ws/src/rosbag_to_csv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/alfarobi/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,18 +32,23 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alfarobi/alfarobi_ws/build/rosbag_to_csv/catkin_generated/installspace/rosbag_to_csv.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/rosbag_to_csv/catkin_generated/installspace/rosbag_to_csv.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbag_to_csv/cmake" TYPE FILE FILES
-    "/home/alfarobi/alfarobi_ws/build/rosbag_to_csv/catkin_generated/installspace/rosbag_to_csvConfig.cmake"
-    "/home/alfarobi/alfarobi_ws/build/rosbag_to_csv/catkin_generated/installspace/rosbag_to_csvConfig-version.cmake"
+    "/home/ajus/alfarobi_ws/build/rosbag_to_csv/catkin_generated/installspace/rosbag_to_csvConfig.cmake"
+    "/home/ajus/alfarobi_ws/build/rosbag_to_csv/catkin_generated/installspace/rosbag_to_csvConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbag_to_csv" TYPE FILE FILES "/home/alfarobi/alfarobi_ws/src/rosbag_to_csv/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosbag_to_csv" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/rosbag_to_csv/package.xml")
 endif()
 

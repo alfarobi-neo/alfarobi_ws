@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -331,6 +331,74 @@ ros::message_operations::Printer< ::op3_walking_module_msgs::WalkingParam_<Conta
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator1> & lhs, const ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator2> & rhs)
+{
+  return lhs.init_x_offset == rhs.init_x_offset &&
+    lhs.init_y_offset == rhs.init_y_offset &&
+    lhs.init_z_offset == rhs.init_z_offset &&
+    lhs.init_roll_offset == rhs.init_roll_offset &&
+    lhs.init_pitch_offset == rhs.init_pitch_offset &&
+    lhs.init_yaw_offset == rhs.init_yaw_offset &&
+    lhs.r_x_offset == rhs.r_x_offset &&
+    lhs.r_y_offset == rhs.r_y_offset &&
+    lhs.r_z_offset == rhs.r_z_offset &&
+    lhs.r_roll_offset == rhs.r_roll_offset &&
+    lhs.r_pitch_offset == rhs.r_pitch_offset &&
+    lhs.r_yaw_offset == rhs.r_yaw_offset &&
+    lhs.l_x_offset == rhs.l_x_offset &&
+    lhs.l_y_offset == rhs.l_y_offset &&
+    lhs.l_z_offset == rhs.l_z_offset &&
+    lhs.l_roll_offset == rhs.l_roll_offset &&
+    lhs.l_pitch_offset == rhs.l_pitch_offset &&
+    lhs.l_yaw_offset == rhs.l_yaw_offset &&
+    lhs.period_time == rhs.period_time &&
+    lhs.dsp_ratio == rhs.dsp_ratio &&
+    lhs.step_fb_ratio == rhs.step_fb_ratio &&
+    lhs.x_move_amplitude == rhs.x_move_amplitude &&
+    lhs.y_move_amplitude == rhs.y_move_amplitude &&
+    lhs.z_move_amplitude == rhs.z_move_amplitude &&
+    lhs.angle_move_amplitude == rhs.angle_move_amplitude &&
+    lhs.move_aim_on == rhs.move_aim_on &&
+    lhs.balance_enable == rhs.balance_enable &&
+    lhs.balance_hip_roll_gain == rhs.balance_hip_roll_gain &&
+    lhs.balance_knee_gain == rhs.balance_knee_gain &&
+    lhs.balance_ankle_roll_gain == rhs.balance_ankle_roll_gain &&
+    lhs.balance_ankle_pitch_gain == rhs.balance_ankle_pitch_gain &&
+    lhs.y_swap_amplitude == rhs.y_swap_amplitude &&
+    lhs.z_swap_amplitude == rhs.z_swap_amplitude &&
+    lhs.arm_swing_gain == rhs.arm_swing_gain &&
+    lhs.pelvis_offset == rhs.pelvis_offset &&
+    lhs.hip_pitch_offset == rhs.hip_pitch_offset &&
+    lhs.KP_P == rhs.KP_P &&
+    lhs.KD_P == rhs.KD_P &&
+    lhs.KI_P == rhs.KI_P &&
+    lhs.D_ANKLE_P == rhs.D_ANKLE_P &&
+    lhs.D_KNEE == rhs.D_KNEE &&
+    lhs.D_HIP_P == rhs.D_HIP_P &&
+    lhs.KP_R == rhs.KP_R &&
+    lhs.KD_R == rhs.KD_R &&
+    lhs.KI_R == rhs.KI_R &&
+    lhs.D_ANKLE_R == rhs.D_ANKLE_R &&
+    lhs.D_HIP_R == rhs.D_HIP_R &&
+    lhs.shoulder_gain == rhs.shoulder_gain &&
+    lhs.p_gain == rhs.p_gain &&
+    lhs.i_gain == rhs.i_gain &&
+    lhs.d_gain == rhs.d_gain &&
+    lhs.zmp_vx == rhs.zmp_vx &&
+    lhs.zmp_vy == rhs.zmp_vy &&
+    lhs.zmp_vphi == rhs.zmp_vphi &&
+    lhs.zmp_useGyro == rhs.zmp_useGyro;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator1> & lhs, const ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace op3_walking_module_msgs
 
 namespace ros
@@ -340,23 +408,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'op3_walking_module_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/op3_walking_module_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator> >
@@ -365,6 +417,16 @@ struct IsMessage< ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator> >
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -408,78 +470,78 @@ struct Definition< ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator> 
 {
   static const char* value()
   {
-    return "####### walking init pose #######\n\
-float32 init_x_offset\n\
-float32 init_y_offset\n\
-float32 init_z_offset\n\
-float32 init_roll_offset\n\
-float32 init_pitch_offset\n\
-float32 init_yaw_offset\n\
-float32 r_x_offset\n\
-float32 r_y_offset\n\
-float32 r_z_offset\n\
-float32 r_roll_offset\n\
-float32 r_pitch_offset\n\
-float32 r_yaw_offset\n\
-float32 l_x_offset\n\
-float32 l_y_offset\n\
-float32 l_z_offset\n\
-float32 l_roll_offset\n\
-float32 l_pitch_offset\n\
-float32 l_yaw_offset\n\
-\n\
-\n\
-####### time parameter #####\n\
-float32 period_time\n\
-float32 dsp_ratio\n\
-float32 step_fb_ratio\n\
-\n\
-########## walking parameter ########\n\
-float32 x_move_amplitude\n\
-float32 y_move_amplitude\n\
-float32 z_move_amplitude\n\
-float32 angle_move_amplitude\n\
-bool move_aim_on\n\
-\n\
-########## balance parameter ##########\n\
-bool balance_enable\n\
-float32 balance_hip_roll_gain\n\
-float32 balance_knee_gain\n\
-float32 balance_ankle_roll_gain\n\
-float32 balance_ankle_pitch_gain\n\
-float32 y_swap_amplitude\n\
-float32 z_swap_amplitude\n\
-float32 arm_swing_gain\n\
-float32 pelvis_offset\n\
-float32 hip_pitch_offset\n\
-\n\
-########## balance parameter ##########\n\
-float32 KP_P\n\
-float32 KD_P\n\
-float32 KI_P\n\
-float32 D_ANKLE_P\n\
-float32 D_KNEE\n\
-float32 D_HIP_P\n\
-\n\
-float32 KP_R\n\
-float32 KD_R\n\
-float32 KI_R\n\
-float32 D_ANKLE_R\n\
-float32 D_HIP_R\n\
-float32 shoulder_gain\n\
-\n\
-########## gain parameter ##########\n\
-int32 p_gain\n\
-int32 i_gain\n\
-int32 d_gain\n\
-\n\
-########## ZMP WALKING BIT-BOTS ###########\n\
-float32 zmp_vx\n\
-float32 zmp_vy\n\
-float32 zmp_vphi\n\
-\n\
-bool zmp_useGyro\n\
-";
+    return "####### walking init pose #######\n"
+"float32 init_x_offset\n"
+"float32 init_y_offset\n"
+"float32 init_z_offset\n"
+"float32 init_roll_offset\n"
+"float32 init_pitch_offset\n"
+"float32 init_yaw_offset\n"
+"float32 r_x_offset\n"
+"float32 r_y_offset\n"
+"float32 r_z_offset\n"
+"float32 r_roll_offset\n"
+"float32 r_pitch_offset\n"
+"float32 r_yaw_offset\n"
+"float32 l_x_offset\n"
+"float32 l_y_offset\n"
+"float32 l_z_offset\n"
+"float32 l_roll_offset\n"
+"float32 l_pitch_offset\n"
+"float32 l_yaw_offset\n"
+"\n"
+"\n"
+"####### time parameter #####\n"
+"float32 period_time\n"
+"float32 dsp_ratio\n"
+"float32 step_fb_ratio\n"
+"\n"
+"########## walking parameter ########\n"
+"float32 x_move_amplitude\n"
+"float32 y_move_amplitude\n"
+"float32 z_move_amplitude\n"
+"float32 angle_move_amplitude\n"
+"bool move_aim_on\n"
+"\n"
+"########## balance parameter ##########\n"
+"bool balance_enable\n"
+"float32 balance_hip_roll_gain\n"
+"float32 balance_knee_gain\n"
+"float32 balance_ankle_roll_gain\n"
+"float32 balance_ankle_pitch_gain\n"
+"float32 y_swap_amplitude\n"
+"float32 z_swap_amplitude\n"
+"float32 arm_swing_gain\n"
+"float32 pelvis_offset\n"
+"float32 hip_pitch_offset\n"
+"\n"
+"########## balance parameter ##########\n"
+"float32 KP_P\n"
+"float32 KD_P\n"
+"float32 KI_P\n"
+"float32 D_ANKLE_P\n"
+"float32 D_KNEE\n"
+"float32 D_HIP_P\n"
+"\n"
+"float32 KP_R\n"
+"float32 KD_R\n"
+"float32 KI_R\n"
+"float32 D_ANKLE_R\n"
+"float32 D_HIP_R\n"
+"float32 shoulder_gain\n"
+"\n"
+"########## gain parameter ##########\n"
+"int32 p_gain\n"
+"int32 i_gain\n"
+"int32 d_gain\n"
+"\n"
+"########## ZMP WALKING BIT-BOTS ###########\n"
+"float32 zmp_vx\n"
+"float32 zmp_vy\n"
+"float32 zmp_vphi\n"
+"\n"
+"bool zmp_useGyro\n"
+;
   }
 
   static const char* value(const ::op3_walking_module_msgs::WalkingParam_<ContainerAllocator>&) { return value(); }

@@ -193,20 +193,20 @@
    (&optional __angle_move_amplitude)
    (if __angle_move_amplitude (setq _angle_move_amplitude __angle_move_amplitude)) _angle_move_amplitude)
   (:halt_position
-   (&optional __halt_position)
-   (if __halt_position (setq _halt_position __halt_position)) _halt_position)
+   (&optional (__halt_position :null))
+   (if (not (eq __halt_position :null)) (setq _halt_position __halt_position)) _halt_position)
   (:leg_lifting
-   (&optional __leg_lifting)
-   (if __leg_lifting (setq _leg_lifting __leg_lifting)) _leg_lifting)
+   (&optional (__leg_lifting :null))
+   (if (not (eq __leg_lifting :null)) (setq _leg_lifting __leg_lifting)) _leg_lifting)
   (:leg_swing
-   (&optional __leg_swing)
-   (if __leg_swing (setq _leg_swing __leg_swing)) _leg_swing)
+   (&optional (__leg_swing :null))
+   (if (not (eq __leg_swing :null)) (setq _leg_swing __leg_swing)) _leg_swing)
   (:lateral_swing
-   (&optional __lateral_swing)
-   (if __lateral_swing (setq _lateral_swing __lateral_swing)) _lateral_swing)
+   (&optional (__lateral_swing :null))
+   (if (not (eq __lateral_swing :null)) (setq _lateral_swing __lateral_swing)) _lateral_swing)
   (:leaning
-   (&optional __leaning)
-   (if __leaning (setq _leaning __leaning)) _leaning)
+   (&optional (__leaning :null))
+   (if (not (eq __leaning :null)) (setq _leaning __leaning)) _leaning)
   (:serialization-length
    ()
    (+

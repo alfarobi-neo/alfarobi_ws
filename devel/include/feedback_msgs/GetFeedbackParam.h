@@ -57,8 +57,8 @@ struct DataType< ::feedback_msgs::GetFeedbackParam > {
 };
 
 
-// service_traits::MD5Sum< ::feedback_msgs::GetFeedbackParamRequest> should match 
-// service_traits::MD5Sum< ::feedback_msgs::GetFeedbackParam > 
+// service_traits::MD5Sum< ::feedback_msgs::GetFeedbackParamRequest> should match
+// service_traits::MD5Sum< ::feedback_msgs::GetFeedbackParam >
 template<>
 struct MD5Sum< ::feedback_msgs::GetFeedbackParamRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::feedback_msgs::GetFeedbackParamRequest>
   }
 };
 
-// service_traits::DataType< ::feedback_msgs::GetFeedbackParamRequest> should match 
-// service_traits::DataType< ::feedback_msgs::GetFeedbackParam > 
+// service_traits::DataType< ::feedback_msgs::GetFeedbackParamRequest> should match
+// service_traits::DataType< ::feedback_msgs::GetFeedbackParam >
 template<>
 struct DataType< ::feedback_msgs::GetFeedbackParamRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::feedback_msgs::GetFeedbackParamRequest>
   }
 };
 
-// service_traits::MD5Sum< ::feedback_msgs::GetFeedbackParamResponse> should match 
-// service_traits::MD5Sum< ::feedback_msgs::GetFeedbackParam > 
+// service_traits::MD5Sum< ::feedback_msgs::GetFeedbackParamResponse> should match
+// service_traits::MD5Sum< ::feedback_msgs::GetFeedbackParam >
 template<>
 struct MD5Sum< ::feedback_msgs::GetFeedbackParamResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::feedback_msgs::GetFeedbackParamResponse>
   }
 };
 
-// service_traits::DataType< ::feedback_msgs::GetFeedbackParamResponse> should match 
-// service_traits::DataType< ::feedback_msgs::GetFeedbackParam > 
+// service_traits::DataType< ::feedback_msgs::GetFeedbackParamResponse> should match
+// service_traits::DataType< ::feedback_msgs::GetFeedbackParam >
 template<>
 struct DataType< ::feedback_msgs::GetFeedbackParamResponse>
 {

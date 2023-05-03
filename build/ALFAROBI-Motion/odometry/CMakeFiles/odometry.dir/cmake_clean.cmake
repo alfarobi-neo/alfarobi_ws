@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/lib/libodometry.pdb"
+  "/home/ajus/alfarobi_ws/devel/lib/libodometry.so"
   "CMakeFiles/odometry.dir/src/odometry.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/libodometry.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/libodometry.so"
 )
 
 # Per-language clean rules from dependency scanning.

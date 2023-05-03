@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/feedback_msgs/msg/FeedbackParam.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/feedback_msgs/srv/GetFeedbackParam.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/feedback_msgs/srv/SetFeedbackParam.lisp"
   "CMakeFiles/feedback_msgs_generate_messages_lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/feedback_msgs/msg/FeedbackParam.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/feedback_msgs/srv/SetFeedbackParam.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/feedback_msgs/srv/GetFeedbackParam.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

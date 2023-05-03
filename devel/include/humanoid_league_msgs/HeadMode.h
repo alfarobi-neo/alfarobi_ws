@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -37,6 +37,35 @@ struct HeadMode_
   _headMode_type headMode;
 
 
+
+// reducing the odds to have name collisions with Windows.h 
+#if defined(_WIN32) && defined(BALL_MODE)
+  #undef BALL_MODE
+#endif
+#if defined(_WIN32) && defined(POST_MODE)
+  #undef POST_MODE
+#endif
+#if defined(_WIN32) && defined(BALL_GOAL_TRACKING)
+  #undef BALL_GOAL_TRACKING
+#endif
+#if defined(_WIN32) && defined(FIELD_FEATURES)
+  #undef FIELD_FEATURES
+#endif
+#if defined(_WIN32) && defined(NON_FIELD_FEATURES)
+  #undef NON_FIELD_FEATURES
+#endif
+#if defined(_WIN32) && defined(LOOK_DOWN)
+  #undef LOOK_DOWN
+#endif
+#if defined(_WIN32) && defined(LOOK_FORWARD)
+  #undef LOOK_FORWARD
+#endif
+#if defined(_WIN32) && defined(DONT_MOVE)
+  #undef DONT_MOVE
+#endif
+#if defined(_WIN32) && defined(LOOK_UP)
+  #undef LOOK_UP
+#endif
 
   enum {
     BALL_MODE = 0u,
@@ -90,6 +119,20 @@ ros::message_operations::Printer< ::humanoid_league_msgs::HeadMode_<ContainerAll
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::HeadMode_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::HeadMode_<ContainerAllocator2> & rhs)
+{
+  return lhs.headMode == rhs.headMode;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::HeadMode_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::HeadMode_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -99,23 +142,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::HeadMode_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::HeadMode_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::HeadMode_<ContainerAllocator> >
@@ -124,6 +151,16 @@ struct IsMessage< ::humanoid_league_msgs::HeadMode_<ContainerAllocator> >
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::HeadMode_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::HeadMode_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::HeadMode_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -167,30 +204,30 @@ struct Definition< ::humanoid_league_msgs::HeadMode_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# This message is used for communicating between the body behaviour and the head behaviour\n\
-# The body tells the head by this message what it shall do\n\
-\n\
-# Search for Ball and track it if found\n\
-uint8 BALL_MODE=0\n\
-# Search for goal posts, mainly to locate the robot on the field\n\
-uint8 POST_MODE=1\n\
-# Track ball and goal by constantly switching between both\n\
-uint8 BALL_GOAL_TRACKING=2\n\
-# Look generally for all features on the field (ball, goals, corners, center point)\n\
-uint8 FIELD_FEATURES=3\n\
-# Look for features outside of the field (perimeter advertising, walls, etc).\n\
-# Can be used for localization using features on the ceiling.\n\
-uint8 NON_FIELD_FEATURES=4\n\
-# Simply look down to its feet.\n\
-uint8 LOOK_DOWN=5\n\
-# Simply look directly forward\n\
-uint8 LOOK_FORWARD=7\n\
-#Don't move the head\n\
-uint8 DONT_MOVE=8\n\
-# Look to the ceiling, for example for visual compas\n\
-uint8 LOOK_UP=9\n\
-uint8 headMode\n\
-";
+    return "# This message is used for communicating between the body behaviour and the head behaviour\n"
+"# The body tells the head by this message what it shall do\n"
+"\n"
+"# Search for Ball and track it if found\n"
+"uint8 BALL_MODE=0\n"
+"# Search for goal posts, mainly to locate the robot on the field\n"
+"uint8 POST_MODE=1\n"
+"# Track ball and goal by constantly switching between both\n"
+"uint8 BALL_GOAL_TRACKING=2\n"
+"# Look generally for all features on the field (ball, goals, corners, center point)\n"
+"uint8 FIELD_FEATURES=3\n"
+"# Look for features outside of the field (perimeter advertising, walls, etc).\n"
+"# Can be used for localization using features on the ceiling.\n"
+"uint8 NON_FIELD_FEATURES=4\n"
+"# Simply look down to its feet.\n"
+"uint8 LOOK_DOWN=5\n"
+"# Simply look directly forward\n"
+"uint8 LOOK_FORWARD=7\n"
+"#Don't move the head\n"
+"uint8 DONT_MOVE=8\n"
+"# Look to the ceiling, for example for visual compas\n"
+"uint8 LOOK_UP=9\n"
+"uint8 headMode\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::HeadMode_<ContainerAllocator>&) { return value(); }

@@ -17,6 +17,12 @@
 (intern "*MANUAL*" (find-package "GAME_CONTROLLER::GAMESTATE"))
 (shadow '*MANUAL* (find-package "GAME_CONTROLLER::GAMESTATE"))
 (defconstant game_controller::GameState::*MANUAL* 15)
+
+(defun game_controller::GameState-to-symbol (const)
+  (cond
+        ((= const 15) 'game_controller::GameState::*MANUAL*)
+        (t nil)))
+
 (defclass game_controller::GameState
   :super ros::object
   :slots (_header _gameState _secondaryState _secondrayStateTeam _firstHalf _ownScore _rivalScore _secondsRemaining _secondary_seconds_remaining _penalty _hasKickOff _penalized _secondsTillUnpenalized _allowedToMove _dropInTeam _dropInTime _penaltyShot _singleShots _coach_message ))
@@ -82,8 +88,8 @@
    (&optional __secondrayStateTeam)
    (if __secondrayStateTeam (setq _secondrayStateTeam __secondrayStateTeam)) _secondrayStateTeam)
   (:firstHalf
-   (&optional __firstHalf)
-   (if __firstHalf (setq _firstHalf __firstHalf)) _firstHalf)
+   (&optional (__firstHalf :null))
+   (if (not (eq __firstHalf :null)) (setq _firstHalf __firstHalf)) _firstHalf)
   (:ownScore
    (&optional __ownScore)
    (if __ownScore (setq _ownScore __ownScore)) _ownScore)
@@ -100,20 +106,20 @@
    (&optional __penalty)
    (if __penalty (setq _penalty __penalty)) _penalty)
   (:hasKickOff
-   (&optional __hasKickOff)
-   (if __hasKickOff (setq _hasKickOff __hasKickOff)) _hasKickOff)
+   (&optional (__hasKickOff :null))
+   (if (not (eq __hasKickOff :null)) (setq _hasKickOff __hasKickOff)) _hasKickOff)
   (:penalized
-   (&optional __penalized)
-   (if __penalized (setq _penalized __penalized)) _penalized)
+   (&optional (__penalized :null))
+   (if (not (eq __penalized :null)) (setq _penalized __penalized)) _penalized)
   (:secondsTillUnpenalized
    (&optional __secondsTillUnpenalized)
    (if __secondsTillUnpenalized (setq _secondsTillUnpenalized __secondsTillUnpenalized)) _secondsTillUnpenalized)
   (:allowedToMove
-   (&optional __allowedToMove)
-   (if __allowedToMove (setq _allowedToMove __allowedToMove)) _allowedToMove)
+   (&optional (__allowedToMove :null))
+   (if (not (eq __allowedToMove :null)) (setq _allowedToMove __allowedToMove)) _allowedToMove)
   (:dropInTeam
-   (&optional __dropInTeam)
-   (if __dropInTeam (setq _dropInTeam __dropInTeam)) _dropInTeam)
+   (&optional (__dropInTeam :null))
+   (if (not (eq __dropInTeam :null)) (setq _dropInTeam __dropInTeam)) _dropInTeam)
   (:dropInTime
    (&optional __dropInTime)
    (if __dropInTime (setq _dropInTime __dropInTime)) _dropInTime)
@@ -336,8 +342,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ")

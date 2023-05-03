@@ -1,8 +1,8 @@
-# Install script for directory: /home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/op3_kinematics_dynamics
+# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/op3_kinematics_dynamics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/alfarobi/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,34 +32,39 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Motion/op3_kinematics_dynamics/catkin_generated/installspace/op3_kinematics_dynamics.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/op3_kinematics_dynamics/catkin_generated/installspace/op3_kinematics_dynamics.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_kinematics_dynamics/cmake" TYPE FILE FILES
-    "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Motion/op3_kinematics_dynamics/catkin_generated/installspace/op3_kinematics_dynamicsConfig.cmake"
-    "/home/alfarobi/alfarobi_ws/build/ALFAROBI-Motion/op3_kinematics_dynamics/catkin_generated/installspace/op3_kinematics_dynamicsConfig-version.cmake"
+    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/op3_kinematics_dynamics/catkin_generated/installspace/op3_kinematics_dynamicsConfig.cmake"
+    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/op3_kinematics_dynamics/catkin_generated/installspace/op3_kinematics_dynamicsConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_kinematics_dynamics" TYPE FILE FILES "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/op3_kinematics_dynamics/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_kinematics_dynamics" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/op3_kinematics_dynamics/package.xml")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libop3_kinematics_dynamics.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libop3_kinematics_dynamics.so")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libop3_kinematics_dynamics.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/alfarobi/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ajus/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libop3_kinematics_dynamics.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libop3_kinematics_dynamics.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libop3_kinematics_dynamics.so"
-         OLD_RPATH "/home/alfarobi/alfarobi_ws/devel/lib:/opt/ros/kinetic/lib:"
+         OLD_RPATH "/home/ajus/alfarobi_ws/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libop3_kinematics_dynamics.so")
@@ -67,7 +72,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   endif()
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/op3_kinematics_dynamics" TYPE DIRECTORY FILES "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/op3_kinematics_dynamics/include/op3_kinematics_dynamics/")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/op3_kinematics_dynamics" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/op3_kinematics_dynamics/include/op3_kinematics_dynamics/")
 endif()
 

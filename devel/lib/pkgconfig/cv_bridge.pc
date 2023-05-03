@@ -1,8 +1,0 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
-
-Name: cv_bridge
-Description: Description of cv_bridge
-Version: 1.12.8
-Cflags: -I/home/alfarobi/alfarobi_ws/src/ALFAROBI-Vision/cv_bridge/include -I/usr/local/include -I/usr/local/include/opencv
-Libs: -L${prefix}/lib -lcv_bridge /usr/local/lib/libopencv_core.so.3.4.4 /usr/local/lib/libopencv_imgproc.so.3.4.4 /usr/local/lib/libopencv_imgcodecs.so.3.4.4
-Requires: rosconsole sensor_msgs

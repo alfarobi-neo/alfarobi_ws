@@ -1,8 +1,8 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
+prefix=/home/ajus/alfarobi_ws/devel
 
 Name: kicking_asli
 Description: Description of kicking_asli
 Version: 0.1.0
-Cflags: -I/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/include
+Cflags: -I/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/include
 Libs: -L${prefix}/lib -lkicking -lwalk_zmp
 Requires: 

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -207,6 +207,47 @@ ros::message_operations::Printer< ::densis_msgs::densis_<ContainerAllocator> >::
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::densis_msgs::densis_<ContainerAllocator1> & lhs, const ::densis_msgs::densis_<ContainerAllocator2> & rhs)
+{
+  return lhs.IMUorientation == rhs.IMUorientation &&
+    lhs.IMUgyro == rhs.IMUgyro &&
+    lhs.COMLSSP == rhs.COMLSSP &&
+    lhs.COMRSSP == rhs.COMRSSP &&
+    lhs.COMDSP == rhs.COMDSP &&
+    lhs.COMLSSPrpy == rhs.COMLSSPrpy &&
+    lhs.COMRSSPrpy == rhs.COMRSSPrpy &&
+    lhs.COMDSPrpy == rhs.COMDSPrpy &&
+    lhs.ZMPLSSP == rhs.ZMPLSSP &&
+    lhs.ZMPRSSP == rhs.ZMPRSSP &&
+    lhs.ZMPDSP == rhs.ZMPDSP &&
+    lhs.LAnklePitch_velocityNow == rhs.LAnklePitch_velocityNow &&
+    lhs.LAnklePitch_positionIK == rhs.LAnklePitch_positionIK &&
+    lhs.LAnklePitch_positionNow == rhs.LAnklePitch_positionNow &&
+    lhs.LAnklePitch_refPosFromPos == rhs.LAnklePitch_refPosFromPos &&
+    lhs.RAnklePitch_velocityNow == rhs.RAnklePitch_velocityNow &&
+    lhs.RAnklePitch_positionIK == rhs.RAnklePitch_positionIK &&
+    lhs.RAnklePitch_positionNow == rhs.RAnklePitch_positionNow &&
+    lhs.RAnklePitch_refPosFromPos == rhs.RAnklePitch_refPosFromPos &&
+    lhs.COMDSPrpy_pitch_Est == rhs.COMDSPrpy_pitch_Est &&
+    lhs.gyro_pitch_Est == rhs.gyro_pitch_Est &&
+    lhs.COMDSPrpy_pitch_Meas == rhs.COMDSPrpy_pitch_Meas &&
+    lhs.gyro_pitch_Meas == rhs.gyro_pitch_Meas &&
+    lhs.gyro_pitch_Fil == rhs.gyro_pitch_Fil &&
+    lhs.CP_0 == rhs.CP_0 &&
+    lhs.CP_1 == rhs.CP_1 &&
+    lhs.CP_2 == rhs.CP_2 &&
+    lhs.CP_3 == rhs.CP_3;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::densis_msgs::densis_<ContainerAllocator1> & lhs, const ::densis_msgs::densis_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace densis_msgs
 
 namespace ros
@@ -216,23 +257,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'densis_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/densis_msgs/msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::densis_msgs::densis_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::densis_msgs::densis_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::densis_msgs::densis_<ContainerAllocator> >
@@ -241,6 +266,16 @@ struct IsMessage< ::densis_msgs::densis_<ContainerAllocator> >
 
 template <class ContainerAllocator>
 struct IsMessage< ::densis_msgs::densis_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::densis_msgs::densis_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::densis_msgs::densis_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -284,47 +319,47 @@ struct Definition< ::densis_msgs::densis_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "geometry_msgs/Point IMUorientation\n\
-geometry_msgs/Point IMUgyro\n\
-geometry_msgs/Point COMLSSP\n\
-geometry_msgs/Point COMRSSP\n\
-geometry_msgs/Point COMDSP\n\
-geometry_msgs/Point COMLSSPrpy\n\
-geometry_msgs/Point COMRSSPrpy\n\
-geometry_msgs/Point COMDSPrpy\n\
-geometry_msgs/Point ZMPLSSP\n\
-geometry_msgs/Point ZMPRSSP\n\
-geometry_msgs/Point ZMPDSP\n\
-\n\
-#geometry_msgs/Transform LAnklePitch\n\
-#geometry_msgs/Transform RAnklePitch\n\
-\n\
-float32 LAnklePitch_velocityNow  \n\
-float32 LAnklePitch_positionIK   \n\
-float32 LAnklePitch_positionNow  \n\
-float32 LAnklePitch_refPosFromPos \n\
-float32 RAnklePitch_velocityNow  \n\
-float32 RAnklePitch_positionIK   \n\
-float32 RAnklePitch_positionNow \n\
-float32 RAnklePitch_refPosFromPos\n\
-\n\
-float32 COMDSPrpy_pitch_Est\n\
-float32 gyro_pitch_Est\n\
-float32 COMDSPrpy_pitch_Meas\n\
-float32 gyro_pitch_Meas\n\
-float32 gyro_pitch_Fil\n\
-\n\
-float32 CP_0\n\
-float32 CP_1\n\
-float32 CP_2\n\
-float32 CP_3\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-";
+    return "geometry_msgs/Point IMUorientation\n"
+"geometry_msgs/Point IMUgyro\n"
+"geometry_msgs/Point COMLSSP\n"
+"geometry_msgs/Point COMRSSP\n"
+"geometry_msgs/Point COMDSP\n"
+"geometry_msgs/Point COMLSSPrpy\n"
+"geometry_msgs/Point COMRSSPrpy\n"
+"geometry_msgs/Point COMDSPrpy\n"
+"geometry_msgs/Point ZMPLSSP\n"
+"geometry_msgs/Point ZMPRSSP\n"
+"geometry_msgs/Point ZMPDSP\n"
+"\n"
+"#geometry_msgs/Transform LAnklePitch\n"
+"#geometry_msgs/Transform RAnklePitch\n"
+"\n"
+"float32 LAnklePitch_velocityNow  \n"
+"float32 LAnklePitch_positionIK   \n"
+"float32 LAnklePitch_positionNow  \n"
+"float32 LAnklePitch_refPosFromPos \n"
+"float32 RAnklePitch_velocityNow  \n"
+"float32 RAnklePitch_positionIK   \n"
+"float32 RAnklePitch_positionNow \n"
+"float32 RAnklePitch_refPosFromPos\n"
+"\n"
+"float32 COMDSPrpy_pitch_Est\n"
+"float32 gyro_pitch_Est\n"
+"float32 COMDSPrpy_pitch_Meas\n"
+"float32 gyro_pitch_Meas\n"
+"float32 gyro_pitch_Fil\n"
+"\n"
+"float32 CP_0\n"
+"float32 CP_1\n"
+"float32 CP_2\n"
+"float32 CP_3\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+;
   }
 
   static const char* value(const ::densis_msgs::densis_<ContainerAllocator>&) { return value(); }

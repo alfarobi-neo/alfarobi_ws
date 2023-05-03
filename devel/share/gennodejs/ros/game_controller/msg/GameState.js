@@ -248,7 +248,7 @@ class GameState {
   static getMessageSize(object) {
     let length = 0;
     length += std_msgs.msg.Header.getMessageSize(object.header);
-    length += object.coach_message.length;
+    length += _getByteLength(object.coach_message);
     return length + 26;
   }
 
@@ -342,8 +342,6 @@ class GameState {
     # time-handling sugar is provided by the client library
     time stamp
     #Frame this data is associated with
-    # 0: no frame
-    # 1: global frame
     string frame_id
     
     `;

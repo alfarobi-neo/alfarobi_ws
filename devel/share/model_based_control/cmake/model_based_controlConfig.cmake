@@ -67,14 +67,14 @@ set(model_based_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(model_based_control_SOURCE_PREFIX /home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/model_based_control)
-  set(model_based_control_DEVEL_PREFIX /home/alfarobi/alfarobi_ws/devel)
+  set(model_based_control_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/model_based_control)
+  set(model_based_control_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
   set(model_based_control_INSTALL_PREFIX "")
   set(model_based_control_PREFIX ${model_based_control_DEVEL_PREFIX})
 else()
   set(model_based_control_SOURCE_PREFIX "")
   set(model_based_control_DEVEL_PREFIX "")
-  set(model_based_control_INSTALL_PREFIX /home/alfarobi/alfarobi_ws/install)
+  set(model_based_control_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
   set(model_based_control_PREFIX ${model_based_control_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(model_based_control_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/include " STREQUAL " ")
+if(NOT "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/include " STREQUAL " ")
   set(model_based_control_INCLUDE_DIRS "")
-  set(_include_dirs "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/include")
+  set(_include_dirs "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/inclu
         message(FATAL_ERROR "Project 'model_based_control' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'model_based_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/alfarobi/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'model_based_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/${idir}'.  ${_report}")
     endif()
     _list_append_unique(model_based_control_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/alfarobi/alfarobi_ws/devel/lib;/home/alfarobi/alfarobi_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ajus/alfarobi_ws/devel/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(model_based_control_LIBRARIES ${model_based_control_LIBRARIES})
 
   _list_append_unique(model_based_control_LIBRARY_DIRS ${${model_based_control_dep}_LIBRARY_DIRS})
-  list(APPEND model_based_control_EXPORTED_TARGETS ${${model_based_control_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(model_based_control_EXPORTED_TARGETS ${${model_based_control_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "model_based_control-msg-extras.cmake")

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/__init__.py"
+  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_robot_data.py"
+  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_comm.py"
+  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py"
   "CMakeFiles/team_communication_generate_messages_py"
-  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/team_communication/msg/_robot_data.py"
-  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/team_communication/msg/_team_comm.py"
-  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/team_communication/msg/_team_data.py"
-  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/team_communication/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

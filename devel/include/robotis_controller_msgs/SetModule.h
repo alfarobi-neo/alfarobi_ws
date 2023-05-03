@@ -57,8 +57,8 @@ struct DataType< ::robotis_controller_msgs::SetModule > {
 };
 
 
-// service_traits::MD5Sum< ::robotis_controller_msgs::SetModuleRequest> should match 
-// service_traits::MD5Sum< ::robotis_controller_msgs::SetModule > 
+// service_traits::MD5Sum< ::robotis_controller_msgs::SetModuleRequest> should match
+// service_traits::MD5Sum< ::robotis_controller_msgs::SetModule >
 template<>
 struct MD5Sum< ::robotis_controller_msgs::SetModuleRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::robotis_controller_msgs::SetModuleRequest>
   }
 };
 
-// service_traits::DataType< ::robotis_controller_msgs::SetModuleRequest> should match 
-// service_traits::DataType< ::robotis_controller_msgs::SetModule > 
+// service_traits::DataType< ::robotis_controller_msgs::SetModuleRequest> should match
+// service_traits::DataType< ::robotis_controller_msgs::SetModule >
 template<>
 struct DataType< ::robotis_controller_msgs::SetModuleRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::robotis_controller_msgs::SetModuleRequest>
   }
 };
 
-// service_traits::MD5Sum< ::robotis_controller_msgs::SetModuleResponse> should match 
-// service_traits::MD5Sum< ::robotis_controller_msgs::SetModule > 
+// service_traits::MD5Sum< ::robotis_controller_msgs::SetModuleResponse> should match
+// service_traits::MD5Sum< ::robotis_controller_msgs::SetModule >
 template<>
 struct MD5Sum< ::robotis_controller_msgs::SetModuleResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::robotis_controller_msgs::SetModuleResponse>
   }
 };
 
-// service_traits::DataType< ::robotis_controller_msgs::SetModuleResponse> should match 
-// service_traits::DataType< ::robotis_controller_msgs::SetModule > 
+// service_traits::DataType< ::robotis_controller_msgs::SetModuleResponse> should match
+// service_traits::DataType< ::robotis_controller_msgs::SetModule >
 template<>
 struct DataType< ::robotis_controller_msgs::SetModuleResponse>
 {

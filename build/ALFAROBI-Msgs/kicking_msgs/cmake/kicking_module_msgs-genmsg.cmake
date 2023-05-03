@@ -2,7 +2,7 @@
 
 message(STATUS "kicking_module_msgs: 1 messages, 2 services")
 
-set(MSG_I_FLAGS "-Ikicking_module_msgs:/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ikicking_module_msgs:/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,19 +17,19 @@ add_custom_target(kicking_module_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
 add_custom_target(_kicking_module_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kicking_module_msgs" "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" "kicking_module_msgs/KickingParam"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kicking_module_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" ""
 )
 
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
 add_custom_target(_kicking_module_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kicking_module_msgs" "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" "kicking_module_msgs/KickingParam"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kicking_module_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" "kicking_module_msgs/KickingParam"
 )
 
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
 add_custom_target(_kicking_module_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kicking_module_msgs" "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "kicking_module_msgs" "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" "kicking_module_msgs/KickingParam"
 )
 
 #
@@ -39,7 +39,7 @@ add_custom_target(_kicking_module_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kicking_module_msgs
@@ -47,15 +47,15 @@ _generate_msg_cpp(kicking_module_msgs
 
 ### Generating Services
 _generate_srv_cpp(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kicking_module_msgs
 )
 _generate_srv_cpp(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/kicking_module_msgs
 )
 
@@ -71,11 +71,11 @@ add_custom_target(kicking_module_msgs_generate_messages_cpp
 add_dependencies(kicking_module_msgs_generate_messages kicking_module_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_cpp _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_cpp _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_cpp _kicking_module_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -88,7 +88,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kicking_module_msgs_generate_messag
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kicking_module_msgs
@@ -96,15 +96,15 @@ _generate_msg_eus(kicking_module_msgs
 
 ### Generating Services
 _generate_srv_eus(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kicking_module_msgs
 )
 _generate_srv_eus(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/kicking_module_msgs
 )
 
@@ -120,11 +120,11 @@ add_custom_target(kicking_module_msgs_generate_messages_eus
 add_dependencies(kicking_module_msgs_generate_messages kicking_module_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_eus _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_eus _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_eus _kicking_module_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -137,7 +137,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kicking_module_msgs_generate_messag
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kicking_module_msgs
@@ -145,15 +145,15 @@ _generate_msg_lisp(kicking_module_msgs
 
 ### Generating Services
 _generate_srv_lisp(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kicking_module_msgs
 )
 _generate_srv_lisp(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/kicking_module_msgs
 )
 
@@ -169,11 +169,11 @@ add_custom_target(kicking_module_msgs_generate_messages_lisp
 add_dependencies(kicking_module_msgs_generate_messages kicking_module_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_lisp _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_lisp _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_lisp _kicking_module_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -186,7 +186,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kicking_module_msgs_generate_messag
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kicking_module_msgs
@@ -194,15 +194,15 @@ _generate_msg_nodejs(kicking_module_msgs
 
 ### Generating Services
 _generate_srv_nodejs(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kicking_module_msgs
 )
 _generate_srv_nodejs(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/kicking_module_msgs
 )
 
@@ -218,11 +218,11 @@ add_custom_target(kicking_module_msgs_generate_messages_nodejs
 add_dependencies(kicking_module_msgs_generate_messages kicking_module_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_nodejs _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_nodejs _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_nodejs _kicking_module_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -235,7 +235,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS kicking_module_msgs_generate_messag
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kicking_module_msgs
@@ -243,15 +243,15 @@ _generate_msg_py(kicking_module_msgs
 
 ### Generating Services
 _generate_srv_py(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kicking_module_msgs
 )
 _generate_srv_py(kicking_module_msgs
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv"
   "${MSG_I_FLAGS}"
-  "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
+  "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kicking_module_msgs
 )
 
@@ -267,11 +267,11 @@ add_custom_target(kicking_module_msgs_generate_messages_py
 add_dependencies(kicking_module_msgs_generate_messages kicking_module_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_py _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/GetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_py _kicking_module_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/msg/KickingParam.msg" NAME_WE)
+get_filename_component(_filename "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/kicking_msgs/srv/SetKickingParam.srv" NAME_WE)
 add_dependencies(kicking_module_msgs_generate_messages_py _kicking_module_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -328,7 +328,7 @@ if(TARGET std_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kicking_module_msgs)
-  install(CODE "execute_process(COMMAND \"/usr/bin/python2\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kicking_module_msgs\")")
+  install(CODE "execute_process(COMMAND \"/home/ajus/anaconda3/bin/python3\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kicking_module_msgs\")")
   # install generated code
   install(
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/kicking_module_msgs

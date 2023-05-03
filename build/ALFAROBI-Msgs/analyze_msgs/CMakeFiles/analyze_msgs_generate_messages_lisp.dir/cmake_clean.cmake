@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/analyze_msgs/msg/Fuzzy.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/analyze_msgs/msg/movAvg.lisp"
   "CMakeFiles/analyze_msgs_generate_messages_lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/analyze_msgs/msg/Fuzzy.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/analyze_msgs/msg/movAvg.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

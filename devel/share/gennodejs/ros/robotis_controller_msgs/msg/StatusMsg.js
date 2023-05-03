@@ -83,8 +83,8 @@ class StatusMsg {
   static getMessageSize(object) {
     let length = 0;
     length += std_msgs.msg.Header.getMessageSize(object.header);
-    length += object.module_name.length;
-    length += object.status_msg.length;
+    length += _getByteLength(object.module_name);
+    length += _getByteLength(object.status_msg);
     return length + 9;
   }
 
@@ -125,8 +125,6 @@ class StatusMsg {
     # time-handling sugar is provided by the client library
     time stamp
     #Frame this data is associated with
-    # 0: no frame
-    # 1: global frame
     string frame_id
     
     `;

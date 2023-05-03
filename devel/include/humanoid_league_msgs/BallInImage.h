@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -72,6 +72,22 @@ ros::message_operations::Printer< ::humanoid_league_msgs::BallInImage_<Container
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::BallInImage_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::BallInImage_<ContainerAllocator2> & rhs)
+{
+  return lhs.center == rhs.center &&
+    lhs.diameter == rhs.diameter &&
+    lhs.confidence == rhs.confidence;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::BallInImage_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::BallInImage_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -81,23 +97,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::BallInImage_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::BallInImage_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::BallInImage_<ContainerAllocator> >
@@ -106,6 +106,16 @@ struct IsMessage< ::humanoid_league_msgs::BallInImage_<ContainerAllocator> >
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::BallInImage_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::BallInImage_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::BallInImage_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -149,24 +159,24 @@ struct Definition< ::humanoid_league_msgs::BallInImage_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# Providing a (possible) ball in the image\n\
-\n\
-# Center point of the ball, the z-axis should be ignored (in pixel)\n\
-geometry_msgs/Point center\n\
-# Diameter of the ball (in pixel)\n\
-float64 diameter\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-# 0 means no ball was found\n\
-float32 confidence\n\
-\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-";
+    return "# Providing a (possible) ball in the image\n"
+"\n"
+"# Center point of the ball, the z-axis should be ignored (in pixel)\n"
+"geometry_msgs/Point center\n"
+"# Diameter of the ball (in pixel)\n"
+"float64 diameter\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"# 0 means no ball was found\n"
+"float32 confidence\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::BallInImage_<ContainerAllocator>&) { return value(); }

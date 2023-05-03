@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/op3_action_editor.dir/src/main.cpp.o"
+  "/home/ajus/alfarobi_ws/devel/lib/op3_action_editor/op3_action_editor"
+  "/home/ajus/alfarobi_ws/devel/lib/op3_action_editor/op3_action_editor.pdb"
   "CMakeFiles/op3_action_editor.dir/src/action_editor.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/op3_action_editor/op3_action_editor.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/op3_action_editor/op3_action_editor"
+  "CMakeFiles/op3_action_editor.dir/src/main.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
+prefix=/home/ajus/alfarobi_ws/devel
 
 Name: op3_manager
 Description: Description of op3_manager

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -46,13 +46,13 @@ struct LineInformationRelative_
    typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
   _header_type header;
 
-   typedef std::vector< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> >::other >  _segments_type;
+   typedef std::vector< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::LineSegmentRelative_<ContainerAllocator> >> _segments_type;
   _segments_type segments;
 
-   typedef std::vector< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> >::other >  _markings_type;
+   typedef std::vector< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::LineIntersectionRelative_<ContainerAllocator> >> _markings_type;
   _markings_type markings;
 
-   typedef std::vector< ::humanoid_league_msgs::LineCircleRelative_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::humanoid_league_msgs::LineCircleRelative_<ContainerAllocator> >::other >  _circles_type;
+   typedef std::vector< ::humanoid_league_msgs::LineCircleRelative_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::humanoid_league_msgs::LineCircleRelative_<ContainerAllocator> >> _circles_type;
   _circles_type circles;
 
 
@@ -80,6 +80,23 @@ ros::message_operations::Printer< ::humanoid_league_msgs::LineInformationRelativ
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator2> & rhs)
+{
+  return lhs.header == rhs.header &&
+    lhs.segments == rhs.segments &&
+    lhs.markings == rhs.markings &&
+    lhs.circles == rhs.circles;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -89,23 +106,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator> >
@@ -115,6 +116,16 @@ struct IsMessage< ::humanoid_league_msgs::LineInformationRelative_<ContainerAllo
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -157,79 +168,77 @@ struct Definition< ::humanoid_league_msgs::LineInformationRelative_<ContainerAll
 {
   static const char* value()
   {
-    return "# Contains all relative information about line features on the field\n\
-\n\
-# The header is included to get the time stamp for later use in tf\n\
-std_msgs/Header header\n\
-\n\
-LineSegmentRelative[] segments\n\
-LineIntersectionRelative[] markings\n\
-LineCircleRelative[] circles\n\
-================================================================================\n\
-MSG: std_msgs/Header\n\
-# Standard metadata for higher-level stamped data types.\n\
-# This is generally used to communicate timestamped data \n\
-# in a particular coordinate frame.\n\
-# \n\
-# sequence ID: consecutively increasing ID \n\
-uint32 seq\n\
-#Two-integer timestamp that is expressed as:\n\
-# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
-# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
-# time-handling sugar is provided by the client library\n\
-time stamp\n\
-#Frame this data is associated with\n\
-# 0: no frame\n\
-# 1: global frame\n\
-string frame_id\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/LineSegmentRelative\n\
-# A line segment relative to the robot\n\
-\n\
-# Start and end position of the line\n\
-# x in front of the robot\n\
-# y to the left\n\
-# z should be 0\n\
-geometry_msgs/Point start\n\
-geometry_msgs/Point end\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/LineIntersectionRelative\n\
-# Information about a special line feature on the field\n\
-\n\
-# The type defines which kind of intersection is present\n\
-uint8 UNDEFINED=0\n\
-uint8 L=1\n\
-uint8 T=2\n\
-uint8 X=3\n\
-uint8 type\n\
-\n\
-# The line segments related to this crossing\n\
-humanoid_league_msgs/LineSegmentRelative segments\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-\n\
-================================================================================\n\
-MSG: humanoid_league_msgs/LineCircleRelative\n\
-# Defines a line circle in relative space, i.e. the center circle\n\
-\n\
-# The circle is defined by an arc with left and right end points and a point in the middle for getting the radius\n\
-geometry_msgs/Point left\n\
-geometry_msgs/Point middle\n\
-geometry_msgs/Point right\n\
-\n\
-";
+    return "# Contains all relative information about line features on the field\n"
+"\n"
+"# The header is included to get the time stamp for later use in tf\n"
+"std_msgs/Header header\n"
+"\n"
+"LineSegmentRelative[] segments\n"
+"LineIntersectionRelative[] markings\n"
+"LineCircleRelative[] circles\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/LineSegmentRelative\n"
+"# A line segment relative to the robot\n"
+"\n"
+"# Start and end position of the line\n"
+"# x in front of the robot\n"
+"# y to the left\n"
+"# z should be 0\n"
+"geometry_msgs/Point start\n"
+"geometry_msgs/Point end\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/LineIntersectionRelative\n"
+"# Information about a special line feature on the field\n"
+"\n"
+"# The type defines which kind of intersection is present\n"
+"uint8 UNDEFINED=0\n"
+"uint8 L=1\n"
+"uint8 T=2\n"
+"uint8 X=3\n"
+"uint8 type\n"
+"\n"
+"# The line segments related to this crossing\n"
+"humanoid_league_msgs/LineSegmentRelative segments\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"\n"
+"================================================================================\n"
+"MSG: humanoid_league_msgs/LineCircleRelative\n"
+"# Defines a line circle in relative space, i.e. the center circle\n"
+"\n"
+"# The circle is defined by an arc with left and right end points and a point in the middle for getting the radius\n"
+"geometry_msgs/Point left\n"
+"geometry_msgs/Point middle\n"
+"geometry_msgs/Point right\n"
+"\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::LineInformationRelative_<ContainerAllocator>&) { return value(); }

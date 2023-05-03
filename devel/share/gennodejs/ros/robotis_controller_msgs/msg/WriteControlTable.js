@@ -81,8 +81,8 @@ class WriteControlTable {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.joint_name.length;
-    length += object.start_item_name.length;
+    length += _getByteLength(object.joint_name);
+    length += _getByteLength(object.start_item_name);
     length += object.data.length;
     return length + 14;
   }

@@ -1,8 +1,8 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
+prefix=/home/ajus/alfarobi_ws/devel
 
 Name: robotis_framework_common
 Description: Description of robotis_framework_common
 Version: 0.2.9
-Cflags: -I/home/alfarobi/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include
+Cflags: -I/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include
 Libs: -L${prefix}/lib -lrobotis_framework_common
 Requires: roscpp robotis_device

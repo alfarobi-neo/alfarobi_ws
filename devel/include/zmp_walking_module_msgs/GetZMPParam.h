@@ -57,8 +57,8 @@ struct DataType< ::zmp_walking_module_msgs::GetZMPParam > {
 };
 
 
-// service_traits::MD5Sum< ::zmp_walking_module_msgs::GetZMPParamRequest> should match 
-// service_traits::MD5Sum< ::zmp_walking_module_msgs::GetZMPParam > 
+// service_traits::MD5Sum< ::zmp_walking_module_msgs::GetZMPParamRequest> should match
+// service_traits::MD5Sum< ::zmp_walking_module_msgs::GetZMPParam >
 template<>
 struct MD5Sum< ::zmp_walking_module_msgs::GetZMPParamRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::zmp_walking_module_msgs::GetZMPParamRequest>
   }
 };
 
-// service_traits::DataType< ::zmp_walking_module_msgs::GetZMPParamRequest> should match 
-// service_traits::DataType< ::zmp_walking_module_msgs::GetZMPParam > 
+// service_traits::DataType< ::zmp_walking_module_msgs::GetZMPParamRequest> should match
+// service_traits::DataType< ::zmp_walking_module_msgs::GetZMPParam >
 template<>
 struct DataType< ::zmp_walking_module_msgs::GetZMPParamRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::zmp_walking_module_msgs::GetZMPParamRequest>
   }
 };
 
-// service_traits::MD5Sum< ::zmp_walking_module_msgs::GetZMPParamResponse> should match 
-// service_traits::MD5Sum< ::zmp_walking_module_msgs::GetZMPParam > 
+// service_traits::MD5Sum< ::zmp_walking_module_msgs::GetZMPParamResponse> should match
+// service_traits::MD5Sum< ::zmp_walking_module_msgs::GetZMPParam >
 template<>
 struct MD5Sum< ::zmp_walking_module_msgs::GetZMPParamResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::zmp_walking_module_msgs::GetZMPParamResponse>
   }
 };
 
-// service_traits::DataType< ::zmp_walking_module_msgs::GetZMPParamResponse> should match 
-// service_traits::DataType< ::zmp_walking_module_msgs::GetZMPParam > 
+// service_traits::DataType< ::zmp_walking_module_msgs::GetZMPParamResponse> should match
+// service_traits::DataType< ::zmp_walking_module_msgs::GetZMPParam >
 template<>
 struct DataType< ::zmp_walking_module_msgs::GetZMPParamResponse>
 {

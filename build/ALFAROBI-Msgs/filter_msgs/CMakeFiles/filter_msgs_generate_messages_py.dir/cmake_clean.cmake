@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/filter_msgs/msg/__init__.py"
+  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/filter_msgs/msg/_filter.py"
   "CMakeFiles/filter_msgs_generate_messages_py"
-  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/filter_msgs/msg/_filter.py"
-  "/home/alfarobi/alfarobi_ws/devel/lib/python2.7/dist-packages/filter_msgs/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

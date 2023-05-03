@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include".split(';') if
 PROJECT_CATKIN_DEPENDS = "roscpp;roslib;std_msgs;sensor_msgs;robotis_controller_msgs;dynamixel_sdk;robotis_device;robotis_framework_common;cmake_modules".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lrobotis_controller".split(';') if "-lrobotis_controller" != "" else []
 PROJECT_NAME = "robotis_controller"
-PROJECT_SPACE_DIR = "/home/alfarobi/alfarobi_ws/install"
+PROJECT_SPACE_DIR = "/home/ajus/alfarobi_ws/install"
 PROJECT_VERSION = "0.2.9"

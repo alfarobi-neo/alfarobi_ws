@@ -22,7 +22,7 @@
   (:init
    (&key
     ((:voltage __voltage) (make-array 0 :initial-element 0.0 :element-type :float))
-    ((:temperature __temperature) (let (r) (dotimes (i 0) (push (instance sensor_msgs::Temperature :init) r)) r))
+    ((:temperature __temperature) ())
     )
    (send-super :init)
    (setq _voltage __voltage)
@@ -115,8 +115,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ")

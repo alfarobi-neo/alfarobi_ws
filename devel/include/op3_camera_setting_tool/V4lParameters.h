@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -34,7 +34,7 @@ struct V4lParameters_
 
 
 
-   typedef std::vector< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> >::other >  _video_parameter_type;
+   typedef std::vector< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::op3_camera_setting_tool::V4lParameter_<ContainerAllocator> >> _video_parameter_type;
   _video_parameter_type video_parameter;
 
 
@@ -62,6 +62,20 @@ ros::message_operations::Printer< ::op3_camera_setting_tool::V4lParameters_<Cont
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator1> & lhs, const ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator2> & rhs)
+{
+  return lhs.video_parameter == rhs.video_parameter;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator1> & lhs, const ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace op3_camera_setting_tool
 
 namespace ros
@@ -71,23 +85,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'op3_camera_setting_tool': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Tools/op3_camera_setting_tool/msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator> >
@@ -97,6 +95,16 @@ struct IsMessage< ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator> 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -139,12 +147,12 @@ struct Definition< ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator>
 {
   static const char* value()
   {
-    return "V4lParameter[]    video_parameter\n\
-================================================================================\n\
-MSG: op3_camera_setting_tool/V4lParameter\n\
-string  name\n\
-int32   value\n\
-";
+    return "V4lParameter[]    video_parameter\n"
+"================================================================================\n"
+"MSG: op3_camera_setting_tool/V4lParameter\n"
+"string  name\n"
+"int32   value\n"
+;
   }
 
   static const char* value(const ::op3_camera_setting_tool::V4lParameters_<ContainerAllocator>&) { return value(); }

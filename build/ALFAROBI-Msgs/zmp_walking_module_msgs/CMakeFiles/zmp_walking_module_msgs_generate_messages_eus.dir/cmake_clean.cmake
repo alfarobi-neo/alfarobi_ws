@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/manifest.l"
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/msg/ZMPWalkingParam.l"
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/srv/GetZMPParam.l"
+  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/srv/SetZMPParam.l"
   "CMakeFiles/zmp_walking_module_msgs_generate_messages_eus"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/msg/ZMPWalkingParam.l"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/srv/SetZMPParam.l"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/srv/GetZMPParam.l"
-  "/home/alfarobi/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

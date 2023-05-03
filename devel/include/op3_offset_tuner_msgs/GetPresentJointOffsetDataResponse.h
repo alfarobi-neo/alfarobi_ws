@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -34,7 +34,7 @@ struct GetPresentJointOffsetDataResponse_
 
 
 
-   typedef std::vector< ::op3_offset_tuner_msgs::JointOffsetPositionData_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::op3_offset_tuner_msgs::JointOffsetPositionData_<ContainerAllocator> >::other >  _present_data_array_type;
+   typedef std::vector< ::op3_offset_tuner_msgs::JointOffsetPositionData_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::op3_offset_tuner_msgs::JointOffsetPositionData_<ContainerAllocator> >> _present_data_array_type;
   _present_data_array_type present_data_array;
 
 
@@ -62,6 +62,20 @@ ros::message_operations::Printer< ::op3_offset_tuner_msgs::GetPresentJointOffset
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator1> & lhs, const ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator2> & rhs)
+{
+  return lhs.present_data_array == rhs.present_data_array;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator1> & lhs, const ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace op3_offset_tuner_msgs
 
 namespace ros
@@ -71,23 +85,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'op3_offset_tuner_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator> >
@@ -97,6 +95,16 @@ struct IsMessage< ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<Co
 template <class ContainerAllocator>
 struct IsMessage< ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -139,18 +147,18 @@ struct Definition< ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<C
 {
   static const char* value()
   {
-    return "JointOffsetPositionData[] present_data_array\n\
-\n\
-================================================================================\n\
-MSG: op3_offset_tuner_msgs/JointOffsetPositionData\n\
-string  joint_name\n\
-float64 goal_value\n\
-float64 offset_value\n\
-float64 present_value\n\
-int32   p_gain\n\
-int32   i_gain\n\
-int32   d_gain\n\
-";
+    return "JointOffsetPositionData[] present_data_array\n"
+"\n"
+"================================================================================\n"
+"MSG: op3_offset_tuner_msgs/JointOffsetPositionData\n"
+"string  joint_name\n"
+"float64 goal_value\n"
+"float64 offset_value\n"
+"float64 present_value\n"
+"int32   p_gain\n"
+"int32   i_gain\n"
+"int32   d_gain\n"
+;
   }
 
   static const char* value(const ::op3_offset_tuner_msgs::GetPresentJointOffsetDataResponse_<ContainerAllocator>&) { return value(); }

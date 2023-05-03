@@ -47,6 +47,22 @@
 (intern "*STATE_PENALTYKICK*" (find-package "HUMANOID_LEAGUE_MSGS::GAMESTATE"))
 (shadow '*STATE_PENALTYKICK* (find-package "HUMANOID_LEAGUE_MSGS::GAMESTATE"))
 (defconstant humanoid_league_msgs::GameState::*STATE_PENALTYKICK* 5)
+
+(defun humanoid_league_msgs::GameState-to-symbol (const)
+  (cond
+        ((= const 0) 'humanoid_league_msgs::GameState::*GAMESTATE_INITAL*)
+        ((= const 1) 'humanoid_league_msgs::GameState::*GAMESTATE_READY*)
+        ((= const 2) 'humanoid_league_msgs::GameState::*GAMESTATE_SET*)
+        ((= const 3) 'humanoid_league_msgs::GameState::*GAMESTATE_PLAYING*)
+        ((= const 4) 'humanoid_league_msgs::GameState::*GAMESTATE_FINISHED*)
+        ((= const 0) 'humanoid_league_msgs::GameState::*STATE_NORMAL*)
+        ((= const 1) 'humanoid_league_msgs::GameState::*STATE_PENALTYSHOOT*)
+        ((= const 2) 'humanoid_league_msgs::GameState::*STATE_OVERTIME*)
+        ((= const 3) 'humanoid_league_msgs::GameState::*STATE_TIMEOUT*)
+        ((= const 4) 'humanoid_league_msgs::GameState::*STATE_FREEKICK*)
+        ((= const 5) 'humanoid_league_msgs::GameState::*STATE_PENALTYKICK*)
+        (t nil)))
+
 (defclass humanoid_league_msgs::GameState
   :super ros::object
   :slots (_header _gameState _secondaryState _secondrayStateTeam _firstHalf _ownScore _rivalScore _secondsRemaining _secondary_seconds_remaining _hasKickOff _penalized _secondsTillUnpenalized _allowedToMove _dropInTeam _dropInTime _penaltyShot _singleShots _coach_message ))
@@ -110,8 +126,8 @@
    (&optional __secondrayStateTeam)
    (if __secondrayStateTeam (setq _secondrayStateTeam __secondrayStateTeam)) _secondrayStateTeam)
   (:firstHalf
-   (&optional __firstHalf)
-   (if __firstHalf (setq _firstHalf __firstHalf)) _firstHalf)
+   (&optional (__firstHalf :null))
+   (if (not (eq __firstHalf :null)) (setq _firstHalf __firstHalf)) _firstHalf)
   (:ownScore
    (&optional __ownScore)
    (if __ownScore (setq _ownScore __ownScore)) _ownScore)
@@ -125,20 +141,20 @@
    (&optional __secondary_seconds_remaining)
    (if __secondary_seconds_remaining (setq _secondary_seconds_remaining __secondary_seconds_remaining)) _secondary_seconds_remaining)
   (:hasKickOff
-   (&optional __hasKickOff)
-   (if __hasKickOff (setq _hasKickOff __hasKickOff)) _hasKickOff)
+   (&optional (__hasKickOff :null))
+   (if (not (eq __hasKickOff :null)) (setq _hasKickOff __hasKickOff)) _hasKickOff)
   (:penalized
-   (&optional __penalized)
-   (if __penalized (setq _penalized __penalized)) _penalized)
+   (&optional (__penalized :null))
+   (if (not (eq __penalized :null)) (setq _penalized __penalized)) _penalized)
   (:secondsTillUnpenalized
    (&optional __secondsTillUnpenalized)
    (if __secondsTillUnpenalized (setq _secondsTillUnpenalized __secondsTillUnpenalized)) _secondsTillUnpenalized)
   (:allowedToMove
-   (&optional __allowedToMove)
-   (if __allowedToMove (setq _allowedToMove __allowedToMove)) _allowedToMove)
+   (&optional (__allowedToMove :null))
+   (if (not (eq __allowedToMove :null)) (setq _allowedToMove __allowedToMove)) _allowedToMove)
   (:dropInTeam
-   (&optional __dropInTeam)
-   (if __dropInTeam (setq _dropInTeam __dropInTeam)) _dropInTeam)
+   (&optional (__dropInTeam :null))
+   (if (not (eq __dropInTeam :null)) (setq _dropInTeam __dropInTeam)) _dropInTeam)
   (:dropInTime
    (&optional __dropInTime)
    (if __dropInTime (setq _dropInTime __dropInTime)) _dropInTime)
@@ -342,8 +358,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ")

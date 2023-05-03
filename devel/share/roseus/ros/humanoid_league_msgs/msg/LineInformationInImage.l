@@ -22,9 +22,9 @@
   (:init
    (&key
     ((:header __header) (instance std_msgs::Header :init))
-    ((:intersections __intersections) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::LineIntersectionInImage :init) r)) r))
-    ((:segments __segments) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::LineSegmentInImage :init) r)) r))
-    ((:circles __circles) (let (r) (dotimes (i 0) (push (instance humanoid_league_msgs::LineCircleInImage :init) r)) r))
+    ((:intersections __intersections) ())
+    ((:segments __segments) ())
+    ((:circles __circles) ())
     )
    (send-super :init)
    (setq _header __header)
@@ -149,8 +149,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 
 ================================================================================

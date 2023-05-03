@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/msg/ZMPWalkingParam.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/srv/GetZMPParam.lisp"
+  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/srv/SetZMPParam.lisp"
   "CMakeFiles/zmp_walking_module_msgs_generate_messages_lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/msg/ZMPWalkingParam.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/srv/SetZMPParam.lisp"
-  "/home/alfarobi/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/srv/GetZMPParam.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/include/team_msgs/team_msgs.h"
   "CMakeFiles/team_msgs_generate_messages_cpp"
-  "/home/alfarobi/alfarobi_ws/devel/include/team_msgs/team_msgs.h"
 )
 
 # Per-language clean rules from dependency scanning.

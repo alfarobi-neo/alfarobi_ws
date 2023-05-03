@@ -67,14 +67,14 @@ set(data_log_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(data_log_msgs_SOURCE_PREFIX /home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs)
-  set(data_log_msgs_DEVEL_PREFIX /home/alfarobi/alfarobi_ws/devel)
+  set(data_log_msgs_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs)
+  set(data_log_msgs_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
   set(data_log_msgs_INSTALL_PREFIX "")
   set(data_log_msgs_PREFIX ${data_log_msgs_DEVEL_PREFIX})
 else()
   set(data_log_msgs_SOURCE_PREFIX "")
   set(data_log_msgs_DEVEL_PREFIX "")
-  set(data_log_msgs_INSTALL_PREFIX /home/alfarobi/alfarobi_ws/install)
+  set(data_log_msgs_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
   set(data_log_msgs_PREFIX ${data_log_msgs_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/alfarobi/alfarobi_ws/install/lib;/home/alfarobi/alfarobi_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ajus/alfarobi_ws/install/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(data_log_msgs_LIBRARIES ${data_log_msgs_LIBRARIES})
 
   _list_append_unique(data_log_msgs_LIBRARY_DIRS ${${data_log_msgs_dep}_LIBRARY_DIRS})
-  list(APPEND data_log_msgs_EXPORTED_TARGETS ${${data_log_msgs_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(data_log_msgs_EXPORTED_TARGETS ${${data_log_msgs_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "data_log_msgs-msg-extras.cmake")

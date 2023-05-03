@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "robotis_math;op3_kinematics_dynamics".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lop3_base_module".split(';') if "-lop3_base_module" != "" else []
 PROJECT_NAME = "op3_base_module"
-PROJECT_SPACE_DIR = "/home/alfarobi/alfarobi_ws/install"
+PROJECT_SPACE_DIR = "/home/ajus/alfarobi_ws/install"
 PROJECT_VERSION = "0.1.0"

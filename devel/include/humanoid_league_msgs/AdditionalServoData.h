@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -36,10 +36,10 @@ struct AdditionalServoData_
 
 
 
-   typedef std::vector<float, typename ContainerAllocator::template rebind<float>::other >  _voltage_type;
+   typedef std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> _voltage_type;
   _voltage_type voltage;
 
-   typedef std::vector< ::sensor_msgs::Temperature_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::sensor_msgs::Temperature_<ContainerAllocator> >::other >  _temperature_type;
+   typedef std::vector< ::sensor_msgs::Temperature_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::sensor_msgs::Temperature_<ContainerAllocator> >> _temperature_type;
   _temperature_type temperature;
 
 
@@ -67,6 +67,21 @@ ros::message_operations::Printer< ::humanoid_league_msgs::AdditionalServoData_<C
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator2> & rhs)
+{
+  return lhs.voltage == rhs.voltage &&
+    lhs.temperature == rhs.temperature;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -76,23 +91,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator> >
@@ -102,6 +101,16 @@ struct IsMessage< ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocato
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -144,40 +153,38 @@ struct Definition< ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocat
 {
   static const char* value()
   {
-    return "# This message provides additional data from the servos, which is not included in JointState.msg\n\
-# Should mainly used for monitoring and debug purposes\n\
-\n\
-# Setting the value to -1 means there is no data from this motor\n\
-float32[] voltage\n\
-sensor_msgs/Temperature[] temperature\n\
-================================================================================\n\
-MSG: sensor_msgs/Temperature\n\
- # Single temperature reading.\n\
-\n\
- Header header           # timestamp is the time the temperature was measured\n\
-                         # frame_id is the location of the temperature reading\n\
-\n\
- float64 temperature     # Measurement of the Temperature in Degrees Celsius\n\
-\n\
- float64 variance        # 0 is interpreted as variance unknown\n\
-================================================================================\n\
-MSG: std_msgs/Header\n\
-# Standard metadata for higher-level stamped data types.\n\
-# This is generally used to communicate timestamped data \n\
-# in a particular coordinate frame.\n\
-# \n\
-# sequence ID: consecutively increasing ID \n\
-uint32 seq\n\
-#Two-integer timestamp that is expressed as:\n\
-# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
-# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
-# time-handling sugar is provided by the client library\n\
-time stamp\n\
-#Frame this data is associated with\n\
-# 0: no frame\n\
-# 1: global frame\n\
-string frame_id\n\
-";
+    return "# This message provides additional data from the servos, which is not included in JointState.msg\n"
+"# Should mainly used for monitoring and debug purposes\n"
+"\n"
+"# Setting the value to -1 means there is no data from this motor\n"
+"float32[] voltage\n"
+"sensor_msgs/Temperature[] temperature\n"
+"================================================================================\n"
+"MSG: sensor_msgs/Temperature\n"
+" # Single temperature reading.\n"
+"\n"
+" Header header           # timestamp is the time the temperature was measured\n"
+"                         # frame_id is the location of the temperature reading\n"
+"\n"
+" float64 temperature     # Measurement of the Temperature in Degrees Celsius\n"
+"\n"
+" float64 variance        # 0 is interpreted as variance unknown\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::AdditionalServoData_<ContainerAllocator>&) { return value(); }

@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
+prefix=/home/ajus/alfarobi_ws/devel
 
 Name: uni_color_detector
 Description: Description of uni_color_detector

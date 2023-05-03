@@ -12,7 +12,7 @@ add_compile_options(-std=c++11)
 
 # qt_build provides the qt cmake glue, roscpp the comms for a default talker
 find_package(catkin REQUIRED COMPONENTS
-    qt_build
+    # qt_build
     roscpp
     roslib
     cmake_modules
@@ -48,21 +48,21 @@ catkin_package(
 # Qt Environment
 ##############################################################################
 
-# this comes from qt_build's qt-ros.cmake which is automatically 
-# included via the dependency call in package.xml
-rosbuild_prepare_qt4(QtCore QtGui) # Add the appropriate components to the component list here
+# # this comes from qt_build's qt-ros.cmake which is automatically 
+# # included via the dependency call in package.xml
+# rosbuild_prepare_qt4(QtCore QtGui) # Add the appropriate components to the component list here
 
-##############################################################################
-# Sections
-##############################################################################
+# ##############################################################################
+# # Sections
+# ##############################################################################
 
-file(GLOB QT_FORMS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ui/*.ui)
-file(GLOB QT_RESOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} resources/*.qrc)
-file(GLOB_RECURSE QT_MOC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/op3_gui_demo/*.hpp)
+# file(GLOB QT_FORMS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ui/*.ui)
+# file(GLOB QT_RESOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} resources/*.qrc)
+# file(GLOB_RECURSE QT_MOC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/op3_gui_demo/*.hpp)
 
-QT4_ADD_RESOURCES(QT_RESOURCES_CPP ${QT_RESOURCES})
-QT4_WRAP_UI(QT_FORMS_HPP ${QT_FORMS})
-QT4_WRAP_CPP(QT_MOC_HPP ${QT_MOC})
+# QT4_ADD_RESOURCES(QT_RESOURCES_CPP ${QT_RESOURCES})
+# QT4_WRAP_UI(QT_FORMS_HPP ${QT_FORMS})
+# QT4_WRAP_CPP(QT_MOC_HPP ${QT_MOC})
 
 ##############################################################################
 # Sources

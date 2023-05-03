@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/install
+prefix=/home/ajus/alfarobi_ws/install
 
 Name: op3_offset_tuner_client
 Description: Description of op3_offset_tuner_client

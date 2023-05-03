@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-  <node pkg="vision_simple" type="vision_simple_node" name="vision_simple_node" args="" output="screen">
-    <remap from="/vision_simple_node/image_in" to="/alfarobi/camera/image_raw" />
-  </node>
-</launch>

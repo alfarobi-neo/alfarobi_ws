@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_planefit"
+  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_planefit.pdb"
   "CMakeFiles/test_planefit.dir/test/test_planefit.cpp.o"
-  "/home/alfarobi/alfarobi_ws/devel/lib/rc_utils/test_planefit.pdb"
-  "/home/alfarobi/alfarobi_ws/devel/lib/rc_utils/test_planefit"
 )
 
 # Per-language clean rules from dependency scanning.

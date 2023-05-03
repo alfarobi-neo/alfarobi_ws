@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   roslib
   sensor_msgs
-  op3_ball_detector
+  # op3_ball_detector
   op3_walking_module_msgs
   robotis_controller_msgs
   walk_zmp
@@ -23,7 +23,7 @@ find_package(catkin REQUIRED COMPONENTS
   quintic_walk_msgs
   cmake_modules
   robotis_math
-  dnn_detector
+  # dnn_detector
   game_controller
   config
 )

@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
+prefix=/home/ajus/alfarobi_ws/devel
 
 Name: v9_2_ball_detector
 Description: Description of v9_2_ball_detector

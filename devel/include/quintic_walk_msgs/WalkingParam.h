@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -219,7 +219,7 @@ struct WalkingParam_
    typedef float _ZMove_type;
   _ZMove_type ZMove;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _mode_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _mode_type;
   _mode_type mode;
 
    typedef uint8_t _tuning_type;
@@ -346,6 +346,77 @@ ros::message_operations::Printer< ::quintic_walk_msgs::WalkingParam_<ContainerAl
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::quintic_walk_msgs::WalkingParam_<ContainerAllocator1> & lhs, const ::quintic_walk_msgs::WalkingParam_<ContainerAllocator2> & rhs)
+{
+  return lhs.freq == rhs.freq &&
+    lhs.doubleSupportRatio == rhs.doubleSupportRatio &&
+    lhs.footDistance == rhs.footDistance &&
+    lhs.footRise == rhs.footRise &&
+    lhs.footPutDownZOffset == rhs.footPutDownZOffset &&
+    lhs.footPutDownPhase == rhs.footPutDownPhase &&
+    lhs.footApexPhase == rhs.footApexPhase &&
+    lhs.footOvershootRatio == rhs.footOvershootRatio &&
+    lhs.footOvershootPhase == rhs.footOvershootPhase &&
+    lhs.trunkHeight == rhs.trunkHeight &&
+    lhs.trunkPitch == rhs.trunkPitch &&
+    lhs.trunkPhase == rhs.trunkPhase &&
+    lhs.trunkXOffset == rhs.trunkXOffset &&
+    lhs.trunkYOffset == rhs.trunkYOffset &&
+    lhs.trunkSwing == rhs.trunkSwing &&
+    lhs.trunkPause == rhs.trunkPause &&
+    lhs.trunkXOffsetPCoefForward == rhs.trunkXOffsetPCoefForward &&
+    lhs.trunkXOffsetPCoefTurn == rhs.trunkXOffsetPCoefTurn &&
+    lhs.trunkPitchPCoefForward == rhs.trunkPitchPCoefForward &&
+    lhs.trunkPitchPCoefTurn == rhs.trunkPitchPCoefTurn &&
+    lhs.trunkYOnlyInDoubleSupport == rhs.trunkYOnlyInDoubleSupport &&
+    lhs.XMove == rhs.XMove &&
+    lhs.YMove == rhs.YMove &&
+    lhs.ZMove == rhs.ZMove &&
+    lhs.mode == rhs.mode &&
+    lhs.tuning == rhs.tuning &&
+    lhs.D_ANKLE_P_qw == rhs.D_ANKLE_P_qw &&
+    lhs.D_KNEE_qw == rhs.D_KNEE_qw &&
+    lhs.D_HIP_P_qw == rhs.D_HIP_P_qw &&
+    lhs.KP_P_qw == rhs.KP_P_qw &&
+    lhs.KD_P_qw == rhs.KD_P_qw &&
+    lhs.KI_P_qw == rhs.KI_P_qw &&
+    lhs.ShoulderGain_qw == rhs.ShoulderGain_qw &&
+    lhs.setpointPitch == rhs.setpointPitch &&
+    lhs.pitch_error_tol == rhs.pitch_error_tol &&
+    lhs.KP_X_qw == rhs.KP_X_qw &&
+    lhs.KD_X_qw == rhs.KD_X_qw &&
+    lhs.KI_X_qw == rhs.KI_X_qw &&
+    lhs.Angle_0 == rhs.Angle_0 &&
+    lhs.Angle_1 == rhs.Angle_1 &&
+    lhs.Angle_2 == rhs.Angle_2 &&
+    lhs.Angle_3 == rhs.Angle_3 &&
+    lhs.Angle_4 == rhs.Angle_4 &&
+    lhs.KD_0 == rhs.KD_0 &&
+    lhs.KD_1 == rhs.KD_1 &&
+    lhs.KD_2 == rhs.KD_2 &&
+    lhs.KD_3 == rhs.KD_3 &&
+    lhs.KD_4 == rhs.KD_4 &&
+    lhs.Gyro_0 == rhs.Gyro_0 &&
+    lhs.Gyro_1 == rhs.Gyro_1 &&
+    lhs.Gyro_2 == rhs.Gyro_2 &&
+    lhs.Gyro_3 == rhs.Gyro_3 &&
+    lhs.Gyro_4 == rhs.Gyro_4 &&
+    lhs.KP_0 == rhs.KP_0 &&
+    lhs.KP_1 == rhs.KP_1 &&
+    lhs.KP_2 == rhs.KP_2 &&
+    lhs.KP_3 == rhs.KP_3 &&
+    lhs.KP_4 == rhs.KP_4;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::quintic_walk_msgs::WalkingParam_<ContainerAllocator1> & lhs, const ::quintic_walk_msgs::WalkingParam_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace quintic_walk_msgs
 
 namespace ros
@@ -355,23 +426,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'quintic_walk_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/quintic_walk_msgs/msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> >
@@ -381,6 +436,16 @@ struct IsMessage< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -423,80 +488,80 @@ struct Definition< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32 freq\n\
-float32 doubleSupportRatio\n\
-float32 footDistance\n\
-float32 footRise\n\
-float32 footPutDownZOffset\n\
-float32 footPutDownPhase\n\
-float32 footApexPhase\n\
-float32 footOvershootRatio\n\
-float32 footOvershootPhase\n\
-float32 trunkHeight\n\
-float32 trunkPitch\n\
-float32 trunkPhase\n\
-float32 trunkXOffset\n\
-float32 trunkYOffset\n\
-float32 trunkSwing\n\
-float32 trunkPause\n\
-float32 trunkXOffsetPCoefForward\n\
-float32 trunkXOffsetPCoefTurn\n\
-float32 trunkPitchPCoefForward\n\
-float32 trunkPitchPCoefTurn\n\
-bool trunkYOnlyInDoubleSupport\n\
-\n\
-float32 XMove\n\
-float32 YMove\n\
-float32 ZMove\n\
-string mode\n\
-bool tuning\n\
-\n\
-float32 D_ANKLE_P_qw\n\
-float32 D_KNEE_qw\n\
-float32 D_HIP_P_qw\n\
-\n\
-\n\
-float32 KP_P_qw\n\
-float32 KD_P_qw\n\
-float32 KI_P_qw\n\
-\n\
-\n\
-\n\
-float32 ShoulderGain_qw\n\
-float32 setpointPitch\n\
-float32 pitch_error_tol\n\
-\n\
-float32 KP_X_qw\n\
-float32 KD_X_qw\n\
-float32 KI_X_qw\n\
-\n\
-\n\
-float32 Angle_0\n\
-float32 Angle_1\n\
-float32 Angle_2\n\
-float32 Angle_3\n\
-float32 Angle_4\n\
-\n\
-float32 KD_0\n\
-float32 KD_1\n\
-float32 KD_2\n\
-float32 KD_3\n\
-float32 KD_4\n\
-\n\
-float32 Gyro_0\n\
-float32 Gyro_1\n\
-float32 Gyro_2\n\
-float32 Gyro_3\n\
-float32 Gyro_4\n\
-\n\
-float32 KP_0\n\
-float32 KP_1\n\
-float32 KP_2\n\
-float32 KP_3\n\
-float32 KP_4\n\
-\n\
-\n\
-";
+    return "float32 freq\n"
+"float32 doubleSupportRatio\n"
+"float32 footDistance\n"
+"float32 footRise\n"
+"float32 footPutDownZOffset\n"
+"float32 footPutDownPhase\n"
+"float32 footApexPhase\n"
+"float32 footOvershootRatio\n"
+"float32 footOvershootPhase\n"
+"float32 trunkHeight\n"
+"float32 trunkPitch\n"
+"float32 trunkPhase\n"
+"float32 trunkXOffset\n"
+"float32 trunkYOffset\n"
+"float32 trunkSwing\n"
+"float32 trunkPause\n"
+"float32 trunkXOffsetPCoefForward\n"
+"float32 trunkXOffsetPCoefTurn\n"
+"float32 trunkPitchPCoefForward\n"
+"float32 trunkPitchPCoefTurn\n"
+"bool trunkYOnlyInDoubleSupport\n"
+"\n"
+"float32 XMove\n"
+"float32 YMove\n"
+"float32 ZMove\n"
+"string mode\n"
+"bool tuning\n"
+"\n"
+"float32 D_ANKLE_P_qw\n"
+"float32 D_KNEE_qw\n"
+"float32 D_HIP_P_qw\n"
+"\n"
+"\n"
+"float32 KP_P_qw\n"
+"float32 KD_P_qw\n"
+"float32 KI_P_qw\n"
+"\n"
+"\n"
+"\n"
+"float32 ShoulderGain_qw\n"
+"float32 setpointPitch\n"
+"float32 pitch_error_tol\n"
+"\n"
+"float32 KP_X_qw\n"
+"float32 KD_X_qw\n"
+"float32 KI_X_qw\n"
+"\n"
+"\n"
+"float32 Angle_0\n"
+"float32 Angle_1\n"
+"float32 Angle_2\n"
+"float32 Angle_3\n"
+"float32 Angle_4\n"
+"\n"
+"float32 KD_0\n"
+"float32 KD_1\n"
+"float32 KD_2\n"
+"float32 KD_3\n"
+"float32 KD_4\n"
+"\n"
+"float32 Gyro_0\n"
+"float32 Gyro_1\n"
+"float32 Gyro_2\n"
+"float32 Gyro_3\n"
+"float32 Gyro_4\n"
+"\n"
+"float32 KP_0\n"
+"float32 KP_1\n"
+"float32 KP_2\n"
+"float32 KP_3\n"
+"float32 KP_4\n"
+"\n"
+"\n"
+;
   }
 
   static const char* value(const ::quintic_walk_msgs::WalkingParam_<ContainerAllocator>&) { return value(); }
@@ -639,7 +704,7 @@ struct Printer< ::quintic_walk_msgs::WalkingParam_<ContainerAllocator> >
     s << indent << "ZMove: ";
     Printer<float>::stream(s, indent + "  ", v.ZMove);
     s << indent << "mode: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.mode);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.mode);
     s << indent << "tuning: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.tuning);
     s << indent << "D_ANKLE_P_qw: ";

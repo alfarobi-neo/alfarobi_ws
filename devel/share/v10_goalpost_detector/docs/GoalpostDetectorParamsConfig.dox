@@ -1,9 +1,0 @@
-\subsubsection parameters ROS parameters
-
-Reads and maintains the following parameters on the ROS server
-
-- \b "~canny1" : \b [int] Value of Canny 1 min: 0, default: 20, max: 255
-- \b "~canny2" : \b [int] Value of Canny 2 min: 0, default: 20, max: 255
-- \b "~threshold_corner" : \b [int] Value of Threshold Corner min: 0, default: 20, max: 255
-- \b "~intersections" : \b [int] Minimum Intersections min: 0, default: 20, max: 255
-

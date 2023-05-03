@@ -1,8 +1,0 @@
-prefix=/home/alfarobi/alfarobi_ws/install
-
-Name: localization_monitor
-Description: Description of localization_monitor
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp roslib std_msgs geometry_msgs sensor_msgs message_filters vision_utils v9_localization

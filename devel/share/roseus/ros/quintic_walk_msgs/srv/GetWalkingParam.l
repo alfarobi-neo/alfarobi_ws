@@ -31,8 +31,8 @@
    (setq _get_param __get_param)
    self)
   (:get_param
-   (&optional __get_param)
-   (if __get_param (setq _get_param __get_param)) _get_param)
+   (&optional (__get_param :null))
+   (if (not (eq __get_param :null)) (setq _get_param __get_param)) _get_param)
   (:serialization-length
    ()
    (+

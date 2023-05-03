@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -71,6 +71,22 @@ ros::message_operations::Printer< ::filter_msgs::filter_<ContainerAllocator> >::
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::filter_msgs::filter_<ContainerAllocator1> & lhs, const ::filter_msgs::filter_<ContainerAllocator2> & rhs)
+{
+  return lhs.fltr_sesudah == rhs.fltr_sesudah &&
+    lhs.fltr_sebelum == rhs.fltr_sebelum &&
+    lhs.fltr_sesudah_EMAV2 == rhs.fltr_sesudah_EMAV2;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::filter_msgs::filter_<ContainerAllocator1> & lhs, const ::filter_msgs::filter_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace filter_msgs
 
 namespace ros
@@ -80,23 +96,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'filter_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/filter_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::filter_msgs::filter_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::filter_msgs::filter_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::filter_msgs::filter_<ContainerAllocator> >
@@ -105,6 +105,16 @@ struct IsMessage< ::filter_msgs::filter_<ContainerAllocator> >
 
 template <class ContainerAllocator>
 struct IsMessage< ::filter_msgs::filter_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::filter_msgs::filter_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::filter_msgs::filter_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -148,10 +158,10 @@ struct Definition< ::filter_msgs::filter_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32 fltr_sesudah\n\
-float32 fltr_sebelum\n\
-float32 fltr_sesudah_EMAV2\n\
-";
+    return "float32 fltr_sesudah\n"
+"float32 fltr_sebelum\n"
+"float32 fltr_sesudah_EMAV2\n"
+;
   }
 
   static const char* value(const ::filter_msgs::filter_<ContainerAllocator>&) { return value(); }

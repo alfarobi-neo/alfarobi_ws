@@ -60,7 +60,7 @@ class StartAction {
   static getMessageSize(object) {
     let length = 0;
     object.joint_name_array.forEach((val) => {
-      length += 4 + val.length;
+      length += 4 + _getByteLength(val);
     });
     return length + 8;
   }

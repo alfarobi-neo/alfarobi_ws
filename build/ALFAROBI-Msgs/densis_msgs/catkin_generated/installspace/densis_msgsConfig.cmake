@@ -67,14 +67,14 @@ set(densis_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(densis_msgs_SOURCE_PREFIX /home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/densis_msgs)
-  set(densis_msgs_DEVEL_PREFIX /home/alfarobi/alfarobi_ws/devel)
+  set(densis_msgs_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/densis_msgs)
+  set(densis_msgs_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
   set(densis_msgs_INSTALL_PREFIX "")
   set(densis_msgs_PREFIX ${densis_msgs_DEVEL_PREFIX})
 else()
   set(densis_msgs_SOURCE_PREFIX "")
   set(densis_msgs_DEVEL_PREFIX "")
-  set(densis_msgs_INSTALL_PREFIX /home/alfarobi/alfarobi_ws/install)
+  set(densis_msgs_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
   set(densis_msgs_PREFIX ${densis_msgs_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/alfarobi/alfarobi_ws/install/lib;/home/alfarobi/alfarobi_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ajus/alfarobi_ws/install/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(densis_msgs_LIBRARIES ${densis_msgs_LIBRARIES})
 
   _list_append_unique(densis_msgs_LIBRARY_DIRS ${${densis_msgs_dep}_LIBRARY_DIRS})
-  list(APPEND densis_msgs_EXPORTED_TARGETS ${${densis_msgs_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(densis_msgs_EXPORTED_TARGETS ${${densis_msgs_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "densis_msgs-msg-extras.cmake")

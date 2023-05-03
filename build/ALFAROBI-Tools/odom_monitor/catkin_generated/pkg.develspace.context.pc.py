@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "roscpp;roslib;std_msgs;geometry_msgs;sensor_msgs;message_filters".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "odom_monitor"
-PROJECT_SPACE_DIR = "/home/alfarobi/alfarobi_ws/devel"
+PROJECT_SPACE_DIR = "/home/ajus/alfarobi_ws/devel"
 PROJECT_VERSION = "0.0.0"

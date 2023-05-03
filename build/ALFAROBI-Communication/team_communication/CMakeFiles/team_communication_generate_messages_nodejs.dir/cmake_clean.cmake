@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/robot_data.js"
+  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_comm.js"
+  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js"
   "CMakeFiles/team_communication_generate_messages_nodejs"
-  "/home/alfarobi/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/robot_data.js"
-  "/home/alfarobi/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_comm.js"
-  "/home/alfarobi/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js"
 )
 
 # Per-language clean rules from dependency scanning.

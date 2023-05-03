@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -39,16 +39,16 @@ struct WriteControlTable_
 
 
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _joint_name_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _joint_name_type;
   _joint_name_type joint_name;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _start_item_name_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _start_item_name_type;
   _start_item_name_type start_item_name;
 
    typedef uint16_t _data_length_type;
   _data_length_type data_length;
 
-   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _data_type;
+   typedef std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> _data_type;
   _data_type data;
 
 
@@ -76,6 +76,23 @@ ros::message_operations::Printer< ::robotis_controller_msgs::WriteControlTable_<
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator1> & lhs, const ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator2> & rhs)
+{
+  return lhs.joint_name == rhs.joint_name &&
+    lhs.start_item_name == rhs.start_item_name &&
+    lhs.data_length == rhs.data_length &&
+    lhs.data == rhs.data;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator1> & lhs, const ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace robotis_controller_msgs
 
 namespace ros
@@ -85,23 +102,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'robotis_controller_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Msgs/robotis_controller_msgs/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator> const>
-  : FalseType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator> >
@@ -111,6 +112,16 @@ struct IsMessage< ::robotis_controller_msgs::WriteControlTable_<ContainerAllocat
 template <class ContainerAllocator>
 struct IsMessage< ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -153,11 +164,11 @@ struct Definition< ::robotis_controller_msgs::WriteControlTable_<ContainerAlloca
 {
   static const char* value()
   {
-    return "string joint_name\n\
-string start_item_name\n\
-uint16 data_length\n\
-uint8[] data\n\
-";
+    return "string joint_name\n"
+"string start_item_name\n"
+"uint16 data_length\n"
+"uint8[] data\n"
+;
   }
 
   static const char* value(const ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator>&) { return value(); }
@@ -198,9 +209,9 @@ struct Printer< ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::robotis_controller_msgs::WriteControlTable_<ContainerAllocator>& v)
   {
     s << indent << "joint_name: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.joint_name);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.joint_name);
     s << indent << "start_item_name: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.start_item_name);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.start_item_name);
     s << indent << "data_length: ";
     Printer<uint16_t>::stream(s, indent + "  ", v.data_length);
     s << indent << "data[]" << std::endl;

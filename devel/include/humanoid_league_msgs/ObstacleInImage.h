@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -64,6 +64,26 @@ struct ObstacleInImage_
 
 
 
+// reducing the odds to have name collisions with Windows.h 
+#if defined(_WIN32) && defined(UNDEFINED)
+  #undef UNDEFINED
+#endif
+#if defined(_WIN32) && defined(ROBOT_UNDEFINED)
+  #undef ROBOT_UNDEFINED
+#endif
+#if defined(_WIN32) && defined(ROBOT_MAGENTA)
+  #undef ROBOT_MAGENTA
+#endif
+#if defined(_WIN32) && defined(ROBOT_CYAN)
+  #undef ROBOT_CYAN
+#endif
+#if defined(_WIN32) && defined(HUMAN)
+  #undef HUMAN
+#endif
+#if defined(_WIN32) && defined(POLE)
+  #undef POLE
+#endif
+
   enum {
     UNDEFINED = 0u,
     ROBOT_UNDEFINED = 1u,
@@ -107,6 +127,25 @@ ros::message_operations::Printer< ::humanoid_league_msgs::ObstacleInImage_<Conta
 return s;
 }
 
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator==(const ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator2> & rhs)
+{
+  return lhs.color == rhs.color &&
+    lhs.playerNumber == rhs.playerNumber &&
+    lhs.top_left == rhs.top_left &&
+    lhs.height == rhs.height &&
+    lhs.width == rhs.width &&
+    lhs.confidence == rhs.confidence;
+}
+
+template<typename ContainerAllocator1, typename ContainerAllocator2>
+bool operator!=(const ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator1> & lhs, const ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator2> & rhs)
+{
+  return !(lhs == rhs);
+}
+
+
 } // namespace humanoid_league_msgs
 
 namespace ros
@@ -116,23 +155,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'sensor_msgs': ['/opt/ros/kinetic/share/sensor_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'trajectory_msgs': ['/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg'], 'humanoid_league_msgs': ['/home/alfarobi/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg'], 'geometry_msgs': ['/opt/ros/kinetic/share/geometry_msgs/cmake/../msg']}
 
-// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
-
-
-
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator> >
@@ -141,6 +164,16 @@ struct IsMessage< ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator> >
 
 template <class ContainerAllocator>
 struct IsMessage< ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator> const>
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator> const>
   : TrueType
   { };
 
@@ -184,38 +217,38 @@ struct Definition< ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator> 
 {
   static const char* value()
   {
-    return "# An obstacle in the image, which can be a robot, a human or something else\n\
-\n\
-# Main color of the obstacle, to differentiate between robots and other things like human legs\n\
-# Something we cant classify\n\
-uint8 UNDEFINED = 0\n\
-# Robot without known color\n\
-uint8 ROBOT_UNDEFINED = 1\n\
-uint8 ROBOT_MAGENTA = 2\n\
-uint8 ROBOT_CYAN = 3\n\
-# A human legs, e.g. from the referee\n\
-uint8 HUMAN = 4\n\
-# Black poles which are normally used for technical challenges\n\
-uint8 POLE = 5\n\
-uint8 color\n\
-\n\
-# The number of the robot, if it is a robot and if it can be read. Put in -1 if not known\n\
-uint8 playerNumber\n\
-\n\
-# The corresponding section in the image\n\
-geometry_msgs/Point top_left\n\
-uint8 height\n\
-uint8 width\n\
-\n\
-# A certainty rating between 0 and 1, where 1 is the surest.\n\
-float32 confidence\n\
-================================================================================\n\
-MSG: geometry_msgs/Point\n\
-# This contains the position of a point in free space\n\
-float64 x\n\
-float64 y\n\
-float64 z\n\
-";
+    return "# An obstacle in the image, which can be a robot, a human or something else\n"
+"\n"
+"# Main color of the obstacle, to differentiate between robots and other things like human legs\n"
+"# Something we cant classify\n"
+"uint8 UNDEFINED = 0\n"
+"# Robot without known color\n"
+"uint8 ROBOT_UNDEFINED = 1\n"
+"uint8 ROBOT_MAGENTA = 2\n"
+"uint8 ROBOT_CYAN = 3\n"
+"# A human legs, e.g. from the referee\n"
+"uint8 HUMAN = 4\n"
+"# Black poles which are normally used for technical challenges\n"
+"uint8 POLE = 5\n"
+"uint8 color\n"
+"\n"
+"# The number of the robot, if it is a robot and if it can be read. Put in -1 if not known\n"
+"uint8 playerNumber\n"
+"\n"
+"# The corresponding section in the image\n"
+"geometry_msgs/Point top_left\n"
+"uint8 height\n"
+"uint8 width\n"
+"\n"
+"# A certainty rating between 0 and 1, where 1 is the surest.\n"
+"float32 confidence\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Point\n"
+"# This contains the position of a point in free space\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+;
   }
 
   static const char* value(const ::humanoid_league_msgs::ObstacleInImage_<ContainerAllocator>&) { return value(); }

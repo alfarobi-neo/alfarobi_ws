@@ -1,4 +1,4 @@
-prefix=/home/alfarobi/alfarobi_ws/devel
+prefix=/home/ajus/alfarobi_ws/devel
 
 Name: odom_monitor
 Description: Description of odom_monitor

@@ -70,9 +70,9 @@ class SyncWriteItem {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.item_name.length;
+    length += _getByteLength(object.item_name);
     object.joint_name.forEach((val) => {
-      length += 4 + val.length;
+      length += 4 + _getByteLength(val);
     });
     length += 4 * object.value.length;
     return length + 12;

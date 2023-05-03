@@ -1,8 +1,0 @@
-prefix=/home/alfarobi/alfarobi_ws/install
-
-Name: v9_ball_tracker
-Description: Description of v9_ball_tracker
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
