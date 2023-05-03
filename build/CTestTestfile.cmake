@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/ajus/alfarobi_ws/src
-# Build directory: /home/ajus/alfarobi_ws/build
+# Source directory: /home/fariz/Desktop/alfarobi_ws/src
+# Build directory: /home/fariz/Desktop/alfarobi_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -34,7 +34,6 @@ subdirs("ALFAROBI-Framework/robotis_device")
 subdirs("ALFAROBI-Framework/robotis_framework_common")
 subdirs("ALFAROBI-Math/robotis_math")
 subdirs("ALFAROBI-Motion/op3_kinematics_dynamics")
-subdirs("rosbag_to_csv")
 subdirs("ALFAROBI-Tools/op3_offset_tuner_client")
 subdirs("ALFAROBI-Tools/op3_tuner_client")
 subdirs("ALFAROBI-Communication/team_communication")
@@ -52,12 +51,11 @@ subdirs("ALFAROBI-Tools/op3_offset_tuner_server")
 subdirs("ALFAROBI-Motion/arduino_controller")
 subdirs("ALFAROBI-Math/rc_utils")
 subdirs("ALFAROBI-Motion/capture_step_module")
+subdirs("ALFAROBI-Common/robot_gazebo")
 subdirs("ALFAROBI-Motion/robot_state_module")
 subdirs("ALFAROBI-Motion/quintic_walk")
-subdirs("ALFAROBI-Common/robot_gazebo")
 subdirs("ALFAROBI-Motion/kicking")
 subdirs("ALFAROBI-Motion/skripsi_kicking")
-subdirs("ALFAROBI-Tools/vision_calibration")
 subdirs("ALFAROBI-Msgs/zmp_walking_module_msgs")
 subdirs("ALFAROBI-Motion/odometry")
 subdirs("ALFAROBI-Tools/op3_gui_demo")

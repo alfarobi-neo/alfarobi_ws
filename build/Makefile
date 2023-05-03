@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -5862,6 +5862,19 @@ capture_step_module/fast:
 .PHONY : capture_step_module/fast
 
 #=============================================================================
+# Target rules for targets named gazebo_ros_gencfg
+
+# Build rule for target.
+gazebo_ros_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_gencfg
+.PHONY : gazebo_ros_gencfg
+
+# fast build rule for target.
+gazebo_ros_gencfg/fast:
+	$(MAKE) -f ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build.make ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
+.PHONY : gazebo_ros_gencfg/fast
+
+#=============================================================================
 # Target rules for targets named robot_state_module
 
 # Build rule for target.
@@ -5888,19 +5901,6 @@ quintic_walk/fast:
 .PHONY : quintic_walk/fast
 
 #=============================================================================
-# Target rules for targets named gazebo_ros_gencfg
-
-# Build rule for target.
-gazebo_ros_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_gencfg
-.PHONY : gazebo_ros_gencfg
-
-# fast build rule for target.
-gazebo_ros_gencfg/fast:
-	$(MAKE) -f ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build.make ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
-.PHONY : gazebo_ros_gencfg/fast
-
-#=============================================================================
 # Target rules for targets named kicking
 
 # Build rule for target.
@@ -5925,32 +5925,6 @@ kicking_asli: cmake_check_build_system
 kicking_asli/fast:
 	$(MAKE) -f ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/build.make ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/build
 .PHONY : kicking_asli/fast
-
-#=============================================================================
-# Target rules for targets named vision_calibration
-
-# Build rule for target.
-vision_calibration: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vision_calibration
-.PHONY : vision_calibration
-
-# fast build rule for target.
-vision_calibration/fast:
-	$(MAKE) -f ALFAROBI-Tools/vision_calibration/CMakeFiles/vision_calibration.dir/build.make ALFAROBI-Tools/vision_calibration/CMakeFiles/vision_calibration.dir/build
-.PHONY : vision_calibration/fast
-
-#=============================================================================
-# Target rules for targets named vision_calibration_autogen
-
-# Build rule for target.
-vision_calibration_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vision_calibration_autogen
-.PHONY : vision_calibration_autogen
-
-# fast build rule for target.
-vision_calibration_autogen/fast:
-	$(MAKE) -f ALFAROBI-Tools/vision_calibration/CMakeFiles/vision_calibration_autogen.dir/build.make ALFAROBI-Tools/vision_calibration/CMakeFiles/vision_calibration_autogen.dir/build
-.PHONY : vision_calibration_autogen/fast
 
 #=============================================================================
 # Target rules for targets named _zmp_walking_module_msgs_generate_messages_check_deps_ZMPWalkingParam
@@ -6650,13 +6624,11 @@ help:
 	@echo "... _run_tests_rc_utils_gtest_test_math_util"
 	@echo "... run_tests_rc_utils_gtest_test_misc_util"
 	@echo "... capture_step_module"
+	@echo "... gazebo_ros_gencfg"
 	@echo "... robot_state_module"
 	@echo "... quintic_walk"
-	@echo "... gazebo_ros_gencfg"
 	@echo "... kicking"
 	@echo "... kicking_asli"
-	@echo "... vision_calibration"
-	@echo "... vision_calibration_autogen"
 	@echo "... _zmp_walking_module_msgs_generate_messages_check_deps_ZMPWalkingParam"
 	@echo "... _zmp_walking_module_msgs_generate_messages_check_deps_GetZMPParam"
 	@echo "... zmp_walking_module_msgs_genpy"

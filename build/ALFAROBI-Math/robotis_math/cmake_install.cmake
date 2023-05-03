@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Math/robotis_math/catkin_generated/installspace/robotis_math.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/robotis_math/catkin_generated/installspace/robotis_math.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotis_math/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Math/robotis_math/catkin_generated/installspace/robotis_mathConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Math/robotis_math/catkin_generated/installspace/robotis_mathConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/robotis_math/catkin_generated/installspace/robotis_mathConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/robotis_math/catkin_generated/installspace/robotis_mathConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotis_math" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotis_math" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobotis_math.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ajus/alfarobi_ws/devel/lib/librobotis_math.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_math.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobotis_math.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobotis_math.so")
     file(RPATH_CHANGE
@@ -76,6 +76,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/robotis_math" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/robotis_math" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/")
 endif()
 

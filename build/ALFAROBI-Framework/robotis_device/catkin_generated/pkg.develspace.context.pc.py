@@ -1,8 +1,8 @@
 # generated from catkin/cmake/template/pkg.context.pc.in
 CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_device/include".split(';') if "/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_device/include" != "" else []
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Framework/robotis_device/include".split(';') if "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Framework/robotis_device/include" != "" else []
 PROJECT_CATKIN_DEPENDS = "roscpp;dynamixel_sdk".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lrobotis_device".split(';') if "-lrobotis_device" != "" else []
 PROJECT_NAME = "robotis_device"
-PROJECT_SPACE_DIR = "/home/ajus/alfarobi_ws/devel"
+PROJECT_SPACE_DIR = "/home/fariz/Desktop/alfarobi_ws/devel"
 PROJECT_VERSION = "0.2.9"

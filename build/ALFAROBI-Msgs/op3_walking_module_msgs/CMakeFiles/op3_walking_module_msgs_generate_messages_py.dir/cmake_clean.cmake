@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/msg/_WalkingParam.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/msg/__init__.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/srv/_GetWalkingParam.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/srv/_SetWalkingParam.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/srv/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/msg/_WalkingParam.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/msg/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/srv/_GetWalkingParam.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/srv/_SetWalkingParam.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_walking_module_msgs/srv/__init__.py"
   "CMakeFiles/op3_walking_module_msgs_generate_messages_py"
 )
 

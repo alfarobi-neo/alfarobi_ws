@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/data_log_msgs/msg/DataLog.js"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/data_log_msgs/msg/DataLog.js"
   "CMakeFiles/data_log_msgs_generate_messages_nodejs"
 )
 

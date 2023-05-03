@@ -1,8 +1,8 @@
-prefix=/home/ajus/alfarobi_ws/devel
+prefix=/home/fariz/Desktop/alfarobi_ws/devel
 
 Name: op3_walking_module_msgs
 Description: Description of op3_walking_module_msgs
 Version: 0.1.0
-Cflags: -I/home/ajus/alfarobi_ws/devel/include
+Cflags: -I/home/fariz/Desktop/alfarobi_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime std_msgs

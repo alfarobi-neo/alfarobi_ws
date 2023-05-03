@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/op3_offset_tuner_server/offset_tuner_server_node"
-  "/home/ajus/alfarobi_ws/devel/lib/op3_offset_tuner_server/offset_tuner_server_node.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_offset_tuner_server/offset_tuner_server_node"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_offset_tuner_server/offset_tuner_server_node.pdb"
   "CMakeFiles/offset_tuner_server_node.dir/src/main.cpp.o"
   "CMakeFiles/offset_tuner_server_node.dir/src/op3_offset_tuner_server.cpp.o"
 )

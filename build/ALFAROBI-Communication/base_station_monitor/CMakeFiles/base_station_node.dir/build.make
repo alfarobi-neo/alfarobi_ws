@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Include any dependencies generated for this target.
 include ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/depend.make
@@ -59,42 +59,42 @@ include ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/flags.make
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o: ALFAROBI-Communication/base_station_monitor/base_station_node_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o -c /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/base_station_node_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o -c /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/base_station_node_autogen/mocs_compilation.cpp
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/base_station_node_autogen/mocs_compilation.cpp > CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/base_station_node_autogen/mocs_compilation.cpp > CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.i
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/base_station_node_autogen/mocs_compilation.cpp -o CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/base_station_node_autogen/mocs_compilation.cpp -o CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.s
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/flags.make
-ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/base_monitor_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/base_monitor_node.cpp
+ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/base_monitor_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/base_monitor_node.cpp
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base_station_node.dir/base_monitor_node.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/base_monitor_node.cpp > CMakeFiles/base_station_node.dir/base_monitor_node.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/base_monitor_node.cpp > CMakeFiles/base_station_node.dir/base_monitor_node.cpp.i
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base_station_node.dir/base_monitor_node.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/base_monitor_node.cpp -o CMakeFiles/base_station_node.dir/base_monitor_node.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/base_monitor_node.cpp -o CMakeFiles/base_station_node.dir/base_monitor_node.cpp.s
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.o: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/flags.make
-ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/basemonitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base_station_node.dir/basemonitor.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/basemonitor.cpp
+ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/basemonitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base_station_node.dir/basemonitor.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/basemonitor.cpp
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base_station_node.dir/basemonitor.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/basemonitor.cpp > CMakeFiles/base_station_node.dir/basemonitor.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/basemonitor.cpp > CMakeFiles/base_station_node.dir/basemonitor.cpp.i
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base_station_node.dir/basemonitor.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/basemonitor.cpp -o CMakeFiles/base_station_node.dir/basemonitor.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/basemonitor.cpp -o CMakeFiles/base_station_node.dir/basemonitor.cpp.s
 
 # Object files for target base_station_node
 base_station_node_OBJECTS = \
@@ -105,44 +105,44 @@ base_station_node_OBJECTS = \
 # External object files for target base_station_node
 base_station_node_EXTERNAL_OBJECTS =
 
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/build.make
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/libroscpp.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/librosconsole.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/librostime.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
-/home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/base_station_node.dir/link.txt --verbose=$(VERBOSE)
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_station_node_autogen/mocs_compilation.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/base_monitor_node.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/basemonitor.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/build.make
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/libroscpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/librosconsole.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/librostime.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
+/home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node: ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/base_station_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/build: /home/ajus/alfarobi_ws/devel/lib/base_station_monitor/base_station_node
+ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/build: /home/fariz/Desktop/alfarobi_ws/devel/lib/base_station_monitor/base_station_node
 
 .PHONY : ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/build
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && $(CMAKE_COMMAND) -P CMakeFiles/base_station_node.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor && $(CMAKE_COMMAND) -P CMakeFiles/base_station_node.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/clean
 
 ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Communication/base_station_monitor/CMakeFiles/base_station_node.dir/depend
 

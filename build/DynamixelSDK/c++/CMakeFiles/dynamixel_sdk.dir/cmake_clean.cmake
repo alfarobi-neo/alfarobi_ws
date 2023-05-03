@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libdynamixel_sdk.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libdynamixel_sdk.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libdynamixel_sdk.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libdynamixel_sdk.so"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o"

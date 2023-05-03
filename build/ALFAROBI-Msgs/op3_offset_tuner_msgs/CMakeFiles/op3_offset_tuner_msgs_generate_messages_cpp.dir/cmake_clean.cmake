@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h"
-  "/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h"
-  "/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h"
-  "/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h"
-  "/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h"
   "CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp"
 )
 

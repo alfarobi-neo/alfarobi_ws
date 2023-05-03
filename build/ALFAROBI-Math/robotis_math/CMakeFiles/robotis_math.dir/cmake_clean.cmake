@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/librobotis_math.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/librobotis_math.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_math.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_math.so"
   "CMakeFiles/robotis_math.dir/src/bezier_curve.cpp.o"
   "CMakeFiles/robotis_math.dir/src/fifth_order_polynomial_trajectory.cpp.o"
   "CMakeFiles/robotis_math.dir/src/minimum_jerk_trajectory.cpp.o"

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Utility rule file for _run_tests_rot_conv.
 
@@ -63,10 +63,10 @@ ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/build: _run_tests_rot_
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/build
 
 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Math/rot_conv && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_rot_conv.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/rot_conv && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_rot_conv.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/clean
 
 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Math/rot_conv /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Math/rot_conv /home/ajus/alfarobi_ws/build/ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/rot_conv /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/rot_conv /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/depend
 

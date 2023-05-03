@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/op3_gui_demo/op3_gui_demo"
-  "/home/ajus/alfarobi_ws/devel/lib/op3_gui_demo/op3_gui_demo.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_gui_demo/op3_gui_demo"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_gui_demo/op3_gui_demo.pdb"
   "CMakeFiles/op3_gui_demo.dir/src/main.cpp.o"
   "CMakeFiles/op3_gui_demo.dir/src/main_window.cpp.o"
   "CMakeFiles/op3_gui_demo.dir/src/main_window_ext.cpp.o"

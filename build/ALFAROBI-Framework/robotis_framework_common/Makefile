@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Framework/robotis_framework_common/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Framework/robotis_framework_common/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Framework/robotis_framework_common/CMakeFiles/robotis_framework_common.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/CMakeFiles/robotis_framework_common.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_framework_common/CMakeFiles/robotis_framework_common.dir/rule
 .PHONY : ALFAROBI-Framework/robotis_framework_common/CMakeFiles/robotis_framework_common.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ robotis_framework_common: ALFAROBI-Framework/robotis_framework_common/CMakeFiles
 
 # fast build rule for target.
 robotis_framework_common/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_framework_common/CMakeFiles/robotis_framework_common.dir/build.make ALFAROBI-Framework/robotis_framework_common/CMakeFiles/robotis_framework_common.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_framework_common/CMakeFiles/robotis_framework_common.dir/build.make ALFAROBI-Framework/robotis_framework_common/CMakeFiles/robotis_framework_common.dir/build
 .PHONY : robotis_framework_common/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/game_controller/msg/_GameState.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/game_controller/msg/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/game_controller/msg/_GameState.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/game_controller/msg/__init__.py"
   "CMakeFiles/game_controller_generate_messages_py"
 )
 

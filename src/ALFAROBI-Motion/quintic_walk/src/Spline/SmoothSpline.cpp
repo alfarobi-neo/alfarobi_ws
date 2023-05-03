@@ -1,5 +1,6 @@
 #include <stdexcept>
 #include <algorithm>
+#include <cmath>
 #include "quintic_walk/utils/SmoothSpline.hpp"
 
 namespace robotis_op

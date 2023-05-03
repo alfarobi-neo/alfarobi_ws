@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/_JointOffsetData.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/_JointOffsetPositionData.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/_JointTorqueOnOff.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/_JointTorqueOnOffArray.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/__init__.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/srv/_GetPresentJointOffsetData.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/srv/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/_JointOffsetData.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/_JointOffsetPositionData.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/_JointTorqueOnOff.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/_JointTorqueOnOffArray.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/msg/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/srv/_GetPresentJointOffsetData.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs/srv/__init__.py"
   "CMakeFiles/op3_offset_tuner_msgs_generate_messages_py"
 )
 

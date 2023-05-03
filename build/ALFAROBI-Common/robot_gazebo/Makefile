@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Common/robot_gazebo/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Common/robot_gazebo/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
 .PHONY : ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ gazebo_ros_gencfg: ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir
 
 # fast build rule for target.
 gazebo_ros_gencfg/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build.make ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build.make ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
 .PHONY : gazebo_ros_gencfg/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

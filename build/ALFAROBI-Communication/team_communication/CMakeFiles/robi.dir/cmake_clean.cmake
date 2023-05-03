@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/team_communication/robi"
-  "/home/ajus/alfarobi_ws/devel/lib/team_communication/robi.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/team_communication/robi"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/team_communication/robi.pdb"
   "CMakeFiles/robi.dir/src/robi.cpp.o"
 )
 

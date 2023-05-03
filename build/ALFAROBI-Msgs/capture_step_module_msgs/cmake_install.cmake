@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,60 +38,60 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs/msg" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/msg/WalkingParam.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs/msg" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/msg/WalkingParam.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs/srv" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/srv/GetWalkingParam.srv"
-    "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/srv/SetWalkingParam.srv"
+    "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/srv/GetWalkingParam.srv"
+    "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/srv/SetWalkingParam.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs/cmake" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs/cmake" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/include/capture_step_module_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/include/capture_step_module_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/share/roseus/ros/capture_step_module_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/capture_step_module_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/capture_step_module_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/capture_step_module_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/capture_step_module_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/capture_step_module_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/home/ajus/anaconda3/bin/python3" -m compileall "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/capture_step_module_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/capture_step_module_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/capture_step_module_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/capture_step_module_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs/cmake" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs/cmake" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgsConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgsConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgsConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/capture_step_module_msgs/catkin_generated/installspace/capture_step_module_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/capture_step_module_msgs" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/capture_step_module_msgs/package.xml")
 endif()
 

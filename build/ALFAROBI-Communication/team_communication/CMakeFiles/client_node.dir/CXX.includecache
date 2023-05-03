@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/client_node.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/client_node.cpp
 ros/ros.h
 -
 stdio.h
@@ -26,7 +26,7 @@ netinet/in.h
 netdb.h
 -
 std_msgs/String.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/std_msgs/String.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/std_msgs/String.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libkicking.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libkicking.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking.so"
   "CMakeFiles/kicking.dir/__/walk_zmp/src/kinematics.cpp.o"
   "CMakeFiles/kicking.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o"
   "CMakeFiles/kicking.dir/src/kicking.cpp.o"

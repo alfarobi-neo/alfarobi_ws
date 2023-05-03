@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/msg/ZMPWalkingParam.lisp"
-  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/srv/GetZMPParam.lisp"
-  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/srv/SetZMPParam.lisp"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/msg/ZMPWalkingParam.lisp"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/srv/GetZMPParam.lisp"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/zmp_walking_module_msgs/srv/SetZMPParam.lisp"
   "CMakeFiles/zmp_walking_module_msgs_generate_messages_lisp"
 )
 

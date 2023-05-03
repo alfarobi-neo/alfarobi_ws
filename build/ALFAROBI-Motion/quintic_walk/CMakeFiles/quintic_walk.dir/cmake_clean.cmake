@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so"
   "CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o"
   "CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o"
   "CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o"

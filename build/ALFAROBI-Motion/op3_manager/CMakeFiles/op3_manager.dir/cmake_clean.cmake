@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/op3_manager/op3_manager"
-  "/home/ajus/alfarobi_ws/devel/lib/op3_manager/op3_manager.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_manager/op3_manager"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_manager/op3_manager.pdb"
   "CMakeFiles/op3_manager.dir/src/op3_manager.cpp.o"
 )
 

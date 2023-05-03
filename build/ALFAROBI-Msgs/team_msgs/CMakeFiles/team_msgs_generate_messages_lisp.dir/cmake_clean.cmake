@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/team_msgs/msg/team_msgs.lisp"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/team_msgs/msg/team_msgs.lisp"
   "CMakeFiles/team_msgs_generate_messages_lisp"
 )
 

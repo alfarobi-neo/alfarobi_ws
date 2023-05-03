@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Include any dependencies generated for this target.
 include ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/depend.make
@@ -58,199 +58,199 @@ include ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/progress.make
 include ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/alfarobi_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/alfarobi_node.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/alfarobi_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/alfarobi_node.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/alfarobi_node.cpp > CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/alfarobi_node.cpp > CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/alfarobi_node.cpp -o CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/alfarobi_node.cpp -o CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/soccer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/soccer.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/soccer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/soccer.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/soccer.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/soccer.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/soccer.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/soccer.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/kepeer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/kepeer.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/kepeer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/kepeer.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/kepeer.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/kepeer.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/kepeer.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/kepeer.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/strategycontroller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/strategycontroller.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/strategycontroller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/strategycontroller.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/strategycontroller.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/strategycontroller.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/strategycontroller.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/strategycontroller.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/ball_tracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/ball_tracker.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/ball_tracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/ball_tracker.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/ball_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/ball_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/ball_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/ball_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/goalpost_tracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/goalpost_tracker.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/goalpost_tracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/goalpost_tracker.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/goalpost_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/goalpost_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/goalpost_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/goalpost_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/pillar_tracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/pillar_tracker.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/pillar_tracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/pillar_tracker.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/pillar_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/pillar_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/pillar_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/pillar_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/square_tracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/square_tracker.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/square_tracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/square_tracker.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/square_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/square_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/square_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/square_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/messagehandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/messagehandler.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/messagehandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/messagehandler.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/messagehandler.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/messagehandler.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/messagehandler.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/messagehandler.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/behavioral.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/behavioral.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/behavioral.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/behavioral.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/behavioral.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/behavioral.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/behavioral.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/behavioral.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/runner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/runner.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/runner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/runner.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/runner.cpp > CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/runner.cpp > CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/runner.cpp -o CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/runner.cpp -o CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/dribbler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/dribbler.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/dribbler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/dribbler.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/dribbler.cpp > CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/dribbler.cpp > CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/dribbler.cpp -o CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/dribbler.cpp -o CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/passer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/passer.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/passer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/passer.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/passer.cpp > CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/passer.cpp > CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/passer.cpp -o CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/passer.cpp -o CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/cat2_tracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/cat2_tracker.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/cat2_tracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/cat2_tracker.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/cat2_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/cat2_tracker.cpp > CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/cat2_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/soccer/cat2_tracker.cpp -o CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.s
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/flags.make
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/penalty_manual.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/penalty_manual.cpp
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/penalty_manual.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/penalty_manual.cpp
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/penalty_manual.cpp > CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/penalty_manual.cpp > CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.i
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/penalty_manual.cpp -o CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi/src/olympic/penalty_manual.cpp -o CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.s
 
 # Object files for target alfarobi_node
 alfarobi_node_OBJECTS = \
@@ -273,110 +273,110 @@ alfarobi_node_OBJECTS = \
 # External object files for target alfarobi_node
 alfarobi_node_EXTERNAL_OBJECTS =
 
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/build.make
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroslib.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librospack.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/ajus/alfarobi_ws/devel/lib/libwalk_zmp.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroscpp.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librostime.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libeigen_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/ajus/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/ajus/alfarobi_ws/devel/lib/librobotis_math.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/ajus/alfarobi_ws/devel/lib/librobotis_framework_common.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/ajus/alfarobi_ws/devel/lib/librobotis_device.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/ajus/alfarobi_ws/devel/lib/libdynamixel_sdk.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/ajus/alfarobi_ws/devel/lib/librc_utils.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libkdl_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librobot_state_publisher_solver.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libjoint_state_listener.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libkdl_parser.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/liburdf.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libclass_loader.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroslib.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librospack.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_bridge.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/liborocos-kdl.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libtf.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libtf2_ros.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libactionlib.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libmessage_filters.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroscpp.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libtf2.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librostime.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable /home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/alfarobi_node.dir/link.txt --verbose=$(VERBOSE)
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/soccer.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/kepeer.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/strategycontroller.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/ball_tracker.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/goalpost_tracker.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/pillar_tracker.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/square_tracker.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/messagehandler.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/behavioral.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/runner.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/soccer/cat2_tracker.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/src/olympic/penalty_manual.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/build.make
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroslib.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librospack.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/fariz/Desktop/alfarobi_ws/devel/lib/libwalk_zmp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroscpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librostime.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libeigen_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_math.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_framework_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_device.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/fariz/Desktop/alfarobi_ws/devel/lib/libdynamixel_sdk.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /home/fariz/Desktop/alfarobi_ws/devel/lib/librc_utils.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libkdl_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librobot_state_publisher_solver.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libjoint_state_listener.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libkdl_parser.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/liburdf.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libclass_loader.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroslib.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librospack.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_bridge.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/liborocos-kdl.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libtf.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libtf2_ros.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libactionlib.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libmessage_filters.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroscpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libtf2.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/librostime.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node: ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable /home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/alfarobi_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/build: /home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node
+ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/build: /home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node
 
 .PHONY : ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/build
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi && $(CMAKE_COMMAND) -P CMakeFiles/alfarobi_node.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi && $(CMAKE_COMMAND) -P CMakeFiles/alfarobi_node.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/clean
 
 ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Main/alfarobi /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi /home/ajus/alfarobi_ws/build/ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Main/alfarobi /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Main/alfarobi/CMakeFiles/alfarobi_node.dir/depend
 

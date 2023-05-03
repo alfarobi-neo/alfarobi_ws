@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/bezier_curve.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/bezier_curve.h
 vector
 -
 robotis_math_base.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
 robotis_linear_algebra.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/fifth_order_polynomial_trajectory.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/fifth_order_polynomial_trajectory.h
 robotis_linear_algebra.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
 robotis_math_base.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/minimum_jerk_trajectory.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/minimum_jerk_trajectory.h
 robotis_linear_algebra.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
 robotis_math_base.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
 ros/ros.h
 -
 stdint.h
@@ -32,11 +32,11 @@ stdint.h
 vector
 -
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/minimum_jerk_trajectory_with_via_point.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/minimum_jerk_trajectory_with_via_point.h
 robotis_linear_algebra.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
 robotis_math_base.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
 ros/ros.h
 -
 stdint.h
@@ -44,11 +44,11 @@ stdint.h
 vector
 -
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/preview_control.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/preview_control.h
 robotis_linear_algebra.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
 robotis_math_base.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
 ros/ros.h
 -
 stdint.h
@@ -56,79 +56,79 @@ stdint.h
 vector
 -
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
 cmath
 -
 eigen3/Eigen/Dense
 -
 step_data_define.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/step_data_define.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/step_data_define.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
 iostream
 -
 cmath
 -
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_trajectory_calculator.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_trajectory_calculator.h
 robotis_linear_algebra.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
 robotis_math_base.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
 fifth_order_polynomial_trajectory.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/fifth_order_polynomial_trajectory.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/fifth_order_polynomial_trajectory.h
 simple_trapezoidal_velocity_profile.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/simple_trapezoidal_velocity_profile.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/simple_trapezoidal_velocity_profile.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/simple_trapezoidal_velocity_profile.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/simple_trapezoidal_velocity_profile.h
 robotis_linear_algebra.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_linear_algebra.h
 robotis_math_base.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/robotis_math_base.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/step_data_define.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include/robotis_math/step_data_define.h
 ostream
 -
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/bezier_curve.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/bezier_curve.cpp
 robotis_math/bezier_curve.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/bezier_curve.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/bezier_curve.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/fifth_order_polynomial_trajectory.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/fifth_order_polynomial_trajectory.cpp
 robotis_math/fifth_order_polynomial_trajectory.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/fifth_order_polynomial_trajectory.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/fifth_order_polynomial_trajectory.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/minimum_jerk_trajectory.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/minimum_jerk_trajectory.cpp
 robotis_math/minimum_jerk_trajectory.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/minimum_jerk_trajectory.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/minimum_jerk_trajectory.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/minimum_jerk_trajectory_with_via_point.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/minimum_jerk_trajectory_with_via_point.cpp
 robotis_math/minimum_jerk_trajectory_with_via_point.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/minimum_jerk_trajectory_with_via_point.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/minimum_jerk_trajectory_with_via_point.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/preview_control.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/preview_control.cpp
 robotis_math/preview_control.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/preview_control.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/preview_control.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_linear_algebra.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_linear_algebra.cpp
 robotis_math/robotis_linear_algebra.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/robotis_linear_algebra.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/robotis_linear_algebra.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math_base.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math_base.cpp
 robotis_math/robotis_math_base.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/robotis_math_base.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/robotis_math_base.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_trajectory_calculator.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_trajectory_calculator.cpp
 robotis_math/robotis_trajectory_calculator.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/robotis_trajectory_calculator.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/robotis_trajectory_calculator.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/simple_trapezoidal_velocity_profile.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/simple_trapezoidal_velocity_profile.cpp
 iostream
 -
 robotis_math/simple_trapezoidal_velocity_profile.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/simple_trapezoidal_velocity_profile.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/robotis_math/simple_trapezoidal_velocity_profile.h
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/step_data_define.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/src/step_data_define.cpp
 robotis_math/step_data_define.h
 -
 iostream

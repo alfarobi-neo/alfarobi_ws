@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/game_controller/src/game_controller.cpp" "/home/ajus/alfarobi_ws/build/ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller.cpp.o"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/game_controller/src/game_controller_client_t.cpp" "/home/ajus/alfarobi_ws/build/ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.o"
+  "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/game_controller/src/game_controller.cpp" "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller.cpp.o"
+  "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/game_controller/src/game_controller_client_t.cpp" "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,8 +20,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ajus/alfarobi_ws/devel/include"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/game_controller/include"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include"
+  "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/game_controller/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../../include"

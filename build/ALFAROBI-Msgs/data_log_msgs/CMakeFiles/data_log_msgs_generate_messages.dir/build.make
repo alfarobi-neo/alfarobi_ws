@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Utility rule file for data_log_msgs_generate_messages.
 
@@ -63,10 +63,10 @@ ALFAROBI-Msgs/data_log_msgs/CMakeFiles/data_log_msgs_generate_messages.dir/build
 .PHONY : ALFAROBI-Msgs/data_log_msgs/CMakeFiles/data_log_msgs_generate_messages.dir/build
 
 ALFAROBI-Msgs/data_log_msgs/CMakeFiles/data_log_msgs_generate_messages.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs && $(CMAKE_COMMAND) -P CMakeFiles/data_log_msgs_generate_messages.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs && $(CMAKE_COMMAND) -P CMakeFiles/data_log_msgs_generate_messages.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Msgs/data_log_msgs/CMakeFiles/data_log_msgs_generate_messages.dir/clean
 
 ALFAROBI-Msgs/data_log_msgs/CMakeFiles/data_log_msgs_generate_messages.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs/CMakeFiles/data_log_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs/CMakeFiles/data_log_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Msgs/data_log_msgs/CMakeFiles/data_log_msgs_generate_messages.dir/depend
 

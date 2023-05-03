@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/librot_conv.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/librot_conv.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/librot_conv.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/librot_conv.so"
   "CMakeFiles/rot_conv.dir/src/rot_conv.cpp.o"
 )
 

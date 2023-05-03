@@ -1,8 +1,8 @@
-prefix=/home/ajus/alfarobi_ws/devel
+prefix=/home/fariz/Desktop/alfarobi_ws/devel
 
 Name: dynamixel_sdk
 Description: Description of dynamixel_sdk
 Version: 3.5.2
-Cflags: -I/home/ajus/alfarobi_ws/src/DynamixelSDK/c++/include
+Cflags: -I/home/fariz/Desktop/alfarobi_ws/src/DynamixelSDK/c++/include
 Libs: -L${prefix}/lib -ldynamixel_sdk
 Requires: 

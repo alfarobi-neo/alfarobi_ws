@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/rule
 .PHONY : ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ offset_tuner_server_node: ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offs
 
 # fast build rule for target.
 offset_tuner_server_node/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build
 .PHONY : offset_tuner_server_node/fast
 
 src/main.o: src/main.cpp.o
@@ -188,7 +188,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/main.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -197,7 +197,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/main.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -206,7 +206,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/main.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/op3_offset_tuner_server.o: src/op3_offset_tuner_server.cpp.o
@@ -215,7 +215,7 @@ src/op3_offset_tuner_server.o: src/op3_offset_tuner_server.cpp.o
 
 # target to build an object file
 src/op3_offset_tuner_server.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/op3_offset_tuner_server.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/op3_offset_tuner_server.cpp.o
 .PHONY : src/op3_offset_tuner_server.cpp.o
 
 src/op3_offset_tuner_server.i: src/op3_offset_tuner_server.cpp.i
@@ -224,7 +224,7 @@ src/op3_offset_tuner_server.i: src/op3_offset_tuner_server.cpp.i
 
 # target to preprocess a source file
 src/op3_offset_tuner_server.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/op3_offset_tuner_server.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/op3_offset_tuner_server.cpp.i
 .PHONY : src/op3_offset_tuner_server.cpp.i
 
 src/op3_offset_tuner_server.s: src/op3_offset_tuner_server.cpp.s
@@ -233,7 +233,7 @@ src/op3_offset_tuner_server.s: src/op3_offset_tuner_server.cpp.s
 
 # target to generate assembly for a file
 src/op3_offset_tuner_server.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/op3_offset_tuner_server.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/build.make ALFAROBI-Tools/op3_offset_tuner_server/CMakeFiles/offset_tuner_server_node.dir/src/op3_offset_tuner_server.cpp.s
 .PHONY : src/op3_offset_tuner_server.cpp.s
 
 # Help Target
@@ -267,6 +267,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

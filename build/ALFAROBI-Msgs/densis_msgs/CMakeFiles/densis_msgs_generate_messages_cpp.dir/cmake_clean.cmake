@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/densis_msgs/densis.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/densis_msgs/densis.h"
   "CMakeFiles/densis_msgs_generate_messages_cpp"
 )
 

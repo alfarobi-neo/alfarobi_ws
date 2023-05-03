@@ -1,4 +1,4 @@
 # generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
 
-set(op3_action_module_msgs_MSG_INCLUDE_DIRS "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_action_module_msgs/msg")
+set(op3_action_module_msgs_MSG_INCLUDE_DIRS "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_action_module_msgs/msg")
 set(op3_action_module_msgs_MSG_DEPENDENCIES std_msgs)

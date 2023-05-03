@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/librc_utils.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/librc_utils.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/librc_utils.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/librc_utils.so"
   "CMakeFiles/rc_utils.dir/src/angle_estimator.cpp.o"
   "CMakeFiles/rc_utils.dir/src/attitude_estimator.cpp.o"
   "CMakeFiles/rc_utils.dir/src/conicfit.cpp.o"

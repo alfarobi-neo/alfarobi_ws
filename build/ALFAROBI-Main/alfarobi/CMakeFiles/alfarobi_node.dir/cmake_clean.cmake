@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node"
-  "/home/ajus/alfarobi_ws/devel/lib/alfarobi/alfarobi_node.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/alfarobi/alfarobi_node.pdb"
   "CMakeFiles/alfarobi_node.dir/src/alfarobi_node.cpp.o"
   "CMakeFiles/alfarobi_node.dir/src/olympic/dribbler.cpp.o"
   "CMakeFiles/alfarobi_node.dir/src/olympic/passer.cpp.o"

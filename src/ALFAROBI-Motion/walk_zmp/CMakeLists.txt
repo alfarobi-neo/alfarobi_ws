@@ -62,7 +62,7 @@ include_directories(
     )
 
 add_library(${PROJECT_NAME}
-    src/walk_zmp.cpp
+    #src/walk_zmp.cpp
     src/zmp_walk_parameter.cpp
     src/zmp_team_darwin_kinematics.cpp
     src/kinematics.cpp

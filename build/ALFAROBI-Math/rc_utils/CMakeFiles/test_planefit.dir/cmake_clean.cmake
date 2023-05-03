@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_planefit"
-  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_planefit.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/rc_utils/test_planefit"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/rc_utils/test_planefit.pdb"
   "CMakeFiles/test_planefit.dir/test/test_planefit.cpp.o"
 )
 

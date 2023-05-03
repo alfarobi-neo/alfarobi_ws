@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,61 +39,61 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs/msg" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetData.msg"
-    "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetPositionData.msg"
-    "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOff.msg"
-    "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOffArray.msg"
+    "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetData.msg"
+    "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetPositionData.msg"
+    "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOff.msg"
+    "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOffArray.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs/srv" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs/srv" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs/cmake" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs/cmake" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/share/roseus/ros/op3_offset_tuner_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/op3_offset_tuner_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/op3_offset_tuner_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/op3_offset_tuner_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/op3_offset_tuner_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/op3_offset_tuner_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/home/ajus/anaconda3/bin/python3" -m compileall "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_offset_tuner_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs/cmake" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs/cmake" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgsConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgsConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgsConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/catkin_generated/installspace/op3_offset_tuner_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_offset_tuner_msgs" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/package.xml")
 endif()
 

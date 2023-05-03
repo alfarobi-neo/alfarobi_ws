@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/op3_action_editor/op3_action_editor"
-  "/home/ajus/alfarobi_ws/devel/lib/op3_action_editor/op3_action_editor.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_action_editor/op3_action_editor"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_action_editor/op3_action_editor.pdb"
   "CMakeFiles/op3_action_editor.dir/src/action_editor.cpp.o"
   "CMakeFiles/op3_action_editor.dir/src/main.cpp.o"
 )

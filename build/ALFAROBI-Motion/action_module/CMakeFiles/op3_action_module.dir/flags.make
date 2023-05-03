@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11  -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"op3_action_module\" -Dop3_action_module_EXPORTS
 
-CXX_INCLUDES = -I/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/action_module/include -I/home/ajus/alfarobi_ws/devel/include -I/home/ajus/alfarobi_ws/src/DynamixelSDK/c++/include -I/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_device/include -I/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/action_module/include -I/home/fariz/Desktop/alfarobi_ws/devel/include -I/home/fariz/Desktop/alfarobi_ws/src/DynamixelSDK/c++/include -I/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Framework/robotis_device/include -I/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

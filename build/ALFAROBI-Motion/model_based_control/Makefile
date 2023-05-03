@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/rule
 .PHONY : ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ model_based_control: ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_
 
 # fast build rule for target.
 model_based_control/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build
 .PHONY : model_based_control/fast
 
 # Convenience name for target.
 ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control_generate_messages.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control_generate_messages.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control_generate_messages.dir/rule
 .PHONY : ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ model_based_control_generate_messages: ALFAROBI-Motion/model_based_control/CMake
 
 # fast build rule for target.
 model_based_control_generate_messages/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control_generate_messages.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control_generate_messages.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control_generate_messages.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control_generate_messages.dir/build
 .PHONY : model_based_control_generate_messages/fast
 
 src/csvManager.o: src/csvManager.cpp.o
@@ -203,7 +203,7 @@ src/csvManager.o: src/csvManager.cpp.o
 
 # target to build an object file
 src/csvManager.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/csvManager.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/csvManager.cpp.o
 .PHONY : src/csvManager.cpp.o
 
 src/csvManager.i: src/csvManager.cpp.i
@@ -212,7 +212,7 @@ src/csvManager.i: src/csvManager.cpp.i
 
 # target to preprocess a source file
 src/csvManager.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/csvManager.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/csvManager.cpp.i
 .PHONY : src/csvManager.cpp.i
 
 src/csvManager.s: src/csvManager.cpp.s
@@ -221,7 +221,7 @@ src/csvManager.s: src/csvManager.cpp.s
 
 # target to generate assembly for a file
 src/csvManager.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/csvManager.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/csvManager.cpp.s
 .PHONY : src/csvManager.cpp.s
 
 src/densis.o: src/densis.cpp.o
@@ -230,7 +230,7 @@ src/densis.o: src/densis.cpp.o
 
 # target to build an object file
 src/densis.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/densis.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/densis.cpp.o
 .PHONY : src/densis.cpp.o
 
 src/densis.i: src/densis.cpp.i
@@ -239,7 +239,7 @@ src/densis.i: src/densis.cpp.i
 
 # target to preprocess a source file
 src/densis.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/densis.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/densis.cpp.i
 .PHONY : src/densis.cpp.i
 
 src/densis.s: src/densis.cpp.s
@@ -248,7 +248,7 @@ src/densis.s: src/densis.cpp.s
 
 # target to generate assembly for a file
 src/densis.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/densis.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/densis.cpp.s
 .PHONY : src/densis.cpp.s
 
 src/modelBasedControl.o: src/modelBasedControl.cpp.o
@@ -257,7 +257,7 @@ src/modelBasedControl.o: src/modelBasedControl.cpp.o
 
 # target to build an object file
 src/modelBasedControl.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/modelBasedControl.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/modelBasedControl.cpp.o
 .PHONY : src/modelBasedControl.cpp.o
 
 src/modelBasedControl.i: src/modelBasedControl.cpp.i
@@ -266,7 +266,7 @@ src/modelBasedControl.i: src/modelBasedControl.cpp.i
 
 # target to preprocess a source file
 src/modelBasedControl.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/modelBasedControl.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/modelBasedControl.cpp.i
 .PHONY : src/modelBasedControl.cpp.i
 
 src/modelBasedControl.s: src/modelBasedControl.cpp.s
@@ -275,7 +275,7 @@ src/modelBasedControl.s: src/modelBasedControl.cpp.s
 
 # target to generate assembly for a file
 src/modelBasedControl.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/modelBasedControl.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/modelBasedControl.cpp.s
 .PHONY : src/modelBasedControl.cpp.s
 
 src/servoObserver.o: src/servoObserver.cpp.o
@@ -284,7 +284,7 @@ src/servoObserver.o: src/servoObserver.cpp.o
 
 # target to build an object file
 src/servoObserver.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/servoObserver.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/servoObserver.cpp.o
 .PHONY : src/servoObserver.cpp.o
 
 src/servoObserver.i: src/servoObserver.cpp.i
@@ -293,7 +293,7 @@ src/servoObserver.i: src/servoObserver.cpp.i
 
 # target to preprocess a source file
 src/servoObserver.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/servoObserver.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/servoObserver.cpp.i
 .PHONY : src/servoObserver.cpp.i
 
 src/servoObserver.s: src/servoObserver.cpp.s
@@ -302,7 +302,7 @@ src/servoObserver.s: src/servoObserver.cpp.s
 
 # target to generate assembly for a file
 src/servoObserver.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/servoObserver.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/build.make ALFAROBI-Motion/model_based_control/CMakeFiles/model_based_control.dir/src/servoObserver.cpp.s
 .PHONY : src/servoObserver.cpp.s
 
 # Help Target
@@ -343,6 +343,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

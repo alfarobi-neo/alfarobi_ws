@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/ajus/alfarobi_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_38e0c/fast && /usr/bin/make -f CMakeFiles/cmTC_38e0c.dir/build.make CMakeFiles/cmTC_38e0c.dir/build
-make[1]: Entering directory '/home/ajus/alfarobi_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_38e0c.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_38e0c.dir/src.c.o   -c /home/ajus/alfarobi_ws/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_38e0c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38e0c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_38e0c.dir/src.c.o  -o cmTC_38e0c 
-/usr/bin/ld: CMakeFiles/cmTC_38e0c.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_eefbb/fast && /usr/bin/make -f CMakeFiles/cmTC_eefbb.dir/build.make CMakeFiles/cmTC_eefbb.dir/build
+make[1]: Entering directory '/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eefbb.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_eefbb.dir/src.c.o   -c /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_eefbb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eefbb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_eefbb.dir/src.c.o  -o cmTC_eefbb 
+/usr/bin/ld: CMakeFiles/cmTC_eefbb.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_38e0c.dir/build.make:87: cmTC_38e0c] Error 1
-make[1]: Leaving directory '/home/ajus/alfarobi_ws/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_38e0c/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_eefbb.dir/build.make:87: cmTC_eefbb] Error 1
+make[1]: Leaving directory '/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_eefbb/fast] Error 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/ajus/alfarobi_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_add52/fast && /usr/bin/make -f CMakeFiles/cmTC_add52.dir/build.make CMakeFiles/cmTC_add52.dir/build
-make[1]: Entering directory '/home/ajus/alfarobi_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_add52.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_add52.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_add52
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_add52.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_add52.dir/CheckFunctionExists.c.o  -o cmTC_add52  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_d2803/fast && /usr/bin/make -f CMakeFiles/cmTC_d2803.dir/build.make CMakeFiles/cmTC_d2803.dir/build
+make[1]: Entering directory '/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2803.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d2803.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d2803
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2803.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d2803.dir/CheckFunctionExists.c.o  -o cmTC_d2803  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_add52.dir/build.make:87: cmTC_add52] Error 1
-make[1]: Leaving directory '/home/ajus/alfarobi_ws/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_add52/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_d2803.dir/build.make:87: cmTC_d2803] Error 1
+make[1]: Leaving directory '/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d2803/fast] Error 2
 
 
 

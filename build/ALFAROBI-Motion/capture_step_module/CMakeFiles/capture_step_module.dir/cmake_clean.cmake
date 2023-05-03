@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so"
   "CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o"
 )
 

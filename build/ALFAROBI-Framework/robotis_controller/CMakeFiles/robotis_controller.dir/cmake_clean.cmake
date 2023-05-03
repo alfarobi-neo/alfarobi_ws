@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/librobotis_controller.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/librobotis_controller.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_controller.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_controller.so"
   "CMakeFiles/robotis_controller.dir/src/robotis_controller/robotis_controller.cpp.o"
 )
 

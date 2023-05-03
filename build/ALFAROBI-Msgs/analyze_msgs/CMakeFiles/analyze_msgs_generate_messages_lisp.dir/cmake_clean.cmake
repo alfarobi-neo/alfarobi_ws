@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/analyze_msgs/msg/Fuzzy.lisp"
-  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/analyze_msgs/msg/movAvg.lisp"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/analyze_msgs/msg/Fuzzy.lisp"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/analyze_msgs/msg/movAvg.lisp"
   "CMakeFiles/analyze_msgs_generate_messages_lisp"
 )
 

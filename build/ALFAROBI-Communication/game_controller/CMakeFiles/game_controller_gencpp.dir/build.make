@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Utility rule file for game_controller_gencpp.
 
@@ -63,10 +63,10 @@ ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/bui
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/build
 
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/game_controller && $(CMAKE_COMMAND) -P CMakeFiles/game_controller_gencpp.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/game_controller && $(CMAKE_COMMAND) -P CMakeFiles/game_controller_gencpp.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/clean
 
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/game_controller /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/game_controller /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/game_controller /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/game_controller /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/depend
 

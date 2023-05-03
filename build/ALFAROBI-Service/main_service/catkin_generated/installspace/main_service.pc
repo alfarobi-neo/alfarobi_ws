@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/install
+prefix=/home/fariz/Desktop/alfarobi_ws/install
 
 Name: main_service
 Description: Description of main_service

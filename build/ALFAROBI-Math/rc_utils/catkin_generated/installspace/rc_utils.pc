@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/install
+prefix=/home/fariz/Desktop/alfarobi_ws/install
 
 Name: rc_utils
 Description: Description of rc_utils

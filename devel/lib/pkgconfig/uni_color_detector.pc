@@ -1,8 +1,0 @@
-prefix=/home/ajus/alfarobi_ws/devel
-
-Name: uni_color_detector
-Description: Description of uni_color_detector
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

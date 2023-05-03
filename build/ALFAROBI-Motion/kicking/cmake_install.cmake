@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/kicking
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/kicking
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/kicking/catkin_generated/installspace/kicking.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/kicking/catkin_generated/installspace/kicking.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kicking/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/kicking/catkin_generated/installspace/kickingConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/kicking/catkin_generated/installspace/kickingConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/kicking/catkin_generated/installspace/kickingConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/kicking/catkin_generated/installspace/kickingConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kicking" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/kicking/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kicking" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/kicking/package.xml")
 endif()
 

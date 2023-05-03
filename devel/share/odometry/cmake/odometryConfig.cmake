@@ -67,14 +67,14 @@ set(odometry_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(odometry_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/odometry)
-  set(odometry_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
+  set(odometry_SOURCE_PREFIX /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/odometry)
+  set(odometry_DEVEL_PREFIX /home/fariz/Desktop/alfarobi_ws/devel)
   set(odometry_INSTALL_PREFIX "")
   set(odometry_PREFIX ${odometry_DEVEL_PREFIX})
 else()
   set(odometry_SOURCE_PREFIX "")
   set(odometry_DEVEL_PREFIX "")
-  set(odometry_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
+  set(odometry_INSTALL_PREFIX /home/fariz/Desktop/alfarobi_ws/install)
   set(odometry_PREFIX ${odometry_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(odometry_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/odometry/include " STREQUAL " ")
+if(NOT "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/odometry/include " STREQUAL " ")
   set(odometry_INCLUDE_DIRS "")
-  set(_include_dirs "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/odometry/include")
+  set(_include_dirs "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/odometry/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/odometry/include " STREQUAL "
         message(FATAL_ERROR "Project 'odometry' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'odometry' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/odometry/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'odometry' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/odometry/${idir}'.  ${_report}")
     endif()
     _list_append_unique(odometry_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ajus/alfarobi_ws/devel/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/fariz/Desktop/alfarobi_ws/devel/lib;/home/fariz/Desktop/alfarobi_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

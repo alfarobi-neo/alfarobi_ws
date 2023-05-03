@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Framework/robotis_framework_common/catkin_generated/installspace/robotis_framework_common.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Framework/robotis_framework_common/catkin_generated/installspace/robotis_framework_common.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotis_framework_common/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Framework/robotis_framework_common/catkin_generated/installspace/robotis_framework_commonConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Framework/robotis_framework_common/catkin_generated/installspace/robotis_framework_commonConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Framework/robotis_framework_common/catkin_generated/installspace/robotis_framework_commonConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Framework/robotis_framework_common/catkin_generated/installspace/robotis_framework_commonConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotis_framework_common" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotis_framework_common" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobotis_framework_common.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ajus/alfarobi_ws/devel/lib/librobotis_framework_common.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_framework_common.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobotis_framework_common.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobotis_framework_common.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -72,6 +72,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/robotis_framework_common" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include/robotis_framework_common/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/robotis_framework_common" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Framework/robotis_framework_common/include/robotis_framework_common/")
 endif()
 

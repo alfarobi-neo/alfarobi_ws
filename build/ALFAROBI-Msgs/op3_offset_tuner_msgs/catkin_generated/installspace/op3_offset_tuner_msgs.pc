@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/install
+prefix=/home/fariz/Desktop/alfarobi_ws/install
 
 Name: op3_offset_tuner_msgs
 Description: Description of op3_offset_tuner_msgs

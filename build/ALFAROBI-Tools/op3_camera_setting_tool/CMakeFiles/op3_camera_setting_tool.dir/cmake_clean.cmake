@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/op3_camera_setting_tool/op3_camera_setting_tool"
-  "/home/ajus/alfarobi_ws/devel/lib/op3_camera_setting_tool/op3_camera_setting_tool.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_camera_setting_tool/op3_camera_setting_tool"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_camera_setting_tool/op3_camera_setting_tool.pdb"
   "CMakeFiles/op3_camera_setting_tool.dir/src/main.cpp.o"
 )
 

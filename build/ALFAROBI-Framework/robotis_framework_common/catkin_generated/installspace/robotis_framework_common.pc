@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/install
+prefix=/home/fariz/Desktop/alfarobi_ws/install
 
 Name: robotis_framework_common
 Description: Description of robotis_framework_common

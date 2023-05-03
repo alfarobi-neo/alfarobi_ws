@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/kicking_module_msgs/GetKickingParam.h"
-  "/home/ajus/alfarobi_ws/devel/include/kicking_module_msgs/KickingParam.h"
-  "/home/ajus/alfarobi_ws/devel/include/kicking_module_msgs/SetKickingParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/kicking_module_msgs/GetKickingParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/kicking_module_msgs/KickingParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/kicking_module_msgs/SetKickingParam.h"
   "CMakeFiles/kicking_module_msgs_generate_messages_cpp"
 )
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Include any dependencies generated for this target.
 include ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/depend.make
@@ -58,43 +58,43 @@ include ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/progress.mak
 include ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/flags.make
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.o: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/flags.make
-ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/src/kicking.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kicking_asli.dir/src/kicking.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/src/kicking.cpp
+ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/src/kicking.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kicking_asli.dir/src/kicking.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/src/kicking.cpp
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kicking_asli.dir/src/kicking.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/src/kicking.cpp > CMakeFiles/kicking_asli.dir/src/kicking.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/src/kicking.cpp > CMakeFiles/kicking_asli.dir/src/kicking.cpp.i
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kicking_asli.dir/src/kicking.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/src/kicking.cpp -o CMakeFiles/kicking_asli.dir/src/kicking.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking/src/kicking.cpp -o CMakeFiles/kicking_asli.dir/src/kicking.cpp.s
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/flags.make
-ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/kinematics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/kinematics.cpp
+ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/kinematics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/kinematics.cpp
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/kinematics.cpp > CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/kinematics.cpp > CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.i
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/kinematics.cpp -o CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/kinematics.cpp -o CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.s
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/flags.make
-ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/zmp_team_darwin_kinematics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/zmp_team_darwin_kinematics.cpp
+ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/zmp_team_darwin_kinematics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/zmp_team_darwin_kinematics.cpp
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/zmp_team_darwin_kinematics.cpp > CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/zmp_team_darwin_kinematics.cpp > CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/zmp_team_darwin_kinematics.cpp -o CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/walk_zmp/src/zmp_team_darwin_kinematics.cpp -o CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s
 
 # Object files for target kicking_asli
 kicking_asli_OBJECTS = \
@@ -105,76 +105,76 @@ kicking_asli_OBJECTS = \
 # External object files for target kicking_asli
 kicking_asli_EXTERNAL_OBJECTS =
 
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/build.make
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libeigen_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_framework_common.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_device.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /home/ajus/alfarobi_ws/devel/lib/libdynamixel_sdk.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libkdl_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/liborocos-kdl.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /home/ajus/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_math.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroscpp.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librostime.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /home/ajus/alfarobi_ws/devel/lib/libmodel_based_control.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libeigen_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/liborocos-kdl.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroscpp.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroslib.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librospack.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librostime.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kicking_asli.dir/link.txt --verbose=$(VERBOSE)
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/src/kicking.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/kinematics.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/build.make
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libeigen_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_framework_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_device.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/libdynamixel_sdk.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libkdl_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/liborocos-kdl.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_math.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroscpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librostime.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/libmodel_based_control.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libeigen_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/liborocos-kdl.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroscpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroslib.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librospack.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/librostime.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so: ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kicking_asli.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/build: /home/ajus/alfarobi_ws/devel/lib/libkicking_asli.so
+ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/build: /home/fariz/Desktop/alfarobi_ws/devel/lib/libkicking_asli.so
 
 .PHONY : ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/build
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && $(CMAKE_COMMAND) -P CMakeFiles/kicking_asli.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking && $(CMAKE_COMMAND) -P CMakeFiles/kicking_asli.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/clean
 
 ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/skripsi_kicking /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Motion/skripsi_kicking/CMakeFiles/kicking_asli.dir/depend
 

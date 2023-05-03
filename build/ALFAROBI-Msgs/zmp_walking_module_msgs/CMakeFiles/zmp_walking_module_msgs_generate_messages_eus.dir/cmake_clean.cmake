@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/manifest.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/msg/ZMPWalkingParam.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/srv/GetZMPParam.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/srv/SetZMPParam.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/manifest.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/msg/ZMPWalkingParam.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/srv/GetZMPParam.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/zmp_walking_module_msgs/srv/SetZMPParam.l"
   "CMakeFiles/zmp_walking_module_msgs_generate_messages_eus"
 )
 

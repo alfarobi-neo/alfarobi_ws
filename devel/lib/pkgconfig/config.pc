@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/devel
+prefix=/home/fariz/Desktop/alfarobi_ws/devel
 
 Name: config
 Description: Description of config

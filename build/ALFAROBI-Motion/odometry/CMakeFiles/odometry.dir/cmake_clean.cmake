@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libodometry.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libodometry.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libodometry.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libodometry.so"
   "CMakeFiles/odometry.dir/src/odometry.cpp.o"
 )
 

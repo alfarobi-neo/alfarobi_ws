@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/analyze_msgs/Fuzzy.h"
-  "/home/ajus/alfarobi_ws/devel/include/analyze_msgs/movAvg.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/analyze_msgs/Fuzzy.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/analyze_msgs/movAvg.h"
   "CMakeFiles/analyze_msgs_generate_messages_cpp"
 )
 

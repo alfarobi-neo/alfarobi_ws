@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/feedback_msgs/FeedbackParam.h"
-  "/home/ajus/alfarobi_ws/devel/include/feedback_msgs/GetFeedbackParam.h"
-  "/home/ajus/alfarobi_ws/devel/include/feedback_msgs/SetFeedbackParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/feedback_msgs/FeedbackParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/feedback_msgs/GetFeedbackParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/feedback_msgs/SetFeedbackParam.h"
   "CMakeFiles/feedback_msgs_generate_messages_cpp"
 )
 

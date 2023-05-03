@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/install
+prefix=/home/fariz/Desktop/alfarobi_ws/install
 
 Name: data_log_msgs
 Description: Description of data_log_msgs

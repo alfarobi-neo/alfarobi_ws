@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/kicking/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/kicking/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/rule
 .PHONY : ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ kicking: ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/rule
 
 # fast build rule for target.
 kicking/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build
 .PHONY : kicking/fast
 
 __/walk_zmp/src/kinematics.o: __/walk_zmp/src/kinematics.cpp.o
@@ -188,7 +188,7 @@ __/walk_zmp/src/kinematics.o: __/walk_zmp/src/kinematics.cpp.o
 
 # target to build an object file
 __/walk_zmp/src/kinematics.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/kinematics.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/kinematics.cpp.o
 .PHONY : __/walk_zmp/src/kinematics.cpp.o
 
 __/walk_zmp/src/kinematics.i: __/walk_zmp/src/kinematics.cpp.i
@@ -197,7 +197,7 @@ __/walk_zmp/src/kinematics.i: __/walk_zmp/src/kinematics.cpp.i
 
 # target to preprocess a source file
 __/walk_zmp/src/kinematics.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/kinematics.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/kinematics.cpp.i
 .PHONY : __/walk_zmp/src/kinematics.cpp.i
 
 __/walk_zmp/src/kinematics.s: __/walk_zmp/src/kinematics.cpp.s
@@ -206,7 +206,7 @@ __/walk_zmp/src/kinematics.s: __/walk_zmp/src/kinematics.cpp.s
 
 # target to generate assembly for a file
 __/walk_zmp/src/kinematics.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/kinematics.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/kinematics.cpp.s
 .PHONY : __/walk_zmp/src/kinematics.cpp.s
 
 __/walk_zmp/src/zmp_team_darwin_kinematics.o: __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o
@@ -215,7 +215,7 @@ __/walk_zmp/src/zmp_team_darwin_kinematics.o: __/walk_zmp/src/zmp_team_darwin_ki
 
 # target to build an object file
 __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o
 .PHONY : __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.o
 
 __/walk_zmp/src/zmp_team_darwin_kinematics.i: __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i
@@ -224,7 +224,7 @@ __/walk_zmp/src/zmp_team_darwin_kinematics.i: __/walk_zmp/src/zmp_team_darwin_ki
 
 # target to preprocess a source file
 __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i
 .PHONY : __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.i
 
 __/walk_zmp/src/zmp_team_darwin_kinematics.s: __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s
@@ -233,7 +233,7 @@ __/walk_zmp/src/zmp_team_darwin_kinematics.s: __/walk_zmp/src/zmp_team_darwin_ki
 
 # target to generate assembly for a file
 __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/__/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s
 .PHONY : __/walk_zmp/src/zmp_team_darwin_kinematics.cpp.s
 
 src/kicking.o: src/kicking.cpp.o
@@ -242,7 +242,7 @@ src/kicking.o: src/kicking.cpp.o
 
 # target to build an object file
 src/kicking.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/src/kicking.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/src/kicking.cpp.o
 .PHONY : src/kicking.cpp.o
 
 src/kicking.i: src/kicking.cpp.i
@@ -251,7 +251,7 @@ src/kicking.i: src/kicking.cpp.i
 
 # target to preprocess a source file
 src/kicking.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/src/kicking.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/src/kicking.cpp.i
 .PHONY : src/kicking.cpp.i
 
 src/kicking.s: src/kicking.cpp.s
@@ -260,7 +260,7 @@ src/kicking.s: src/kicking.cpp.s
 
 # target to generate assembly for a file
 src/kicking.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/src/kicking.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/build.make ALFAROBI-Motion/kicking/CMakeFiles/kicking.dir/src/kicking.cpp.s
 .PHONY : src/kicking.cpp.s
 
 # Help Target
@@ -297,6 +297,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

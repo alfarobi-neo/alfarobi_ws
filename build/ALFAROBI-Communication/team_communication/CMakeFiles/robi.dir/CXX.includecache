@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/communication.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/communication.h
 ros/ros.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/ros/ros.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/ros/ros.h
 std_msgs/Bool.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/std_msgs/Bool.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/std_msgs/Bool.h
 std_msgs/Float32.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/std_msgs/Float32.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/std_msgs/Float32.h
 std_msgs/Int8.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/std_msgs/Int8.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/std_msgs/Int8.h
 iostream
 -
 algorithm
@@ -34,7 +34,7 @@ arpa/inet.h
 unistd.h
 -
 
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/robi.cpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/robi.cpp
 cstdio
 -
 cstdlib
@@ -44,7 +44,7 @@ cstring
 iostream
 -
 communication.h
-/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/communication.h
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/src/communication.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

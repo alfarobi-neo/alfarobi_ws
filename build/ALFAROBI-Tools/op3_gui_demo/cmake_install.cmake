@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Tools/op3_gui_demo
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Tools/op3_gui_demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/op3_gui_demo/catkin_generated/installspace/op3_gui_demo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Tools/op3_gui_demo/catkin_generated/installspace/op3_gui_demo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_gui_demo/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/op3_gui_demo/catkin_generated/installspace/op3_gui_demoConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Tools/op3_gui_demo/catkin_generated/installspace/op3_gui_demoConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Tools/op3_gui_demo/catkin_generated/installspace/op3_gui_demoConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Tools/op3_gui_demo/catkin_generated/installspace/op3_gui_demoConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_gui_demo" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Tools/op3_gui_demo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/op3_gui_demo" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Tools/op3_gui_demo/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/op3_gui_demo/op3_gui_demo"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/op3_gui_demo" TYPE EXECUTABLE FILES "/home/ajus/alfarobi_ws/devel/lib/op3_gui_demo/op3_gui_demo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/op3_gui_demo" TYPE EXECUTABLE FILES "/home/fariz/Desktop/alfarobi_ws/devel/lib/op3_gui_demo/op3_gui_demo")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/op3_gui_demo/op3_gui_demo" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/op3_gui_demo/op3_gui_demo")
     file(RPATH_CHANGE

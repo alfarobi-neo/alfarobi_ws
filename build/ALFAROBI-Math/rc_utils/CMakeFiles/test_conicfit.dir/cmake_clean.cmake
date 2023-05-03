@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_conicfit"
-  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_conicfit.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/rc_utils/test_conicfit"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/rc_utils/test_conicfit.pdb"
   "CMakeFiles/test_conicfit.dir/test/test_conicfit.cpp.o"
 )
 

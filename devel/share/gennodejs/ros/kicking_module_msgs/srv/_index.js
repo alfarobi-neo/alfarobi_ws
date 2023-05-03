@@ -1,10 +1,10 @@
 
 "use strict";
 
-let GetKickingParam = require('./GetKickingParam.js')
 let SetKickingParam = require('./SetKickingParam.js')
+let GetKickingParam = require('./GetKickingParam.js')
 
 module.exports = {
-  GetKickingParam: GetKickingParam,
   SetKickingParam: SetKickingParam,
+  GetKickingParam: GetKickingParam,
 };

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_golay"
-  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_golay.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/rc_utils/test_golay"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/rc_utils/test_golay.pdb"
   "CMakeFiles/test_golay.dir/test/test_golay.cpp.o"
 )
 

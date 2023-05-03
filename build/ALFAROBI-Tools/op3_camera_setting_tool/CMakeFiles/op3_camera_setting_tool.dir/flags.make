@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"op3_camera_setting_tool\"
 
-CXX_INCLUDES = -I/home/ajus/alfarobi_ws/devel/include -I/home/ajus/alfarobi_ws/src/ALFAROBI-Tools/op3_camera_setting_tool/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/fariz/Desktop/alfarobi_ws/devel/include -I/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Tools/op3_camera_setting_tool/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

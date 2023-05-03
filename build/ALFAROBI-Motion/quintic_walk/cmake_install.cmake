@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/catkin_generated/installspace/quintic_walk.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/catkin_generated/installspace/quintic_walk.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quintic_walk/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/catkin_generated/installspace/quintic_walkConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/catkin_generated/installspace/quintic_walkConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/catkin_generated/installspace/quintic_walkConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/catkin_generated/installspace/quintic_walkConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quintic_walk" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quintic_walk" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/package.xml")
 endif()
 

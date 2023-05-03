@@ -1,10 +1,10 @@
 
 "use strict";
 
-let SetZMPParam = require('./SetZMPParam.js')
 let GetZMPParam = require('./GetZMPParam.js')
+let SetZMPParam = require('./SetZMPParam.js')
 
 module.exports = {
-  SetZMPParam: SetZMPParam,
   GetZMPParam: GetZMPParam,
+  SetZMPParam: SetZMPParam,
 };

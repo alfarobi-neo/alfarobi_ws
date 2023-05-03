@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/game_controller/manifest.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/game_controller/msg/GameState.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/game_controller/manifest.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/game_controller/msg/GameState.l"
   "CMakeFiles/game_controller_generate_messages_eus"
 )
 

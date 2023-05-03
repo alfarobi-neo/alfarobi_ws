@@ -67,14 +67,14 @@ set(game_controller_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(game_controller_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/game_controller)
-  set(game_controller_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
+  set(game_controller_SOURCE_PREFIX /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/game_controller)
+  set(game_controller_DEVEL_PREFIX /home/fariz/Desktop/alfarobi_ws/devel)
   set(game_controller_INSTALL_PREFIX "")
   set(game_controller_PREFIX ${game_controller_DEVEL_PREFIX})
 else()
   set(game_controller_SOURCE_PREFIX "")
   set(game_controller_DEVEL_PREFIX "")
-  set(game_controller_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
+  set(game_controller_INSTALL_PREFIX /home/fariz/Desktop/alfarobi_ws/install)
   set(game_controller_PREFIX ${game_controller_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ajus/alfarobi_ws/install/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/fariz/Desktop/alfarobi_ws/install/lib;/home/fariz/Desktop/alfarobi_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

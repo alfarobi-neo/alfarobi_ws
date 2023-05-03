@@ -43,62 +43,62 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Utility rule file for op3_offset_tuner_msgs_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/progress.make
 
-ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h
-ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h
-ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h
-ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h
-ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h
+ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h
+ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h
+ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h
+ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h
+ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h
 
 
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetData.msg
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from op3_offset_tuner_msgs/JointOffsetData.msg"
-	cd /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/ajus/alfarobi_ws/build/catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetData.msg -Iop3_offset_tuner_msgs:/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetData.msg
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from op3_offset_tuner_msgs/JointOffsetData.msg"
+	cd /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/fariz/Desktop/alfarobi_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetData.msg -Iop3_offset_tuner_msgs:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetPositionData.msg
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from op3_offset_tuner_msgs/JointOffsetPositionData.msg"
-	cd /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/ajus/alfarobi_ws/build/catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetPositionData.msg -Iop3_offset_tuner_msgs:/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetPositionData.msg
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from op3_offset_tuner_msgs/JointOffsetPositionData.msg"
+	cd /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/fariz/Desktop/alfarobi_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetPositionData.msg -Iop3_offset_tuner_msgs:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOff.msg
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from op3_offset_tuner_msgs/JointTorqueOnOff.msg"
-	cd /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/ajus/alfarobi_ws/build/catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOff.msg -Iop3_offset_tuner_msgs:/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOff.msg
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from op3_offset_tuner_msgs/JointTorqueOnOff.msg"
+	cd /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/fariz/Desktop/alfarobi_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOff.msg -Iop3_offset_tuner_msgs:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOffArray.msg
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOff.msg
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from op3_offset_tuner_msgs/JointTorqueOnOffArray.msg"
-	cd /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/ajus/alfarobi_ws/build/catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOffArray.msg -Iop3_offset_tuner_msgs:/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOffArray.msg
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOff.msg
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from op3_offset_tuner_msgs/JointTorqueOnOffArray.msg"
+	cd /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/fariz/Desktop/alfarobi_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointTorqueOnOffArray.msg -Iop3_offset_tuner_msgs:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetPositionData.msg
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from op3_offset_tuner_msgs/GetPresentJointOffsetData.srv"
-	cd /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/ajus/alfarobi_ws/build/catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv -Iop3_offset_tuner_msgs:/home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg/JointOffsetPositionData.msg
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from op3_offset_tuner_msgs/GetPresentJointOffsetData.srv"
+	cd /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs && /home/fariz/Desktop/alfarobi_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv -Iop3_offset_tuner_msgs:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p op3_offset_tuner_msgs -o /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 op3_offset_tuner_msgs_generate_messages_cpp: ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp
-op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h
-op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h
-op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h
-op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h
-op3_offset_tuner_msgs_generate_messages_cpp: /home/ajus/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h
+op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetData.h
+op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointOffsetPositionData.h
+op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOff.h
+op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/JointTorqueOnOffArray.h
+op3_offset_tuner_msgs_generate_messages_cpp: /home/fariz/Desktop/alfarobi_ws/devel/include/op3_offset_tuner_msgs/GetPresentJointOffsetData.h
 op3_offset_tuner_msgs_generate_messages_cpp: ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/build.make
 
 .PHONY : op3_offset_tuner_msgs_generate_messages_cpp
@@ -109,10 +109,10 @@ ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_me
 .PHONY : ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/build
 
 ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs && $(CMAKE_COMMAND) -P CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs && $(CMAKE_COMMAND) -P CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/clean
 
 ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/op3_offset_tuner_msgs /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Msgs/op3_offset_tuner_msgs/CMakeFiles/op3_offset_tuner_msgs_generate_messages_cpp.dir/depend
 

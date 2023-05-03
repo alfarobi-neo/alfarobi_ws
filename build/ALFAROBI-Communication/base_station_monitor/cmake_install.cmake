@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/catkin_generated/installspace/base_station_monitor.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/catkin_generated/installspace/base_station_monitor.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/base_station_monitor/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/catkin_generated/installspace/base_station_monitorConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/catkin_generated/installspace/base_station_monitorConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/catkin_generated/installspace/base_station_monitorConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/base_station_monitor/catkin_generated/installspace/base_station_monitorConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/base_station_monitor" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/base_station_monitor" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/base_station_monitor/package.xml")
 endif()
 

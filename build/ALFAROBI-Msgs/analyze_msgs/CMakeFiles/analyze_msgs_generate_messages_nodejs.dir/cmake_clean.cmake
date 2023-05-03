@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/analyze_msgs/msg/Fuzzy.js"
-  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/analyze_msgs/msg/movAvg.js"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/analyze_msgs/msg/Fuzzy.js"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/analyze_msgs/msg/movAvg.js"
   "CMakeFiles/analyze_msgs_generate_messages_nodejs"
 )
 

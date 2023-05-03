@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/capture_step_module_msgs/GetWalkingParam.h"
-  "/home/ajus/alfarobi_ws/devel/include/capture_step_module_msgs/SetWalkingParam.h"
-  "/home/ajus/alfarobi_ws/devel/include/capture_step_module_msgs/WalkingParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/capture_step_module_msgs/GetWalkingParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/capture_step_module_msgs/SetWalkingParam.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/capture_step_module_msgs/WalkingParam.h"
   "CMakeFiles/capture_step_module_msgs_generate_messages_cpp"
 )
 

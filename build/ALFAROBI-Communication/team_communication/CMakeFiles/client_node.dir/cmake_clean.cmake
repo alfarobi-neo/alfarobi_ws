@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/team_communication/client_node"
-  "/home/ajus/alfarobi_ws/devel/lib/team_communication/client_node.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/team_communication/client_node"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/team_communication/client_node.pdb"
   "CMakeFiles/client_node.dir/src/client_node.cpp.o"
 )
 

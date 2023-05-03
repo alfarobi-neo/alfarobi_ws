@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/densis_msgs/msg/__init__.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/densis_msgs/msg/_densis.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/densis_msgs/msg/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/densis_msgs/msg/_densis.py"
   "CMakeFiles/densis_msgs_generate_messages_py"
 )
 

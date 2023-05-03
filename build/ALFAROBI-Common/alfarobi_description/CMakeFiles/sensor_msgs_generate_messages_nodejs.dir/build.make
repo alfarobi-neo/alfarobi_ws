@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Utility rule file for sensor_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ ALFAROBI-Common/alfarobi_description/CMakeFiles/sensor_msgs_generate_messages_no
 .PHONY : ALFAROBI-Common/alfarobi_description/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 
 ALFAROBI-Common/alfarobi_description/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Common/alfarobi_description && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Common/alfarobi_description && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Common/alfarobi_description/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 
 ALFAROBI-Common/alfarobi_description/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Common/alfarobi_description /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Common/alfarobi_description /home/ajus/alfarobi_ws/build/ALFAROBI-Common/alfarobi_description/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Common/alfarobi_description /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Common/alfarobi_description /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Common/alfarobi_description/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Common/alfarobi_description/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
 

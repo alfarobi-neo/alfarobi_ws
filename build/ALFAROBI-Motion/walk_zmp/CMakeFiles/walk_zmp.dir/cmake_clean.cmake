@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libwalk_zmp.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libwalk_zmp.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libwalk_zmp.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libwalk_zmp.so"
   "CMakeFiles/walk_zmp.dir/src/kinematics.cpp.o"
-  "CMakeFiles/walk_zmp.dir/src/walk_zmp.cpp.o"
   "CMakeFiles/walk_zmp.dir/src/zmp_team_darwin_kinematics.cpp.o"
   "CMakeFiles/walk_zmp.dir/src/zmp_walk_parameter.cpp.o"
 )

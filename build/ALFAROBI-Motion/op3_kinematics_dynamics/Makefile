@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/rule
 .PHONY : ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ op3_kinematics_dynamics: ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_
 
 # fast build rule for target.
 op3_kinematics_dynamics/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build
 .PHONY : op3_kinematics_dynamics/fast
 
 src/link_data.o: src/link_data.cpp.o
@@ -188,7 +188,7 @@ src/link_data.o: src/link_data.cpp.o
 
 # target to build an object file
 src/link_data.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/link_data.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/link_data.cpp.o
 .PHONY : src/link_data.cpp.o
 
 src/link_data.i: src/link_data.cpp.i
@@ -197,7 +197,7 @@ src/link_data.i: src/link_data.cpp.i
 
 # target to preprocess a source file
 src/link_data.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/link_data.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/link_data.cpp.i
 .PHONY : src/link_data.cpp.i
 
 src/link_data.s: src/link_data.cpp.s
@@ -206,7 +206,7 @@ src/link_data.s: src/link_data.cpp.s
 
 # target to generate assembly for a file
 src/link_data.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/link_data.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/link_data.cpp.s
 .PHONY : src/link_data.cpp.s
 
 src/op3_kinematics_dynamics.o: src/op3_kinematics_dynamics.cpp.o
@@ -215,7 +215,7 @@ src/op3_kinematics_dynamics.o: src/op3_kinematics_dynamics.cpp.o
 
 # target to build an object file
 src/op3_kinematics_dynamics.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/op3_kinematics_dynamics.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/op3_kinematics_dynamics.cpp.o
 .PHONY : src/op3_kinematics_dynamics.cpp.o
 
 src/op3_kinematics_dynamics.i: src/op3_kinematics_dynamics.cpp.i
@@ -224,7 +224,7 @@ src/op3_kinematics_dynamics.i: src/op3_kinematics_dynamics.cpp.i
 
 # target to preprocess a source file
 src/op3_kinematics_dynamics.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/op3_kinematics_dynamics.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/op3_kinematics_dynamics.cpp.i
 .PHONY : src/op3_kinematics_dynamics.cpp.i
 
 src/op3_kinematics_dynamics.s: src/op3_kinematics_dynamics.cpp.s
@@ -233,7 +233,7 @@ src/op3_kinematics_dynamics.s: src/op3_kinematics_dynamics.cpp.s
 
 # target to generate assembly for a file
 src/op3_kinematics_dynamics.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/op3_kinematics_dynamics.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/op3_kinematics_dynamics.cpp.s
 .PHONY : src/op3_kinematics_dynamics.cpp.s
 
 src/servoObserver.o: src/servoObserver.cpp.o
@@ -242,7 +242,7 @@ src/servoObserver.o: src/servoObserver.cpp.o
 
 # target to build an object file
 src/servoObserver.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/servoObserver.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/servoObserver.cpp.o
 .PHONY : src/servoObserver.cpp.o
 
 src/servoObserver.i: src/servoObserver.cpp.i
@@ -251,7 +251,7 @@ src/servoObserver.i: src/servoObserver.cpp.i
 
 # target to preprocess a source file
 src/servoObserver.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/servoObserver.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/servoObserver.cpp.i
 .PHONY : src/servoObserver.cpp.i
 
 src/servoObserver.s: src/servoObserver.cpp.s
@@ -260,7 +260,7 @@ src/servoObserver.s: src/servoObserver.cpp.s
 
 # target to generate assembly for a file
 src/servoObserver.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/servoObserver.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/build.make ALFAROBI-Motion/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir/src/servoObserver.cpp.s
 .PHONY : src/servoObserver.cpp.s
 
 # Help Target
@@ -297,6 +297,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

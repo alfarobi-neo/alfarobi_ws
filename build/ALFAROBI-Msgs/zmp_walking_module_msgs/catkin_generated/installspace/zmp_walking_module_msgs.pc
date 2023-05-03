@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/install
+prefix=/home/fariz/Desktop/alfarobi_ws/install
 
 Name: zmp_walking_module_msgs
 Description: Description of zmp_walking_module_msgs

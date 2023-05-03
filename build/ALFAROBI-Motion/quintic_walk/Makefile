@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/rule
 .PHONY : ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ quintic_walk: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/rule
 
 # fast build rule for target.
 quintic_walk/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build
 .PHONY : quintic_walk/fast
 
 src/AnalyticIKSolver.o: src/AnalyticIKSolver.cpp.o
@@ -188,7 +188,7 @@ src/AnalyticIKSolver.o: src/AnalyticIKSolver.cpp.o
 
 # target to build an object file
 src/AnalyticIKSolver.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o
 .PHONY : src/AnalyticIKSolver.cpp.o
 
 src/AnalyticIKSolver.i: src/AnalyticIKSolver.cpp.i
@@ -197,7 +197,7 @@ src/AnalyticIKSolver.i: src/AnalyticIKSolver.cpp.i
 
 # target to preprocess a source file
 src/AnalyticIKSolver.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.i
 .PHONY : src/AnalyticIKSolver.cpp.i
 
 src/AnalyticIKSolver.s: src/AnalyticIKSolver.cpp.s
@@ -206,7 +206,7 @@ src/AnalyticIKSolver.s: src/AnalyticIKSolver.cpp.s
 
 # target to generate assembly for a file
 src/AnalyticIKSolver.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.s
 .PHONY : src/AnalyticIKSolver.cpp.s
 
 src/Footstep.o: src/Footstep.cpp.o
@@ -215,7 +215,7 @@ src/Footstep.o: src/Footstep.cpp.o
 
 # target to build an object file
 src/Footstep.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o
 .PHONY : src/Footstep.cpp.o
 
 src/Footstep.i: src/Footstep.cpp.i
@@ -224,7 +224,7 @@ src/Footstep.i: src/Footstep.cpp.i
 
 # target to preprocess a source file
 src/Footstep.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.i
 .PHONY : src/Footstep.cpp.i
 
 src/Footstep.s: src/Footstep.cpp.s
@@ -233,7 +233,7 @@ src/Footstep.s: src/Footstep.cpp.s
 
 # target to generate assembly for a file
 src/Footstep.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.s
 .PHONY : src/Footstep.cpp.s
 
 src/Spline/Polynom.o: src/Spline/Polynom.cpp.o
@@ -242,7 +242,7 @@ src/Spline/Polynom.o: src/Spline/Polynom.cpp.o
 
 # target to build an object file
 src/Spline/Polynom.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o
 .PHONY : src/Spline/Polynom.cpp.o
 
 src/Spline/Polynom.i: src/Spline/Polynom.cpp.i
@@ -251,7 +251,7 @@ src/Spline/Polynom.i: src/Spline/Polynom.cpp.i
 
 # target to preprocess a source file
 src/Spline/Polynom.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.i
 .PHONY : src/Spline/Polynom.cpp.i
 
 src/Spline/Polynom.s: src/Spline/Polynom.cpp.s
@@ -260,7 +260,7 @@ src/Spline/Polynom.s: src/Spline/Polynom.cpp.s
 
 # target to generate assembly for a file
 src/Spline/Polynom.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.s
 .PHONY : src/Spline/Polynom.cpp.s
 
 src/Spline/SmoothSpline.o: src/Spline/SmoothSpline.cpp.o
@@ -269,7 +269,7 @@ src/Spline/SmoothSpline.o: src/Spline/SmoothSpline.cpp.o
 
 # target to build an object file
 src/Spline/SmoothSpline.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o
 .PHONY : src/Spline/SmoothSpline.cpp.o
 
 src/Spline/SmoothSpline.i: src/Spline/SmoothSpline.cpp.i
@@ -278,7 +278,7 @@ src/Spline/SmoothSpline.i: src/Spline/SmoothSpline.cpp.i
 
 # target to preprocess a source file
 src/Spline/SmoothSpline.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.i
 .PHONY : src/Spline/SmoothSpline.cpp.i
 
 src/Spline/SmoothSpline.s: src/Spline/SmoothSpline.cpp.s
@@ -287,7 +287,7 @@ src/Spline/SmoothSpline.s: src/Spline/SmoothSpline.cpp.s
 
 # target to generate assembly for a file
 src/Spline/SmoothSpline.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.s
 .PHONY : src/Spline/SmoothSpline.cpp.s
 
 src/Spline/Spline.o: src/Spline/Spline.cpp.o
@@ -296,7 +296,7 @@ src/Spline/Spline.o: src/Spline/Spline.cpp.o
 
 # target to build an object file
 src/Spline/Spline.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o
 .PHONY : src/Spline/Spline.cpp.o
 
 src/Spline/Spline.i: src/Spline/Spline.cpp.i
@@ -305,7 +305,7 @@ src/Spline/Spline.i: src/Spline/Spline.cpp.i
 
 # target to preprocess a source file
 src/Spline/Spline.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.i
 .PHONY : src/Spline/Spline.cpp.i
 
 src/Spline/Spline.s: src/Spline/Spline.cpp.s
@@ -314,7 +314,7 @@ src/Spline/Spline.s: src/Spline/Spline.cpp.s
 
 # target to generate assembly for a file
 src/Spline/Spline.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.s
 .PHONY : src/Spline/Spline.cpp.s
 
 src/Utils/Combination.o: src/Utils/Combination.cpp.o
@@ -323,7 +323,7 @@ src/Utils/Combination.o: src/Utils/Combination.cpp.o
 
 # target to build an object file
 src/Utils/Combination.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o
 .PHONY : src/Utils/Combination.cpp.o
 
 src/Utils/Combination.i: src/Utils/Combination.cpp.i
@@ -332,7 +332,7 @@ src/Utils/Combination.i: src/Utils/Combination.cpp.i
 
 # target to preprocess a source file
 src/Utils/Combination.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.i
 .PHONY : src/Utils/Combination.cpp.i
 
 src/Utils/Combination.s: src/Utils/Combination.cpp.s
@@ -341,7 +341,7 @@ src/Utils/Combination.s: src/Utils/Combination.cpp.s
 
 # target to generate assembly for a file
 src/Utils/Combination.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.s
 .PHONY : src/Utils/Combination.cpp.s
 
 src/Utils/NewtonBinomial.o: src/Utils/NewtonBinomial.cpp.o
@@ -350,7 +350,7 @@ src/Utils/NewtonBinomial.o: src/Utils/NewtonBinomial.cpp.o
 
 # target to build an object file
 src/Utils/NewtonBinomial.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o
 .PHONY : src/Utils/NewtonBinomial.cpp.o
 
 src/Utils/NewtonBinomial.i: src/Utils/NewtonBinomial.cpp.i
@@ -359,7 +359,7 @@ src/Utils/NewtonBinomial.i: src/Utils/NewtonBinomial.cpp.i
 
 # target to preprocess a source file
 src/Utils/NewtonBinomial.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.i
 .PHONY : src/Utils/NewtonBinomial.cpp.i
 
 src/Utils/NewtonBinomial.s: src/Utils/NewtonBinomial.cpp.s
@@ -368,7 +368,7 @@ src/Utils/NewtonBinomial.s: src/Utils/NewtonBinomial.cpp.s
 
 # target to generate assembly for a file
 src/Utils/NewtonBinomial.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.s
 .PHONY : src/Utils/NewtonBinomial.cpp.s
 
 src/Utils/TrajectoryUtils.o: src/Utils/TrajectoryUtils.cpp.o
@@ -377,7 +377,7 @@ src/Utils/TrajectoryUtils.o: src/Utils/TrajectoryUtils.cpp.o
 
 # target to build an object file
 src/Utils/TrajectoryUtils.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o
 .PHONY : src/Utils/TrajectoryUtils.cpp.o
 
 src/Utils/TrajectoryUtils.i: src/Utils/TrajectoryUtils.cpp.i
@@ -386,7 +386,7 @@ src/Utils/TrajectoryUtils.i: src/Utils/TrajectoryUtils.cpp.i
 
 # target to preprocess a source file
 src/Utils/TrajectoryUtils.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.i
 .PHONY : src/Utils/TrajectoryUtils.cpp.i
 
 src/Utils/TrajectoryUtils.s: src/Utils/TrajectoryUtils.cpp.s
@@ -395,7 +395,7 @@ src/Utils/TrajectoryUtils.s: src/Utils/TrajectoryUtils.cpp.s
 
 # target to generate assembly for a file
 src/Utils/TrajectoryUtils.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.s
 .PHONY : src/Utils/TrajectoryUtils.cpp.s
 
 src/fuzzy.o: src/fuzzy.cpp.o
@@ -404,7 +404,7 @@ src/fuzzy.o: src/fuzzy.cpp.o
 
 # target to build an object file
 src/fuzzy.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o
 .PHONY : src/fuzzy.cpp.o
 
 src/fuzzy.i: src/fuzzy.cpp.i
@@ -413,7 +413,7 @@ src/fuzzy.i: src/fuzzy.cpp.i
 
 # target to preprocess a source file
 src/fuzzy.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.i
 .PHONY : src/fuzzy.cpp.i
 
 src/fuzzy.s: src/fuzzy.cpp.s
@@ -422,7 +422,7 @@ src/fuzzy.s: src/fuzzy.cpp.s
 
 # target to generate assembly for a file
 src/fuzzy.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.s
 .PHONY : src/fuzzy.cpp.s
 
 src/quinticwalk.o: src/quinticwalk.cpp.o
@@ -431,7 +431,7 @@ src/quinticwalk.o: src/quinticwalk.cpp.o
 
 # target to build an object file
 src/quinticwalk.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o
 .PHONY : src/quinticwalk.cpp.o
 
 src/quinticwalk.i: src/quinticwalk.cpp.i
@@ -440,7 +440,7 @@ src/quinticwalk.i: src/quinticwalk.cpp.i
 
 # target to preprocess a source file
 src/quinticwalk.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.i
 .PHONY : src/quinticwalk.cpp.i
 
 src/quinticwalk.s: src/quinticwalk.cpp.s
@@ -449,7 +449,7 @@ src/quinticwalk.s: src/quinticwalk.cpp.s
 
 # target to generate assembly for a file
 src/quinticwalk.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.s
 .PHONY : src/quinticwalk.cpp.s
 
 src/walk_engine.o: src/walk_engine.cpp.o
@@ -458,7 +458,7 @@ src/walk_engine.o: src/walk_engine.cpp.o
 
 # target to build an object file
 src/walk_engine.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o
 .PHONY : src/walk_engine.cpp.o
 
 src/walk_engine.i: src/walk_engine.cpp.i
@@ -467,7 +467,7 @@ src/walk_engine.i: src/walk_engine.cpp.i
 
 # target to preprocess a source file
 src/walk_engine.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.i
 .PHONY : src/walk_engine.cpp.i
 
 src/walk_engine.s: src/walk_engine.cpp.s
@@ -476,7 +476,7 @@ src/walk_engine.s: src/walk_engine.cpp.s
 
 # target to generate assembly for a file
 src/walk_engine.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.s
 .PHONY : src/walk_engine.cpp.s
 
 # Help Target
@@ -537,6 +537,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

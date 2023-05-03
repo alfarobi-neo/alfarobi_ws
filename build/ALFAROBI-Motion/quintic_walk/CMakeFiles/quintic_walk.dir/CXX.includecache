@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/include/quintic_walk/utils/Polynom.hpp
+cstdlib
+-
+vector
+-
+iostream
+-
+
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/include/quintic_walk/utils/SmoothSpline.hpp
+Spline.hpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/include/quintic_walk/utils/Spline.hpp
+
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/include/quintic_walk/utils/Spline.hpp
+vector
+-
+iostream
+-
+Polynom.hpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/include/quintic_walk/utils/Polynom.hpp
+
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp
+stdexcept
+-
+algorithm
+-
+cmath
+-
+quintic_walk/utils/SmoothSpline.hpp
+/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/quintic_walk/utils/SmoothSpline.hpp
+

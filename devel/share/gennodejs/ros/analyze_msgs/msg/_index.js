@@ -1,10 +1,10 @@
 
 "use strict";
 
-let movAvg = require('./movAvg.js');
 let Fuzzy = require('./Fuzzy.js');
+let movAvg = require('./movAvg.js');
 
 module.exports = {
-  movAvg: movAvg,
   Fuzzy: Fuzzy,
+  movAvg: movAvg,
 };

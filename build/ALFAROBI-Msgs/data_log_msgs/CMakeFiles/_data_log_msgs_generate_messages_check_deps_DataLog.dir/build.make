@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Utility rule file for _data_log_msgs_generate_messages_check_deps_DataLog.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
 include ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/progress.make
 
 ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs && ../../catkin_generated/env_cached.sh /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py data_log_msgs /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs/msg/DataLog.msg geometry_msgs/Pose:geometry_msgs/Vector3:geometry_msgs/Inertia:geometry_msgs/Point:geometry_msgs/Quaternion
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py data_log_msgs /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs/msg/DataLog.msg geometry_msgs/Vector3:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Inertia:geometry_msgs/Quaternion
 
 _data_log_msgs_generate_messages_check_deps_DataLog: ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog
 _data_log_msgs_generate_messages_check_deps_DataLog: ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/build.make
@@ -67,10 +67,10 @@ ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_de
 .PHONY : ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/build
 
 ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/clean
 
 ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs /home/ajus/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Msgs/data_log_msgs /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Msgs/data_log_msgs/CMakeFiles/_data_log_msgs_generate_messages_check_deps_DataLog.dir/depend
 

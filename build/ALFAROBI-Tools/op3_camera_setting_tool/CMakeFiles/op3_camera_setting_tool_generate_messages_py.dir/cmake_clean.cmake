@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_camera_setting_tool/msg/_V4lParameter.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_camera_setting_tool/msg/_V4lParameters.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/op3_camera_setting_tool/msg/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_camera_setting_tool/msg/_V4lParameter.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_camera_setting_tool/msg/_V4lParameters.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/op3_camera_setting_tool/msg/__init__.py"
   "CMakeFiles/op3_camera_setting_tool_generate_messages_py"
 )
 

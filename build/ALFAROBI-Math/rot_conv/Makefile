@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Math/rot_conv/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/rot_conv/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ rot_conv: ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/rule
 
 # fast build rule for target.
 rot_conv/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build
 .PHONY : rot_conv/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ _run_tests_rot_conv: ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/r
 
 # fast build rule for target.
 _run_tests_rot_conv/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv.dir/build
 .PHONY : _run_tests_rot_conv/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ rot_conv_sample: ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/rule
 
 # fast build rule for target.
 rot_conv_sample/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build
 .PHONY : rot_conv_sample/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ _run_tests_rot_conv_gtest: ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv
 
 # fast build rule for target.
 _run_tests_rot_conv_gtest/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest.dir/build
 .PHONY : _run_tests_rot_conv_gtest/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ run_tests_rot_conv: ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/rul
 
 # fast build rule for target.
 run_tests_rot_conv/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv.dir/build
 .PHONY : run_tests_rot_conv/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ run_tests_rot_conv_gtest: ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_g
 
 # fast build rule for target.
 run_tests_rot_conv_gtest/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest.dir/build
 .PHONY : run_tests_rot_conv_gtest/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest_test_rot_conv.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest_test_rot_conv.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest_test_rot_conv.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest_test_rot_conv.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ _run_tests_rot_conv_gtest_test_rot_conv: ALFAROBI-Math/rot_conv/CMakeFiles/_run_
 
 # fast build rule for target.
 _run_tests_rot_conv_gtest_test_rot_conv/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest_test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest_test_rot_conv.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest_test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/_run_tests_rot_conv_gtest_test_rot_conv.dir/build
 .PHONY : _run_tests_rot_conv_gtest_test_rot_conv/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ test_rot_conv: ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/rule
 
 # fast build rule for target.
 test_rot_conv/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build
 .PHONY : test_rot_conv/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest_test_rot_conv.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest_test_rot_conv.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest_test_rot_conv.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest_test_rot_conv.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ run_tests_rot_conv_gtest_test_rot_conv: ALFAROBI-Math/rot_conv/CMakeFiles/run_te
 
 # fast build rule for target.
 run_tests_rot_conv_gtest_test_rot_conv/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest_test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest_test_rot_conv.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest_test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/run_tests_rot_conv_gtest_test_rot_conv.dir/build
 .PHONY : run_tests_rot_conv_gtest_test_rot_conv/fast
 
 # Convenience name for target.
 ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_results_rot_conv.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_results_rot_conv.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_results_rot_conv.dir/rule
 .PHONY : ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_results_rot_conv.dir/rule
 
 # Convenience name for target.
@@ -314,7 +314,7 @@ clean_test_results_rot_conv: ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_result
 
 # fast build rule for target.
 clean_test_results_rot_conv/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_results_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_results_rot_conv.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_results_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/clean_test_results_rot_conv.dir/build
 .PHONY : clean_test_results_rot_conv/fast
 
 src/rot_conv.o: src/rot_conv.cpp.o
@@ -323,7 +323,7 @@ src/rot_conv.o: src/rot_conv.cpp.o
 
 # target to build an object file
 src/rot_conv.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/src/rot_conv.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/src/rot_conv.cpp.o
 .PHONY : src/rot_conv.cpp.o
 
 src/rot_conv.i: src/rot_conv.cpp.i
@@ -332,7 +332,7 @@ src/rot_conv.i: src/rot_conv.cpp.i
 
 # target to preprocess a source file
 src/rot_conv.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/src/rot_conv.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/src/rot_conv.cpp.i
 .PHONY : src/rot_conv.cpp.i
 
 src/rot_conv.s: src/rot_conv.cpp.s
@@ -341,7 +341,7 @@ src/rot_conv.s: src/rot_conv.cpp.s
 
 # target to generate assembly for a file
 src/rot_conv.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/src/rot_conv.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv.dir/src/rot_conv.cpp.s
 .PHONY : src/rot_conv.cpp.s
 
 test/rot_conv_sample.o: test/rot_conv_sample.cpp.o
@@ -350,7 +350,7 @@ test/rot_conv_sample.o: test/rot_conv_sample.cpp.o
 
 # target to build an object file
 test/rot_conv_sample.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/test/rot_conv_sample.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/test/rot_conv_sample.cpp.o
 .PHONY : test/rot_conv_sample.cpp.o
 
 test/rot_conv_sample.i: test/rot_conv_sample.cpp.i
@@ -359,7 +359,7 @@ test/rot_conv_sample.i: test/rot_conv_sample.cpp.i
 
 # target to preprocess a source file
 test/rot_conv_sample.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/test/rot_conv_sample.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/test/rot_conv_sample.cpp.i
 .PHONY : test/rot_conv_sample.cpp.i
 
 test/rot_conv_sample.s: test/rot_conv_sample.cpp.s
@@ -368,7 +368,7 @@ test/rot_conv_sample.s: test/rot_conv_sample.cpp.s
 
 # target to generate assembly for a file
 test/rot_conv_sample.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/test/rot_conv_sample.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/rot_conv_sample.dir/test/rot_conv_sample.cpp.s
 .PHONY : test/rot_conv_sample.cpp.s
 
 test/test_rot_conv.o: test/test_rot_conv.cpp.o
@@ -377,7 +377,7 @@ test/test_rot_conv.o: test/test_rot_conv.cpp.o
 
 # target to build an object file
 test/test_rot_conv.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/test/test_rot_conv.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/test/test_rot_conv.cpp.o
 .PHONY : test/test_rot_conv.cpp.o
 
 test/test_rot_conv.i: test/test_rot_conv.cpp.i
@@ -386,7 +386,7 @@ test/test_rot_conv.i: test/test_rot_conv.cpp.i
 
 # target to preprocess a source file
 test/test_rot_conv.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/test/test_rot_conv.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/test/test_rot_conv.cpp.i
 .PHONY : test/test_rot_conv.cpp.i
 
 test/test_rot_conv.s: test/test_rot_conv.cpp.s
@@ -395,7 +395,7 @@ test/test_rot_conv.s: test/test_rot_conv.cpp.s
 
 # target to generate assembly for a file
 test/test_rot_conv.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/test/test_rot_conv.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/build.make ALFAROBI-Math/rot_conv/CMakeFiles/test_rot_conv.dir/test/test_rot_conv.cpp.s
 .PHONY : test/test_rot_conv.cpp.s
 
 # Help Target
@@ -441,6 +441,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

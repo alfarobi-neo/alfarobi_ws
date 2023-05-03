@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/quintic_walk_msgs/msg/WalkingParam.js"
-  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/quintic_walk_msgs/srv/GetWalkingParam.js"
-  "/home/ajus/alfarobi_ws/devel/share/gennodejs/ros/quintic_walk_msgs/srv/SetWalkingParam.js"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/quintic_walk_msgs/msg/WalkingParam.js"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/quintic_walk_msgs/srv/GetWalkingParam.js"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/quintic_walk_msgs/srv/SetWalkingParam.js"
   "CMakeFiles/quintic_walk_msgs_generate_messages_nodejs"
 )
 

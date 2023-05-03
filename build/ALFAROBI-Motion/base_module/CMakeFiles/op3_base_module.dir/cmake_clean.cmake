@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libop3_base_module.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libop3_base_module.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_base_module.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_base_module.so"
   "CMakeFiles/op3_base_module.dir/src/base_module.cpp.o"
   "CMakeFiles/op3_base_module.dir/src/base_module_state.cpp.o"
 )

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libop3_action_module.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libop3_action_module.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_action_module.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_action_module.so"
   "CMakeFiles/op3_action_module.dir/src/action_module.cpp.o"
 )
 

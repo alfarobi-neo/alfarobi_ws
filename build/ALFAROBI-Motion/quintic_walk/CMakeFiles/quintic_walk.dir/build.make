@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Include any dependencies generated for this target.
 include ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/depend.make
@@ -58,147 +58,147 @@ include ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/progress.make
 include ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/quinticwalk.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/quinticwalk.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/quinticwalk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/quinticwalk.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/quinticwalk.cpp > CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/quinticwalk.cpp > CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/quinticwalk.cpp -o CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/quinticwalk.cpp -o CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/walk_engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/walk_engine.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/walk_engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/walk_engine.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/walk_engine.cpp > CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/walk_engine.cpp > CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/walk_engine.cpp -o CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/walk_engine.cpp -o CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Footstep.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Footstep.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Footstep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Footstep.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/Footstep.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Footstep.cpp > CMakeFiles/quintic_walk.dir/src/Footstep.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Footstep.cpp > CMakeFiles/quintic_walk.dir/src/Footstep.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/Footstep.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Footstep.cpp -o CMakeFiles/quintic_walk.dir/src/Footstep.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Footstep.cpp -o CMakeFiles/quintic_walk.dir/src/Footstep.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/AnalyticIKSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/AnalyticIKSolver.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/AnalyticIKSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/AnalyticIKSolver.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/AnalyticIKSolver.cpp > CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/AnalyticIKSolver.cpp > CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/AnalyticIKSolver.cpp -o CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/AnalyticIKSolver.cpp -o CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/Combination.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/Combination.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/Combination.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/Combination.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/Combination.cpp > CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/Combination.cpp > CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/Combination.cpp -o CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/Combination.cpp -o CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/NewtonBinomial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/NewtonBinomial.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/NewtonBinomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/NewtonBinomial.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/NewtonBinomial.cpp > CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/NewtonBinomial.cpp > CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/NewtonBinomial.cpp -o CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/NewtonBinomial.cpp -o CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/TrajectoryUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/TrajectoryUtils.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/TrajectoryUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/TrajectoryUtils.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/TrajectoryUtils.cpp > CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/TrajectoryUtils.cpp > CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/TrajectoryUtils.cpp -o CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Utils/TrajectoryUtils.cpp -o CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Polynom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Polynom.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Polynom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Polynom.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Polynom.cpp > CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Polynom.cpp > CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Polynom.cpp -o CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Polynom.cpp -o CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp > CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp > CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp -o CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/SmoothSpline.cpp -o CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Spline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Spline.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Spline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Spline.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Spline.cpp > CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Spline.cpp > CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Spline.cpp -o CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/Spline/Spline.cpp -o CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.s
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/flags.make
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/fuzzy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/fuzzy.cpp
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/fuzzy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/fuzzy.cpp
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/fuzzy.cpp > CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/fuzzy.cpp > CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.i
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/fuzzy.cpp -o CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/src/fuzzy.cpp -o CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.s
 
 # Object files for target quintic_walk
 quintic_walk_OBJECTS = \
@@ -217,99 +217,99 @@ quintic_walk_OBJECTS = \
 # External object files for target quintic_walk
 quintic_walk_EXTERNAL_OBJECTS =
 
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroslib.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librospack.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_framework_common.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_device.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /home/ajus/alfarobi_ws/devel/lib/libdynamixel_sdk.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libtf_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libkdl_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libtf.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libtf2_ros.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libactionlib.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libmessage_filters.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libtf2.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libeigen_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/liborocos-kdl.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /home/ajus/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_math.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroscpp.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librostime.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /home/ajus/alfarobi_ws/devel/lib/libmodel_based_control.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroslib.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librospack.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libeigen_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/liborocos-kdl.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroscpp.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librostime.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library /home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/quintic_walk.dir/link.txt --verbose=$(VERBOSE)
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/quinticwalk.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/walk_engine.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Footstep.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/AnalyticIKSolver.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/Combination.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/NewtonBinomial.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Utils/TrajectoryUtils.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Polynom.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/SmoothSpline.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/Spline/Spline.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/src/fuzzy.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build.make
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroslib.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librospack.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_framework_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_device.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/libdynamixel_sdk.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libtf_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libkdl_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libtf.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libtf2_ros.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libactionlib.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libmessage_filters.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libtf2.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libeigen_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/liborocos-kdl.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_math.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroscpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librostime.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/libmodel_based_control.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroslib.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librospack.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libeigen_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/liborocos-kdl.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroscpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/librostime.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so: ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library /home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/quintic_walk.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build: /home/ajus/alfarobi_ws/devel/lib/libquintic_walk.so
+ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build: /home/fariz/Desktop/alfarobi_ws/devel/lib/libquintic_walk.so
 
 .PHONY : ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/build
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && $(CMAKE_COMMAND) -P CMakeFiles/quintic_walk.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk && $(CMAKE_COMMAND) -P CMakeFiles/quintic_walk.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/clean
 
 ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Motion/quintic_walk/CMakeFiles/quintic_walk.dir/depend
 

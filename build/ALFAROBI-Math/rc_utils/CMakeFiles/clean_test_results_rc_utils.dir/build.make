@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Utility rule file for clean_test_results_rc_utils.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
 include ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/progress.make
 
 ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Math/rc_utils && /home/ajus/anaconda3/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/ajus/alfarobi_ws/build/test_results/rc_utils
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/rc_utils && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/fariz/Desktop/alfarobi_ws/build/test_results/rc_utils
 
 clean_test_results_rc_utils: ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils
 clean_test_results_rc_utils: ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/build.make
@@ -67,10 +67,10 @@ ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/build: clean_t
 .PHONY : ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/build
 
 ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Math/rc_utils && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_rc_utils.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/rc_utils && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_rc_utils.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/clean
 
 ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Math/rc_utils /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Math/rc_utils /home/ajus/alfarobi_ws/build/ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/rc_utils /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/rc_utils /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Math/rc_utils/CMakeFiles/clean_test_results_rc_utils.dir/depend
 

@@ -1,8 +1,8 @@
-prefix=/home/ajus/alfarobi_ws/devel
+prefix=/home/fariz/Desktop/alfarobi_ws/devel
 
 Name: quintic_walk
 Description: Description of quintic_walk
 Version: 0.1.0
-Cflags: -I/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/include
+Cflags: -I/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/quintic_walk/include
 Libs: -L${prefix}/lib -lquintic_walk
 Requires: 

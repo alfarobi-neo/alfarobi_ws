@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/game_controller/game_controller"
-  "/home/ajus/alfarobi_ws/devel/lib/game_controller/game_controller.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/game_controller/game_controller"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/game_controller/game_controller.pdb"
   "CMakeFiles/game_controller.dir/src/game_controller.cpp.o"
   "CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.o"
 )

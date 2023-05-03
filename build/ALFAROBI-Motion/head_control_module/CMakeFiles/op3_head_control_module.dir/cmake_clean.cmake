@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/libop3_head_control_module.pdb"
-  "/home/ajus/alfarobi_ws/devel/lib/libop3_head_control_module.so"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_head_control_module.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_head_control_module.so"
   "CMakeFiles/op3_head_control_module.dir/src/head_control_module.cpp.o"
 )
 

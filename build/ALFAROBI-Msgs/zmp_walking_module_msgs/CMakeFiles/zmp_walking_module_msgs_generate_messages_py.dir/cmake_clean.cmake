@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/msg/_ZMPWalkingParam.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/msg/__init__.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/srv/_GetZMPParam.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/srv/_SetZMPParam.py"
-  "/home/ajus/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/srv/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/msg/_ZMPWalkingParam.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/msg/__init__.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/srv/_GetZMPParam.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/srv/_SetZMPParam.py"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/zmp_walking_module_msgs/srv/__init__.py"
   "CMakeFiles/zmp_walking_module_msgs_generate_messages_py"
 )
 

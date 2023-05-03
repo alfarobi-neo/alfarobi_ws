@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/analyze_msgs/manifest.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/analyze_msgs/msg/Fuzzy.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/analyze_msgs/msg/movAvg.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/analyze_msgs/manifest.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/analyze_msgs/msg/Fuzzy.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/analyze_msgs/msg/movAvg.l"
   "CMakeFiles/analyze_msgs_generate_messages_eus"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/data_log_msgs/manifest.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/data_log_msgs/msg/DataLog.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/data_log_msgs/manifest.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/data_log_msgs/msg/DataLog.l"
   "CMakeFiles/data_log_msgs_generate_messages_eus"
 )
 

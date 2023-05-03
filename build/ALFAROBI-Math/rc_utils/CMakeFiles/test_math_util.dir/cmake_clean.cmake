@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_math_util"
-  "/home/ajus/alfarobi_ws/devel/lib/rc_utils/test_math_util.pdb"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/rc_utils/test_math_util"
+  "/home/fariz/Desktop/alfarobi_ws/devel/lib/rc_utils/test_math_util.pdb"
   "CMakeFiles/test_math_util.dir/test/test_math_util.cpp.o"
 )
 

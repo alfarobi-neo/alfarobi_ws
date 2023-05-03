@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Communication/game_controller/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/game_controller/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ game_controller_generate_messages: ALFAROBI-Communication/game_controller/CMakeF
 
 # fast build rule for target.
 game_controller_generate_messages/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages.dir/build
 .PHONY : game_controller_generate_messages/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genlisp.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genlisp.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genlisp.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genlisp.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ game_controller_genlisp: ALFAROBI-Communication/game_controller/CMakeFiles/game_
 
 # fast build rule for target.
 game_controller_genlisp/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genlisp.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genlisp.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genlisp.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genlisp.dir/build
 .PHONY : game_controller_genlisp/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/_game_controller_generate_messages_check_deps_GameState.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/_game_controller_generate_messages_check_deps_GameState.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/_game_controller_generate_messages_check_deps_GameState.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/_game_controller_generate_messages_check_deps_GameState.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ _game_controller_generate_messages_check_deps_GameState: ALFAROBI-Communication/
 
 # fast build rule for target.
 _game_controller_generate_messages_check_deps_GameState/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/_game_controller_generate_messages_check_deps_GameState.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/_game_controller_generate_messages_check_deps_GameState.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/_game_controller_generate_messages_check_deps_GameState.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/_game_controller_generate_messages_check_deps_GameState.dir/build
 .PHONY : _game_controller_generate_messages_check_deps_GameState/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ game_controller_gencpp: ALFAROBI-Communication/game_controller/CMakeFiles/game_c
 
 # fast build rule for target.
 game_controller_gencpp/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gencpp.dir/build
 .PHONY : game_controller_gencpp/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_py.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_py.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_py.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ game_controller_generate_messages_py: ALFAROBI-Communication/game_controller/CMa
 
 # fast build rule for target.
 game_controller_generate_messages_py/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_py.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_py.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_py.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_py.dir/build
 .PHONY : game_controller_generate_messages_py/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_eus.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_eus.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_eus.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ game_controller_generate_messages_eus: ALFAROBI-Communication/game_controller/CM
 
 # fast build rule for target.
 game_controller_generate_messages_eus/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_eus.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_eus.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_eus.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_eus.dir/build
 .PHONY : game_controller_generate_messages_eus/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_geneus.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_geneus.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_geneus.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_geneus.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ game_controller_geneus: ALFAROBI-Communication/game_controller/CMakeFiles/game_c
 
 # fast build rule for target.
 game_controller_geneus/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_geneus.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_geneus.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_geneus.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_geneus.dir/build
 .PHONY : game_controller_geneus/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_lisp.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_lisp.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_lisp.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ game_controller_generate_messages_lisp: ALFAROBI-Communication/game_controller/C
 
 # fast build rule for target.
 game_controller_generate_messages_lisp/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_lisp.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_lisp.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_lisp.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_lisp.dir/build
 .PHONY : game_controller_generate_messages_lisp/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_cpp.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_cpp.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_cpp.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ game_controller_generate_messages_cpp: ALFAROBI-Communication/game_controller/CM
 
 # fast build rule for target.
 game_controller_generate_messages_cpp/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_cpp.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_cpp.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_cpp.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_cpp.dir/build
 .PHONY : game_controller_generate_messages_cpp/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genpy.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genpy.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genpy.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genpy.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ game_controller_genpy: ALFAROBI-Communication/game_controller/CMakeFiles/game_co
 
 # fast build rule for target.
 game_controller_genpy/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genpy.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genpy.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genpy.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_genpy.dir/build
 .PHONY : game_controller_genpy/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gennodejs.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gennodejs.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gennodejs.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ game_controller_gennodejs: ALFAROBI-Communication/game_controller/CMakeFiles/gam
 
 # fast build rule for target.
 game_controller_gennodejs/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gennodejs.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gennodejs.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gennodejs.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_gennodejs.dir/build
 .PHONY : game_controller_gennodejs/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_nodejs.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_nodejs.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_nodejs.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ game_controller_generate_messages_nodejs: ALFAROBI-Communication/game_controller
 
 # fast build rule for target.
 game_controller_generate_messages_nodejs/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_nodejs.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_nodejs.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_nodejs.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller_generate_messages_nodejs.dir/build
 .PHONY : game_controller_generate_messages_nodejs/fast
 
 # Convenience name for target.
 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/rule
 .PHONY : ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/rule
 
 # Convenience name for target.
@@ -359,7 +359,7 @@ game_controller: ALFAROBI-Communication/game_controller/CMakeFiles/game_controll
 
 # fast build rule for target.
 game_controller/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build
 .PHONY : game_controller/fast
 
 src/game_controller.o: src/game_controller.cpp.o
@@ -368,7 +368,7 @@ src/game_controller.o: src/game_controller.cpp.o
 
 # target to build an object file
 src/game_controller.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller.cpp.o
 .PHONY : src/game_controller.cpp.o
 
 src/game_controller.i: src/game_controller.cpp.i
@@ -377,7 +377,7 @@ src/game_controller.i: src/game_controller.cpp.i
 
 # target to preprocess a source file
 src/game_controller.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller.cpp.i
 .PHONY : src/game_controller.cpp.i
 
 src/game_controller.s: src/game_controller.cpp.s
@@ -386,7 +386,7 @@ src/game_controller.s: src/game_controller.cpp.s
 
 # target to generate assembly for a file
 src/game_controller.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller.cpp.s
 .PHONY : src/game_controller.cpp.s
 
 src/game_controller_client_t.o: src/game_controller_client_t.cpp.o
@@ -395,7 +395,7 @@ src/game_controller_client_t.o: src/game_controller_client_t.cpp.o
 
 # target to build an object file
 src/game_controller_client_t.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.o
 .PHONY : src/game_controller_client_t.cpp.o
 
 src/game_controller_client_t.i: src/game_controller_client_t.cpp.i
@@ -404,7 +404,7 @@ src/game_controller_client_t.i: src/game_controller_client_t.cpp.i
 
 # target to preprocess a source file
 src/game_controller_client_t.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.i
 .PHONY : src/game_controller_client_t.cpp.i
 
 src/game_controller_client_t.s: src/game_controller_client_t.cpp.s
@@ -413,7 +413,7 @@ src/game_controller_client_t.s: src/game_controller_client_t.cpp.s
 
 # target to generate assembly for a file
 src/game_controller_client_t.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/build.make ALFAROBI-Communication/game_controller/CMakeFiles/game_controller.dir/src/game_controller_client_t.cpp.s
 .PHONY : src/game_controller_client_t.cpp.s
 
 # Help Target
@@ -459,6 +459,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

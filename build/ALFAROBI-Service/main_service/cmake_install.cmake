@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Service/main_service
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Service/main_service
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Service/main_service/catkin_generated/installspace/main_service.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Service/main_service/catkin_generated/installspace/main_service.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/main_service/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Service/main_service/catkin_generated/installspace/main_serviceConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Service/main_service/catkin_generated/installspace/main_serviceConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Service/main_service/catkin_generated/installspace/main_serviceConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Service/main_service/catkin_generated/installspace/main_serviceConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/main_service" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Service/main_service/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/main_service" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Service/main_service/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/main_service" TYPE PROGRAM FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Service/main_service/catkin_generated/installspace/main_service.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/main_service" TYPE PROGRAM FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Service/main_service/catkin_generated/installspace/main_service.py")
 endif()
 

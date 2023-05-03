@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Wno-address -fPIC
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Drot_conv_EXPORTS
 
-CXX_INCLUDES = -I/home/ajus/alfarobi_ws/src/ALFAROBI-Math/rot_conv/include 
+CXX_INCLUDES = -I/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/rot_conv/include 
 

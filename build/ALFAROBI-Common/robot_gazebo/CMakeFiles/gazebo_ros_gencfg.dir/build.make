@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Utility rule file for gazebo_ros_gencfg.
 
@@ -63,10 +63,10 @@ ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build: gazebo_ros_
 .PHONY : ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/build
 
 ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Common/robot_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_ros_gencfg.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Common/robot_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_ros_gencfg.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/clean
 
 ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Common/robot_gazebo /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Common/robot_gazebo /home/ajus/alfarobi_ws/build/ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Common/robot_gazebo /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Common/robot_gazebo /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Common/robot_gazebo/CMakeFiles/gazebo_ros_gencfg.dir/depend
 

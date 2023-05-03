@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/robotis_controller_msgs/GetJointModule.h"
-  "/home/ajus/alfarobi_ws/devel/include/robotis_controller_msgs/JointCtrlModule.h"
-  "/home/ajus/alfarobi_ws/devel/include/robotis_controller_msgs/SetJointModule.h"
-  "/home/ajus/alfarobi_ws/devel/include/robotis_controller_msgs/SetModule.h"
-  "/home/ajus/alfarobi_ws/devel/include/robotis_controller_msgs/StatusMsg.h"
-  "/home/ajus/alfarobi_ws/devel/include/robotis_controller_msgs/SyncWriteItem.h"
-  "/home/ajus/alfarobi_ws/devel/include/robotis_controller_msgs/WriteControlTable.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/robotis_controller_msgs/GetJointModule.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/robotis_controller_msgs/JointCtrlModule.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/robotis_controller_msgs/SetJointModule.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/robotis_controller_msgs/SetModule.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/robotis_controller_msgs/StatusMsg.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/robotis_controller_msgs/SyncWriteItem.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/robotis_controller_msgs/WriteControlTable.h"
   "CMakeFiles/robotis_controller_msgs_generate_messages_cpp"
 )
 

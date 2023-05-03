@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/devel
+prefix=/home/fariz/Desktop/alfarobi_ws/devel
 
 Name: arduino_controller
 Description: Description of arduino_controller

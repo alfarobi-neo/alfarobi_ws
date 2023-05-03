@@ -1,4 +1,4 @@
-prefix=/home/ajus/alfarobi_ws/devel
+prefix=/home/fariz/Desktop/alfarobi_ws/devel
 
 Name: base_station_monitor
 Description: Description of base_station_monitor

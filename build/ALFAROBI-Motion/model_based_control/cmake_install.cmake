@@ -1,8 +1,8 @@
-# Install script for directory: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/model_based_control
+# Install script for directory: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/model_based_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ajus/alfarobi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fariz/Desktop/alfarobi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,45 +38,45 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control-msg-extras.cmake")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_controlConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_controlConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_controlConfig.cmake"
-    "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_controlConfig-version.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_controlConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_controlConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control" TYPE FILE FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_control-msg-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control/cmake" TYPE FILE FILES
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_controlConfig.cmake"
+    "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/model_based_control/catkin_generated/installspace/model_based_controlConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/model_based_control" TYPE FILE FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -86,7 +86,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmodel_based_control.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ajus/alfarobi_ws/devel/lib/libmodel_based_control.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/fariz/Desktop/alfarobi_ws/devel/lib/libmodel_based_control.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmodel_based_control.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmodel_based_control.so")
     file(RPATH_CHANGE
@@ -103,6 +103,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/model_based_control" TYPE DIRECTORY FILES "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/include/model_based_control/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/model_based_control" TYPE DIRECTORY FILES "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/model_based_control/include/model_based_control/")
 endif()
 

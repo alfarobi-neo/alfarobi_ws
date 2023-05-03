@@ -67,14 +67,14 @@ set(robotis_math_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(robotis_math_SOURCE_PREFIX /home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math)
-  set(robotis_math_DEVEL_PREFIX /home/ajus/alfarobi_ws/devel)
+  set(robotis_math_SOURCE_PREFIX /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math)
+  set(robotis_math_DEVEL_PREFIX /home/fariz/Desktop/alfarobi_ws/devel)
   set(robotis_math_INSTALL_PREFIX "")
   set(robotis_math_PREFIX ${robotis_math_DEVEL_PREFIX})
 else()
   set(robotis_math_SOURCE_PREFIX "")
   set(robotis_math_DEVEL_PREFIX "")
-  set(robotis_math_INSTALL_PREFIX /home/ajus/alfarobi_ws/install)
+  set(robotis_math_INSTALL_PREFIX /home/fariz/Desktop/alfarobi_ws/install)
   set(robotis_math_PREFIX ${robotis_math_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(robotis_math_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include;/usr/include/eigen3 " STREQUAL " ")
+if(NOT "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include;/usr/include/eigen3 " STREQUAL " ")
   set(robotis_math_INCLUDE_DIRS "")
-  set(_include_dirs "/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include;/usr/include/eigen3")
+  set(_include_dirs "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include;/usr/include/eigen3")
   if(NOT "https://github.com/ROBOTIS-GIT/ROBOTIS-Math/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ROBOTIS-GIT/ROBOTIS-Math/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/robotis_math " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include;/usr/inclu
         message(FATAL_ERROR "Project 'robotis_math' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'robotis_math' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'robotis_math' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/${idir}'.  ${_report}")
     endif()
     _list_append_unique(robotis_math_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ajus/alfarobi_ws/devel/lib;/home/ajus/prakbot_ws/devel/lib;/home/ajus/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/fariz/Desktop/alfarobi_ws/devel/lib;/home/fariz/Desktop/alfarobi_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

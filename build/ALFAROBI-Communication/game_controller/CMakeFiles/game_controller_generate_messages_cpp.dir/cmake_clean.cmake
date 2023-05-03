@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/game_controller/GameState.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/game_controller/GameState.h"
   "CMakeFiles/game_controller_generate_messages_cpp"
 )
 

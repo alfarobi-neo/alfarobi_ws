@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/manifest.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/msg/FeedbackParam.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/srv/GetFeedbackParam.l"
-  "/home/ajus/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/srv/SetFeedbackParam.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/manifest.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/msg/FeedbackParam.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/srv/GetFeedbackParam.l"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/roseus/ros/feedback_msgs/srv/SetFeedbackParam.l"
   "CMakeFiles/feedback_msgs_generate_messages_eus"
 )
 

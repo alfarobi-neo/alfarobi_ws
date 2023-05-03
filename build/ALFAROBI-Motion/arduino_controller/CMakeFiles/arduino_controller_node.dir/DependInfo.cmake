@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/arduino_controller/arduino_controller_node.cpp" "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/arduino_controller/CMakeFiles/arduino_controller_node.dir/arduino_controller_node.cpp.o"
-  "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/arduino_controller/arduino_controller_node_autogen/mocs_compilation.cpp" "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/arduino_controller/CMakeFiles/arduino_controller_node.dir/arduino_controller_node_autogen/mocs_compilation.cpp.o"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/arduino_controller/controller.cpp" "/home/ajus/alfarobi_ws/build/ALFAROBI-Motion/arduino_controller/CMakeFiles/arduino_controller_node.dir/controller.cpp.o"
+  "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/arduino_controller/arduino_controller_node.cpp" "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/arduino_controller/CMakeFiles/arduino_controller_node.dir/arduino_controller_node.cpp.o"
+  "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/arduino_controller/arduino_controller_node_autogen/mocs_compilation.cpp" "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/arduino_controller/CMakeFiles/arduino_controller_node.dir/arduino_controller_node_autogen/mocs_compilation.cpp.o"
+  "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/arduino_controller/controller.cpp" "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/arduino_controller/CMakeFiles/arduino_controller_node.dir/controller.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -25,9 +25,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "ALFAROBI-Motion/arduino_controller"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Motion/arduino_controller"
+  "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/arduino_controller"
   "ALFAROBI-Motion/arduino_controller/arduino_controller_node_autogen/include"
-  "/home/ajus/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include"
+  "/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Math/robotis_math/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"
@@ -36,14 +36,13 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"
   "/usr/include/x86_64-linux-gnu/qt5/QtCore"
   "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
-  "/home/ajus/anaconda3/include/qt"
-  "/home/ajus/anaconda3/include/qt/QtSerialPort"
+  "/usr/include/x86_64-linux-gnu/qt5/QtSerialPort"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ajus/alfarobi_ws/build/ALFAROBI-Math/robotis_math/CMakeFiles/robotis_math.dir/DependInfo.cmake"
+  "/home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Math/robotis_math/CMakeFiles/robotis_math.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

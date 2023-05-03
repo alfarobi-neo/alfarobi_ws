@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/share/common-lisp/ros/densis_msgs/msg/densis.lisp"
+  "/home/fariz/Desktop/alfarobi_ws/devel/share/common-lisp/ros/densis_msgs/msg/densis.lisp"
   "CMakeFiles/densis_msgs_generate_messages_lisp"
 )
 

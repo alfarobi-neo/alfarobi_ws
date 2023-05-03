@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 # Include any dependencies generated for this target.
 include ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/depend.make
@@ -58,17 +58,17 @@ include ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/p
 include ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/flags.make
 
 ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o: ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/flags.make
-ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o: /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/src/capture_step_walking.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o -c /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/src/capture_step_walking.cpp
+ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/src/capture_step_walking.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o -c /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/src/capture_step_walking.cpp
 
 ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.i"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/src/capture_step_walking.cpp > CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/src/capture_step_walking.cpp > CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.i
 
 ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.s"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/src/capture_step_walking.cpp -o CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module/src/capture_step_walking.cpp -o CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.s
 
 # Object files for target capture_step_module
 capture_step_module_OBJECTS = \
@@ -77,52 +77,52 @@ capture_step_module_OBJECTS = \
 # External object files for target capture_step_module
 capture_step_module_EXTERNAL_OBJECTS =
 
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/build.make
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libeigen_conversions.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/liborocos-kdl.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/ajus/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_framework_common.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_device.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/ajus/alfarobi_ws/devel/lib/libdynamixel_sdk.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/ajus/alfarobi_ws/devel/lib/librobotis_math.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libroscpp.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librosconsole.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librostime.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libroslib.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librospack.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
-/home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so: ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ajus/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so"
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/capture_step_module.dir/link.txt --verbose=$(VERBOSE)
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/src/capture_step_walking.cpp.o
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/build.make
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libeigen_conversions.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/liborocos-kdl.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/libop3_kinematics_dynamics.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_framework_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_device.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/libdynamixel_sdk.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /home/fariz/Desktop/alfarobi_ws/devel/lib/librobotis_math.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libroscpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librosconsole.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librostime.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/libroslib.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /opt/ros/noetic/lib/librospack.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
+/home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so: ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so"
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/capture_step_module.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/build: /home/ajus/alfarobi_ws/devel/lib/libcapture_step_module.so
+ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/build: /home/fariz/Desktop/alfarobi_ws/devel/lib/libcapture_step_module.so
 
 .PHONY : ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/build
 
 ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/clean:
-	cd /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && $(CMAKE_COMMAND) -P CMakeFiles/capture_step_module.dir/cmake_clean.cmake
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module && $(CMAKE_COMMAND) -P CMakeFiles/capture_step_module.dir/cmake_clean.cmake
 .PHONY : ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/clean
 
 ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajus/alfarobi_ws/src /home/ajus/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module /home/ajus/alfarobi_ws/build /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module /home/ajus/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fariz/Desktop/alfarobi_ws/src /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Motion/capture_step_module /home/fariz/Desktop/alfarobi_ws/build /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ALFAROBI-Motion/capture_step_module/CMakeFiles/capture_step_module.dir/depend
 

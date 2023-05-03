@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/ajus/alfarobi_ws/devel/include/data_log_msgs/DataLog.h"
+  "/home/fariz/Desktop/alfarobi_ws/devel/include/data_log_msgs/DataLog.h"
   "CMakeFiles/data_log_msgs_generate_messages_cpp"
 )
 

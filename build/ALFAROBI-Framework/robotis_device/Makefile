@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ajus/alfarobi_ws/src
+CMAKE_SOURCE_DIR = /home/fariz/Desktop/alfarobi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajus/alfarobi_ws/build
+CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles /home/ajus/alfarobi_ws/build/ALFAROBI-Framework/robotis_device/CMakeFiles/progress.marks
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajus/alfarobi_ws/build/CMakeFiles 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Framework/robotis_device/CMakeFiles/progress.marks
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fariz/Desktop/alfarobi_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/clean
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/preinstall
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/rule:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/rule
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/rule
 .PHONY : ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ robotis_device: ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/
 
 # fast build rule for target.
 robotis_device/fast:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build
 .PHONY : robotis_device/fast
 
 src/robotis_device/dynamixel.o: src/robotis_device/dynamixel.cpp.o
@@ -188,7 +188,7 @@ src/robotis_device/dynamixel.o: src/robotis_device/dynamixel.cpp.o
 
 # target to build an object file
 src/robotis_device/dynamixel.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/dynamixel.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/dynamixel.cpp.o
 .PHONY : src/robotis_device/dynamixel.cpp.o
 
 src/robotis_device/dynamixel.i: src/robotis_device/dynamixel.cpp.i
@@ -197,7 +197,7 @@ src/robotis_device/dynamixel.i: src/robotis_device/dynamixel.cpp.i
 
 # target to preprocess a source file
 src/robotis_device/dynamixel.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/dynamixel.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/dynamixel.cpp.i
 .PHONY : src/robotis_device/dynamixel.cpp.i
 
 src/robotis_device/dynamixel.s: src/robotis_device/dynamixel.cpp.s
@@ -206,7 +206,7 @@ src/robotis_device/dynamixel.s: src/robotis_device/dynamixel.cpp.s
 
 # target to generate assembly for a file
 src/robotis_device/dynamixel.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/dynamixel.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/dynamixel.cpp.s
 .PHONY : src/robotis_device/dynamixel.cpp.s
 
 src/robotis_device/robot.o: src/robotis_device/robot.cpp.o
@@ -215,7 +215,7 @@ src/robotis_device/robot.o: src/robotis_device/robot.cpp.o
 
 # target to build an object file
 src/robotis_device/robot.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/robot.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/robot.cpp.o
 .PHONY : src/robotis_device/robot.cpp.o
 
 src/robotis_device/robot.i: src/robotis_device/robot.cpp.i
@@ -224,7 +224,7 @@ src/robotis_device/robot.i: src/robotis_device/robot.cpp.i
 
 # target to preprocess a source file
 src/robotis_device/robot.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/robot.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/robot.cpp.i
 .PHONY : src/robotis_device/robot.cpp.i
 
 src/robotis_device/robot.s: src/robotis_device/robot.cpp.s
@@ -233,7 +233,7 @@ src/robotis_device/robot.s: src/robotis_device/robot.cpp.s
 
 # target to generate assembly for a file
 src/robotis_device/robot.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/robot.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/robot.cpp.s
 .PHONY : src/robotis_device/robot.cpp.s
 
 src/robotis_device/sensor.o: src/robotis_device/sensor.cpp.o
@@ -242,7 +242,7 @@ src/robotis_device/sensor.o: src/robotis_device/sensor.cpp.o
 
 # target to build an object file
 src/robotis_device/sensor.cpp.o:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/sensor.cpp.o
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/sensor.cpp.o
 .PHONY : src/robotis_device/sensor.cpp.o
 
 src/robotis_device/sensor.i: src/robotis_device/sensor.cpp.i
@@ -251,7 +251,7 @@ src/robotis_device/sensor.i: src/robotis_device/sensor.cpp.i
 
 # target to preprocess a source file
 src/robotis_device/sensor.cpp.i:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/sensor.cpp.i
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/sensor.cpp.i
 .PHONY : src/robotis_device/sensor.cpp.i
 
 src/robotis_device/sensor.s: src/robotis_device/sensor.cpp.s
@@ -260,7 +260,7 @@ src/robotis_device/sensor.s: src/robotis_device/sensor.cpp.s
 
 # target to generate assembly for a file
 src/robotis_device/sensor.cpp.s:
-	cd /home/ajus/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/sensor.cpp.s
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(MAKE) -f ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/build.make ALFAROBI-Framework/robotis_device/CMakeFiles/robotis_device.dir/src/robotis_device/sensor.cpp.s
 .PHONY : src/robotis_device/sensor.cpp.s
 
 # Help Target
@@ -297,6 +297,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ajus/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fariz/Desktop/alfarobi_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
