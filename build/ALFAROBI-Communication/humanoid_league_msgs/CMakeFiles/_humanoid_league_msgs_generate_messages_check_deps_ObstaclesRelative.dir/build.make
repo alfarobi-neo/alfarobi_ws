@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 include ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_ObstaclesRelative.dir/progress.make
 
 ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_ObstaclesRelative:
-	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/humanoid_league_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py humanoid_league_msgs /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg humanoid_league_msgs/ObstacleRelative:std_msgs/Header:geometry_msgs/Point
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/humanoid_league_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py humanoid_league_msgs /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/ObstaclesRelative.msg humanoid_league_msgs/ObstacleRelative:geometry_msgs/Point:std_msgs/Header
 
 _humanoid_league_msgs_generate_messages_check_deps_ObstaclesRelative: ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_ObstaclesRelative
 _humanoid_league_msgs_generate_messages_check_deps_ObstaclesRelative: ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_ObstaclesRelative.dir/build.make

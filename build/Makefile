@@ -3990,32 +3990,6 @@ op3_offset_tuner_client/fast:
 .PHONY : op3_offset_tuner_client/fast
 
 #=============================================================================
-# Target rules for targets named op3_tuner_client
-
-# Build rule for target.
-op3_tuner_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 op3_tuner_client
-.PHONY : op3_tuner_client
-
-# fast build rule for target.
-op3_tuner_client/fast:
-	$(MAKE) -f ALFAROBI-Tools/op3_tuner_client/CMakeFiles/op3_tuner_client.dir/build.make ALFAROBI-Tools/op3_tuner_client/CMakeFiles/op3_tuner_client.dir/build
-.PHONY : op3_tuner_client/fast
-
-#=============================================================================
-# Target rules for targets named op3_tuner_client_autogen
-
-# Build rule for target.
-op3_tuner_client_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 op3_tuner_client_autogen
-.PHONY : op3_tuner_client_autogen
-
-# fast build rule for target.
-op3_tuner_client_autogen/fast:
-	$(MAKE) -f ALFAROBI-Tools/op3_tuner_client/CMakeFiles/op3_tuner_client_autogen.dir/build.make ALFAROBI-Tools/op3_tuner_client/CMakeFiles/op3_tuner_client_autogen.dir/build
-.PHONY : op3_tuner_client_autogen/fast
-
-#=============================================================================
 # Target rules for targets named robi
 
 # Build rule for target.
@@ -6122,19 +6096,6 @@ odometry/fast:
 .PHONY : odometry/fast
 
 #=============================================================================
-# Target rules for targets named op3_gui_demo
-
-# Build rule for target.
-op3_gui_demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 op3_gui_demo
-.PHONY : op3_gui_demo
-
-# fast build rule for target.
-op3_gui_demo/fast:
-	$(MAKE) -f ALFAROBI-Tools/op3_gui_demo/CMakeFiles/op3_gui_demo.dir/build.make ALFAROBI-Tools/op3_gui_demo/CMakeFiles/op3_gui_demo.dir/build
-.PHONY : op3_gui_demo/fast
-
-#=============================================================================
 # Target rules for targets named walk_zmp
 
 # Build rule for target.
@@ -6480,8 +6441,6 @@ help:
 	@echo "... robotis_math"
 	@echo "... op3_kinematics_dynamics"
 	@echo "... op3_offset_tuner_client"
-	@echo "... op3_tuner_client"
-	@echo "... op3_tuner_client_autogen"
 	@echo "... robi"
 	@echo "... server_node"
 	@echo "... team_communication_genpy"
@@ -6644,7 +6603,6 @@ help:
 	@echo "... zmp_walking_module_msgs_generate_messages_lisp"
 	@echo "... zmp_walking_module_msgs_genlisp"
 	@echo "... odometry"
-	@echo "... op3_gui_demo"
 	@echo "... walk_zmp"
 	@echo "... alfarobi_node"
 	@echo "... op3_manager"

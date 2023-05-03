@@ -67,18 +67,18 @@ ALFAROBI-Communication/team_communication/CMakeFiles/team_communication_generate
 
 /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_robot_data.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_robot_data.py: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg
-/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_robot_data.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
 /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_robot_data.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_robot_data.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_robot_data.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG team_communication/robot_data"
 	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/team_communication && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg -Iteam_communication:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p team_communication -o /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg
 
 /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg
-/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg
-/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg/_team_data.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG team_communication/team_data"
 	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/team_communication && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg -Iteam_communication:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p team_communication -o /home/fariz/Desktop/alfarobi_ws/devel/lib/python3/dist-packages/team_communication/msg
 

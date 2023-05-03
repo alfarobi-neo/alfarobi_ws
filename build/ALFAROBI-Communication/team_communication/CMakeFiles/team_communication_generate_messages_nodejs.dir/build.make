@@ -66,18 +66,18 @@ ALFAROBI-Communication/team_communication/CMakeFiles/team_communication_generate
 
 /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/robot_data.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/robot_data.js: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg
-/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/robot_data.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
 /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/robot_data.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/robot_data.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/robot_data.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from team_communication/robot_data.msg"
 	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/team_communication && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg -Iteam_communication:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p team_communication -o /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg
 
 /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg
-/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js: /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/robot_data.msg
-/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg/team_data.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fariz/Desktop/alfarobi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from team_communication/team_data.msg"
 	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/team_communication && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg/team_data.msg -Iteam_communication:/home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/team_communication/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p team_communication -o /home/fariz/Desktop/alfarobi_ws/devel/share/gennodejs/ros/team_communication/msg
 

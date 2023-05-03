@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/fariz/Desktop/alfarobi_ws/build
 include ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_GoalPartsInImage.dir/progress.make
 
 ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_GoalPartsInImage:
-	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/humanoid_league_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py humanoid_league_msgs /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg humanoid_league_msgs/BarInImage:std_msgs/Header:geometry_msgs/Point:humanoid_league_msgs/PostInImage
+	cd /home/fariz/Desktop/alfarobi_ws/build/ALFAROBI-Communication/humanoid_league_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py humanoid_league_msgs /home/fariz/Desktop/alfarobi_ws/src/ALFAROBI-Communication/humanoid_league_msgs/msg/GoalPartsInImage.msg humanoid_league_msgs/BarInImage:humanoid_league_msgs/PostInImage:geometry_msgs/Point:std_msgs/Header
 
 _humanoid_league_msgs_generate_messages_check_deps_GoalPartsInImage: ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_GoalPartsInImage
 _humanoid_league_msgs_generate_messages_check_deps_GoalPartsInImage: ALFAROBI-Communication/humanoid_league_msgs/CMakeFiles/_humanoid_league_msgs_generate_messages_check_deps_GoalPartsInImage.dir/build.make
